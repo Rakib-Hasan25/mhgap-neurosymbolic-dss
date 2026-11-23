@@ -1,0 +1,233 @@
+{
+    "module": {
+        "id": "PSY",
+        "name": "Psychoses"
+    },
+    "nodes": [
+        {
+            "id": "PSY_A1",
+            "type": "assessment",
+            "is_starting": true,
+            "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?"
+        },
+        {
+            "id": "PSY_M1",
+            "type": "management",
+            "text": "Assess and manage the acute physical condition, and refer to emergency services/specialist as needed."
+        },
+        {
+            "id": "PSY_A2",
+            "type": "assessment",
+            "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?"
+        },
+        {
+            "id": "PSY_M2",
+            "type": "management",
+            "text": "Manage concurrent conditions. Consider consultation with a mental health specialist."
+        },
+        {
+            "id": "PSY_A3",
+            "type": "assessment",
+            "text": "Does the person present with acute agitation and/or acute aggression?"
+        },
+        {
+            "id": "PSY_M3",
+            "type": "management",
+            "text": "Ensure safety. Communicate calmly. Treat underlying causes. Sedate as appropriate (e.g., haloperidol or diazepam) to prevent injury. In extreme violence, seek help from police/staff."
+        },
+        {
+            "id": "PSY_A4",
+            "type": "assessment",
+            "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?"
+        },
+        {
+            "id": "PSY_A5",
+            "type": "assessment",
+            "text": "Is there an imminent risk of suicide?"
+        },
+        {
+            "id": "PSY_R1",
+            "type": "referral",
+            "target_module": "SUI",
+            "text": "Assess and manage imminent risk of suicide before continuing."
+        },
+        {
+            "id": "PSY_D1",
+            "type": "diagnosis",
+            "text": "Bipolar Disorder, Manic Episode"
+        },
+        {
+            "id": "PSY_M4",
+            "type": "management",
+            "text": "Discontinue antidepressants. Begin treatment with lithium, valproate, carbamazepine, or antipsychotics (avoid valproate/lithium/carbamazepine in pregnancy). Provide psychoeducation, promote functioning, reduce stress. Follow-up: Assess for improvement, monitor adherence/side-effects. Continue maintenance medications for at least 2 years. Consider discontinuation if in full remission for 2 years."
+        },
+        {
+            "id": "PSY_E1",
+            "type": "exit",
+            "text": "End of Bipolar Disorder Manic Episode path."
+        },
+        {
+            "id": "PSY_A6",
+            "type": "assessment",
+            "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?"
+        },
+        {
+            "id": "PSY_M5",
+            "type": "management",
+            "text": "Consider consultation with a specialist to review other possible causes of psychosis."
+        },
+        {
+            "id": "PSY_E2",
+            "type": "exit",
+            "text": "End of unconfirmed psychosis path."
+        },
+        {
+            "id": "PSY_A7",
+            "type": "assessment",
+            "text": "Is there an imminent risk of suicide?"
+        },
+        {
+            "id": "PSY_R2",
+            "type": "referral",
+            "target_module": "SUI",
+            "text": "Assess and manage imminent risk of suicide before continuing."
+        },
+        {
+            "id": "PSY_D2",
+            "type": "diagnosis",
+            "text": "Psychosis"
+        },
+        {
+            "id": "PSY_M6",
+            "type": "management",
+            "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms."
+        },
+        {
+            "id": "PSY_E3",
+            "type": "exit",
+            "text": "End of Psychosis path."
+        }
+    ],
+    "relationships": [
+        {
+            "from": "PSY_A1",
+            "to": "PSY_M1",
+            "condition": "YES"
+        },
+        {
+            "from": "PSY_A1",
+            "to": "PSY_A2",
+            "condition": "NO"
+        },
+        {
+            "from": "PSY_M1",
+            "to": "PSY_A2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_A2",
+            "to": "PSY_M2",
+            "condition": "YES"
+        },
+        {
+            "from": "PSY_A2",
+            "to": "PSY_A3",
+            "condition": "NO"
+        },
+        {
+            "from": "PSY_M2",
+            "to": "PSY_A3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_A3",
+            "to": "PSY_M3",
+            "condition": "YES"
+        },
+        {
+            "from": "PSY_A3",
+            "to": "PSY_A4",
+            "condition": "NO"
+        },
+        {
+            "from": "PSY_M3",
+            "to": "PSY_A4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_A4",
+            "to": "PSY_A5",
+            "condition": "YES"
+        },
+        {
+            "from": "PSY_A4",
+            "to": "PSY_A6",
+            "condition": "NO"
+        },
+        {
+            "from": "PSY_A5",
+            "to": "PSY_R1",
+            "condition": "YES"
+        },
+        {
+            "from": "PSY_A5",
+            "to": "PSY_D1",
+            "condition": "NO"
+        },
+        {
+            "from": "PSY_R1",
+            "to": "PSY_D1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_D1",
+            "to": "PSY_M4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_M4",
+            "to": "PSY_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_A6",
+            "to": "PSY_A7",
+            "condition": "YES"
+        },
+        {
+            "from": "PSY_A6",
+            "to": "PSY_M5",
+            "condition": "NO"
+        },
+        {
+            "from": "PSY_M5",
+            "to": "PSY_E2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_A7",
+            "to": "PSY_R2",
+            "condition": "YES"
+        },
+        {
+            "from": "PSY_A7",
+            "to": "PSY_D2",
+            "condition": "NO"
+        },
+        {
+            "from": "PSY_R2",
+            "to": "PSY_D2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_D2",
+            "to": "PSY_M6",
+            "condition": "NEXT"
+        },
+        {
+            "from": "PSY_M6",
+            "to": "PSY_E3",
+            "condition": "NEXT"
+        }
+    ]
+}

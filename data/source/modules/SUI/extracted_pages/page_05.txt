@@ -1,0 +1,59 @@
+[Step 3]
+[Box 3]
+Does the person have concurrent MNS conditions?
+
+[Sub-list under Box 3]
+- Depression  
+- Disorders due to substance use  
+- Child & adolescent mental and behavioral disorders  
+- Psychoses  
+- Epilepsy  
+
+[Decision from Box 3]
+YES -> [Action Box]
+NO -> [Proceed to Step 4]
+
+[Action Box linked to YES]
+» Manage the concurrent conditions.  
+See relevant modules.
+
+--------------------------------------------------
+
+[Step 4]
+[Box 4]
+Does the person have chronic pain?
+
+[Decision from Box 4]
+YES -> [Action Box]
+NO -> [Proceed to Step 5]
+
+[Action Box linked to YES]
+» Manage the pain and treat any relevant medical conditions.
+
+--------------------------------------------------
+
+[Step 5]
+[Box 5]
+Does the person have emotional symptoms severe enough to warrant clinical management?
+
+[Sub-list under Box 5]
+- Difficulty carrying out usual work, school, domestic or social activities  
+- Repeated self-medication for emotional distress, or unexplained physical symptoms  
+- Marked distress or repeated help-seeking  
+
+[Decision from Box 5]
+YES -> [Action Box]
+NO -> [Follow-up Box]
+
+[Action Box linked to YES]
+» Manage the emotional symptoms.  
+» Go to » OTH  
+
+[Follow-up Box linked to NO]
+» Go to SUI 3 (Follow-up)
+
+--------------------------------------------------
+
+[Footer]
+SELF-HARM/SUICIDE  
+135

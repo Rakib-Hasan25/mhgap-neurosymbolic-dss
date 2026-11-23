@@ -1,0 +1,61 @@
+EPILEPSY » Assessment
+
+58
+
+EPI 1
+
+[Clipboard with checkmark and X icon] **EPI 1 » Assessment**
+
+[Doctor icon]
+
+**CLINICAL TIP**
+
+Syncope and pseudoseizures should be considered during initial evaluation and in cases of treatment failure.
+
+» Syncopal (fainting) spells often are associated with flushing, sweating, pallor, and occasionally a feeling of vision darkening prior to an episode. Mild shaking may occur at the end.
+
+» Pseudoseizures are typically associated with a stress trigger. Episodes are often prolonged and can involve nonrhythmic jerking of the body, eyes may be closed, and pelvic thrusting is often seen. There is typically a rapid return to baseline after the episode. If pseudoseizures are suspected, go to » **OTH**.
+
+**COMMON PRESENTATIONS OF EPILEPSY**
+
+*   Convulsive movement or fits/seizures
+    During the convulsion:
+    – Loss of consciousness or impaired consciousness
+    – Stiffness, rigidity
+    – Tongue bite, injury, incontinence of urine or faeces
+*   After the convulsion: fatigue, drowsiness, sleepiness, confusion, abnormal behaviour, headache, muscle aches, or weakness on one side of the body
+
+***
+
+### **Flowchart**
+
+[BOX 1]
+1
+Does the person have convulsive seizures?
+---
+↓
+---
+[BOX 2]
+Has the person had convulsive movements lasting longer than 1-2 minutes?
+---
+↓
+---
+[DECISION]
+Has the person had convulsive movements lasting longer than 1-2 minutes?
+
+---
+**→ NO →**
+---
+[OUTCOME BOX]
+[Arrow pointing left icon]
+
+**Convulsive seizures unlikely**
+
+» Consult a specialist for recurrent episodes [Specialist icon]
+» Follow-up in 3 months [Follow-up/clock icon]
+
+---
+**→ YES →**
+---
+↓
+(Flow continues downwards)

@@ -1,0 +1,60 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/SUB/SUB_single_hop_single_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "SUB_single_hop_positive_1",
+      "prefix_ok": true,
+      "exact_ok": true,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [],
+      "counts": {
+        "expected_assessment_findings": 6,
+        "matched": 6,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 0
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": true,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "SUB_A1",
+        "SUB_A4",
+        "SUB_A5",
+        "SUB_D4",
+        "SUB_M6",
+        "SUB_A12",
+        "SUB_A14",
+        "SUB_A15",
+        "SUB_M16",
+        "SUB_E11"
+      ],
+      "expected_node_ids": [
+        "SUB_A1",
+        "SUB_A4",
+        "SUB_A5",
+        "SUB_D4",
+        "SUB_M6",
+        "SUB_A12",
+        "SUB_A14",
+        "SUB_A15",
+        "SUB_M16",
+        "SUB_E11"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "SUB_D4",
+        "engine_management_node_ids": [
+          "SUB_M6",
+          "SUB_M16"
+        ],
+        "engine_referrals": [],
+        "engine_exit_node_id": "SUB_E11"
+      },
+      "stop_reason": "exit_reached",
+      "stop_node_id": "SUB_E11",
+      "vp_total_tokens": 2679
+    }
+  ]
+}

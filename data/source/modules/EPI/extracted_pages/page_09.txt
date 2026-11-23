@@ -1,0 +1,78 @@
+[FLOWCHART START]
+[ARROW DOWN]
+
+[BOX]
+Has the person had at least 2 of the following symptoms during the episode(s)?
+
+*   – Loss of consciousness or impaired consciousness
+*   – Stiffness, rigidity
+*   – Bitten or bruised tongue, bodily injury
+*   – Incontinence of faeces/urine
+*   – After the convulsion: fatigue, drowsiness, sleepiness, confusion, abnormal behaviour, headache, muscle aches, or weakness on one side of the body
+
+[END BOX]
+
+[DECISION POINT]
+From the box "Has the person had at least 2 of the following symptoms during the episode(s)?" there are two paths:
+
+**Path 1: NO**
+[ARROW to the left from NO node]
+[BOX]
+[Icon of a large left-pointing arrow]
+Convulsive seizures unlikely
+» Consult a specialist for recurrent episodes [icon of a person at a desk]
+» Follow-up in 3 months C [icon of a calendar with a 'C']
+[END BOX]
+
+**Path 2: YES**
+[ARROW DOWN from YES node]
+[BOX]
+Suspect
+CONVULSIVE SEIZURES
+[END BOX]
+
+[ARROW DOWN]
+
+[NODE IN CIRCLE]
+2
+[END NODE]
+
+[ARROW DOWN]
+
+[BOX]
+Is there an acute cause?
+[END BOX]
+
+[ARROW DOWN]
+
+[BOX]
+Is there neuroinfection or other possible causes of convulsions?
+» Check for signs and symptoms:
+*   – Fever
+*   – Headache
+*   – Confusion
+*   – Meningeal irritation (e.g. stiff neck)
+*   – Head injury
+*   – Metabolic abnormality (e.g. hypogylcemia/ hyponatremia)
+*   – Alcohol or drug intoxication or withdrawal
+[END BOX]
+
+[DECISION POINT]
+From the box "Is there neuroinfection or other possible causes of convulsions?" there are two paths:
+
+**Path 1: YES**
+[ARROW DOWN from YES node, points to the bottom of the page]
+
+**Path 2: NO**
+[ARROW to the right from NO node]
+[BOX]
+Suspect EPILEPSY
+[END BOX]
+[ARROW DOWN from the box, points to the bottom of the page]
+
+[FLOWCHART END]
+
+[FOOTER]
+EPILEPSY
+59
+[END FOOTER]

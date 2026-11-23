@@ -1,0 +1,53 @@
+[Page Header]
+[Icon of a blue circle with a plus sign and a circular arrow] EPI 3 » Follow-up
+
+---
+
+[Flowchart]
+
+**BOX 1**
+[A blue rectangle with a number 1 in a circle on top]
+REVIEW THE CURRENT CONDITION
+
+-> [Arrow pointing down to the decision box]
+
+**DECISION BOX**
+Does the person have more than 50% seizure reduction in convulsion frequency?
+
+-> [Arrow labeled **NO** points left to the following box]
+
+**IF THE PERSON IS NOT IMPROVING ON CURRENT DOSE:**
+» Review adherence to medications.
+» Consider increase in medication dose as needed to maximal dose if no adverse effects.
+» If response is still poor,
+  – Consider switching medication. The new medication should be at an optimum dose before slowly discontinuing the first.
+» If response is still poor,
+  – Review diagnosis.
+  – REFER TO SPECIALIST. [Icon of a specialist]
+» Follow-up more frequently. [Icon of a circular arrow with a plus sign]
+
+-> [Arrow labeled **YES** points down]
+[The YES path continues off the page]
+
+---
+
+[Side Boxes]
+
+**TOP RIGHT BOX**
+[Connected by an icon of a person with a stethoscope]
+
+RECOMMENDATIONS ON FREQUENCY OF CONTACT
+» Follow up should occur every 3-6 months
+
+**BOTTOM LEFT BOX**
+[Connected by an icon of a person]
+
+**CLINICAL TIP:**
+» ADVERSE EFFECTS (e.g. drowsiness, nystagmus, diplopia, ataxia) are from too high doses of medication for the person.
+» If there is an IDIOSYNCRATIC REACTION (allergic reaction, bone marrow depression, hepatic failure), switch antiepileptic medication.
+
+---
+
+[Footer]
+EPILEPSY
+67

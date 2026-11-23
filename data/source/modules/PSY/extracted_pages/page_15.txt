@@ -1,0 +1,76 @@
+Here is the structured transcription of the clinical guideline page:
+
+[The flowchart begins with a thick grey arrow pointing downwards from an unseen previous step.]
+
+[ARROW]
+
+[NODE 2]
+[A dark blue circle containing the number 2.]
+
+[ARROW points from NODE 2 to the box below.]
+
+[BOX]
+**ROUTINELY MONITOR TREATMENT**
+
+[ARROW points from the box above to the box below.]
+
+[BOX]
+>> Review psychosocial interventions.
+>> If on medication, review **adherence**, **side effects and dosing** (Table 4). Check weight, blood pressure, and blood glucose.
+>> If the person starts to use any other medications with potential drug-drug interactions, consider reviewing the medication dose.
+>> Ask regarding the onset of symptoms, prior episodes, and details of any previous or current treatment.
+
+[ARROW points from the box above to NODE 3.]
+
+[NODE 3]
+[A dark blue circle containing the number 3.]
+
+[ARROW points from NODE 3 to the box below.]
+
+[BOX]
+**DISCONTINUE MEDICATIONS**
+
+[The flowchart now splits into two parallel paths.]
+
+***
+
+**Path 1 (Left Branch)**
+
+[BOX]
+**Person with first episode, relapse, or worsening of psychosis symptoms:**
+
+[ARROW points down to the next box in this path.]
+
+[BOX]
+>> Consider discontinuation of medications **12 MONTHS after symptoms have resolved.**
+
+***
+
+**Path 2 (Right Branch)**
+
+[BOX]
+**Person with psychotic symptoms persisting more than 3 months:**
+
+[ARROW points down to the next box in this path.]
+
+[BOX]
+>> Consider discontinuation of medications **if person is in FULL REMISSION of symptoms for several years.**
+
+***
+
+[The two parallel paths converge into a single box below.]
+
+[BOX]
+>> Discuss risks of relapse against long-term medication side-effects with person and family.
+>> If possible, consult a specialist. [Icon of a person/specialist]
+>> Gradually and slowly reduce the medication dose. When medications are withdrawn, individuals and family members need to be educated to detect early symptoms of relapse. Close clinical monitoring is recommended.
+
+***
+
+**Footer**
+
+[Left Side]
+PSYCHOSES
+
+[Right Side]
+47

@@ -1,0 +1,79 @@
+[ICON: Two people with speech bubbles and a plus sign] **EPI 2 >> Management**
+
+**PROTOCOL 1**
+
+[BOX]
+>> Provide **psychoeducation** to the person and carers (2.1) [Icon of two people]
+>> Initiate **antiepileptic medications** (2.3) [Icon of a pill bottle with a plus sign]
+>> Promote functioning in daily activities (2.2)
+[/BOX]
+
+**Special populations**
+Note that interventions are different for EPILEPSY in these populations
+
+---
+
+[COLUMN 1]
+
+[ICON: Woman holding a child]
+
+[BOX]
+**WOMAN OF CHILDBEARING AGE**
+Concern: Risk of antiepileptic medication to fetus/child
+[/BOX]
+
+[BOX]
+>> Advise folate (5 mg/day) to **prevent neural tube defects**, in **ALL women of childbearing age.**
+
+>> AVOID VALPROATE.
+
+>> [ICON: Exclamation mark in a red circle] **CAUTION If Pregnant:**
+   - Avoid polytherapy. Multiple medications in combination increase the risk of teratogenic effects during pregnancy.
+   - If medications are stopped during pregnancy, they should always be tapered.
+   - Advise delivery in hospital.
+   - At delivery, give 1 mg vitamin K i.m. to the newborn to prevent haemorrhagic disease.
+
+>> **If breastfeeding**, carbamazepine preferred to other medication.
+[/BOX]
+
+---
+
+[COLUMN 2]
+
+[ICON: Child and adolescent]
+
+[BOX]
+**CHILD / ADOLESCENT**
+Concern: Effect of antiepileptic medication on development and/or behavior
+[/BOX]
+
+[BOX]
+>> For those with a **developmental disorder**, manage the condition. Go to >> **CMH**.
+
+>> For children with behavioural disorder, avoid phenobarbital if possible. Manage the condition. Go to >> **CMH**.
+[/BOX]
+
+---
+
+[COLUMN 3]
+
+[ICON: HIV]
+
+[BOX]
+**PERSON LIVING WITH HIV**
+Concern: Drug interactions between antiepileptic medications and antiretrovirals
+[/BOX]
+
+[BOX]
+>> When available, refer to specific drug interactions for person's antiretroviral regimen and antiepileptic medication.
+
+>> **Valproate** is preferred due to fewer drug-drug interactions.
+
+>> [ICON: Red X] AVOID PHENYTOIN AND CARBAMAZEPINE WHEN POSSIBLE.
+[/BOX]
+
+---
+
+EPILEPSY
+
+63

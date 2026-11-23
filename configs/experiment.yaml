@@ -1,0 +1,40 @@
+# Experiment design (paper Section VI)
+
+cases:
+  file: data/cases/cases_22.json
+  total: 22
+  single_hop_positive: 6
+  single_hop_negative: 6
+  multi_hop_positive: 10          # exactly one referral each
+  modules: [DEP, SUB, CMH, EPI, PSY, SUI]
+  referral_targets_used: [SUI, CMH, PSY, OTH]
+
+systems:
+  S1_symbolic:
+    description: deterministic edge matching on the Neo4j graph (Eq. 1-2)
+    navigator_models: 0
+    runs: 22                      # 22 cases x 1
+    output: results/raw_runs/S1_symbolic/
+  S2_llm_graph_json:
+    description: navigator LLM picks next node from data/graphs/<CODE>/mhgap_decision_graph.json
+    navigator_models: 6
+    runs: 132                     # 22 cases x 6 navigators
+    output: results/raw_runs/S2_llm_graph_json/
+  S3_llm_raw_text:
+    description: navigator LLM picks next node from data/graphs/<CODE>/mhgap_clinical_logic.md + node catalogue
+    navigator_models: 6
+    runs: 132
+    output: results/raw_runs/S3_llm_raw_text/
+
+configurations: 13                # S1 + 6 x S2 + 6 x S3
+executions: 286
+repeats_per_configuration: 1      # no stochastic repetition
+max_referral_hops: 1
+max_iter: 20                      # default in the S2/S3 runners
+
+metrics:                          # paper Section VI-B
+  exact_path_match: observed node sequence == reference sequence
+  prefix_path_match: observed sequence is a prefix of the reference
+  finding_accuracy: matched / (matched + mismatched + missing), averaged over runs
+  extra_findings: reported separately, per execution
+  navigator_tokens: next-node control only (S1 = 0)

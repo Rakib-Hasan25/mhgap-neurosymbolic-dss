@@ -1,0 +1,107 @@
+{
+  "cases": [
+    {
+      "case_id": "EPI_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "EPI",
+      "referred_module": null,
+      "final_module": "EPI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "EPI_D7",
+      "exit_node_id": "EPI_E7",
+      "node_sequence": [
+        {
+          "id": "EPI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Any sign of head or neck injury?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M2",
+          "type": "management",
+          "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A2",
+          "type": "assessment",
+          "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M4",
+          "type": "management",
+          "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A3",
+          "type": "assessment",
+          "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A8",
+          "type": "assessment",
+          "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A9",
+          "type": "assessment",
+          "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D3",
+          "type": "diagnosis",
+          "text": "Suspect CONVULSIVE SEIZURES",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A10",
+          "type": "assessment",
+          "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_D4",
+          "type": "diagnosis",
+          "text": "Suspect EPILEPSY",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A13",
+          "type": "assessment",
+          "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D7",
+          "type": "diagnosis",
+          "text": "EPILEPSY is likely",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A14",
+          "type": "assessment",
+          "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_M16",
+          "type": "management",
+          "text": "Refer to specialist for further evaluation of cause.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_E7",
+          "type": "exit",
+          "text": "Exit: Specialist referral for underlying cause."
+        }
+      ],
+      "user_story": "Thirty-two-year-old Mizanur Rahman, a quiet launch mechanic from Char Fasson in Bhola, was brought to the upazila health complex after collapsing beside a tea stall near the river jetty. Witnesses said he had not fallen from a height or been struck; he simply stiffened, slid from the bench onto the packed earth, and was quickly moved away from the stove and sharp tools. On arrival there were no cuts, swelling, bruises, or tenderness on his scalp, face, neck, or spine, and his wife insisted there had been no accident or quarrel before the episode.\n\nThe nurse checked his airway, breathing, and pulse while his brother timed the fit. Nobody put anything in his mouth, though an older bystander tried to suggest it. Mizanur’s whole body remained rigid and jerking for about four minutes, with froth at the lips and unresponsiveness. He wet his lungi and later had a sore bitten edge of his tongue. An IV line was placed, normal saline started, and IV diazepam was given; within seven minutes of the first dose the convulsions stopped, though he stayed drowsy and confused, complaining of a heavy headache when he began to wake.\n\nMizanur is male, and his wife is not the patient, so pregnancy or postpartum eclampsia was not relevant. He had no fever, neck stiffness, rash, ear discharge, severe vomiting, recent illness, or signs of meningitis. His random glucose at the clinic was normal, he had eaten rice and lentils that morning, and his family denied alcohol use, yaba, sedatives, pesticide exposure, or withdrawal from any substance.\n\nThis was not his first episode. His wife described a similar convulsion at home three months ago after Fajr prayer and another one eight months ago while repairing an engine, both on separate days and followed by deep sleep and confusion. He had never received regular antiseizure medicine. During history-taking, his mother recalled that Mizanur had been born after a prolonged obstructed labor in their village, did not cry immediately, and was “blue and silent” for several minutes before a dai revived him. She also mentioned that one maternal uncle had recurrent fits in adulthood. Because of these possible underlying causes, the medical officer planned referral to a specialist in Barishal for further evaluation."
+    }
+  ]
+}

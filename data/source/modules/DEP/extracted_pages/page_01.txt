@@ -1,0 +1,61 @@
+**HEADER**
+DEPRESSION >> Follow-up
+30
+DEP 3
+
+**MAIN TITLE**
+[Icon: Circular arrow with a plus sign] DEP 3 >> Follow-up
+
+**SIDE PANEL (Right)**
+[Icon: Red figure of a person with a stethoscope]
+**RECOMMENDATIONS ON FREQUENCY OF CONTACT**
+» Schedule the second appointment within 1 week.
+» Initially maintain regular contact via telephone, home visits, letters, or contact cards more frequently, e.g. monthly, for the first 3 months.
+
+***
+
+**FLOWCHART**
+
+**Node [1]**
+↓ Arrow points to
+
+**Box:**
+**ASSESS FOR IMPROVEMENT**
+↓ Arrow points to
+
+**Decision Box:**
+**Is the person improving?**
+*Branching paths:*
+
+---
+
+**PATH: NO**
+(Grey arrow points down and left to the following box)
+
+**Box Contents:**
+» **If not yet receiving psychological treatment**, consider psychological treatment.
+» **If receiving a psychological treatment**, evaluate engagement in and experience of current psychological treatment.
+» **If not yet on antidepressants**, consider antidepressants.
+» **If on antidepressants**, assess:
+– **Does the person take the medication as prescribed?**
+If not, explore reasons why and encourage adherence.
+– **Are there side effects?**
+**If yes**, evaluate and weigh benefits of treatment.
+**If no** to side effects to antidepressants, increase dose (**TABLE 1**).
+Follow-up in 1-2 weeks. [Icon: Circular arrow with a plus sign]
+[Icon: Red exclamation point] **CAUTION WITH DOSE INCREASE.** CLOSE FOLLOW-UP NEEDED DUE TO POSSIBLE INCREASE IN SIDE EFFECTS.
+
+↓ (Grey line continues downward from the bottom of this box)
+
+---
+
+**PATH: YES**
+(Purple arrow points down and right to the following box)
+
+**Box Contents:**
+» Encourage the person to continue with their current management plan until they are *symptom free for 9-12 months*.
+» **Arrange a further follow up appointment in 1-2 weeks.** [Icon: Circular arrow with a plus sign]
+» Decrease contact as the person’s symptoms improve, e.g. once every 3 months after the initial 3 months.
+*Note: follow up should continue until the person no longer has any symptoms of depression.*
+
+↓ (Purple line continues downward from the bottom of this box)

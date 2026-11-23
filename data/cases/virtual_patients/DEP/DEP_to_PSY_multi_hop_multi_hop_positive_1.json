@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "case_id": "DEP_to_PSY_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "PSY",
+      "final_module": "PSY",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "PSY_D1",
+      "exit_node_id": "PSY_E1",
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_D1",
+          "type": "diagnosis",
+          "text": "DEPRESSIVE EPISODE IN BIPOLAR DISORDER is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_M3",
+          "type": "management",
+          "text": "PROTOCOL 2: Consult a specialist. If not immediately available, follow treatment for depression but NEVER prescribe antidepressants alone without a mood stabilizer. If symptoms of mania develop, stop antidepressant immediately and return for help.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_R2",
+          "type": "referral",
+          "target_module": "PSY",
+          "text": "Refer to Psychoses module for mood stabilizer management."
+        },
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A5",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D1",
+          "type": "diagnosis",
+          "text": "Bipolar Disorder, Manic Episode",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M4",
+          "type": "management",
+          "text": "Discontinue antidepressants. Begin treatment with lithium, valproate, carbamazepine, or antipsychotics (avoid valproate/lithium/carbamazepine in pregnancy). Provide psychoeducation, promote functioning, reduce stress. Follow-up: Assess for improvement, monitor adherence/side-effects. Continue maintenance medications for at least 2 years. Consider discontinuation if in full remission for 2 years.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E1",
+          "type": "exit",
+          "text": "End of Bipolar Disorder Manic Episode path."
+        }
+      ],
+      "user_story": "Md. Rashedul Karim, a 29-year-old launch ticket clerk from Chandpur Sadar, lives with his wife, their small son, and his widowed mother in a rented room near the river terminal. For nearly a month before his first clinic visit, his family noticed he was “not himself”: he sat silently after work, stopped playing carrom with neighbors, ignored his beloved fishing trips on the Meghna, and said everything felt empty. He slept only in broken stretches after fajr, lost interest in meals, and his trousers became loose after losing about 4 kg. At the ticket counter he made repeated fare mistakes, could not decide simple issues, moved and spoke slowly, and told his wife he was useless and had ruined the family’s future. He missed several shifts, stopped paying bills on time, and his mother had to remind him to bathe and eat.\n\nAt Chandpur District Hospital, examination found him afebrile, oriented, and neurologically normal. His hemoglobin, thyroid test, glucose, electrolytes, and liver and kidney tests were within normal limits; there was no sign of malnutrition, chronic infection, hypothyroidism, or anemia. He was not taking steroids, sedatives, or other regular medicines, and his wife confirmed he does not drink alcohol or use yaba, cannabis, or injectable drugs.\n\nHis wife then described a striking episode three years earlier that lasted almost two weeks: Rashedul slept one or two hours a night yet seemed full of energy, talked nonstop, claimed he would become the “king of river transport,” sold his motorbike to invest in a fantasy loudspeaker business, and tried to leave for Dhaka without telling anyone. That episode led to debt, family conflict, and suspension from work.\n\nBy the time he reached the psychiatry clinic, the low, withdrawn state had abruptly changed over the previous nine days. He was cheerful one moment and irritable the next, sleeping barely two hours without fatigue, pacing around the bazaar, calling relatives at midnight with grand business plans, and borrowing money impulsively to “buy a launch route.” Despite his pressured speech, he was not confused, drowsy, feverish, or disoriented, and his attention and memory were intact. There were no features of dementia, intoxication, or withdrawal, and the presentation was no longer explainable as depression alone. In the clinic he was loud but cooperative, made no threats, carried no weapon, and sat down when his wife asked. When asked directly, he denied wanting to die, had no plan to harm himself, and said he needed to stay alive to “build the family empire.”"
+    }
+  ]
+}

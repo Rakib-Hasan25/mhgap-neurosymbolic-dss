@@ -1,0 +1,72 @@
+{
+  "cases": [
+    {
+      "case_id": "CMH_to_SUI_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "CMH",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": null,
+      "node_sequence": [
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "type": "assessment",
+          "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "type": "assessment",
+          "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "type": "assessment",
+          "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_R1",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage suicide risk immediately."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+        }
+      ],
+      "user_story": "Fifteen-year-old Tasnim Jahan lives with her parents and younger brother in a rented flat near the railway station in Cumilla, where she attends class ten at a girls’ high school and helps her mother in the evenings by tutoring two neighborhood children. Her mother reports that Tasnim walked, spoke, learned to read, dressed herself, and managed daily routines at expected ages; she keeps up with schoolwork, communicates clearly with adults and peers, maintains friendships, and handles bathing, prayer, meals, and travel to school without needing unusual support.\n\nTeachers describe her as calm and attentive in class, not a child who fidgets, wanders around, interrupts, or loses materials. At home she can sit through lessons and complete sewing projects with her aunt, and her father says she is not unusually restless or distractible. She has no history of fighting, bullying, stealing, breaking things, running away, or repeated defiance; family disagreements are usually mild, and she is known in the building as polite and cooperative.\n\nUntil the past two days, Tasnim had been eating and sleeping normally, laughing with cousins, practicing for a school recitation, and making plans for the SSC exam. She has not had weeks of low mood, loss of interest, constant fearfulness, school avoidance, or frequent headaches or stomach pains. The crisis began suddenly after a classmate circulated an edited, humiliating photo of her in a Messenger group. Tasnim became intensely ashamed and frightened that her father would see it. This evening her mother found a goodbye note hidden in her schoolbag and saw messages to a friend saying, “I will jump from the roof tonight before everyone knows.” Tasnim admitted she had gone upstairs to check whether the rooftop gate was open and said she still intended to do it if taken home.\n\nShe has not swallowed tablets or poison, cut herself, hanged herself, lost consciousness, or become drowsy or intoxicated; on examination she is physically alert with no bleeding wounds or signs of poisoning. However, she is crying, refusing to promise safety, and repeatedly asking to be left alone because she believes death is the only way to stop the shame."
+    }
+  ]
+}

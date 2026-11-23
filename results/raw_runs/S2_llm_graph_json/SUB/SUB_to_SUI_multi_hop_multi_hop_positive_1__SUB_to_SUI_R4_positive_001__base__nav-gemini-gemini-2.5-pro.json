@@ -1,0 +1,385 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "SUB",
+  "step_logs": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A8",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person appear confused?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A12",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_A14",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_A15",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_R4",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Assess and manage imminent risk of suicide before continuing.",
+      "target_module": "SUI"
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+    },
+    {
+      "id": "SUI_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving."
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have chronic pain?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_M7",
+      "type": "management",
+      "is_starting": false,
+      "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving."
+    },
+    {
+      "id": "SUI_E1",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of Self-Harm / Suicide Assessment and Management."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "SUB_A1",
+      "answer": "NO",
+      "to": "SUB_A4"
+    },
+    {
+      "from": "SUB_A4",
+      "answer": "NO",
+      "to": "SUB_A8"
+    },
+    {
+      "from": "SUB_A8",
+      "answer": "NO",
+      "to": "SUB_A12"
+    },
+    {
+      "from": "SUB_A12",
+      "answer": "YES",
+      "to": "SUB_A14"
+    },
+    {
+      "from": "SUB_A14",
+      "answer": "YES",
+      "to": "SUB_A15"
+    },
+    {
+      "from": "SUB_A15",
+      "answer": "YES",
+      "to": "SUB_R4"
+    },
+    {
+      "from": "SUB_R4",
+      "answer": "REFERRAL",
+      "to": "SUI_A1",
+      "target_module": "SUI"
+    },
+    {
+      "from": "SUI_A1",
+      "answer": "NO",
+      "to": "SUI_A2"
+    },
+    {
+      "from": "SUI_A2",
+      "answer": "YES",
+      "to": "SUI_D1"
+    },
+    {
+      "from": "SUI_D1",
+      "answer": "NEXT",
+      "to": "SUI_M2"
+    },
+    {
+      "from": "SUI_M2",
+      "answer": "NEXT",
+      "to": "SUI_A4"
+    },
+    {
+      "from": "SUI_A4",
+      "answer": "NO",
+      "to": "SUI_A5"
+    },
+    {
+      "from": "SUI_A5",
+      "answer": "NO",
+      "to": "SUI_A6"
+    },
+    {
+      "from": "SUI_A6",
+      "answer": "NO",
+      "to": "SUI_M7"
+    },
+    {
+      "from": "SUI_M7",
+      "answer": "NEXT",
+      "to": "SUI_E1"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "SUI_E1",
+  "usage": {
+    "vp": {
+      "calls": 11,
+      "input_tokens": 6604,
+      "output_tokens": 22,
+      "total_tokens": 6626
+    },
+    "nav": {
+      "calls": 14,
+      "input_tokens": 48017,
+      "output_tokens": 318,
+      "total_tokens": 56457
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/SUB/SUB_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "case_id": "SUB_to_SUI_R4_positive_001",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-pro"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A8",
+      "type": "assessment",
+      "text": "Does the person appear confused?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A12",
+      "type": "assessment",
+      "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_A14",
+      "type": "assessment",
+      "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_A15",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_R4",
+      "type": "referral",
+      "target_module": "SUI",
+      "text": "Assess and manage imminent risk of suicide before continuing."
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_M2",
+      "type": "management",
+      "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_M4",
+      "type": "management",
+      "text": "Manage the concurrent conditions. See relevant modules.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "text": "Does the person have chronic pain?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_M7",
+      "type": "management",
+      "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_E1",
+      "type": "exit",
+      "text": "End of Self-Harm / Suicide Assessment and Management."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A8",
+      "SUB_A12",
+      "SUB_A14",
+      "SUB_A15",
+      "SUB_R4",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1",
+      "SUI_M2",
+      "SUI_A4",
+      "SUI_M4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M7",
+      "SUI_E1"
+    ],
+    "actual_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A8",
+      "SUB_A12",
+      "SUB_A14",
+      "SUB_A15",
+      "SUB_R4",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1",
+      "SUI_M2",
+      "SUI_A4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M7",
+      "SUI_E1"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": false,
+    "finding_accuracy": 0.9090909090909091,
+    "missing_findings": [],
+    "mismatched_findings": [
+      {
+        "id": "SUI_A4",
+        "expected": "YES",
+        "actual": "NO"
+      }
+    ],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 11,
+      "matched": 10,
+      "missing": 0,
+      "mismatched": 1,
+      "extra": 0
+    }
+  },
+  "total_tokens": 63083
+}

@@ -1,0 +1,96 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/PSY/PSY_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "multi_hop_positive_PSY_R1_SUI_D1",
+      "prefix_ok": false,
+      "exact_ok": false,
+      "finding_accuracy": 0.8,
+      "missing_findings": [],
+      "mismatched_findings": [
+        {
+          "node_id": "SUI_A4",
+          "expected": "YES",
+          "actual": "NO"
+        },
+        {
+          "node_id": "SUI_A6",
+          "expected": "NO",
+          "actual": "YES"
+        }
+      ],
+      "extra_findings": [],
+      "counts": {
+        "expected_assessment_findings": 10,
+        "matched": 8,
+        "missing": 0,
+        "mismatched": 2,
+        "extra": 0
+      },
+      "mismatched_answers": [
+        {
+          "node_id": "SUI_A4",
+          "expected": "YES",
+          "actual": "NO"
+        },
+        {
+          "node_id": "SUI_A6",
+          "expected": "NO",
+          "actual": "YES"
+        }
+      ],
+      "diagnosis_ok": true,
+      "exit_ok": false,
+      "actual_node_ids": [
+        "PSY_A1",
+        "PSY_A2",
+        "PSY_A3",
+        "PSY_A4",
+        "PSY_A5",
+        "PSY_R1",
+        "SUI_A1",
+        "SUI_A2",
+        "SUI_D1",
+        "SUI_M2",
+        "SUI_A4",
+        "SUI_A5",
+        "SUI_A6",
+        "SUI_M6",
+        "SUI_R1"
+      ],
+      "expected_node_ids": [
+        "PSY_A1",
+        "PSY_A2",
+        "PSY_A3",
+        "PSY_A4",
+        "PSY_A5",
+        "PSY_R1",
+        "SUI_A1",
+        "SUI_A2",
+        "SUI_D1",
+        "SUI_M2",
+        "SUI_A4",
+        "SUI_M4",
+        "SUI_A5",
+        "SUI_A6",
+        "SUI_M7",
+        "SUI_E1"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "SUI_D1",
+        "engine_management_node_ids": [
+          "SUI_M2",
+          "SUI_M6"
+        ],
+        "engine_referrals": [
+          "SUI",
+          "OTH"
+        ],
+        "engine_exit_node_id": null
+      },
+      "stop_reason": "max_referral_hops",
+      "stop_node_id": "SUI_R1",
+      "vp_total_tokens": 6217
+    }
+  ]
+}

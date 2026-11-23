@@ -1,0 +1,38 @@
+**DEPRESSION » Management** | **26** | **DEP 2**
+***
+
+# DEP 2 » Management
+
+## PROTOCOL 1
+**Depression**
+
+*   » Provide psychoeducation to the person and their carers. **(2.1)**
+*   » Reduce stress and strengthen social supports. **(2.2)**
+*   » Promote functioning in daily activities and community life. **(2.3)**
+*   » Consider antidepressants. **(2.5)**
+*   » If available, consider referral for one of the following brief psychological treatments: interpersonal therapy (IPT), cognitive behavioural therapy (CBT), behaviour activation and problem-solving counselling. **(2.4)**
+*   » ✖ **DO NOT** manage the symptoms with ineffective treatments, e.g. vitamin injections.
+*   » Offer regular follow-up.
+
+***
+
+## PROTOCOL 2
+**Depression in Bipolar Disorder**
+
+*   » Consult a specialist.
+*   » If a specialist is not immediately available, follow treatment for depression (**PROTOCOL 1**). However, NEVER prescribe antidepressants alone without a mood stabilizer such as lithium, carbamazepine or valproate because antidepressants can lead to mania in people with bipolar disorder (Go to **» PSY**).
+*   » If symptoms of mania develop, tell the person and the carers to stop the antidepressant immediately and return for help.
+
+***
+
+## Special populations
+*Note that interventions may differ for these populations*
+
+### CHILD/ADOLESCENT
+*   » For management of depression in children/adolescents, go to **» CMH**.
+
+### WOMEN WHO ARE PREGNANT OR BREASTFEEDING
+*   » Follow treatment for depression (**PROTOCOL 1**) but AVOID antidepressants if possible, especially during the first trimester.
+*   » If no response to psychological treatment, consider using with caution the lowest effective dose of antidepressants.
+*   » If breastfeeding, avoid long acting medication such as fluoxetine.
+*   » CONSULT A SPECIALIST, if available.

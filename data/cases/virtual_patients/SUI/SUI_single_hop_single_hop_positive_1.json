@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "case_id": "SUI_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "SUI",
+      "referred_module": null,
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": "SUI_E1",
+      "node_sequence": [
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "type": "management",
+          "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "type": "management",
+          "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "type": "exit",
+          "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+      ],
+      "user_story": "Shafiqur Rahman, a 37-year-old mechanic at a rickshaw garage near Rupatali bus stand in Barishal, was brought to the upazila health complex by his elder sister after a heated family dispute over unpaid loan installments. He was sitting rigidly, clutching his prayer cap, and admitted in a low voice that he had decided to kill himself that night by drinking the pesticide kept in their storeroom, or by using the nylon rope from his workshop if the bottle was taken away. His sister had found him writing a short farewell message on his phone, but he had not swallowed anything, cut himself, tied the rope, or lost consciousness. On examination he was alert, able to answer clearly, not drowsy or intoxicated, with no smell of chemicals, no bleeding, and no injuries.\n\nThe family immediately removed the pesticide, rope, and sharp tools from the house, and his sister stayed beside him while his wife arranged for a cousin to remain overnight so he would not be left alone. Shafiqur said he had never tried to harm himself before, but the plan still felt “too close” when he imagined facing the moneylender the next morning.\n\nOutside this crisis, Shafiqur had been functioning much as usual: opening the garage after Fajr, eating regular meals, joking with coworkers, and sleeping normally until the previous night. He denied persistent sadness, loss of interest, hearing voices, unusual beliefs, seizures, or use of alcohol, yaba, cannabis, or sedatives; his sister confirmed he is known in the family for avoiding intoxicants. He has no long-standing back, joint, abdominal, or headache pain and had not been repeatedly visiting doctors or taking pills to calm himself. This was the first time his family sought help for emotional distress, and apart from the immediate suicidal plan linked to the loan crisis, he had been carrying out his daily responsibilities."
+    }
+  ]
+}

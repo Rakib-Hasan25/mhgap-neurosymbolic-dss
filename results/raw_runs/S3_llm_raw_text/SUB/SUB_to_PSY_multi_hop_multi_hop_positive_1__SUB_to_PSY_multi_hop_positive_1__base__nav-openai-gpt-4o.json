@@ -1,0 +1,429 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "SUB",
+  "step_logs": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person recently used stimulants (cocaine, amphetamines) AND is showing dilated pupils, anxiety, agitation, hyper-excitable state, racing thoughts, or raised pulse and BP?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_D5",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Suspect ACUTE STIMULANT INTOXICATION"
+    },
+    {
+      "id": "SUB_M7",
+      "type": "management",
+      "is_starting": false,
+      "text": "Give diazepam 5-10 mg in titrated doses until calm. If psychotic symptoms not responsive to diazepam, consider haloperidol 1-2.5 mg. TRANSFER TO HOSPITAL if chest pain, tachyarrhythmias, or neurological signs."
+    },
+    {
+      "id": "SUB_A6_1",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Do psychotic symptoms persist despite treatment?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Refer to Psychoses module for persistent psychotic symptoms.",
+      "target_module": "PSY"
+    },
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "PSY_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "Manage concurrent conditions. Consider consultation with a mental health specialist."
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "PSY_M3",
+      "type": "management",
+      "is_starting": false,
+      "text": "Ensure safety. Communicate calmly. Treat underlying causes. Sedate as appropriate (e.g., haloperidol or diazepam) to prevent injury. In extreme violence, seek help from police/staff."
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "PSY_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_D2",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Psychosis"
+    },
+    {
+      "id": "PSY_M6",
+      "type": "management",
+      "is_starting": false,
+      "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms."
+    },
+    {
+      "id": "PSY_E3",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of Psychosis path."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "SUB_A1",
+      "answer": "NO",
+      "to": "SUB_A4"
+    },
+    {
+      "from": "SUB_A4",
+      "answer": "YES",
+      "to": "SUB_A5"
+    },
+    {
+      "from": "SUB_A5",
+      "answer": "NO",
+      "to": "SUB_A6"
+    },
+    {
+      "from": "SUB_A6",
+      "answer": "YES",
+      "to": "SUB_D5"
+    },
+    {
+      "from": "SUB_D5",
+      "answer": "NEXT",
+      "to": "SUB_M7"
+    },
+    {
+      "from": "SUB_M7",
+      "answer": "NEXT",
+      "to": "SUB_A6_1"
+    },
+    {
+      "from": "SUB_A6_1",
+      "answer": "YES",
+      "to": "SUB_R1"
+    },
+    {
+      "from": "SUB_R1",
+      "answer": "REFERRAL",
+      "to": "PSY_A1",
+      "target_module": "PSY"
+    },
+    {
+      "from": "PSY_A1",
+      "answer": "NO",
+      "to": "PSY_A2"
+    },
+    {
+      "from": "PSY_A2",
+      "answer": "YES",
+      "to": "PSY_M2"
+    },
+    {
+      "from": "PSY_M2",
+      "answer": "NEXT",
+      "to": "PSY_A3"
+    },
+    {
+      "from": "PSY_A3",
+      "answer": "YES",
+      "to": "PSY_M3"
+    },
+    {
+      "from": "PSY_M3",
+      "answer": "NEXT",
+      "to": "PSY_A4"
+    },
+    {
+      "from": "PSY_A4",
+      "answer": "NO",
+      "to": "PSY_A6"
+    },
+    {
+      "from": "PSY_A6",
+      "answer": "YES",
+      "to": "PSY_A7"
+    },
+    {
+      "from": "PSY_A7",
+      "answer": "NO",
+      "to": "PSY_D2"
+    },
+    {
+      "from": "PSY_D2",
+      "answer": "NEXT",
+      "to": "PSY_M6"
+    },
+    {
+      "from": "PSY_M6",
+      "answer": "NEXT",
+      "to": "PSY_E3"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "PSY_E3",
+  "usage": {
+    "vp": {
+      "calls": 11,
+      "input_tokens": 6632,
+      "output_tokens": 22,
+      "total_tokens": 6654
+    },
+    "nav": {
+      "calls": 17,
+      "input_tokens": 77478,
+      "output_tokens": 273,
+      "total_tokens": 77751
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/SUB/SUB_to_PSY_multi_hop_multi_hop_positive_1.json",
+  "case_id": "SUB_to_PSY_multi_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "openai",
+    "model": "gpt-4o"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_A5",
+      "type": "assessment",
+      "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A6",
+      "type": "assessment",
+      "text": "Has the person recently used stimulants (cocaine, amphetamines) AND is showing dilated pupils, anxiety, agitation, hyper-excitable state, racing thoughts, or raised pulse and BP?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_D5",
+      "type": "diagnosis",
+      "text": "Suspect ACUTE STIMULANT INTOXICATION",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUB_M7",
+      "type": "management",
+      "text": "Give diazepam 5-10 mg in titrated doses until calm. If psychotic symptoms not responsive to diazepam, consider haloperidol 1-2.5 mg. TRANSFER TO HOSPITAL if chest pain, tachyarrhythmias, or neurological signs.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUB_A6_1",
+      "type": "assessment",
+      "text": "Do psychotic symptoms persist despite treatment?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_R1",
+      "type": "referral",
+      "target_module": "PSY",
+      "text": "Refer to Psychoses module for persistent psychotic symptoms."
+    },
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "PSY_M2",
+      "type": "management",
+      "text": "Manage concurrent conditions. Consider consultation with a mental health specialist.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "PSY_M3",
+      "type": "management",
+      "text": "Ensure safety. Communicate calmly. Treat underlying causes. Sedate as appropriate (e.g., haloperidol or diazepam) to prevent injury. In extreme violence, seek help from police/staff.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A6",
+      "type": "assessment",
+      "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "PSY_A7",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_D2",
+      "type": "diagnosis",
+      "text": "Psychosis",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_M6",
+      "type": "management",
+      "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_E3",
+      "type": "exit",
+      "text": "End of Psychosis path."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A5",
+      "SUB_A6",
+      "SUB_D5",
+      "SUB_M7",
+      "SUB_A6_1",
+      "SUB_R1",
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_M2",
+      "PSY_A3",
+      "PSY_M3",
+      "PSY_A4",
+      "PSY_A6",
+      "PSY_A7",
+      "PSY_D2",
+      "PSY_M6",
+      "PSY_E3"
+    ],
+    "actual_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A5",
+      "SUB_A6",
+      "SUB_D5",
+      "SUB_M7",
+      "SUB_A6_1",
+      "SUB_R1",
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_M2",
+      "PSY_A3",
+      "PSY_M3",
+      "PSY_A4",
+      "PSY_A6",
+      "PSY_A7",
+      "PSY_D2",
+      "PSY_M6",
+      "PSY_E3"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 11,
+      "matched": 11,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 84405
+}

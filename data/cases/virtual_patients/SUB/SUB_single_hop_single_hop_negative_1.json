@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "case_id": "SUB_single_hop_negative_001",
+      "category": "single_hop_negative",
+      "source_module": "SUB",
+      "referred_module": null,
+      "final_module": "SUB",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "SUB_E9",
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A8",
+          "type": "assessment",
+          "text": "Does the person appear confused?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A12",
+          "type": "assessment",
+          "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_M15",
+          "type": "management",
+          "text": "Emphasise the health benefits of not using psychoactive substances.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_E9",
+          "type": "exit",
+          "text": "End of module: No substance use."
+        }
+      ],
+      "user_story": "Shahnaz Parvin, a 34-year-old primary school teacher from Chandpur town, came to the community clinic during her lunch break for a routine health check required by her school. She was neatly dressed in a cotton salwar kameez, greeted the nurse politely, and sat upright while waiting, fully alert and attentive. Her speech was clear and steady, her eyes were open and focused, and she did not look drowsy, slowed, or intoxicated.\n\nDuring the consultation, Shahnaz remained calm and composed. She answered questions without restlessness, trembling, pacing, irritability, or pressured speech. She said she had slept normally the night before after preparing exam papers for her students and did not feel unusually worried or tense. She understood where she was, gave the correct date and her school’s name, and described the reason for her visit coherently, showing no signs of confusion.\n\nWhen asked about substance use, Shahnaz explained that she has never smoked cigarettes or used jarda, gul, or other tobacco products, and she avoids alcohol because it is not part of her family or social life. She has never tried cannabis or yaba, and she does not take sleeping pills, pain tablets, cough syrup, or any prescription medicine unless prescribed; currently she is not taking any regular medication. She drinks tea with her colleagues but no other psychoactive substances. The clinician praised her for maintaining these habits and briefly reinforced how avoiding tobacco, alcohol, and unnecessary medicines helps protect her lungs, liver, sleep, mood, and long-term health."
+    }
+  ]
+}

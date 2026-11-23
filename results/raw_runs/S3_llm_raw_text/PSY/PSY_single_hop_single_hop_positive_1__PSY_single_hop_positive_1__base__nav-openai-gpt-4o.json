@@ -1,0 +1,231 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "PSY",
+  "step_logs": [
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "PSY_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_D2",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Psychosis"
+    },
+    {
+      "id": "PSY_M6",
+      "type": "management",
+      "is_starting": false,
+      "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms."
+    },
+    {
+      "id": "PSY_E3",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of Psychosis path."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "PSY_A1",
+      "answer": "NO",
+      "to": "PSY_A2"
+    },
+    {
+      "from": "PSY_A2",
+      "answer": "NO",
+      "to": "PSY_A3"
+    },
+    {
+      "from": "PSY_A3",
+      "answer": "NO",
+      "to": "PSY_A4"
+    },
+    {
+      "from": "PSY_A4",
+      "answer": "NO",
+      "to": "PSY_A6"
+    },
+    {
+      "from": "PSY_A6",
+      "answer": "YES",
+      "to": "PSY_A7"
+    },
+    {
+      "from": "PSY_A7",
+      "answer": "NO",
+      "to": "PSY_D2"
+    },
+    {
+      "from": "PSY_D2",
+      "answer": "NEXT",
+      "to": "PSY_M6"
+    },
+    {
+      "from": "PSY_M6",
+      "answer": "NEXT",
+      "to": "PSY_E3"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "PSY_E3",
+  "usage": {
+    "vp": {
+      "calls": 6,
+      "input_tokens": 3569,
+      "output_tokens": 12,
+      "total_tokens": 3581
+    },
+    "nav": {
+      "calls": 8,
+      "input_tokens": 27994,
+      "output_tokens": 131,
+      "total_tokens": 28125
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/PSY/PSY_single_hop_single_hop_positive_1.json",
+  "case_id": "PSY_single_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "openai",
+    "model": "gpt-4o"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A6",
+      "type": "assessment",
+      "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "PSY_A7",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_D2",
+      "type": "diagnosis",
+      "text": "Psychosis",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_M6",
+      "type": "management",
+      "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_E3",
+      "type": "exit",
+      "text": "End of Psychosis path."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_A3",
+      "PSY_A4",
+      "PSY_A6",
+      "PSY_A7",
+      "PSY_D2",
+      "PSY_M6",
+      "PSY_E3"
+    ],
+    "actual_ids": [
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_A3",
+      "PSY_A4",
+      "PSY_A6",
+      "PSY_A7",
+      "PSY_D2",
+      "PSY_M6",
+      "PSY_E3"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 6,
+      "matched": 6,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 31706
+}

@@ -1,0 +1,327 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "CMH",
+  "step_logs": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A15",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Assess and manage suicide risk immediately.",
+      "target_module": "SUI"
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+    },
+    {
+      "id": "SUI_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving."
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have chronic pain?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_M6",
+      "type": "management",
+      "is_starting": false,
+      "text": "Manage the emotional symptoms."
+    },
+    {
+      "id": "SUI_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Go to Other Significant Mental Health Complaints module.",
+      "target_module": "OTH"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "CMH_A1",
+      "answer": "NO",
+      "to": "CMH_A4"
+    },
+    {
+      "from": "CMH_A4",
+      "answer": "NO",
+      "to": "CMH_A7"
+    },
+    {
+      "from": "CMH_A7",
+      "answer": "NO",
+      "to": "CMH_A9"
+    },
+    {
+      "from": "CMH_A9",
+      "answer": "NO",
+      "to": "CMH_A15"
+    },
+    {
+      "from": "CMH_A15",
+      "answer": "YES",
+      "to": "CMH_R1"
+    },
+    {
+      "from": "CMH_R1",
+      "answer": "REFERRAL",
+      "to": "SUI_A1",
+      "target_module": "SUI"
+    },
+    {
+      "from": "SUI_A1",
+      "answer": "NO",
+      "to": "SUI_A2"
+    },
+    {
+      "from": "SUI_A2",
+      "answer": "YES",
+      "to": "SUI_D1"
+    },
+    {
+      "from": "SUI_D1",
+      "answer": "NEXT",
+      "to": "SUI_M2"
+    },
+    {
+      "from": "SUI_M2",
+      "answer": "NEXT",
+      "to": "SUI_A4"
+    },
+    {
+      "from": "SUI_A4",
+      "answer": "NO",
+      "to": "SUI_A5"
+    },
+    {
+      "from": "SUI_A5",
+      "answer": "NO",
+      "to": "SUI_A6"
+    },
+    {
+      "from": "SUI_A6",
+      "answer": "YES",
+      "to": "SUI_M6"
+    },
+    {
+      "from": "SUI_M6",
+      "answer": "NEXT",
+      "to": "SUI_R1"
+    }
+  ],
+  "stop_reason": "max_referral_hops",
+  "stop_node_id": "SUI_R1",
+  "usage": {
+    "vp": {
+      "calls": 10,
+      "input_tokens": 5474,
+      "output_tokens": 20,
+      "total_tokens": 5494
+    },
+    "nav": {
+      "calls": 13,
+      "input_tokens": 41996,
+      "output_tokens": 298,
+      "total_tokens": 49305
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/CMH/CMH_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "case_id": "CMH_to_SUI_multi_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-pro"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A15",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_R1",
+      "type": "referral",
+      "target_module": "SUI",
+      "text": "Assess and manage suicide risk immediately."
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "CMH_A1",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A15",
+      "CMH_R1",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1"
+    ],
+    "actual_ids": [
+      "CMH_A1",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A15",
+      "CMH_R1",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1",
+      "SUI_M2",
+      "SUI_A4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M6",
+      "SUI_R1"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": false,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [
+      {
+        "id": "SUI_A4",
+        "expected": null,
+        "actual": "NO"
+      },
+      {
+        "id": "SUI_A5",
+        "expected": null,
+        "actual": "NO"
+      },
+      {
+        "id": "SUI_A6",
+        "expected": null,
+        "actual": "YES"
+      }
+    ],
+    "counts": {
+      "expected_assessment_findings": 7,
+      "matched": 7,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 3
+    }
+  },
+  "total_tokens": 54799
+}

@@ -1,0 +1,40 @@
+[Box] Consider DEPRESSION
+
+[Box - Clinical Tip]
+CLINICAL TIP  
+Delusions or hallucinations may be present. If present, treatment for depression needs to be adapted. CONSULT A SPECIALIST
+
+[Box]
+Rule out a history of manic episode(s) and normal reaction to recent major loss. See » DEP.
+
+[Arrow] → [Box]
+» Go to PROTOCOL 6
+
+[Flow continues downward]
+
+[Circle] 5
+
+[Box]
+ASSESS FOR OTHER PRIORITY MNS CONDITIONS
+
+[Side Note]
+IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS AND MANAGE before continuing. Go to » SUI.
+
+[Box]
+Are there any other concurrent MNS conditions? Assess according to the mhGAP-IG Master Chart. See » MC.
+
+[Bullet Points]
+• Do not forget to assess for disorders due to substance use. See » SUB.  
+• For children with developmental delay/disorders, do not forget to assess for epilepsy. See » EPI.
+
+[Decision Node]
+YES / NO
+
+[Arrow YES] → [Box]
+» ASSESS AND MANAGE concurrent MNS conditions
+
+[Arrow NO] → (continues downward, not shown)
+
+[Footer]
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS  
+81

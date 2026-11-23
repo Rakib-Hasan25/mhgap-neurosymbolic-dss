@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "case_id": "PSY_single_hop_negative_001",
+      "category": "single_hop_negative",
+      "source_module": "PSY",
+      "referred_module": null,
+      "final_module": "PSY",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "PSY_E2",
+      "node_sequence": [
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "type": "assessment",
+          "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_M5",
+          "type": "management",
+          "text": "Consider consultation with a specialist to review other possible causes of psychosis.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E2",
+          "type": "exit",
+          "text": "End of unconfirmed psychosis path."
+        }
+      ]
+    }
+  ]
+}

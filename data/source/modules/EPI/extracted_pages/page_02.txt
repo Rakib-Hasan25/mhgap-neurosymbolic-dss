@@ -1,0 +1,42 @@
+EPILEPSY
+52
+EPI
+
+**EPI >> Quick Overview**
+Acute presentation of seizures/convulsions warrants emergency treatment & management
+
+***
+
+### Flowchart
+
+**[Box 1]**
+[Icon of a clipboard with a checkmark and an 'x']
+**ASSESSMENT**
+
+*   >> EMERGENCY:
+    Assessment & management of acute convulsions
+*   >> Assess if person has convulsive seizures
+*   >> Assess for an acute cause
+    (e.g. neuroinfection, trauma, etc.)
+*   >> Assess if the person has epilepsy and for any underlying causes (by history or examination)
+*   >> Assess for concurrent priority MNS conditions
+
+**---> [Arrow pointing from ASSESSMENT to MANAGEMENT]**
+
+**[Box 2]**
+[Icon of two people with a speech bubble containing a medicine bottle]
+**MANAGEMENT**
+
+*   >> Management Protocol and Special Populations
+    1. Epilepsy
+    2. Special Populations (women of childbearing age, children/adolescents, and people living with HIV)
+*   >> [Icon of two people] Psychosocial Interventions
+*   >> [Icon of a pill bottle with a plus sign] Pharmacological Interventions
+
+**---> [Arrow pointing from MANAGEMENT to FOLLOW-UP]**
+
+**[Box 3]**
+[Icon of a currency symbol with a circular arrow]
+**FOLLOW-UP**
+
+**---> [Arrow pointing from FOLLOW-UP back to ASSESSMENT, forming a loop]**

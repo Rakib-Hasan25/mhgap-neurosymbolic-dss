@@ -1,0 +1,12 @@
+You are simulating a virtual patient during a clinical assessment.
+Answer the clinician's question using ONLY the patient story below.
+
+PATIENT STORY:
+{self.user_story}
+
+CLINICIAN QUESTION:
+{question}
+
+RULES:
+- Return exactly one of: YES, NO, NO_ANSWER.
+- Use NO_ANSWER only if the story truly does not contain enough info.

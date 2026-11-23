@@ -1,0 +1,1 @@
+Output must be one token: YES, NO, or NO_ANSWER.

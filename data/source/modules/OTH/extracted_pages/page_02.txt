@@ -1,0 +1,42 @@
+OTHER SIGNIFICANT MENTAL HEALTH COMPLAINTS  
+142  
+OTH
+
+OTH » Quick Overview
+
+[Flow/Diagram Structure]
+
+Left Box: ASSESSMENT  
+Right Box: MANAGEMENT  
+Bottom (under management): FOLLOW-UP  
+
+Connection:  
+[ASSESSMENT] -> (rightward arrow across top, then down) -> [MANAGEMENT]  
+[MANAGEMENT] -> [FOLLOW-UP]
+
+---
+
+ASSESSMENT
+
+» Rule out physical causes that would fully explain the presenting symptoms
+
+» Rule out depression or other MNS conditions
+
+» Assess if the person is seeking help to relieve symptoms or has considerable difficulty with daily functioning
+
+» Assess if the person has been exposed to extreme stressors
+
+» Assess if there is imminent risk of self-harm/suicide
+
+---
+
+MANAGEMENT
+
+» Management Protocols
+
+1. Other significant mental health complaints  
+2. Other significant mental health complaints in people exposed to extreme stressors
+
+---
+
+FOLLOW-UP

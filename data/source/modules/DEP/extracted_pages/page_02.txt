@@ -1,0 +1,46 @@
+**Header**
+DEPRESSION    20    DEP
+
+**Title**
+DEP >> Quick Overview
+
+***
+
+**[Box 1: Left Side]**
+[Icon: Clipboard with an 'x' and a checkmark]
+**ASSESSMENT**
+
+**>> Does the person have depression?**
+
+**>> Are there other explanations for the symptoms?**
+– Rule out physical conditions
+– Rule out a history of mania
+– Rule out normal reactions to recent major loss
+
+**>> Assess for other priority MNS conditions**
+
+***
+
+*[Connection: A thick purple line extends from the bottom of the Assessment box, goes up between the columns, across the top, and ends in a downward-pointing arrow into the top of the Management box.]*
+**↓**
+
+***
+
+**[Box 2: Right Side]**
+[Icon: Two speech bubbles; one with a person, one with a pill bottle]
+**MANAGEMENT**
+
+**>> Management Protocols**
+1. Depression
+2. Depressive episode in bipolar disorder
+3. Special populations
+
+**>>** [Icon: Two people] **Psychosocial Interventions**
+
+**>>** [Icon: Pill bottle with a plus sign] **Pharmacological Interventions**
+
+*[Flow continues downward within the right side]*
+**↓**
+
+[Icon: Circular arrow containing a plus sign]
+**FOLLOW-UP**

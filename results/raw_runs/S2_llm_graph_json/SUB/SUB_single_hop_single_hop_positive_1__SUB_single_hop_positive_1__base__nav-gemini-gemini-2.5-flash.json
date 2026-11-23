@@ -1,0 +1,250 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "SUB",
+  "step_logs": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_D4",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Suspect ALCOHOL or BENZODIAZEPINE WITHDRAWAL"
+    },
+    {
+      "id": "SUB_M6",
+      "type": "management",
+      "is_starting": false,
+      "text": "MANAGE WITHDRAWAL: Give diazepam 10-20 mg orally. Transfer to hospital or detoxification facility if possible. For alcohol withdrawal, give thiamine 100 mg daily for 5 days. TRANSFER IMMEDIATELY if seizures, delirium, or serious medical problems are present."
+    },
+    {
+      "id": "SUB_A12",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_A14",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUB_A15",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_M16",
+      "type": "management",
+      "is_starting": false,
+      "text": "PROTOCOL 2 (DEPENDENCE): Provide psychoeducation. Arrange detoxification or inpatient treatment if necessary. For opioids: assess for opioid agonist maintenance (methadone/buprenorphine) or planned detox. For benzodiazepines: gradually reduce dose. For alcohol: arrange safe cessation, provide thiamine 100mg/day, consider relapse prevention meds (acamprosate, naltrexone, disulfiram). Conduct motivational interviewing. Follow-up: Review several times per week in first 2 weeks, then weekly in first month. Decrease to monthly once improving."
+    },
+    {
+      "id": "SUB_E11",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of Substance Use Module (Dependence managed)."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "SUB_A1",
+      "answer": "NO",
+      "to": "SUB_A4"
+    },
+    {
+      "from": "SUB_A4",
+      "answer": "YES",
+      "to": "SUB_A5"
+    },
+    {
+      "from": "SUB_A5",
+      "answer": "YES",
+      "to": "SUB_D4"
+    },
+    {
+      "from": "SUB_D4",
+      "answer": "NEXT",
+      "to": "SUB_M6"
+    },
+    {
+      "from": "SUB_M6",
+      "answer": "NEXT",
+      "to": "SUB_A12"
+    },
+    {
+      "from": "SUB_A12",
+      "answer": "YES",
+      "to": "SUB_A14"
+    },
+    {
+      "from": "SUB_A14",
+      "answer": "YES",
+      "to": "SUB_A15"
+    },
+    {
+      "from": "SUB_A15",
+      "answer": "NO",
+      "to": "SUB_M16"
+    },
+    {
+      "from": "SUB_M16",
+      "answer": "NEXT",
+      "to": "SUB_E11"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "SUB_E11",
+  "usage": {
+    "vp": {
+      "calls": 6,
+      "input_tokens": 2559,
+      "output_tokens": 12,
+      "total_tokens": 2571
+    },
+    "nav": {
+      "calls": 9,
+      "input_tokens": 44812,
+      "output_tokens": 157,
+      "total_tokens": 46050
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/SUB/SUB_single_hop_single_hop_positive_1.json",
+  "case_id": "SUB_single_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_A5",
+      "type": "assessment",
+      "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_D4",
+      "type": "diagnosis",
+      "text": "Suspect ALCOHOL or BENZODIAZEPINE WITHDRAWAL",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUB_M6",
+      "type": "management",
+      "text": "MANAGE WITHDRAWAL: Give diazepam 10-20 mg orally. Transfer to hospital or detoxification facility if possible. For alcohol withdrawal, give thiamine 100 mg daily for 5 days. TRANSFER IMMEDIATELY if seizures, delirium, or serious medical problems are present.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUB_A12",
+      "type": "assessment",
+      "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_A14",
+      "type": "assessment",
+      "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUB_A15",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_M16",
+      "type": "management",
+      "text": "PROTOCOL 2 (DEPENDENCE): Provide psychoeducation. Arrange detoxification or inpatient treatment if necessary. For opioids: assess for opioid agonist maintenance (methadone/buprenorphine) or planned detox. For benzodiazepines: gradually reduce dose. For alcohol: arrange safe cessation, provide thiamine 100mg/day, consider relapse prevention meds (acamprosate, naltrexone, disulfiram). Conduct motivational interviewing. Follow-up: Review several times per week in first 2 weeks, then weekly in first month. Decrease to monthly once improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUB_E11",
+      "type": "exit",
+      "text": "End of Substance Use Module (Dependence managed)."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A5",
+      "SUB_D4",
+      "SUB_M6",
+      "SUB_A12",
+      "SUB_A14",
+      "SUB_A15",
+      "SUB_M16",
+      "SUB_E11"
+    ],
+    "actual_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A5",
+      "SUB_D4",
+      "SUB_M6",
+      "SUB_A12",
+      "SUB_A14",
+      "SUB_A15",
+      "SUB_M16",
+      "SUB_E11"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 6,
+      "matched": 6,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 48621
+}

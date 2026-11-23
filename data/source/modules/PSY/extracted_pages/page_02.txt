@@ -1,0 +1,51 @@
+PSYCHOSES
+34
+PSY 1
+
+**PSY » Quick Overview**
+
+***
+
+### Flowchart
+
+**[Box 1]**
+
+[Icon: Clipboard with an X and a checkmark]
+
+**ASSESSMENT**
+
+>> **Explore other explanations for the symptoms**
+- EVALUATE FOR MEDICAL CONDITIONS
+  e.g. rule out delirium, medications and metabolic abnormalities
+- EVALUATE FOR OTHER RELEVANT MNS CONDITIONS
+
+>> **Assess for acute manic episode**
+
+>> **Evaluate if the person has psychosis**
+
+**[Arrow: A thick blue line flows down from ASSESSMENT, turns right, and then up to connect to MANAGEMENT]**
+
+**[Box 2]**
+
+[Icon: Two people talking, one with a medication in a speech bubble]
+
+**MANAGEMENT**
+
+>> **Management Protocols**
+1. Bipolar disorder – manic episode
+2. Psychosis
+3. Special populations: women who are pregnant or breast-feeding, adolescents, and older adults
+
+>> [Icon: Two people standing side-by-side] **Psychosocial Interventions**
+
+>> [Icon: Pill bottle with a plus sign] **Pharmacological Interventions**
+1. Psychosis: initiation of antipsychotics
+2. Manic episode: initiation of mood stabilizer or antipsychotic; avoid antidepressants
+
+**[Arrow: A thick blue line flows down from MANAGEMENT to connect to FOLLOW-UP]**
+
+**[Box 3]**
+
+[Icon: A circle with a 'C' and a plus sign inside]
+
+**FOLLOW-UP**

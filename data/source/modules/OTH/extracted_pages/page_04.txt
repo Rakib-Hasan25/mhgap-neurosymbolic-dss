@@ -1,0 +1,29 @@
+OTHER SIGNIFICANT MENTAL HEALTH COMPLAINTS » Assessment                                                                     144                 OTH 1
+
+[Box 3]
+Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?
+
+Decision paths from Box 3:
+- NO -> [Box: » No treatment needed.]
+- YES -> [Box: OTHER SIGNIFICANT MENTAL HEALTH COMPLAINTS are likely]
+
+[Box: » No treatment needed.]
+
+[Box: OTHER SIGNIFICANT MENTAL HEALTH COMPLAINTS are likely]
+
+↓ (from previous box)
+
+[Box 4]
+Has the person been exposed to extreme stressors?
+(e.g. physical or sexual violence, major accidents, bereavement or other major losses)
+
+Decision paths from Box 4:
+- YES -> [Box: » Go to PROTOCOL 1 and 2]
+- NO -> [Box: » Go to PROTOCOL 1]
+
+[Box: » Go to PROTOCOL 1 and 2]
+
+[Box: » Go to PROTOCOL 1]
+
+Note:
+! IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS AND MANAGE before continuing to Protocol 1 and 2 (Go to » SUI).

@@ -1,0 +1,97 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/DEP/DEP_to_CMH_multi_hop_multi_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "DEP_to_CMH_multi_hop_positive_1",
+      "prefix_ok": true,
+      "exact_ok": true,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [],
+      "counts": {
+        "expected_assessment_findings": 23,
+        "matched": 23,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 0
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": false,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "DEP_A1",
+        "DEP_A2",
+        "DEP_A3",
+        "DEP_A4",
+        "DEP_A6",
+        "DEP_A7",
+        "DEP_D2",
+        "DEP_A11",
+        "DEP_R4",
+        "CMH_A1",
+        "CMH_A4",
+        "CMH_A7",
+        "CMH_A9",
+        "CMH_A10",
+        "CMH_A11",
+        "CMH_A12",
+        "CMH_A13",
+        "CMH_A14",
+        "CMH_D8",
+        "CMH_M12",
+        "CMH_A15",
+        "CMH_A16",
+        "CMH_A17",
+        "CMH_A18",
+        "CMH_A19",
+        "CMH_A20",
+        "CMH_A21",
+        "CMH_E1"
+      ],
+      "expected_node_ids": [
+        "DEP_A1",
+        "DEP_A2",
+        "DEP_A3",
+        "DEP_A4",
+        "DEP_A6",
+        "DEP_A7",
+        "DEP_D2",
+        "DEP_A11",
+        "DEP_R4",
+        "CMH_A1",
+        "CMH_A4",
+        "CMH_A7",
+        "CMH_A9",
+        "CMH_A10",
+        "CMH_A11",
+        "CMH_A12",
+        "CMH_A13",
+        "CMH_A14",
+        "CMH_D8",
+        "CMH_M12",
+        "CMH_A15",
+        "CMH_A16",
+        "CMH_A17",
+        "CMH_A18",
+        "CMH_A19",
+        "CMH_A20",
+        "CMH_A21",
+        "CMH_E1"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "DEP_D2",
+        "engine_management_node_ids": [
+          "CMH_M12"
+        ],
+        "engine_referrals": [
+          "CMH"
+        ],
+        "engine_exit_node_id": "CMH_E1"
+      },
+      "stop_reason": "exit_reached",
+      "stop_node_id": "CMH_E1",
+      "vp_total_tokens": 13528
+    }
+  ]
+}

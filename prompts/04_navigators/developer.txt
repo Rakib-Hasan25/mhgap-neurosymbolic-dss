@@ -1,0 +1,1 @@
+Return only a JSON object with key next_node_id.

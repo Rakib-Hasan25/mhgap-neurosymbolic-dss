@@ -1,0 +1,61 @@
+DISORDERS DUE TO SUBSTANCE USE » Assessment  
+116  
+SUB 1  
+
+[Box 1]  
+1  
+Does the person use substances?  
+
+[Main instruction box under Box 1]  
+Ask about use of tobacco, alcohol, and psychoactive prescription medicines. Depending on the setting and the presentation, consider asking about cannabis and other substance use.  
+
+[Decision flow from Box 1]  
+[Box 1] -> NO  
+NO -> [Left box]  
+
+[Left box]  
+» Emphasise the health benefits of not using psychoactive substances.  
+» EXIT MODULE  
+
+[Decision flow from Box 1]  
+[Box 1] -> YES -> [Box 2]  
+
+[Right side panel]  
+CLINICAL TIP  
+While taking a history, ask:  
+» How the person started using substances?  
+» When they started using them?  
+» What was happening in their life at that time?  
+» If anyone in their family or social circle use substances?  
+» If they have tried to reduce their use? Why? What happened?  
+
+[Box 2]  
+2  
+Is the substance use harmful?  
+For each substance used assess:  
+
+[Assessment box under Box 2]  
+
+A Frequency and quantity of use. (Hint: Ask “How many days per week do you use this substance? How much do you use per day?”)  
+
+B Harmful behaviours. (Hint: Ask “Does your substance use cause you any problems?”)  
+
+– Injuries and accidents  
+– Driving while intoxicated  
+– Drug injection, sharing needles, reusing needles  
+– Relationship problems as a result of use  
+
+– Sexual activity while intoxicated that was risky or later regretted  
+– Legal or financial problems  
+– Inability to care for children responsibly  
+
+– Violence towards others  
+– Poor performance in education, employment roles  
+– Poor performance in expected social roles (e.g. parenting)  
+
+[Decision flow from Box 2]  
+[Box 2] -> NO  
+[Box 2] -> YES  
+
+[Right-side note near YES branch]  
+Remember answers for use later during assessment.

@@ -1,0 +1,72 @@
+PSYCHOSES >> Follow -up
+
+46
+
+PSY 3
+
+[Icon of a circle with a plus sign and a circular arrow] **PSY 3 >> Follow-up**
+**PSYCHOSIS**
+
+***
+
+### Flowchart
+
+**1. ASSESS FOR IMPROVEMENT**
+⬇
+**Is the person improving?**
+    |
+    ├─ [YES] → **Box A**
+    |
+    └─ [NO] → **Is the person taking medication?**
+                 |
+                 ├─ [YES] → **Box C**
+                 |
+                 └─ [NO] → **Box D**
+
+***
+
+**Box A Details**
+
+» Continue with treatment plan.
+» Decrease frequency of follow-up once symptoms have subsided.
+» Follow-up as needed. [Icon of a circle with a plus sign and a circular arrow]
+⬇
+**SKIP to STEP 2**
+⬇⬇
+
+***
+
+**Box C Details**
+
+» Ensure that person has been on a typical effective dose for minimum of 4-6 weeks.
+» Maintain a high frequency of contact until symptoms start to respond to treatment.
+» Involve the person and carers in treatment plan changes and decisions.
+⬇
+*(Flow continues)*
+
+***
+
+**Box D Details**
+
+» START ANTIPSYCHOTIC MEDICATIONS [Icon of a medicine bottle with a plus sign]
+(Go to **Table 1**).
+» Maintain a high frequency of contact until symptoms start to respond to treatment.
+» Involve the person and carers in treatment plan changes and decisions.
+⬇
+*(Flow continues)*
+
+***
+
+*(The arrows from Box C and Box D merge and continue downwards off the page)*
+
+***
+
+### Side Information Box
+
+[Icon of a red healthcare professional]
+
+**RECOMMENDATIONS ON FREQUENCY OF CONTACT**
+
+» Initial follow-up should be as frequent as possible, even daily, until acute symptoms respond to treatment.
+
+» Regular follow-up is needed. Once symptoms respond, monthly to quarterly follow-up is recommended (based on clinical need and feasibility factors such as staff availability, distance from clinic, etc.)

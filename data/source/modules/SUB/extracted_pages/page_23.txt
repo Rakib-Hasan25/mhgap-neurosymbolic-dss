@@ -1,0 +1,90 @@
+CLASS / INDICATION  
+MEDICATION  
+DOSING  
+SIDE EFFECTS  
+CONTRAINDICATIONS / CAUTIONS  
+
+---
+
+ALPHA ADRENERGIC AGONISTS  
+To treat opioid withdrawal  
+
+Medication: Clonidine  
+
+Dosing:  
+Start 0.1 mg 2-3 times daily. Increase as tolerated in divided doses to manage withdrawal symptoms, to a maximum of 1 mg daily.  
+
+Side Effects:  
+Sedation, light-headedness, dizziness, headache, nausea/vomiting, dry mouth, constipation, sexual dysfunction, depression, agitation, low blood pressure, tachycardia, sinus bradycardia, and AV block.  
+
+Contraindications / Cautions:  
+Use caution in cardiac, cerebrovascular, and liver disease. Use lower doses in kidney disease.  
+Be aware of the potential for abuse. Monitor vital signs closely.  
+❌ DO NOT stop abruptly, as withdrawal can cause rebound hypertension. Avoid in women who are pregnant or breastfeeding.  
+
+---
+
+Medication: Lofexidine  
+
+Dosing:  
+Start 0.4 - 0.6 mg twice daily. Increase as needed by 0.4-0.8 mg daily. Maximum single dose: 0.8 mg. Maximum daily dose: 2.4 mg (in 2-4 divided doses).  
+
+Side Effects:  
+Sedation, light-headedness, low blood pressure, ECG changes such as prolonged QT interval and sinus bradycardia.  
+
+Contraindications / Cautions:  
+Use caution in cardiac, cerebrovascular, and renal disease. Avoid in patients with prolonged QT syndrome, metabolic disarray, or if they are taking any other QT-prolonging medications.  
+Monitor vital signs closely.  
+❌ DO NOT stop medication abruptly, as withdrawal may cause rebound hypertension.  
+
+---
+
+MEDICATIONS TO PREVENT RELAPSE IN ALCOHOL DEPENDENCE  
+To suppress the urge to drink  
+
+Medication: Acamprosate  
+
+Dosing:  
+Start 2 tablets of 333 mg p.o. each 3 times per day for 12 months. If the person weighs less than 60 kg, give 2 tablets 2 times per day p.o. for 12 months.  
+
+Side Effects:  
+Diarrhoea, flatulence, nausea/vomiting, abdominal pain, depression, anxiety, suicidality, itching. Occasionally, a maculopapular rash can occur, and rarely, bullous skin reactions.  
+
+Contraindications / Cautions:  
+In moderate kidney disease, give a lower dose, 333 mg p.o. 3 times per day.  
+❌ CONTRAINDICATED in severe kidney disease and liver disease.  
+
+---
+
+Medication: Naltrexone  
+
+Dosing:  
+Start 50 mg daily for 6-12 months. In opioid dependence, ensure that there has been no opioid use in the last 7 days (for example by administration of dose of naloxone).  
+
+Side Effects:  
+Sedation, dizziness, nausea/vomiting, abdominal pain, insomnia, anxiety, reduced energy, joint and muscle pain. Monitor liver function due to risk of liver toxicity.  
+
+Contraindications / Cautions:  
+Risk of FATAL OVERDOSE in patients who use opioids more than 24 hours after their last dose of naltrexone, due to the rapid loss of antagonist effect.  
+❌ DO NOT use in patients with liver failure or acute hepatitis.  
+
+---
+
+Medication: Disulfiram  
+
+Dosing:  
+Start 200-400 mg daily.  
+
+Side Effects:  
+Drowsiness, dizziness, headache, flushing, sweating, dry mouth, nausea/vomiting, tremor, foul body odour, sexual dysfunction. Rarely, psychotic reactions, allergic dermatitis, peripheral neuritis, or hepatic cell damage can occur. Severe reactions can lead to confusion, cardiovascular collapse, and death.  
+
+Contraindications / Cautions:  
+Tricyclic antidepressants (TCAs), monamine oxidase inhibitors (MAOIs), antipsychotics, vasodilators, and alpha or beta adrenergic antagonists make the disulfiram-alcohol reaction more serious. Sensitisation to alcohol continues 6-14 days after taking disulfiram, even if in small amounts.  
+❌ DO NOT use with alcohol, as reactions can be life-threatening or fatal.  
+❌ DO NOT use in women who are pregnant or breastfeeding.  
+❌ CONTRAINDICATED in people with hypertension, heart, liver, or kidney disease, a history of cerebrovascular accidents, psychosis, impulsivity, or if at risk of suicide.  
+
+---
+
+DISORDERS DUE TO SUBSTANCE USE  
+127

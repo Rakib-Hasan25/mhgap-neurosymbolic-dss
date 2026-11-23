@@ -1,0 +1,86 @@
+**Header**
+EPILEPSY >> Emergency
+54
+EPI
+
+---
+
+**Flowchart**
+
+[START]
+    |
+    V
+[BOX 3: Decision]
+! SPECIAL POPULATION: Pregnancy/Post-partum
+Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?
+    |
+    +-----------------+
+    |                 |
+    V [YES]           V [NO]
+    |                 |
+    |                 |
+    V                 V
+[BOX]                 [BOX 4]
+SUSPECT ECLAMPSIA     >> GIVE MEDICATION TO STOP CONVULSIONS
+    |                 |
+    V                 +--------------------------------+
+    |                 |                                |
+    |                 V                                V
+[BOX: Red border]     [CONDITION]                      [CONDITION]
+    |                 IF NO I.V. ESTABLISHED           IF I.V. ESTABLISHED
+    |                 |                                |
+    |                 V                                V
+    V                 [BOX: Blue border]               [BOX: Blue border]
+>> Give magnesium sulphate 10 g intramuscular (i.m.)
+>> If diastolic blood pressure >110 mmHg, give hydralazine 5 mg i.v. slowly (3-4min). Repeat every 30 min until ≤ 90 mmHg;
+   X Do not give more than 20 mg total
+>> REFER URGENTLY TO HOSPITAL
+
+---
+
+**Detailed Flowchart Transcription**
+
+[START]
+    |
+    V
+**3: Decision Box**
+! SPECIAL POPULATION: Pregnancy/Post-partum
+Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?
+    |
+    +-----> **YES** ----> [Box] **SUSPECT ECLAMPSIA**
+    |                         |
+    |                         V
+    |                     [Box with red border]
+    |                     >> Give **magnesium sulphate** 10 g
+    |                        intramuscular (i.m.)
+    |                     >> If diastolic **blood pressure** >110 mmHg,
+    |                        give **hydralazine** 5 mg i.v. slowly (3-4min).
+    |                        Repeat every 30 min until ≤ 90 mmHg;
+    |                        X Do not give more than 20 mg total
+    |                     >> REFER URGENTLY TO HOSPITAL
+    |
+    |
+    +-----> **NO** ----> **4: Action Box**
+                          >> GIVE MEDICATION TO STOP CONVULSIONS
+                                |
+          +---------------------+---------------------+
+          |                                           |
+          V                                           V
+    [Condition Box]                               [Condition Box]
+    **IF NO I.V. ESTABLISHED**                    **IF I.V. ESTABLISHED**
+          |                                           |
+          V                                           V
+    [Action Box]                                  [Action Box]
+    **Give:**                                     >> Start normal **saline** administration slowly
+    >> **diazepam** rectally                         (30 drops/minute)
+       (adult 10 mg, child 1 mg/year of age)      >> Give **glucose** i.v.
+    OR                                               (adult 5 ml of 50%; child 2-5 ml/kg of 10%)
+    >> **midazolam** buccally/intranasally          >> Give emergency medication:
+       (5-10 mg adult, child 0.2 mg/kg)              – **diazepam** 10 mg i.v. (child 1mg/year of age i.v.)
+                                                     OR
+                                                     – **lorazepam** 4 mg i.v (child 0.1 mg/kg i.v.)
+          |                                           |
+          +---------------------+---------------------+
+                                |
+                                V
+                             [END OF PAGE FLOW]

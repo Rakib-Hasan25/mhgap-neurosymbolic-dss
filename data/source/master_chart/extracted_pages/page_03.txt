@@ -1,0 +1,123 @@
+Page number: 18
+
+Title:
+❗ EMERGENCY Presentations of Priority MNS Conditions
+
+---
+
+Section (boxed):
+
+Column headers:
+EMERGENCY PRESENTATION | CONDITION TO CONSIDER | GO TO
+
+---
+
+Row 1:
+EMERGENCY PRESENTATION:
+» Act of self-harm with signs of poisoning or intoxication, bleeding from self-inflicted wound, loss of consciousness and/or extreme lethargy
+
+CONDITION TO CONSIDER:
+MEDICALLY SERIOUS ACT OF SELF-HARM
+
+GO TO:
+SUI
+
+---
+
+Row 2:
+EMERGENCY PRESENTATION:
+» Current thoughts, plan, or act of self-harm or suicide, or history of thoughts, plan, or act of self-harm or suicide in a person who is now extremely agitated, violent, distressed or lacks communication
+
+CONDITION TO CONSIDER:
+IMMINENT RISK OF SELF-HARM/SUICIDE
+
+GO TO:
+SUI
+
+---
+
+Row 3:
+EMERGENCY PRESENTATION:
+» Acute convulsion with loss of consciousness or impaired consciousness
+
+CONDITION TO CONSIDER:
+EPILEPSY
+
+GO TO:
+EPI, SUB
+
+---
+
+Row 4:
+EMERGENCY PRESENTATION:
+» Continuous convulsions
+
+CONDITION TO CONSIDER:
+STATUS EPILEPTICUS  
+ALCOHOL OR OTHER SEDATIVE WITHDRAWAL
+
+GO TO:
+EPI, SUB
+
+---
+
+Row 5:
+EMERGENCY PRESENTATION:
+» Agitated and/or aggressive behaviour
+
+CONDITION TO CONSIDER:
+—
+
+GO TO:
+DEM, PSY, SUB
+
+---
+
+Row 6:
+EMERGENCY PRESENTATION:
+» Smell of alcohol on the breath, slurred speech, uninhibited behaviour; disturbance in the level of consciousness, cognition, perception, affect or behaviour
+
+CONDITION TO CONSIDER:
+ACUTE ALCOHOL INTOXICATION
+
+GO TO:
+SUB
+
+---
+
+Row 7:
+EMERGENCY PRESENTATION:
+» Tremor in hands, sweating, vomiting, increased pulse and blood pressure, agitation, headache, nausea, anxiety; seizure and confusion in severe cases
+
+CONDITION TO CONSIDER:
+ALCOHOL WITHDRAWAL  
+ALCOHOL WITHDRAWAL DELIRIUM
+
+GO TO:
+SUB
+
+---
+
+Row 8:
+EMERGENCY PRESENTATION:
+» Unresponsive or minimally responsive, slow respiratory rate, pinpoint pupils
+
+CONDITION TO CONSIDER:
+SEDATIVE OVERDOSE OR INTOXICATION
+
+GO TO:
+SUB
+
+---
+
+Row 9:
+EMERGENCY PRESENTATION:
+» Dilated pupils, excited, racing thoughts, disordered thinking, strange behaviour, recent use of cocaine or other stimulants, increased pulse and blood pressure, aggressive, erratic or violent behaviour
+
+CONDITION TO CONSIDER:
+ACUTE STIMULANT INTOXICATION OR OVERDOSE
+
+GO TO:
+SUB
+
+---

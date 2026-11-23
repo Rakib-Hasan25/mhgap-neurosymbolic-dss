@@ -1,0 +1,59 @@
+**Header:**
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS >> Assessment  
+74  
+CMH 1  
+
+---
+
+**[Box]**
+Assess the child for visual and/or hearing impairment:
+
+For vision assessment, see if the child fails to:
+- Look at your eyes  
+- Follow a moving object with the head and eyes  
+- Grab an object  
+- Recognize familiar people  
+
+For hearing assessment, see if the child fails to:
+- Turn head to see someone behind them when they speak  
+- Show reaction to loud noise  
+- Make a lot of different sounds (tata, dada, baba), if an infant  
+
+---
+
+**Flow:**
+[Assess the child for visual and/or hearing impairment]  
+→ Decision node:
+
+- YES → [CONSULT WITH SPECIALIST FOR EVALUATION.]  
+  → [Go to PROTOCOL 1]
+
+- NO → continues downward
+
+---
+
+**Step Indicator:**
+2  
+
+---
+
+**[Box]**
+ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY  
+
+---
+
+**[Box]**
+Is the child/adolescent:
+- Overactive?  
+- Unable to stay still for long?  
+- Easily distracted, has difficulty completing tasks?  
+- Moving restlessly?  
+
+---
+
+**Flow:**
+[Is the child/adolescent…]  
+→ Decision node:
+
+- YES → (continues downward, next step not shown)  
+- NO → [SKIP to STEP 3]

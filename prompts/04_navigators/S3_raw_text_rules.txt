@@ -1,0 +1,4 @@
+- Choose the next node_id to ask from nodes only.
+- Use the clinical logic markdown to decide the next step based on previous YES/NO/NEXT answers.
+- Return only a JSON object with a single key next_node_id.
+- Do not invent node ids that are not present in nodes.

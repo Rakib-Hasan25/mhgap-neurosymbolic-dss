@@ -1,0 +1,26 @@
+OTHER SIGNIFICANT MENTAL HEALTH COMPLAINTS » Follow-up                                                                     148                                                                     OTH 3
+
+OTH 3 » Follow-up
+
+ASSESS FOR IMPROVEMENT
+
+[Box] Is the person improving?
+
+Decision flow:
+[Is the person improving?] -> YES
+[Is the person improving?] -> NO
+
+YES branch:
+[YES] -> 
+- Continue with treatment plan
+- Follow-up as needed
+
+NO branch:
+[NO] -> 
+If the person is not improving or the person or the carer insists on further investigations and treatment:
+- Review Protocols 1 and 2
+- Consider consulting a specialist.
+
+Right-side box:
+RECOMMENDATIONS ON FREQUENCY OF CONTACT
+» Ask the person to return in 2-4 weeks if their symptoms do not improve or if, at any time, their symptoms worsen.

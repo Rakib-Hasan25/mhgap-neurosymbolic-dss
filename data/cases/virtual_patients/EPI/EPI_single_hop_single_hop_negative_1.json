@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "case_id": "EPI_single_hop_negative_1",
+      "category": "single_hop_negative",
+      "source_module": "EPI",
+      "referred_module": null,
+      "final_module": "EPI",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "EPI_E3",
+      "node_sequence": [
+        {
+          "id": "EPI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Any sign of head or neck injury?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M2",
+          "type": "management",
+          "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A2",
+          "type": "assessment",
+          "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M4",
+          "type": "management",
+          "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A3",
+          "type": "assessment",
+          "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A8",
+          "type": "assessment",
+          "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M11",
+          "type": "management",
+          "text": "Convulsive seizures unlikely. Consult a specialist for recurrent episodes.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_E3",
+          "type": "exit",
+          "text": "Exit: Non-convulsive seizures."
+        }
+      ],
+      "user_story": "Thirty-two-year-old Md. Rashedul Karim, a mobile phone repairman from Shibganj, Chapainawabganj, was brought to the upazila health complex by his younger brother after a strange episode at his shop. While seated behind the counter after lunch, he suddenly stopped responding, stared blankly, and made small repetitive lip-smacking movements with brief twitching of his right fingers. He did not fall, hit his head, or complain of neck pain afterward; his brother and two customers eased him onto a mat, and the nurse later found no scalp swelling, bleeding, bruising, or neck tenderness.\n\nAt the clinic, staff checked that his airway was clear, breathing steady, and pulse present, moved nearby tools away, and kept his brother beside him while timing the episode. No one put anything in his mouth. An IV line was difficult to secure at first, so when the abnormal movements and unresponsiveness continued, he was given buccal midazolam. The episode settled within about five minutes of the first dose, and he gradually became drowsy but arousable.\n\nRashedul is male, unmarried, and has no pregnancy or postpartum relevance. He has never been diagnosed with epilepsy, though his family says he has had two similar brief “blank spells” over the past month, each lasting less than a minute and without full-body shaking. During today’s event, there were no sustained generalized convulsions; the visible movements were limited to mild facial automatisms and finger twitching, never lasting more than about 45 seconds at a stretch. His relatives were worried because he seemed absent rather than because of any long, violent shaking."
+    }
+  ]
+}

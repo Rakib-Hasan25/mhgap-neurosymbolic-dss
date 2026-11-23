@@ -1,0 +1,42 @@
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS >> Assessment                                                                                                             78  
+CMH 1  
+
+[Flow Step Indicator]  
+4  
+
+[Main Box]  
+ASSESS FOR EMOTIONAL DISORDERS  
+(prolonged, disabling distress involving sadness, fearfulness, anxiety or irritability)  
+
+[Assessment Box]  
+Ask if the child/adolescent:  
+- Is often feeling irritable, easily annoyed, down or sad?  
+- Has lost interest in or enjoyment of activities?  
+- Has many worries or often seems worried?  
+- Has many fears or is easily scared?  
+- Often complains of headaches, stomach-aches or sickness?  
+- Is often unhappy, down-hearted or tearful?  
+- Avoids or strongly dislikes certain situations (e.g. separation from carers, meeting new people, or closed spaces)?  
+
+[Flow Decision]  
+[Assessment Box] -> Decision  
+
+Decision Node:  
+NO -> SKIP to STEP 5  
+YES -> (downward path continues)
+
+[Side Box: Clinical Tip]  
+CLINICAL TIP: AGE-APPROPRIATE FEARS AND ANXIETIES IN CHILDREN AND ADOLESCENTS  
+
+Babies & Toddlers (age 9 months – 2 years)  
+– Fear of strangers, distress when separating from caregivers  
+
+Young Children (age 2-5)  
+– Fear of storms, fire, water, darkness, nightmares, and animals  
+
+Middle Childhood (age 6-12)  
+– Fear of monsters, ghosts, germs, natural disasters, physical illness, and being badly injured  
+– Anxiety about school or about performing in front of others  
+
+Adolescents (age 13-18)  
+– Fear of rejection by peers, performing in front of others, physical illness, medical procedures, catastrophes (e.g. war, terrorist attack, disasters)

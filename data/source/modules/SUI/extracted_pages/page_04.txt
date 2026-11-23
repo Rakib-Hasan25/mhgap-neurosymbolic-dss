@@ -1,0 +1,39 @@
+SELF HARM / SUICIDE » Assessment                                                                     134                                                                     SUI 1
+
+[Step 2]
+Is there an imminent risk of self-harm/suicide?
+
+[Box]
+Ask the person and carers if there are ANY of the following:
+– Current thoughts or plan of self-harm/suicide  
+– History of thoughts or plan of self-harm in the past month or act of self-harm in the past year  
+  in a person who is now extremely agitated, violent, distressed or lacks communication
+
+Flow:
+
+[Decision]
+Is there an imminent risk of self-harm/suicide?
+
+→ YES →
+[Box]
+IMMINENT RISK OF SELF-HARM/SUICIDE is likely
+
+→ [Arrow]
+» Go to PROTOCOL 2, manage,  
+and then continue to STEP 3
+
+→ NO →
+[Next Decision Box]
+Is there a history of thoughts or plan of self-harm in the past month or act of self-harm in the past year?
+
+  → YES →
+  [Box]
+  Imminent risk of self-harm/suicide is unlikely, but a risk may still persist.
+
+  → [Arrow]
+  » Go to PROTOCOL 3, manage,  
+  and then continue to STEP 3
+
+  → NO →
+  [Box]
+  Risk of self-harm/suicide is unlikely.

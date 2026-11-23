@@ -1,0 +1,80 @@
+Here is the structured transcription of the clinical guideline flowchart:
+
+**[Start of Flow]**
+*A downward arrow points into the first box.*
+
+**Node 1**
+[Box]
+Are any of the following symptoms present?
+- Suicidal ideation
+- Beliefs of worthlessness
+- Psychotic symptoms
+- Talking or moving more slowly than normal
+
+**Connections from Node 1:**
+*   **Path NO:** An arrow pointing left, labeled with a grey circle containing "**NO**", leads to **Node 2**.
+*   **Path YES:** An arrow pointing down and right, labeled with a purple diamond containing "**YES**", leads to **Node 3**.
+
+---
+
+**Node 2**
+[Box]
+Does the person have a previous history of depression?
+
+**Connections from Node 2:**
+*   **Path NO:** An arrow pointing down, labeled with a grey circle containing "**NO**", leads to **Node 4**.
+*   **Path YES:** An arrow pointing right, labeled with a purple diamond containing "**YES**", merges into the path leading to **Node 3**.
+
+---
+
+**Node 4**
+[Box with diagonally striped bottom border]
+*[An exit arrow points to the left of this box]*
+Do not manage for depression.
+» Go to » **OTH**
+
+---
+
+**Node 3**
+[Box]
+**DEPRESSION is likely**
+
+**Connections from Node 3:**
+*   An arrow points down, passing through a solid purple circle containing the number "**3**", leading to **Node 5**.
+
+---
+
+**Node 5**
+[Solid purple box]
+Are there concurrent priority MNS conditions?
+
+**Important Note to the right of Node 5:**
+[! Red exclamation mark icon] **IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS AND MANAGE** before continuing. Go to » **SUI**.
+*[Red circular arrow icon]*
+
+**Connections from Node 5:**
+*   The flow moves directly down into **Node 6**.
+
+---
+
+**Node 6**
+[Box]
+» Assess for concurrent MNS conditions according to the mhGAP-IG master chart. Go to » **MC**.
+*[Red circular arrow icon aligned to the right]*
+
+[! Red exclamation mark icon] *People with depression are at higher risk for most other priority MNS conditions. Assess for disorders due to substance use.*
+
+**Connections from Node 6:**
+*   An arrow points down from the bottom of the box, then turns right, leading to **Node 7**.
+
+---
+
+**Node 7**
+[Box shaped as a right-pointing chevron]
+» Go to PROTOCOL 1
+
+---
+
+**Footer**
+Left: DEPRESSION
+Center: 25

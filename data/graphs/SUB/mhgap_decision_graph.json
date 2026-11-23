@@ -1,0 +1,701 @@
+{
+    "module": {
+        "id": "SUB",
+        "name": "Disorders due to Substance Use"
+    },
+    "nodes": [
+        {
+            "id": "SUB_A1",
+            "type": "assessment",
+            "is_starting": true,
+            "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?"
+        },
+        {
+            "id": "SUB_D1",
+            "type": "diagnosis",
+            "text": "Suspect SEDATIVE INTOXICATION (alcohol, opioids, other sedatives)"
+        },
+        {
+            "id": "SUB_M1",
+            "type": "management",
+            "text": "Check Airway, Breathing, Circulation (ABC). Provide initial respiratory support. Give oxygen."
+        },
+        {
+            "id": "SUB_A2",
+            "type": "assessment",
+            "text": "Is the person minimally responsive, unresponsive, or in respiratory failure?"
+        },
+        {
+            "id": "SUB_M2",
+            "type": "management",
+            "text": "Provide supportive care. Monitor vital signs. Lay the person on their side to prevent aspiration. Consider intravenous (i.v.) rehydration but do not give fluids orally while sedated."
+        },
+        {
+            "id": "SUB_A3",
+            "type": "assessment",
+            "text": "Check pupils: Are the person's pupils pinpoint?"
+        },
+        {
+            "id": "SUB_D2",
+            "type": "diagnosis",
+            "text": "Suspect OPIOID OVERDOSE"
+        },
+        {
+            "id": "SUB_D3",
+            "type": "diagnosis",
+            "text": "Opioid overdose less likely – consider overdose of alcohol, other sedatives, or other medical causes (i.e. head injury, infection, or hypoglycemia)."
+        },
+        {
+            "id": "SUB_M3",
+            "type": "management",
+            "text": "Give i.v., intramuscular (i.m.), intranasal or subcutaneous naloxone 0.4-2 mg. Continue respiratory support."
+        },
+        {
+            "id": "SUB_A3_1",
+            "type": "assessment",
+            "text": "Did the person respond to naloxone within 2 minutes?"
+        },
+        {
+            "id": "SUB_M4",
+            "type": "management",
+            "text": "GIVE A SECOND DOSE. Observe the person until fully recovered or transported to hospital."
+        },
+        {
+            "id": "SUB_E1",
+            "type": "exit",
+            "text": "End of emergency module encounter (transported or recovering)."
+        },
+        {
+            "id": "SUB_M5",
+            "type": "management",
+            "text": "Observe for 1-2 hours and repeat naloxone as needed. Continue to resuscitate and observe the person until fully recovered or transported to hospital."
+        },
+        {
+            "id": "SUB_E2",
+            "type": "exit",
+            "text": "End of emergency module encounter (transported or recovering)."
+        },
+        {
+            "id": "SUB_A4",
+            "type": "assessment",
+            "text": "Does the person appear overstimulated, anxious, or agitated?"
+        },
+        {
+            "id": "SUB_A5",
+            "type": "assessment",
+            "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?"
+        },
+        {
+            "id": "SUB_D4",
+            "type": "diagnosis",
+            "text": "Suspect ALCOHOL or BENZODIAZEPINE WITHDRAWAL"
+        },
+        {
+            "id": "SUB_M6",
+            "type": "management",
+            "text": "MANAGE WITHDRAWAL: Give diazepam 10-20 mg orally. Transfer to hospital or detoxification facility if possible. For alcohol withdrawal, give thiamine 100 mg daily for 5 days. TRANSFER IMMEDIATELY if seizures, delirium, or serious medical problems are present."
+        },
+        {
+            "id": "SUB_A6",
+            "type": "assessment",
+            "text": "Has the person recently used stimulants (cocaine, amphetamines) AND is showing dilated pupils, anxiety, agitation, hyper-excitable state, racing thoughts, or raised pulse and BP?"
+        },
+        {
+            "id": "SUB_D5",
+            "type": "diagnosis",
+            "text": "Suspect ACUTE STIMULANT INTOXICATION"
+        },
+        {
+            "id": "SUB_M7",
+            "type": "management",
+            "text": "Give diazepam 5-10 mg in titrated doses until calm. If psychotic symptoms not responsive to diazepam, consider haloperidol 1-2.5 mg. TRANSFER TO HOSPITAL if chest pain, tachyarrhythmias, or neurological signs."
+        },
+        {
+            "id": "SUB_A6_1",
+            "type": "assessment",
+            "text": "Do psychotic symptoms persist despite treatment?"
+        },
+        {
+            "id": "SUB_R1",
+            "type": "referral",
+            "target_module": "PSY",
+            "text": "Refer to Psychoses module for persistent psychotic symptoms."
+        },
+        {
+            "id": "SUB_E4_1",
+            "type": "exit",
+            "text": "Exit to Psychoses Module."
+        },
+        {
+            "id": "SUB_A6_2",
+            "type": "assessment",
+            "text": "Are suicidal thoughts or actions present during the post-intoxication phase?"
+        },
+        {
+            "id": "SUB_R2",
+            "type": "referral",
+            "target_module": "SUI",
+            "text": "Refer to Self-harm / Suicide module."
+        },
+        {
+            "id": "SUB_E4_2",
+            "type": "exit",
+            "text": "Exit to Suicide Module."
+        },
+        {
+            "id": "SUB_A7",
+            "type": "assessment",
+            "text": "Has the person recently stopped using opioids AND is showing dilated pupils, muscle aches, abdominal cramps, nausea/vomiting, diarrhea, runny eyes/nose, anxiety, or restlessness?"
+        },
+        {
+            "id": "SUB_D6",
+            "type": "diagnosis",
+            "text": "Suspect ACUTE OPIOID WITHDRAWAL"
+        },
+        {
+            "id": "SUB_M8",
+            "type": "management",
+            "text": "MANAGE OPIOID WITHDRAWAL: Give methadone (20 mg initially), buprenorphine (4-8 mg), or if unavailable, any opioid (e.g. morphine sulphate 10-20 mg) or alpha adrenergic agonists (clonidine/lofexidine). Stabilize."
+        },
+        {
+            "id": "SUB_A8",
+            "type": "assessment",
+            "text": "Does the person appear confused?"
+        },
+        {
+            "id": "SUB_A9",
+            "type": "assessment",
+            "text": "Are there any medical conditions which might explain the confusion (e.g. head trauma, hypoglycaemia, pneumonia, hepatic encephalopathy, cerebrovascular accidents)?"
+        },
+        {
+            "id": "SUB_M10",
+            "type": "management",
+            "text": "Manage the physical condition and refer the person to hospital."
+        },
+        {
+            "id": "SUB_E6",
+            "type": "exit",
+            "text": "Exit due to physical medical condition hospital referral."
+        },
+        {
+            "id": "SUB_A10",
+            "type": "assessment",
+            "text": "Has the person stopped drinking in the last week AND is showing confusion, hallucination, racing thoughts, anxiety, agitation, or disorientation?"
+        },
+        {
+            "id": "SUB_D7",
+            "type": "diagnosis",
+            "text": "Suspect ALCOHOL OR BENZODIAZEPINE WITHDRAWAL DELIRIUM"
+        },
+        {
+            "id": "SUB_M11",
+            "type": "management",
+            "text": "Treat with diazepam 10–20 mg p.o. and manage delirium with antipsychotics such as haloperidol 1–2.5 mg. TRANSFER TO HOSPITAL."
+        },
+        {
+            "id": "SUB_E7",
+            "type": "exit",
+            "text": "Exit due to Hospital Transfer for Withdrawal Delirium."
+        },
+        {
+            "id": "SUB_A11",
+            "type": "assessment",
+            "text": "Has the person been drinking heavily in the last few days AND shows signs of nystagmus, ophthalmoplegia, or ataxia?"
+        },
+        {
+            "id": "SUB_D8",
+            "type": "diagnosis",
+            "text": "Suspect WERNICKE’S ENCEPHALOPATHY"
+        },
+        {
+            "id": "SUB_M12",
+            "type": "management",
+            "text": "Treat with thiamine 100-500 mg 2-3 times daily i.v. or i.m. for 3-5 days. TRANSFER TO HOSPITAL."
+        },
+        {
+            "id": "SUB_E8",
+            "type": "exit",
+            "text": "Exit due to Hospital Transfer for Wernicke's Encephalopathy."
+        },
+        {
+            "id": "SUB_A11_B",
+            "type": "assessment",
+            "text": "Has the person used stimulants in the last few days AND is showing dilated pupils, excited, racing thoughts, disordered thinking, strange or aggressive/erratic behaviour?"
+        },
+        {
+            "id": "SUB_D9",
+            "type": "diagnosis",
+            "text": "Suspect STIMULANT INTOXICATION"
+        },
+        {
+            "id": "SUB_M13",
+            "type": "management",
+            "text": "Treat with diazepam 5-10 mg until lightly sedated. If psychotic symptoms do not respond to diazepam, consider haloperidol 1-2.5 mg."
+        },
+        {
+            "id": "SUB_A11_C",
+            "type": "assessment",
+            "text": "Do psychotic symptoms persist despite treatment?"
+        },
+        {
+            "id": "SUB_R3",
+            "type": "referral",
+            "target_module": "PSY",
+            "text": "Refer to Psychoses module."
+        },
+        {
+            "id": "SUB_E_PSY",
+            "type": "exit",
+            "text": "Exit to Psychoses module."
+        },
+        {
+            "id": "SUB_A12",
+            "type": "assessment",
+            "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?"
+        },
+        {
+            "id": "SUB_M15",
+            "type": "management",
+            "text": "Emphasise the health benefits of not using psychoactive substances."
+        },
+        {
+            "id": "SUB_E9",
+            "type": "exit",
+            "text": "End of module: No substance use."
+        },
+        {
+            "id": "SUB_A14",
+            "type": "assessment",
+            "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)"
+        },
+        {
+            "id": "SUB_A15",
+            "type": "assessment",
+            "text": "Is there an imminent risk of suicide?"
+        },
+        {
+            "id": "SUB_R4",
+            "type": "referral",
+            "target_module": "SUI",
+            "text": "Assess and manage imminent risk of suicide before continuing."
+        },
+        {
+            "id": "SUB_E10",
+            "type": "exit",
+            "text": "Exit to Suicide Module."
+        },
+        {
+            "id": "SUB_M16",
+            "type": "management",
+            "text": "PROTOCOL 2 (DEPENDENCE): Provide psychoeducation. Arrange detoxification or inpatient treatment if necessary. For opioids: assess for opioid agonist maintenance (methadone/buprenorphine) or planned detox. For benzodiazepines: gradually reduce dose. For alcohol: arrange safe cessation, provide thiamine 100mg/day, consider relapse prevention meds (acamprosate, naltrexone, disulfiram). Conduct motivational interviewing. Follow-up: Review several times per week in first 2 weeks, then weekly in first month. Decrease to monthly once improving."
+        },
+        {
+            "id": "SUB_E11",
+            "type": "exit",
+            "text": "End of Substance Use Module (Dependence managed)."
+        },
+        {
+            "id": "SUB_A16",
+            "type": "assessment",
+            "text": "Is the substance use HARMFUL? (e.g. causing injuries, relationship problems, legal/financial issues, violence, or poor performance)"
+        },
+        {
+            "id": "SUB_A17",
+            "type": "assessment",
+            "text": "Is there an imminent risk of suicide?"
+        },
+        {
+            "id": "SUB_R5",
+            "type": "referral",
+            "target_module": "SUI",
+            "text": "Assess and manage imminent risk of suicide before continuing."
+        },
+        {
+            "id": "SUB_E12",
+            "type": "exit",
+            "text": "Exit to Suicide Module."
+        },
+        {
+            "id": "SUB_M17",
+            "type": "management",
+            "text": "PROTOCOL 1 (HARMFUL USE): Provide psychoeducation emphasizing that the pattern of use is causing harm. Conduct motivational interviewing. Advise stopping completely or consuming at a non-harmful level. Address food, housing, and employment needs. Explore strategies for reducing harm. Follow-up: Review in one month, and as needed thereafter."
+        },
+        {
+            "id": "SUB_E13",
+            "type": "exit",
+            "text": "End of Substance Use Module (Harmful Use managed)."
+        },
+        {
+            "id": "SUB_M18",
+            "type": "management",
+            "text": "Provide psychoeducation about the risks of different levels of each substance used. Emphasise health benefits of avoiding substances."
+        },
+        {
+            "id": "SUB_E14",
+            "type": "exit",
+            "text": "End of Substance Use Module (No dependence or harmful use)."
+        }
+    ],
+    "relationships": [
+        {
+            "from": "SUB_A1",
+            "to": "SUB_D1",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A1",
+            "to": "SUB_A4",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_D1",
+            "to": "SUB_M1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M1",
+            "to": "SUB_A2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A2",
+            "to": "SUB_M2",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A2",
+            "to": "SUB_A3",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_M2",
+            "to": "SUB_A3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A3",
+            "to": "SUB_D2",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A3",
+            "to": "SUB_D3",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_D2",
+            "to": "SUB_M3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_D3",
+            "to": "SUB_M3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M3",
+            "to": "SUB_A3_1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A3_1",
+            "to": "SUB_M5",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A3_1",
+            "to": "SUB_M4",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_M4",
+            "to": "SUB_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M5",
+            "to": "SUB_E2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A4",
+            "to": "SUB_A5",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A4",
+            "to": "SUB_A8",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_A5",
+            "to": "SUB_D4",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A5",
+            "to": "SUB_A6",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_D4",
+            "to": "SUB_M6",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M6",
+            "to": "SUB_A12",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A6",
+            "to": "SUB_D5",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A6",
+            "to": "SUB_A7",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_D5",
+            "to": "SUB_M7",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M7",
+            "to": "SUB_A6_1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A6_1",
+            "to": "SUB_R1",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A6_1",
+            "to": "SUB_A6_2",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_R1",
+            "to": "SUB_E4_1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A6_2",
+            "to": "SUB_R2",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A6_2",
+            "to": "SUB_A12",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_R2",
+            "to": "SUB_E4_2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A7",
+            "to": "SUB_D6",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A7",
+            "to": "SUB_A8",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_D6",
+            "to": "SUB_M8",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M8",
+            "to": "SUB_A12",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A8",
+            "to": "SUB_A9",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A8",
+            "to": "SUB_A12",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_A9",
+            "to": "SUB_M10",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A9",
+            "to": "SUB_A10",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_M10",
+            "to": "SUB_E6",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A10",
+            "to": "SUB_D7",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A10",
+            "to": "SUB_A11",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_D7",
+            "to": "SUB_M11",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M11",
+            "to": "SUB_E7",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A11",
+            "to": "SUB_D8",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A11",
+            "to": "SUB_A11_B",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_D8",
+            "to": "SUB_M12",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M12",
+            "to": "SUB_E8",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A11_B",
+            "to": "SUB_D9",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A11_B",
+            "to": "SUB_A12",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_D9",
+            "to": "SUB_M13",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M13",
+            "to": "SUB_A11_C",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A11_C",
+            "to": "SUB_R3",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A11_C",
+            "to": "SUB_A12",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_R3",
+            "to": "SUB_E_PSY",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A12",
+            "to": "SUB_A14",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A12",
+            "to": "SUB_M15",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_M15",
+            "to": "SUB_E9",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A14",
+            "to": "SUB_A15",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A14",
+            "to": "SUB_A16",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_A15",
+            "to": "SUB_R4",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A15",
+            "to": "SUB_M16",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_R4",
+            "to": "SUB_E10",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M16",
+            "to": "SUB_E11",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_A16",
+            "to": "SUB_A17",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A16",
+            "to": "SUB_M18",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_A17",
+            "to": "SUB_R5",
+            "condition": "YES"
+        },
+        {
+            "from": "SUB_A17",
+            "to": "SUB_M17",
+            "condition": "NO"
+        },
+        {
+            "from": "SUB_R5",
+            "to": "SUB_E12",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M17",
+            "to": "SUB_E13",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUB_M18",
+            "to": "SUB_E14",
+            "condition": "NEXT"
+        }
+    ]
+}

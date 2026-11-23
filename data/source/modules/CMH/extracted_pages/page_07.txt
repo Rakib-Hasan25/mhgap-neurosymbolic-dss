@@ -1,0 +1,63 @@
+[Top Box]
+Are symptoms persistent, severe, and causing considerable difficulty with daily functioning?  
+Are ALL of the following true?  
+– Are symptoms present in multiple settings?  
+– Have they lasted at least 6 months?  
+– Are they inappropriate for the child/adolescent’s developmental level?  
+– Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?
+
+Connections:
+[Top Box] -> (YES) -> [Consider ADHD]  
+[Top Box] -> (NO) -> [ADHD is unlikely]
+
+[Right-side Box connected to NO]
+ADHD is unlikely
+
+[Right-side Box]
+Consider PROBLEMS WITH BEHAVIOUR
+
+Connection:
+[Consider PROBLEMS WITH BEHAVIOUR] -> Go to PROTOCOL 2
+
+[Small Box]
+SKIP to STEP 3
+
+---
+
+[Center Box]
+Consider ADHD
+
+Connection:
+[Consider ADHD] -> [Rule out physical conditions that can resemble ADHD.]
+
+---
+
+[Box]
+Rule out physical conditions that can resemble ADHD.  
+Does the child/adolescent have any of the following:  
+– Thyroid diseases  
+– Acute or chronic infectious illness, including HIV/AIDS  
+– Uncontrolled pain e.g. from an ear infection, sickle cell disease
+
+Connections:
+[Rule out physical conditions…] -> (YES) -> [Treat the physical condition]  
+[Rule out physical conditions…] -> (NO) -> Go to PROTOCOL 3
+
+---
+
+[Box]
+Treat the physical condition
+
+Connection:
+[Treat the physical condition] -> Go to PROTOCOL 3
+
+---
+
+[Bottom Right Box]
+Go to PROTOCOL 3
+
+---
+
+[Footer]
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS  
+75

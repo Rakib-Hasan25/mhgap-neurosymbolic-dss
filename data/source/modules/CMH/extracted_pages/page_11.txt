@@ -1,0 +1,49 @@
+[Top Box]  
+“Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?”
+
+Decision from Top Box:  
+- YES -> [Box: Consider EMOTIONAL DISORDER]  
+- NO -> [Box: Consider PROBLEMS WITH EMOTIONS]
+
+[Right Box]  
+“Consider  
+PROBLEMS WITH  
+EMOTIONS”
+
+From [Right Box]:  
+-> “» Go to PROTOCOL 5”  
+-> “SKIP to STEP 5”  
+(downward continuation indicated)
+
+[Center Box]  
+“Consider  
+EMOTIONAL DISORDER”
+
+Arrow down to:
+
+[Large Box]  
+“Rule out physical conditions that can resemble or exacerbate emotional disorders.  
+
+Are there any signs/symptoms suggesting:  
+– Thyroid diseases  
+– Infectious illness, including HIV/AIDS  
+– Anaemia  
+– Obesity  
+– Malnutrition  
+– Asthma  
+– Medication side-effects  
+  (e.g. from corticosteroids or inhaled asthma medications)”
+
+Decision from Large Box:  
+- YES -> [Box: » Manage the physical condition.]  
+- NO -> [Box: » Go to PROTOCOL 6]
+
+[Left Box]  
+“» Manage the physical condition.”
+
+[Right Box]  
+“» Go to PROTOCOL 6”
+
+Footer text:  
+“CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS”  
+“79”

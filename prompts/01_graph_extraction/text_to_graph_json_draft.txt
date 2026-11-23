@@ -1,0 +1,33 @@
+Convert the following mhGAP Depression section into a structured decision graph.
+
+STRICT RULES:
+- Output only valid JSON.
+- Do NOT include explanations or markdown code blocks (no ```json).
+- Do NOT summarize.
+- Do NOT include paragraphs.
+- Extract only decision logic.
+
+OUTPUT FORMAT SCHEMA:
+{
+  "module": { "id": "DEP", "name": "Depression" },
+  "nodes": [
+    { "id": "DEP_Q1", "type": "Question", "text": "...", "phase": "assessment", "symptom_tag": "...", "is_core": true }
+  ],
+  "relationships": [
+    { "from": "DEP_Q1", "to": "DEP_Q2", "type": "NEXT_YES" }
+  ],
+  "diagnosis": [
+    { "id": "DEP_MODERATE", "criteria": { "min_core": 2, "min_total": 5, "duration_days": 14 } }
+  ],
+  "safety_triggers": [
+    { "id": "DEP_SUICIDE", "condition": "suicidal_ideation == true", "risk": "high" }
+  ],
+  "management": [
+    { "id": "DEP_MODERATE_PLAN", "applies_to": "DEP_MODERATE", "interventions": ["behavioral_activation", "ssri"] }
+  ]
+}
+
+Now convert the following text:
+---
+{all_text_content}
+---

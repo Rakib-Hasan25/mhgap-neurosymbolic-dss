@@ -1,0 +1,12 @@
+Task: Generate a rich, concise short virtual patient backstory with a unique persona.
+
+Requirements:
+- The persona must be Bangladeshi (name, setting, and life context should fit Bangladesh).
+- Create a unique persona for each case; do not reuse the same name, age, occupation, or location across cases.
+- The backstory must implicitly answer every YES/NO condition in the provided path or node_sequence.
+- Both YES and NO conditions must be represented in the story.
+- For NO conditions, include realistic evidence that the symptom, behavior, risk factor, or event is absent; do not simply omit it.
+- The story should contain enough information for an assessor to infer the correct answer without guessing.
+- Do not list answers explicitly as a checklist; weave them into the narrative.
+- Stay consistent with the path sequence and clinical context.
+- Keep the story realistic and medically coherent.

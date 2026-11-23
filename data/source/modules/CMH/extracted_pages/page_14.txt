@@ -1,0 +1,80 @@
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS >> Assessment  
+82  
+CMH 1  
+
+---
+
+[Left Panel Box]  
+CLINICAL TIP  
+» Ask the child/adolescent directly about these exposures when developmentally appropriate and safe to do so (e.g. not in the presence of a carer who may have committed the maltreatment).  
+» Adolescents should always be offered the opportunity to be seen on their own, without carers present.  
+
+---
+
+[Central Flowchart]
+
+[Step Indicator]  
+6  
+
+[Main Box]  
+ASSESS THE HOME ENVIRONMENT  
+
+[Decision Box]  
+Are the emotional, behavioural or developmental problems a reaction to or aggravated by a distressing or frightening situation?  
+
+Assess for:  
+» Clinical features or any element in the clinical history that suggest maltreatment or exposure to violence (see CLINICAL TIP).  
+» Any recent or ongoing severe stressors (e.g. illness or death of a family member, difficult living and financial circumstances, being bullied or harmed).  
+
+[Decision Outcome शाखाएँ]
+
+[YES] -> leads to action box below  
+[NO] -> leads downward (no further visible box in image)
+
+---
+
+[YES Path Action Box]  
+» Refer to child protection services if necessary  
+» Explore and manage stressors  
+» Ensure child/adolescent’s safety as a first priority  
+» Reassure the child/adolescent that all children/adolescents need to be protected from abuse  
+» Provide information about where to seek help for any ongoing abuse  
+» Arrange additional support including referral to specialist  
+» Contact legal and community resources, as appropriate and as mandated  
+» Consider additional psychosocial interventions  
+» Ensure appropriate follow-up  
+
+---
+
+[Right Panel Box]  
+CLINICAL TIP:  
+RED FLAGS FOR CHILD MALTREATMENT  
+
+CLINICAL FEATURES  
+
+» Physical abuse  
+– Injuries (e.g. bruises, burns, strangulation marks or marks from a belt, whip, switch or other object)  
+– Any serious or unusual injury without an explanation or with an unsuitable explanation  
+
+» Sexual abuse  
+– Genital or anal injuries or symptoms that are medically unexplained  
+– Sexually transmitted infections or pregnancy  
+– Sexualised behaviours (e.g. indication of age-inappropriate sexual knowledge)  
+
+» Neglect  
+– Being excessively dirty, unsuitable clothing  
+– Signs of malnutrition, very poor dental health  
+
+» Emotional abuse and all other forms of maltreatment  
+Any sudden or significant change in the behaviour or emotional state of the child/adolescent that is not better explained by another cause, such as:  
+– Unusual fearfulness or severe distress (e.g. inconsolable crying)  
+– Self-harm or social withdrawal  
+– Aggression or running away from home  
+– Indiscriminate affection seeking from adults  
+– Development of new soiling and wetting behaviours, thumb sucking  
+
+ASPECTS OF CARER INTERACTION WITH THE CHILD/ADOLESCENT  
+
+» Persistently unresponsive behaviour, especially toward an infant (e.g. not offering comfort or care when the child/adolescent is scared, hurt or sick)  
+» Hostile or rejecting behaviour  
+» Using inappropriate threats (e.g. to abandon the child/adolescent) or harsh methods of discipline

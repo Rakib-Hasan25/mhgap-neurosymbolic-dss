@@ -1,0 +1,50 @@
+DISORDERS DUE TO SUBSTANCE USE » Management  
+120  
+SUB 2  
+
+PROTOCOL  
+3  
+Alcohol Withdrawal  
+
+---
+
+Provide as quiet and non-stimulating an environment as possible; well-lit during the day and lit enough at night to prevent falls if the person wakes up at night.  
+
+Ensure adequate fluid intake and that electrolyte requirements are met, such as potassium and magnesium.  
+
+ADDRESS DEHYDRATION: Maintain adequate hydration including i.v. hydration, if needed, and encourage oral fluid intake. Be sure to give thiamine before glucose to avoid precipitating Wernicke’s encephalopathy.  
+
+Pharmacological Intervention:  
+When appropriate, treat alcohol withdrawal symptoms. In the case of planned detoxification, prevent withdrawal symptoms using diazepam. The dose and duration of diazepam treatment varies according to the severity of the withdrawal.  
+
+– Administer diazepam at an initial dose of up to 40 mg daily (10 mg four times a day or 20 mg twice a day) for 3–7 days, p.o. Gradually decrease the dose and/or frequency as soon as symptoms improve. Monitor the person frequently, as each person may respond differently to this medication.  
+
+– In the hospital setting, diazepam can be given more frequently, (i.e. hourly), and at higher daily doses, up to 120 mg daily for the first 3 days p.o., if necessary, and based on frequent assessment of the person’s withdrawal symptoms and mental status.  
+
+– In persons with impaired hepatic metabolism, (i.e. persons with signs of liver disease or the elderly), use a single low dose initially of 5–10 mg p.o. as benzodiazepines may have a longer duration of action in these populations. Alternatively, a shorter acting benzodiazepine such as oxazepam may be used instead of diazepam. See Table 1.  
+
+CAUTION  
+Use caution when initiating or increasing the dose of benzodiazepines, as they can cause respiratory depression. Use caution in persons with respiratory disease and/or hepatic encephalopathy.  
+
+---
+
+PREVENTING AND TREATING WERNICKE’S ENCEPHALOPATHY:  
+
+Chronic heavy users of alcohol are at risk for Wernicke’s encephalopathy, a thiamine deficiency syndrome characterized by confusion, nystagmus, ophthalmoplegia (trouble with eye movements), and ataxia (uncoordinated movements).  
+
+To prevent this syndrome, all persons with a history of chronic alcohol use should be given thiamine 100 mg p.o. per day. Give thiamine prior to administering glucose to avoid precipitating Wernicke’s encephalopathy.  
+
+---
+
+CLINICAL TIP  
+
+For planned alcohol cessation, assess the person’s risk for severe withdrawal.  
+
+Ask:  
+» Have there been past episodes of severe withdrawal symptoms, including seizures or delirium?  
+» Are there other significant medical or psychiatric issues?  
+» Do significant withdrawal features develop within 6 hours of the person’s last drink?  
+» Have outpatient cessation attempts failed in the past?  
+» Is the person homeless or without any social support?  
+
+If risk is high, inpatient detoxification is preferable to outpatient detoxification.

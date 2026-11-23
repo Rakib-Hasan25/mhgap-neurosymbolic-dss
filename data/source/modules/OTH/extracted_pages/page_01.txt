@@ -1,0 +1,17 @@
+TITLE:
+OTHER SIGNIFICANT  
+MENTAL HEALTH COMPLAINTS
+
+BODY TEXT (Left paragraph):
+This module aims to provide basic guidance on management of a range of mental health complaints not covered elsewhere in this guide. Some of these complaints may be similar to depression, but upon closer examination are distinct from the conditions covered in this guide.
+
+BODY TEXT (Right paragraph):
+Other mental health complaints are considered significant when they impair daily functioning or when the person seeks help for them. Other mental health complaints can be due to stress.
+
+BOXED SECTION (Bullet list):
+» This module should not be considered for people who meet the criteria for any of the mhGAP priority conditions (except self-harm).  
+» This module should only be used after explicitly ruling out depression.  
+» This module should be used when helping adults. In case the person is a child or adolescent, go to » CMH.
+
+PAGE NUMBER:
+141

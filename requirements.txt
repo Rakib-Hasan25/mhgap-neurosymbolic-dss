@@ -1,0 +1,17 @@
+# Experiments and analysis
+openai
+google-genai
+pyyaml
+neo4j
+pandas
+matplotlib
+seaborn
+jupyterlab
+# Graph construction (originally run in Google Colab)
+pypdf
+pdf2image
+google-generativeai
+langchain-core
+langchain-experimental
+langchain-google-genai
+langchain-neo4j

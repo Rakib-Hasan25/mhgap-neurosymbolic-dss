@@ -1,0 +1,51 @@
+**World Health Organization**
+
+---
+
+# Overview of Priority MNS Conditions
+
+1. These common presentations indicate the need for assessment.  
+2. If people present with features of more than one condition, then all relevant conditions need to be assessed.  
+3. All conditions apply to all ages, unless otherwise specified.  
+4. ❗ For emergency presentations, please see the table on page 18.
+
+---
+
+## COMMON PRESENTATION — PRIORITY CONDITION
+
+---
+
+### DEPRESSION (DEP)
+
+**Common presentation:**
+- Multiple persistent physical symptoms with no clear cause  
+- Low energy, fatigue, sleep problems  
+- Persistent sadness or depressed mood, anxiety  
+- Loss of interest or pleasure in activities that are normally pleasurable  
+
+---
+
+### PSYCHOSES (PSY)
+
+**Common presentation:**
+- Marked behavioural changes; neglecting usual responsibilities related to work, school, domestic or social activities  
+- Agitated, aggressive behavior, decreased or increased activity  
+- Fixed false beliefs not shared by others in the person’s culture  
+- Hearing voices or seeing things that are not there  
+- Lack of realization that one is having mental health problems  
+
+---
+
+### EPILEPSY (EPI)
+
+**Common presentation:**
+- Convulsive movement or fits/seizures  
+- During the convulsion: loss of consciousness or impaired consciousness, stiffness, rigidity, tongue bite, injury, incontinence of urine or faeces  
+- After the convulsion: fatigue, drowsiness, sleepiness, confusion, abnormal behaviour, headache, muscle aches, or weakness on one side of the body  
+
+---
+
+**Flow structure (visual relationships):**
+- [Common presentation (Depression symptoms)] -> [DEPRESSION (DEP)]  
+- [Common presentation (Psychoses symptoms)] -> [PSYCHOSES (PSY)]  
+- [Common presentation (Epilepsy symptoms)] -> [EPILEPSY (EPI)]

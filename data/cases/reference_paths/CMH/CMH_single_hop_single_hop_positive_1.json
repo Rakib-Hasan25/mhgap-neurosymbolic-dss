@@ -1,0 +1,40 @@
+{
+  "cases": [
+    {
+      "case_id": "CMH_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "CMH",
+      "referred_module": null,
+      "final_module": "CMH",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "CMH_D1",
+      "exit_node_id": null,
+      "node_sequence": [
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A2",
+          "type": "assessment",
+          "text": "Are there signs/symptoms suggesting nutritional deficiency (including iodine), anaemia, malnutrition, or acute/chronic infectious illness (including ear infection and HIV/AIDS)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A3",
+          "type": "assessment",
+          "text": "Assess the child for visual and/or hearing impairment. Does the child fail visual assessments (fails to look at eyes, follow object) or hearing assessments (fails to react to loud noise, turn head)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_D1",
+          "type": "diagnosis",
+          "text": "Developmental Delay/Disorder"
+        }
+      ]
+    }
+  ]
+}

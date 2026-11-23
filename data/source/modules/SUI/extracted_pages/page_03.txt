@@ -1,0 +1,38 @@
+SUI 1 » Assessment
+
+ASSESS FOR SELF-HARM/SUICIDE IF THE PERSON PRESENTS WITH EITHER:
+• Extreme hopelessness and despair, current thoughts/plan/act of self-harm suicide or history thereof, act of self-harm with signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness and/or extreme lethargy. OR
+• Any of the priority MNS conditions, chronic pain or extreme emotional distress
+
+[Box 1]
+Has the person attempted a medically serious act of self-harm?
+
+[Sub-box under Box 1]
+Assess if there is evidence of self-injury and/or signs/symptoms requiring urgent medical treatment:
+– Signs of poisoning or intoxication  
+– Bleeding from self-inflicted wound  
+– Loss of consciousness  
+– Extreme lethargy  
+
+[Decision Node]
+NO  
+YES
+
+Flow connections:
+[Box 1] -> [Sub-box]
+
+[Sub-box] -> NO  
+[Sub-box] -> YES
+
+[YES branch box]
+Management for the medically serious act of self-harm is required.
+» Go to PROTOCOL 1  
+» Return to STEP 2 once person is medically stable.
+
+[NO branch side note box – CLINICAL TIP]
+CLINICAL TIP  
+If medically stable, perform appropriate management, as needed.
+
+Footer:
+SELF-HARM/SUICIDE  
+133

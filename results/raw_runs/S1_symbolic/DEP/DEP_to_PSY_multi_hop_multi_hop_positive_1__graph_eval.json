@@ -1,0 +1,74 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/DEP/DEP_to_PSY_multi_hop_multi_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "DEP_to_PSY_multi_hop_positive_1",
+      "prefix_ok": true,
+      "exact_ok": true,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [],
+      "counts": {
+        "expected_assessment_findings": 10,
+        "matched": 10,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 0
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": false,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "DEP_A1",
+        "DEP_A2",
+        "DEP_A3",
+        "DEP_A4",
+        "DEP_A6",
+        "DEP_D1",
+        "DEP_M3",
+        "DEP_R2",
+        "PSY_A1",
+        "PSY_A2",
+        "PSY_A3",
+        "PSY_A4",
+        "PSY_A5",
+        "PSY_D1",
+        "PSY_M4",
+        "PSY_E1"
+      ],
+      "expected_node_ids": [
+        "DEP_A1",
+        "DEP_A2",
+        "DEP_A3",
+        "DEP_A4",
+        "DEP_A6",
+        "DEP_D1",
+        "DEP_M3",
+        "DEP_R2",
+        "PSY_A1",
+        "PSY_A2",
+        "PSY_A3",
+        "PSY_A4",
+        "PSY_A5",
+        "PSY_D1",
+        "PSY_M4",
+        "PSY_E1"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "DEP_D1",
+        "engine_management_node_ids": [
+          "DEP_M3",
+          "PSY_M4"
+        ],
+        "engine_referrals": [
+          "PSY"
+        ],
+        "engine_exit_node_id": "PSY_E1"
+      },
+      "stop_reason": "exit_reached",
+      "stop_node_id": "PSY_E1",
+      "vp_total_tokens": 6611
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+HEADER:
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS >> Assessment  
+84  
+CMH 1  
+
+FLOWCHART:
+
+[7]  
+ASSESS THE SCHOOL ENVIRONMENT  
+
+[Box]  
+Is the child/adolescent in school?
+
+Decision:
+- YES ->
+- NO ->
+
+NO path:
+[Box]  
+» Provide information regarding educational services and educate carer on importance of keeping the child/adolescent in school as much as possible.
+
+YES path:
+[Box]  
+Is the child/adolescent:  
+» Being bullied, picked on or made fun of?  
+» Not able to participate and learn?  
+» Not wanting/refusing to attend school?
+
+Decision:
+- YES ->
+- NO ->
+
+YES path:
+[Box]  
+» After getting consent, liaise with teachers and other school staff. Go to Management (2.7).  
+» If there has been an absence from school, try to help the child/adolescent return to school as soon as possible and explore reasons for absence.
+
+NO path:
+[Box]  
+» Go to CMH 2 (Management)
+
+SIDE NOTE:
+
+CLINICAL TIP  
+» Ask the child/adolescent directly about these exposures when developmentally appropriate and safe to do so.

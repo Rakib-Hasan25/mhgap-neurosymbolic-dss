@@ -1,0 +1,241 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "DEP",
+  "step_logs": [
+    {
+      "id": "DEP_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Depression is unlikely. Go to Other Significant Mental Health Complaints.",
+      "target_module": "OTH"
+    },
+    {
+      "id": "OTH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Is there a physical cause that fully explains the presenting symptoms?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "OTH_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is this depression or another MNS condition discussed in another module of this guide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "OTH_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "OTH_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there imminent risk of suicide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "OTH_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person been exposed to extreme stressors? (e.g., physical or sexual violence, major accidents, bereavement or other major losses)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "OTH_M3",
+      "type": "management",
+      "is_starting": false,
+      "text": "No treatment needed."
+    },
+    {
+      "id": "OTH_E3",
+      "type": "exit",
+      "is_starting": false,
+      "text": "Exit as no treatment is needed."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "DEP_A1",
+      "answer": "NO",
+      "to": "DEP_R1"
+    },
+    {
+      "from": "DEP_R1",
+      "answer": "REFERRAL",
+      "to": "OTH_A1",
+      "target_module": "OTH"
+    },
+    {
+      "from": "OTH_A1",
+      "answer": "NO",
+      "to": "OTH_A2"
+    },
+    {
+      "from": "OTH_A2",
+      "answer": "NO",
+      "to": "OTH_A3"
+    },
+    {
+      "from": "OTH_A3",
+      "answer": "YES",
+      "to": "OTH_A4"
+    },
+    {
+      "from": "OTH_A4",
+      "answer": "NO",
+      "to": "OTH_A5"
+    },
+    {
+      "from": "OTH_A5",
+      "answer": "NO",
+      "to": "OTH_M3"
+    },
+    {
+      "from": "OTH_M3",
+      "answer": "NEXT",
+      "to": "OTH_E3"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "OTH_E3",
+  "usage": {
+    "vp": {
+      "calls": 6,
+      "input_tokens": 2880,
+      "output_tokens": 12,
+      "total_tokens": 2892
+    },
+    "nav": {
+      "calls": 7,
+      "input_tokens": 18542,
+      "output_tokens": 98,
+      "total_tokens": 18640
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "openai",
+      "model": "gpt-4o-mini"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/DEP/DEP_to_OTH_multi_hop_multi_hop_positive_1.json",
+  "case_id": "DEP_to_OTH_multi_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "DEP_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_R1",
+      "type": "referral",
+      "target_module": "OTH",
+      "text": "Depression is unlikely. Go to Other Significant Mental Health Complaints."
+    },
+    {
+      "id": "OTH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Is there a physical cause that fully explains the presenting symptoms?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "OTH_A2",
+      "type": "assessment",
+      "text": "Is this depression or another MNS condition discussed in another module of this guide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "OTH_A3",
+      "type": "assessment",
+      "text": "Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "OTH_D1",
+      "type": "diagnosis",
+      "text": "Other Significant Mental Health Complaints are likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "OTH_A4",
+      "type": "assessment",
+      "text": "Is there imminent risk of suicide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "OTH_A5",
+      "type": "assessment",
+      "text": "Has the person been exposed to extreme stressors? (e.g., physical or sexual violence, major accidents, bereavement or other major losses)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "OTH_M4",
+      "type": "management",
+      "text": "Apply Protocol 1: Do not prescribe anti-anxiety or antidepressant medicines unless advised by a specialist. Reduce stress, teach relaxation techniques, and strengthen social supports (ECP). Acknowledge symptoms but avoid unnecessary investigations; explain that no serious disease has been identified. Encourage return to daily activities. Follow-up: Ask the person to return in 2-4 weeks if symptoms do not improve or worsen. If improving, continue treatment plan. If not improving or if insisting on further investigations, review Protocol 1 and consider consulting a specialist.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "OTH_E4",
+      "type": "exit",
+      "text": "Exit after Protocol 1 management."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "DEP_A1",
+      "DEP_R1",
+      "OTH_A1",
+      "OTH_A2",
+      "OTH_A3",
+      "OTH_D1",
+      "OTH_A4",
+      "OTH_A5",
+      "OTH_M4",
+      "OTH_E4"
+    ],
+    "actual_ids": [
+      "DEP_A1",
+      "DEP_R1",
+      "OTH_A1",
+      "OTH_A2",
+      "OTH_A3",
+      "OTH_A4",
+      "OTH_A5",
+      "OTH_M3",
+      "OTH_E3"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": false,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 6,
+      "matched": 6,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 21532
+}

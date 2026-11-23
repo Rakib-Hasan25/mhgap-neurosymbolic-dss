@@ -1,0 +1,95 @@
+{
+  "cases": [
+    {
+      "case_id": "DEP_SUI_MHP_001",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": null,
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "type": "assessment",
+          "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "type": "diagnosis",
+          "text": "DEPRESSION is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "type": "assessment",
+          "text": "Is the person a child or adolescent?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A10",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_R3",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage for imminent risk of suicide before continuing."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+        }
+      ]
+    }
+  ]
+}

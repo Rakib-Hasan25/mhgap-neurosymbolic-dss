@@ -1,0 +1,56 @@
+**HEADER**
+DEPRESSION >> Assessment | 22 | DEP 1
+
+***
+
+**FLOWCHART**
+
+**[Incoming Arrow pointing down to Box 1]**
+
+**[Box 1]**
+Has the person had several of the following additional symptoms for at least 2 weeks:
+*   Disturbed sleep or sleeping too much
+*   Indecisiveness
+*   Significant change in appetite or weight (decrease or increase)
+*   Observable agitation or physical restlessness
+*   Beliefs of worthlessness or excessive guilt
+*   Talking or moving more slowly than usual
+*   Fatigue or loss of energy
+*   Hopelessness
+*   Reduced concentration
+*   Suicidal thoughts or acts
+
+**[Decision from Box 1]**
+*   Path **NO** -> points left to **[Box 2]**
+*   Path **YES** -> points down to **[Box 3]**
+
+**[Box 2]** *(Destination of NO path)*
+[Leftward pointing arrow icon]
+Depression is unlikely
+>> Go to >> **OTH**
+
+**[Box 3]** *(Destination of YES path)*
+Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?
+
+**[Decision from Box 3]**
+*   Path **NO** -> points left to **[Box 4]**
+*   Path **YES** -> points down to **[Box 5]**
+
+**[Box 4]** *(Destination of NO path)*
+[Leftward pointing arrow icon]
+Depression is unlikely
+>> Go to >> **OTH**
+
+**[Box 5]** *(Destination of YES path)*
+Consider DEPRESSION
+
+**[Outgoing Arrow pointing down from Box 5]**
+
+***
+
+**SIDEBAR ELEMENT**
+*(Located to the right of the YES path leading to Box 5, marked with a red doctor figure icon)*
+
+**[Callout Box]**
+**CLINICAL TIP:**
+A person with depression may have psychotic symptoms such as delusions or hallucinations. If present, treatment for depression needs to be adapted. **CONSULT A SPECIALIST.** [Doctor icon]

@@ -1,0 +1,11 @@
+44
+PSYCHOSES >> Management
+PSY 2
+
+**TABLE 4: Review adherence, side effects and dosing based on clinical situation/ presentation**
+
+| CLINICAL SITUATION | ACTION |
+| :--- | :--- |
+| **The person is not tolerating antipsychotic medication, i.e. the person has extrapyramidal symptoms (EPS) or other serious side effects** | » Reduce the dose of antipsychotic medication.<br>» If side-effects persist, consider switching to another antipsychotic medication.<br>» Consider adding anticholinergic medication for short-term use to treat EPS if these strategies fail or if symptoms are severe (see Table 2). |
+| **Adherence to treatment is unsatisfactory** | » Discuss reasons for non-adherence with the person and carers.<br>» And provide information regarding importance of medication.<br>» Consider depot/long-acting injectable antipsychotic medication as an option after discussing possible side effects of oral versus depot preparations. |
+| **Treatment response is inadequate (i.e. symptoms persist or worsen) despite adherence to medication** | » Verify that the person is receiving an effective dose of medication. If the dose is low, increase gradually to lowest effective dose to reduce the risk of side effects.<br>» Enquire about alcohol or substance use and take measures to reduce this. Go to **» SUB**.<br>» Enquire about recent stressful event that may have led to worsening of clinical condition and take measures to reduce stress.<br>» Review symptoms to rule out physical and/or other priority MNS conditions. Go to **» PSY 1**, see STEP 1<br>» Consider risperidone as an alternative to haloperidol or chlorpromazine, if cost and availability are not constraints.<br>» If the person does not respond to adequate dose and duration of more than one antipsychotic medication, using one medicine at a time, then antipsychotic combination treatment may be considered, preferably under the supervision of a specialist, with close clinical monitoring.<br>» Consider consultation with a specialist for the use of clozapine in those who have not responded to other antipsychotic medications at adequate doses and durations. Only use clozapine under the supervision of a specialist and only if routine laboratory monitoring is available, due to the risk of life-threatening agranulocytosis. |

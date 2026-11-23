@@ -1,0 +1,53 @@
+**Header**
+EPILEPSY >> Follow-up
+68
+EPI 3
+
+***
+
+**Flowchart Start**
+
+**Box 1 (Step 2)**
+2
+MONITOR TREATMENT
+
+**Arrow from [Box 1] to [Box 2]**
+
+**Box 2**
+**At every contact:**
+
+*   >> Evaluate side-effects of medication including adverse effects and idiosyncratic reactions (clinically and with appropriate laboratory tests when available).
+*   >> Provide psychoeducation and review psychosocial interventions. [icon of two people]
+*   >> Is the person a woman of childbearing age and considering pregnancy? If so, consult specialist. [icon of a specialist/doctor]
+*   >> Does the patient have any new symptoms of concern?
+    Review for any new symptoms of depression and anxiety given high risk of co-morbidity with epilepsy.
+*   >> Is the patient on any new medications that may have interactions?
+    (Many anticonvulsants have interactions with other medications). If so, consult a specialist. [icon of a specialist/doctor]
+
+**Arrow from [Box 2] to [Box 3]**
+
+**Box 3 (Step 3)**
+3
+CONSIDER MEDICATION DISCONTINUATION WHEN APPROPRIATE
+
+**Arrow from [Box 3] to [Decision Box 4]**
+
+**Decision Box 4**
+Has the person been convulsion free for several years?
+
+**Two paths extend from [Decision Box 4]: NO and YES**
+
+**Path 1: NO**
+Arrow labeled NO points from [Decision Box 4] to [Box 5]
+
+**Box 5**
+**IF THERE ARE NO PROBLEMS WITH MEDICATIONS**
+*   >> Continue at current dose. Correct dosing is lowest therapeutic dose for seizure control, while minimizing adverse side-effects.
+*   >> Continue close follow-up and review for possible discontinuation of medications once seizure free for at least two years.
+
+**Path 2: YES**
+Arrow labeled YES points from [Decision Box 4] to [Box 6]
+
+**Box 6**
+*   >> Discuss risk of seizure occurrence with person/carer (if epilepsy is due to head injury, stroke or neuroinfection, there is a higher risk of seizure recurrence off medication), and risks and benefits of discontinuing medications.
+*   >> If in agreement, gradually take the person off medication by reducing the doses over 2 months and monitoring closely for seizure recurrence. [circular arrow icon]

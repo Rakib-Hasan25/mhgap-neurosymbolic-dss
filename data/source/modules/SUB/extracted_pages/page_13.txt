@@ -1,0 +1,44 @@
+[Top node]
+3  
+Is DEPENDENCE likely?
+
+[Main box]
+For each substance used ask about the following features of dependence:
+- High levels of frequent substance use  
+- A strong craving or sense of compulsion to use the substance  
+- Difficulty self regulating the use of that substance despite the risks and harmful consequences  
+- Increasing levels of use tolerance and withdrawal symptoms on cessation  
+
+[Left box – CLINICAL TIP]
+CLINICAL TIP  
+Patterns of substance use that suggest dependence include:  
+TOBACCO: several times a day, often starting in the morning.  
+ALCOHOL: more than 6 standard drinks at a time, and daily use.  
+PRESCRIPTION PILLS: taking a higher dose of medication than prescribed and lying to get prescriptions.  
+CANNABIS: at least 1 g of cannabis daily.
+
+[Decision flow from main box]
+[Is DEPENDENCE likely?] -> NO -> [Is the substance use harmful? See answer in step 2, above.]  
+[Is DEPENDENCE likely?] -> YES -> Proceed to PROTOCOL 2  
+
+[Right note for YES path]
+IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS and MANAGE before continuing to Protocol (Go to » SUI)
+
+[Second decision box]
+Is the substance use harmful?  
+See answer in step 2, above.
+
+[Decision flow from second box]
+[Is the substance use harmful?] -> NO -> [Provide psychoeducation box]  
+[Is the substance use harmful?] -> YES -> Proceed to PROTOCOL 1  
+
+[Right note for YES path]
+IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS and MANAGE before continuing to Protocol (Go to » SUI)
+
+[Bottom-left box]
+» Provide psychoeducation about the risks of different levels of each substance used.  
+» EXIT MODULE
+
+[Footer]
+DISORDERS DUE TO SUBSTANCE USE  
+117

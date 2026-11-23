@@ -1,0 +1,69 @@
+[PAGE START]
+
+[FLOWCHART START]
+
+[NODE 1: CIRCLE]
+3
+
+-->
+
+[NODE 2: BLUE BOX]
+Does the person have epilepsy?
+
+-->
+
+[NODE 3: DECISION BOX]
+Has the person had at least two seizures on two different days in the past year?
+(An icon of a person is shown to the right of this box)
+
+[CLINICAL TIP associated with NODE 3]
+CLINICAL TIP
+» Ask about:
+– How frequent are the episodes?
+– How many in the past year?
+– When was the last episode?
+
+--> [DECISION PATH: NO] -->
+
+[NODE 4: WHITE BOX, BLUE BORDER]
+(An icon of a left-pointing arrow in a blue box is shown to the left of this node)
+Does not meet criteria for epilepsy
+» Maintenance antiepileptic medication not necessary
+» Follow-up in 3 months (icon of a clock with a circular arrow) and assess for possible epilepsy
+
+--> [DECISION PATH from NODE 3: YES] -->
+
+[NODE 5: WHITE BOX, BLUE BORDER]
+EPILEPSY
+is likely
+
+-->
+
+[NODE 6: DECISION BOX]
+Asses for underlying cause. Do a physical examination.
+(An icon of a person is shown to the left of this box)
+
+[CLINICAL TIP associated with NODE 6]
+CLINICAL TIP
+Physical examination should include neurologic examination and evaluate for any focal deficits; e.g. any asymmetry in strength or reflexes.
+
+» Are any of the following present?
+– Birth asphyxia or trauma history
+– Head injury
+– Infection of the brain
+– family history of seizures
+
+--> [DECISION PATH: NO] --> [Continues downward]
+
+--> [DECISION PATH from NODE 6: YES] -->
+
+[NODE 7: WHITE BOX, RED BORDER]
+» REFER TO SPECIALIST FOR FURTHER EVALUATION OF CAUSE (icon of a person with a stethoscope)
+
+[FLOWCHART END]
+
+[FOOTER]
+EPILEPSY
+61
+
+[PAGE END]

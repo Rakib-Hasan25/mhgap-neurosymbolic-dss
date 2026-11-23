@@ -1,0 +1,50 @@
+HEADER:
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS >> Assessment  
+76  
+CMH 1  
+
+[Step Indicator]
+3  
+
+[Box]
+ASSESS FOR CONDUCT DISORDER  
+
+[Main Question Box]
+Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour, for example:
+
+- Arguing with adults  
+- Defying or refusing to comply with their requests or rules  
+- Extreme irritability/anger  
+- Frequent and severe temper tantrums  
+- Difficulty getting along with others  
+
+- Provocative behaviour  
+- Excessive levels of fighting or bullying  
+- Cruelty to animals or people  
+- Severe destructiveness to property, fire-setting  
+- Stealing, repeated lying, truancy from school, running away from home  
+
+FLOW / DECISION:
+
+[Main Question Box] -> (Decision)
+
+Decision node:
+NO -> [Box] CONDUCT DISORDER is unlikely  
+      -> [Box] SKIP to STEP 4  
+
+YES -> continues downward to Clinical Tip section  
+
+[Clinical Tip Box]
+CLINICAL TIP: AGE-APPROPRIATE DISRUPTIVE OR CHALLENGING BEHAVIOUR IN CHILDREN/ADOLESCENTS
+
+Sections:
+
+Toddlers and young children (age 18 months – 5 years)
+- Refusing to do what they are told, breaking rules, arguing, whining, exaggerating, saying things that aren’t true, denying they did anything wrong, being physically aggressive and blaming others for their misbehaviour.  
+- Brief tantrums (emotional outbursts with crying, screaming, hitting, etc.), usually lasting less than 5 minutes and not longer than 25 minutes, typically occur less than 3 times per week. Developmentally typical tantrums should not result in self-injury or frequent physical aggression toward others, and the child can typically calm themselves down afterward.  
+
+Middle Childhood (age 6-12)
+- Avoidance of or delay in following instructions, complaining or arguing with adults or other children, occasionally losing their temper.  
+
+Adolescents (age 13-18)
+- Testing rules and limits, saying that rules and limits are unfair or unnecessary, occasionally being rude, dismissive, argumentative or defiant with adults.

@@ -1,0 +1,83 @@
+{
+  "cases": [
+    {
+      "case_id": "DEP_single_hop_positive_001",
+      "category": "single_hop_positive",
+      "source_module": "DEP",
+      "referred_module": null,
+      "final_module": "DEP",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "DEP_D2",
+      "exit_node_id": "DEP_E1",
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "type": "assessment",
+          "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "type": "diagnosis",
+          "text": "DEPRESSION is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "type": "assessment",
+          "text": "Is the person a child or adolescent?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A10",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_M5",
+          "type": "management",
+          "text": "PROTOCOL 1: Provide psychoeducation, reduce stress, strengthen social supports, and promote functioning. Consider brief psychological treatments. Consider antidepressants if appropriate. For pregnant/breastfeeding women, avoid antidepressants if possible. Follow-up: Schedule the second appointment within 1 week. Initially maintain regular contact (e.g., monthly) for the first 3 months.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_E1",
+          "type": "exit",
+          "text": "End of Depression Module."
+        }
+      ],
+      "user_story": "Thirty-two-year-old Mahbubur “Mahbub” Rahman lives in a rented two-room flat in Jatrabari, Dhaka, with his wife Shirin and their five-year-old daughter. He works as an accounts assistant for a small garments accessories supplier near Narayanganj, a job that used to suit his careful nature. He was known among colleagues for keeping tidy ledgers, bringing homemade paratha for breakfast, and joking during tea breaks about cricket and old Bangla films.\n\nFor the past five weeks, Shirin has noticed that Mahbub seems like a different person. He wakes up looking heavy and defeated, often sitting silently on the edge of the bed long after the Fajr azan, staring at the floor. When asked what is wrong, he says, “Mon ta bhalo na,” but cannot point to one clear reason. He no longer enjoys things he once looked forward to: Friday visits to his elder sister’s house in Keraniganj, playing carrom with neighbors downstairs, helping his daughter practice her Bangla letters, or watching Abahani matches with friends at the tea stall. Even his daughter’s attempts to make him laugh barely get a smile.\n\nHis sleep has become disturbed. Some nights he lies awake until 3 or 4 a.m., worrying without a clear chain of thought; other nights he wakes repeatedly and feels unrested in the morning. His appetite has reduced, and Shirin says he has lost weight because he often leaves rice and fish untouched, saying everything tastes like sand. At work, he has begun making mistakes in calculations and takes much longer than usual to enter invoice numbers. He rereads the same line again and again but cannot concentrate. When his supervisor asks simple questions, Mahbub freezes, becomes indecisive, and later berates himself for being “useless.” He moves more slowly than before, speaks in a low voice, and complains of constant tiredness even on days when he has done very little.\n\nOver the last month, his daily functioning has suffered noticeably. He has missed work several times, claiming stomach discomfort or headache, though the symptoms pass quickly and do not explain his overall state. On days he does go, he returns exhausted and withdraws into bed without bathing or talking much. Shirin has had to manage the bazar, school drop-off, rent discussions with the landlord, and family phone calls almost entirely by herself. Mahbub avoids relatives because he feels ashamed and believes he has become a burden to everyone. He has stopped sending money regularly to his mother in Kushtia, not because he refuses, but because he cannot organize himself to do the transfer and then feels guilty for days.\n\nA local doctor recently checked him because the family wondered whether weakness, thyroid problems, or anaemia might be causing the change. His blood pressure, pulse, physical examination, haemoglobin, blood sugar, and thyroid test were within normal limits, and he is not taking any regular medicine that could explain the low mood. He eats modestly but has no signs of severe malnutrition, and there has been no recent fever, chronic illness, substance use, or head injury. He does not drink alcohol and only occasionally chews betel nut at weddings.\n\nMahbub has never had periods of unusually elevated or irritable mood, days of feeling unstoppable, needing little sleep, spending recklessly, talking nonstop, or taking impulsive risks. His wife describes him as generally cautious and quiet, even in happier times. There has also been no recent death or major bereavement in the family; his parents are alive, and although money has been tight, there has been no single major loss in the past six months that would account for the depth and persistence of his symptoms.\n\nDuring a conversation with a community health worker, Mahbub admits that sometimes he thinks his family would be “better without this burden,” but he becomes frightened by the thought and says he has no plan or intention to harm himself. He has not tried to"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "cases": [
+    {
+      "case_id": "SUB_to_PSY_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "SUB",
+      "referred_module": "PSY",
+      "final_module": "PSY",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "PSY_D2",
+      "exit_node_id": "PSY_E3",
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A5",
+          "type": "assessment",
+          "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A6",
+          "type": "assessment",
+          "text": "Has the person recently used stimulants (cocaine, amphetamines) AND is showing dilated pupils, anxiety, agitation, hyper-excitable state, racing thoughts, or raised pulse and BP?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_D5",
+          "type": "diagnosis",
+          "text": "Suspect ACUTE STIMULANT INTOXICATION",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_M7",
+          "type": "management",
+          "text": "Give diazepam 5-10 mg in titrated doses until calm. If psychotic symptoms not responsive to diazepam, consider haloperidol 1-2.5 mg. TRANSFER TO HOSPITAL if chest pain, tachyarrhythmias, or neurological signs.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_A6_1",
+          "type": "assessment",
+          "text": "Do psychotic symptoms persist despite treatment?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_R1",
+          "type": "referral",
+          "target_module": "PSY",
+          "text": "Refer to Psychoses module for persistent psychotic symptoms."
+        },
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_M2",
+          "type": "management",
+          "text": "Manage concurrent conditions. Consider consultation with a mental health specialist.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_M3",
+          "type": "management",
+          "text": "Ensure safety. Communicate calmly. Treat underlying causes. Sedate as appropriate (e.g., haloperidol or diazepam) to prevent injury. In extreme violence, seek help from police/staff.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "type": "assessment",
+          "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A7",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D2",
+          "type": "diagnosis",
+          "text": "Psychosis",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M6",
+          "type": "management",
+          "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E3",
+          "type": "exit",
+          "text": "End of Psychosis path."
+        }
+      ]
+    }
+  ]
+}

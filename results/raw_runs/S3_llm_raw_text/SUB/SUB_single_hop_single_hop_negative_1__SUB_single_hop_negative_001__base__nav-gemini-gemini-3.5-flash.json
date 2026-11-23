@@ -1,0 +1,172 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "SUB",
+  "step_logs": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A8",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person appear confused?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A12",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_M15",
+      "type": "management",
+      "is_starting": false,
+      "text": "Emphasise the health benefits of not using psychoactive substances."
+    },
+    {
+      "id": "SUB_E9",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of module: No substance use."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "SUB_A1",
+      "answer": "NO",
+      "to": "SUB_A4"
+    },
+    {
+      "from": "SUB_A4",
+      "answer": "NO",
+      "to": "SUB_A8"
+    },
+    {
+      "from": "SUB_A8",
+      "answer": "NO",
+      "to": "SUB_A12"
+    },
+    {
+      "from": "SUB_A12",
+      "answer": "NO",
+      "to": "SUB_M15"
+    },
+    {
+      "from": "SUB_M15",
+      "answer": "NEXT",
+      "to": "SUB_E9"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "SUB_E9",
+  "usage": {
+    "vp": {
+      "calls": 4,
+      "input_tokens": 1621,
+      "output_tokens": 8,
+      "total_tokens": 1629
+    },
+    "nav": {
+      "calls": 5,
+      "input_tokens": 26159,
+      "output_tokens": 75,
+      "total_tokens": 29527
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/SUB/SUB_single_hop_single_hop_negative_1.json",
+  "case_id": "SUB_single_hop_negative_001",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A8",
+      "type": "assessment",
+      "text": "Does the person appear confused?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A12",
+      "type": "assessment",
+      "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_M15",
+      "type": "management",
+      "text": "Emphasise the health benefits of not using psychoactive substances.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUB_E9",
+      "type": "exit",
+      "text": "End of module: No substance use."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A8",
+      "SUB_A12",
+      "SUB_M15",
+      "SUB_E9"
+    ],
+    "actual_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A8",
+      "SUB_A12",
+      "SUB_M15",
+      "SUB_E9"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 4,
+      "matched": 4,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 31156
+}

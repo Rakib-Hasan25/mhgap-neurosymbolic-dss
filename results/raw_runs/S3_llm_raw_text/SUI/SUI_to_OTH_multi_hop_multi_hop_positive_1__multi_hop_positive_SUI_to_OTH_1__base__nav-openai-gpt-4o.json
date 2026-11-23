@@ -1,0 +1,379 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "SUI",
+  "step_logs": [
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there a history of thoughts or plan of self-harm in the past month or act of self-harm in the past year?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have chronic pain?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_M6",
+      "type": "management",
+      "is_starting": false,
+      "text": "Manage the emotional symptoms."
+    },
+    {
+      "id": "SUI_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Go to Other Significant Mental Health Complaints module.",
+      "target_module": "OTH"
+    },
+    {
+      "id": "OTH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Is there a physical cause that fully explains the presenting symptoms?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "OTH_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is this depression or another MNS condition discussed in another module of this guide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "OTH_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there imminent risk of suicide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "OTH_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "OTH_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Other Significant Mental Health Complaints are likely."
+    },
+    {
+      "id": "OTH_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person been exposed to extreme stressors? (e.g., physical or sexual violence, major accidents, bereavement or other major losses)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "OTH_M4",
+      "type": "management",
+      "is_starting": false,
+      "text": "Apply Protocol 1: Do not prescribe anti-anxiety or antidepressant medicines unless advised by a specialist. Reduce stress, teach relaxation techniques, and strengthen social supports (ECP). Acknowledge symptoms but avoid unnecessary investigations; explain that no serious disease has been identified. Encourage return to daily activities. Follow-up: Ask the person to return in 2-4 weeks if symptoms do not improve or worsen. If improving, continue treatment plan. If not improving or if insisting on further investigations, review Protocol 1 and consider consulting a specialist."
+    },
+    {
+      "id": "OTH_E4",
+      "type": "exit",
+      "is_starting": false,
+      "text": "Exit after Protocol 1 management."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "SUI_A1",
+      "answer": "NO",
+      "to": "SUI_A2"
+    },
+    {
+      "from": "SUI_A2",
+      "answer": "NO",
+      "to": "SUI_A3"
+    },
+    {
+      "from": "SUI_A3",
+      "answer": "NO",
+      "to": "SUI_A4"
+    },
+    {
+      "from": "SUI_A4",
+      "answer": "NO",
+      "to": "SUI_A5"
+    },
+    {
+      "from": "SUI_A5",
+      "answer": "NO",
+      "to": "SUI_A6"
+    },
+    {
+      "from": "SUI_A6",
+      "answer": "YES",
+      "to": "SUI_M6"
+    },
+    {
+      "from": "SUI_M6",
+      "answer": "NEXT",
+      "to": "SUI_R1"
+    },
+    {
+      "from": "SUI_R1",
+      "answer": "REFERRAL",
+      "to": "OTH_A1",
+      "target_module": "OTH"
+    },
+    {
+      "from": "OTH_A1",
+      "answer": "NO",
+      "to": "OTH_A2"
+    },
+    {
+      "from": "OTH_A2",
+      "answer": "NO",
+      "to": "OTH_A4"
+    },
+    {
+      "from": "OTH_A4",
+      "answer": "NO",
+      "to": "OTH_A3"
+    },
+    {
+      "from": "OTH_A3",
+      "answer": "YES",
+      "to": "OTH_D1"
+    },
+    {
+      "from": "OTH_D1",
+      "answer": "NEXT",
+      "to": "OTH_A5"
+    },
+    {
+      "from": "OTH_A5",
+      "answer": "NO",
+      "to": "OTH_M4"
+    },
+    {
+      "from": "OTH_M4",
+      "answer": "NEXT",
+      "to": "OTH_E4"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "OTH_E4",
+  "usage": {
+    "vp": {
+      "calls": 11,
+      "input_tokens": 5694,
+      "output_tokens": 22,
+      "total_tokens": 5716
+    },
+    "nav": {
+      "calls": 14,
+      "input_tokens": 41640,
+      "output_tokens": 220,
+      "total_tokens": 41860
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/SUI/SUI_to_OTH_multi_hop_multi_hop_positive_1.json",
+  "case_id": "multi_hop_positive_SUI_to_OTH_1",
+  "nav_model_spec": {
+    "provider": "openai",
+    "model": "gpt-4o"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A3",
+      "type": "assessment",
+      "text": "Is there a history of thoughts or plan of self-harm in the past month or act of self-harm in the past year?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_D3",
+      "type": "diagnosis",
+      "text": "Risk of self-harm/suicide is unlikely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "text": "Does the person have chronic pain?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_M6",
+      "type": "management",
+      "text": "Manage the emotional symptoms.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_R1",
+      "type": "referral",
+      "target_module": "OTH",
+      "text": "Go to Other Significant Mental Health Complaints module."
+    },
+    {
+      "id": "OTH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Is there a physical cause that fully explains the presenting symptoms?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "OTH_A2",
+      "type": "assessment",
+      "text": "Is this depression or another MNS condition discussed in another module of this guide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "OTH_A3",
+      "type": "assessment",
+      "text": "Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "OTH_D1",
+      "type": "diagnosis",
+      "text": "Other Significant Mental Health Complaints are likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "OTH_A4",
+      "type": "assessment",
+      "text": "Is there imminent risk of suicide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "OTH_A5",
+      "type": "assessment",
+      "text": "Has the person been exposed to extreme stressors? (e.g., physical or sexual violence, major accidents, bereavement or other major losses)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "OTH_M4",
+      "type": "management",
+      "text": "Apply Protocol 1: Do not prescribe anti-anxiety or antidepressant medicines unless advised by a specialist. Reduce stress, teach relaxation techniques, and strengthen social supports (ECP). Acknowledge symptoms but avoid unnecessary investigations; explain that no serious disease has been identified. Encourage return to daily activities. Follow-up: Ask the person to return in 2-4 weeks if symptoms do not improve or worsen. If improving, continue treatment plan. If not improving or if insisting on further investigations, review Protocol 1 and consider consulting a specialist.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "OTH_E4",
+      "type": "exit",
+      "text": "Exit after Protocol 1 management."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_A3",
+      "SUI_D3",
+      "SUI_A4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M6",
+      "SUI_R1",
+      "OTH_A1",
+      "OTH_A2",
+      "OTH_A3",
+      "OTH_D1",
+      "OTH_A4",
+      "OTH_A5",
+      "OTH_M4",
+      "OTH_E4"
+    ],
+    "actual_ids": [
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_A3",
+      "SUI_A4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M6",
+      "SUI_R1",
+      "OTH_A1",
+      "OTH_A2",
+      "OTH_A4",
+      "OTH_A3",
+      "OTH_D1",
+      "OTH_A5",
+      "OTH_M4",
+      "OTH_E4"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": false,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 11,
+      "matched": 11,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 47576
+}

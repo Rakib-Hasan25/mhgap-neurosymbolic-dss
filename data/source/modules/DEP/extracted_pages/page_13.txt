@@ -1,0 +1,61 @@
+Here is the structured transcription of the clinical guideline flowchart:
+
+**[Decision Box 1]**
+Are there symptoms of mania?
+
+--> **[Path: YES]** --> Leads to Action Box 1
+--> **[Path: NO]** --> Merges with an incoming flowline from above and leads to Node 2
+
+***
+
+**[Action Box 1]** *(From YES path)*
+[Left-pointing arrow icon outside box]
+» Discontinue antidepressant medication.
+» Treat mania and consult a specialist. [Specialist icon]
+Go to » PSY.
+
+***
+
+**[Node 2 & Box]** *(From NO path)*
+2
+**MONITOR TREATMENT**
+
+|
+V
+
+**[Action Box 2]**
+**At every contact:**
+» Provide psychoeducation, reduce stress and strengthen social supports, promote functioning in daily activities and community life, and review, if applicable, antidepressant medication use and psychological treatment.
+» Does the person have any new symptoms of concern? Review for MNS and concurrent physical conditions.
+» Is the person a woman of childbearing age and considering pregnancy? If so, CONSULT A SPECIALIST. [Specialist icon]
+**[!] Assess for any IMMINENT RISK OF SUICIDE** (Go to **» SUI**).
+
+|
+V
+
+**[Node 3 & Box]**
+3
+**REVISE TREATMENT AS APPROPRIATE**
+
+|
+V
+
+**[Decision Box 2]**
+Has the person been symptom free for 9-12 months?
+
+--> **[Path: NO]** --> Leads to Action Box 3 (Left)
+--> **[Path: YES]** --> Leads to Action Box 4 (Right)
+
+***
+
+**[Action Box 3]** *(From NO path)*
+» Continue medication until person is symptom free for 9-12 months.
+
+**[Action Box 4]** *(From YES path)*
+» Discuss with the person the risks and benefits of stopping the medication
+» Taper the dose of medication gradually, over a minimum of 4 weeks. Monitor the person for symptom recurrence.
+
+***
+
+**[Footer]**
+DEPRESSION                                                                               31

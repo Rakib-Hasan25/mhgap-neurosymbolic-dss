@@ -1,0 +1,37 @@
+**Flowchart**
+
+[Initial Node]
+An arrow points down to a circle with the number 3, which is connected to the box below.
+3
+Does the person have psychosis?
+--> [Arrow down] -->
+
+[Decision Box]
+Does the person have at least two of the following:
+– Delusions, fixed false beliefs not shared by others in the person’s culture
+– Hallucinations, hearing voices or seeing things that are not there
+– Disorganized speech and/or behaviour, e.g. incoherent/irrelevant speech such as mumbling or laughing to self, strange appearance, signs of self-neglect or appearing unkempt
+--> This box leads to two decision paths: NO and YES.
+
+--> [Decision Path: NO] -->
+[Box]
+An arrow points from the left into this box.
+» Consider consultation with specialist to review other possible causes of psychosis. [Icon of a person]
+
+--> [Decision Path: YES] -->
+[Box]
+Suspect
+PSYCHOSIS
+--> [Arrow down] -->
+
+[Box]
+» Go to PROTOCOL 2
+-->
+
+[Warning Box]
+! IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS AND MANAGE before continuing. Go to » SUI. [Red circle icon with a curved arrow]
+
+**Footer**
+
+PSYCHOSES
+37

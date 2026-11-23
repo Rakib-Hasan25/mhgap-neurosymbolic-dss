@@ -1,0 +1,195 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "CMH",
+  "step_logs": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there signs/symptoms suggesting nutritional deficiency (including iodine), anaemia, malnutrition, or acute/chronic infectious illness (including ear infection and HIV/AIDS)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Assess the child for visual and/or hearing impairment. Does the child fail visual assessments (fails to look at eyes, follow object) or hearing assessments (fails to react to loud noise, turn head)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Developmental Delay/Disorder"
+    },
+    {
+      "id": "CMH_M3",
+      "type": "management",
+      "is_starting": false,
+      "text": "Protocol 1 (Developmental Delay/Disorder): Provide guidance on child well-being, psychoeducation, and parenting advice. Provide carer support, liaise with teachers, and link with Community-Based Rehabilitation. Offer Parent Skills Training. Refer to specialist for further assessment. DO NOT offer pharmacological treatment. Follow-up: Reassess every 3 months or more; if no improvement, further deterioration, or danger, refer to specialist."
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "user_answer": "NO_ANSWER"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "CMH_A1",
+      "answer": "YES",
+      "to": "CMH_A2"
+    },
+    {
+      "from": "CMH_A2",
+      "answer": "NO",
+      "to": "CMH_A3"
+    },
+    {
+      "from": "CMH_A3",
+      "answer": "NO",
+      "to": "CMH_D1"
+    },
+    {
+      "from": "CMH_D1",
+      "answer": "NEXT",
+      "to": "CMH_M3"
+    },
+    {
+      "from": "CMH_M3",
+      "answer": "NEXT",
+      "to": "CMH_A4"
+    },
+    {
+      "from": "CMH_A4",
+      "answer": "NO",
+      "to": "CMH_A7"
+    },
+    {
+      "from": "CMH_A7",
+      "answer": "NO",
+      "to": "CMH_A9"
+    }
+  ],
+  "stop_reason": "no_answer",
+  "stop_node_id": "CMH_A9",
+  "usage": {
+    "vp": {
+      "calls": 6,
+      "input_tokens": 3179,
+      "output_tokens": 14,
+      "total_tokens": 3193
+    },
+    "nav": {
+      "calls": 7,
+      "input_tokens": 32418,
+      "output_tokens": 133,
+      "total_tokens": 33536
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/CMH/CMH_single_hop_single_hop_positive_1.json",
+  "case_id": "CMH_single_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A2",
+      "type": "assessment",
+      "text": "Are there signs/symptoms suggesting nutritional deficiency (including iodine), anaemia, malnutrition, or acute/chronic infectious illness (including ear infection and HIV/AIDS)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A3",
+      "type": "assessment",
+      "text": "Assess the child for visual and/or hearing impairment. Does the child fail visual assessments (fails to look at eyes, follow object) or hearing assessments (fails to react to loud noise, turn head)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_D1",
+      "type": "diagnosis",
+      "text": "Developmental Delay/Disorder"
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "CMH_A1",
+      "CMH_A2",
+      "CMH_A3",
+      "CMH_D1"
+    ],
+    "actual_ids": [
+      "CMH_A1",
+      "CMH_A2",
+      "CMH_A3",
+      "CMH_D1",
+      "CMH_M3",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": false,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [
+      {
+        "id": "CMH_A4",
+        "expected": null,
+        "actual": "NO"
+      },
+      {
+        "id": "CMH_A7",
+        "expected": null,
+        "actual": "NO"
+      }
+    ],
+    "counts": {
+      "expected_assessment_findings": 3,
+      "matched": 3,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 2
+    }
+  },
+  "total_tokens": 36729
+}

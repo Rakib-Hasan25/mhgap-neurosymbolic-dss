@@ -1,0 +1,53 @@
+**[Header]**
+DEPRESSION >> Assessment
+24
+DEP 1
+
+---
+
+**[Box 1]**
+IS THERE A HISTORY OF MANIA?
+
+Have several of the following symptoms occurred simultaneously, lasting for at least 1 week, and severely enough to interfere significantly with work and social activities or requiring hospitalization or confinement?
+
+– Elevation of mood and/or irritability
+– Decreased need for sleep
+– Increased activity, feeling of increased energy, increased talkativeness or rapid speech
+– Impulsive or reckless behaviours such as excessive spending, making important decisions without planning and sexual indiscretion
+– Loss of normal social inhibitions resulting in inappropriate behaviours
+– Being easily distracted
+– Unrealistically inflated self-esteem
+
+---
+**(Flowchart branches from Box 1)**
+
+**Branch 1:**
+--> [YES] --> **[Box 2]**
+DEPRESSIVE EPISODE IN BIPOLAR DISORDER is likely
+
+*(Attached to Box 2 is a Sidebar)*
+**[Sidebar]**
+CLINICAL TIP:
+People with depressive episode in bipolar disorder are at risk for mania. Treatment is different from depression. Protocol 2 must be applied.
+
+--> (Arrow down from Box 2) --> **[Box 3]**
+>> Go to STEP 3 then to PROTOCOL 2
+
+
+**Branch 2:**
+--> [NO] --> **[Box 4]**
+HAS THERE BEEN A MAJOR LOSS (E.G. BEREAVEMENT) WITHIN THE LAST 6 MONTHS?
+
+---
+**(Flowchart branches from Box 4)**
+
+**Branch 2A:**
+--> [NO] --> **[Box 5]**
+DEPRESSION is likely
+
+--> (Arrow down from Box 5) --> **[Box 6]**
+>> Go to STEP 3 then to PROTOCOL 1
+
+
+**Branch 2B:**
+--> [YES] --> *(Arrow points downward, indicating continuation to the next part of the guideline)*

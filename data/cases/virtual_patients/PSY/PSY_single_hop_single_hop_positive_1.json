@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "case_id": "PSY_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "PSY",
+      "referred_module": null,
+      "final_module": "PSY",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "PSY_D2",
+      "exit_node_id": "PSY_E3",
+      "node_sequence": [
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "type": "assessment",
+          "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A7",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D2",
+          "type": "diagnosis",
+          "text": "Psychosis",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M6",
+          "type": "management",
+          "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E3",
+          "type": "exit",
+          "text": "End of Psychosis path."
+        }
+      ],
+      "user_story": "Twenty-six-year-old Tareq Mahmud, a quiet tailor from Shibganj in Chapainawabganj, lives with his parents and younger sister above their small roadside sewing shop. Over the past three months, his family noticed he had become increasingly withdrawn and suspicious. He began insisting that two men from the local market had installed a hidden microphone in the ceiling fan to record his thoughts, and he often covered the fan with a gamcha before sleeping. Several evenings he was seen answering voices no one else could hear, whispering back to “the announcer” who, he said, commented on his stitching and warned him not to trust customers.\n\nWhen brought to the district hospital outpatient clinic by his father, Tareq was calm, neatly dressed, and cooperative, though guarded. He was fully awake, knew the date, place, and why he had come, and could follow the conversation without fluctuating attention. He had no fever, headache, seizure, recent infection, head injury, or new medication use; his pulse, blood pressure, glucose, and basic examination were unremarkable. His family said he does not drink alcohol, use yaba, cannabis, sedatives, or cough syrup recreationally, and there had been no period of withdrawal or intoxication. He had always managed accounts at the shop until recently, with no gradual memory decline or confusion suggesting dementia. He denied persistent sadness, loss of interest, guilt, or appetite change, and his parents had not seen him tearful or slowed in the way they associate with depression.\n\nAlthough frightened by the voices, Tareq had not shouted, threatened anyone, damaged property, or needed restraint; he sat quietly during the visit and answered questions after brief pauses. He had not shown a week of elevated mood, excessive energy, grand plans, reckless spending, sexual disinhibition, or decreased need for sleep—if anything, he slept lightly because he was listening for the voices. When asked directly, he denied wanting to die, harming himself, or having a plan to end his life, and his family confirmed there were no attempts, farewell messages, or access to pesticides kept at home. The clinician explained to Tareq and his father that these experiences were consistent with psychosis, discussed safety and family support, and planned to start one low-dose antipsychotic with close follow-up for benefit, adherence, and side effects while encouraging him to keep helping at the tailor shop as much as he could."
+    }
+  ]
+}

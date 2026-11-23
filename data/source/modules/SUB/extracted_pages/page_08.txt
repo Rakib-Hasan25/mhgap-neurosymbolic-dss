@@ -1,0 +1,40 @@
+DISORDERS DUE TO SUBSTANCE USE  112  SUB
+
+[Step 3]
+Does the person appear confused?
+
+Decision:
+[YES] → next step  
+[NO] → SKIP to SUB 1 Assessment
+
+---
+
+[Box]
+Are there any medical conditions which might explain the confusion, including:
+– head trauma  
+– hypoglycaemia  
+– pneumonia or other infections  
+– hepatic encephalopathy  
+– cerebrovascular accidents (CVA)
+
+Decision:
+[YES] → » Manage the physical condition and refer the person to hospital.  
+[NO] → proceed to ASSESS AND MANAGE A – C
+
+---
+
+ASSESS AND MANAGE A – C
+
+[A]
+Person has stopped drinking in the last week: confusion, hallucination, racing thoughts, anxiety, agitation, disorientation, typically in association with either stimulant intoxication or alcohol (or other sedative) withdrawal.
+
+→ [Box]
+Suspect  
+ALCOHOL OR BENZODIAZEPINE WITHDRAWAL DELIRIUM
+
+→ [Box]
+» If the person is showing other signs of alcohol withdrawal (tremors, sweating, vital signs changes)  
+– Treat with diazepam 10–20 mg p.o.  
+– TRANSFER TO HOSPITAL. +
+
+» Manage delirium with antipsychotics such as haloperidol 1–2.5 mg p.o. or i.m.

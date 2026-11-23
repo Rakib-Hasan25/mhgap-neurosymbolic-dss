@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "case_id": "SUI_single_hop_negative_1",
+      "category": "single_hop_negative",
+      "source_module": "SUI",
+      "referred_module": null,
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D3",
+      "exit_node_id": "SUI_E1",
+      "node_sequence": [
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A3",
+          "type": "assessment",
+          "text": "Is there a history of thoughts or plan of self-harm in the past month or act of self-harm in the past year?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_D3",
+          "type": "diagnosis",
+          "text": "Risk of self-harm/suicide is unlikely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "type": "management",
+          "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "type": "exit",
+          "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+      ],
+      "user_story": "Thirty-two-year-old Nusrat Jahan lives in a rented flat near Shibbari Mor in Khulna with her husband and their five-year-old daughter. She works as a quality checker in a small shrimp-processing office and is known by coworkers for being punctual and talkative during tea breaks. Her elder sister brought her to the local clinic after Nusrat cried during a family dispute about money and said, “I feel exhausted by everyone’s pressure,” which frightened the family.\n\nAt the clinic, Nusrat was alert, neatly dressed, and able to describe the incident clearly. There was no smell of chemicals or alcohol, no drowsiness, vomiting, bleeding, injury marks, or loss of consciousness. She had not taken extra tablets, poison, or harmed herself; she said she had come straight from work after her sister insisted. She denied having any current wish to die, any plan to hurt herself, or access preparations such as saving pills or buying poison. She was upset about the argument but calm, cooperative, and not agitated or aggressive.\n\nWhen asked carefully, Nusrat said she had never attempted self-harm, and in the past month she had not had thoughts or plans of suicide or self-injury. She described the family stress as “temporary tension,” not hopelessness. She sleeps about seven hours most nights, eats normally, enjoys watching dramas with her daughter, and continues attending work and managing household tasks. She has no history of depression treatment, psychosis, seizures, or substance use; she does not drink alcohol or use yaba, cannabis, or sedatives. She has no chronic back, joint, abdominal, or headache pain, only occasional tiredness after long shifts that resolves with rest.\n\nNusrat had not been repeatedly visiting doctors for vague physical complaints and had not been taking sleeping pills, painkillers, or herbal sedatives to cope with emotions. She agreed to let her sister and husband check in with her over the next few days, and she accepted a follow-up call from the clinic mainly for reassurance and support while the family tension settles."
+    }
+  ]
+}

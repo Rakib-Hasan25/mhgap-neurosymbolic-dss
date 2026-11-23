@@ -1,0 +1,79 @@
+**Header:**
+EPILEPSY » Assessment
+60
+EPI 1
+
+***
+
+**Flowchart:**
+
+[An arrow points down from the top of the page towards the first box.]
+
+**Box 1**
+[Icon of two children]
+IS IT A CHILD 6 MONTHS TO
+6 YEARS OLD WITH A FEVER?
+
+[An arrow points down from Box 1 to Box 2.]
+
+**Box 2**
+[Icon of two children]
+Are the convulsions:
+– Focal: Starts in one part of the body
+– Prolonged: Lasts more than 15 min
+– Repetitive: More than 1 episode during the
+current illness
+
+[An arrow points down from Box 2 and splits into two paths: NO and YES.]
+
+---
+**Path 1: NO**
+
+[A blue diamond-shaped box labeled NO.]
+NO
+
+[A blue arrow points down from the NO box to the SIMPLE FEBRILE SEIZURE box.]
+
+**Box 3**
+SIMPLE FEBRILE SEIZURE
+» Look for cause (local Integrated Management
+of Childhood Illness (IMCI) guidelines)
+» Observe over 24 hours
+» No antiepileptic treatment needed
+
+[A left-pointing arrow icon is to the left of this box.]
+---
+**Path 2: YES**
+
+[A red diamond-shaped box labeled YES.]
+YES
+
+[A red arrow points down from the YES box to the COMPLEX FEBRILE SEIZURE box.]
+
+**Box 4**
+COMPLEX FEBRILE SEIZURE
+» REFER TO HOSPITAL [red cross icon]
+FOR ADMISSION
+
+[A left-pointing arrow icon is to the left of this box.]
+
+---
+
+**Parallel Flow (Right Side)**
+
+[A blue arrow points down from the top of the page, parallel to the main flow, to the box below.]
+
+**Box 5**
+» EVALUATE & TREAT MEDICAL
+CONDITION
+» REFER TO HOSPITAL [red cross icon]
+IF POSSIBLE FOR HEAD INJURY,
+MENINGITIS, AND METABOLIC
+ABNORMALITIES
+[Red 'X' in circle icon] ANTIEPILEPTIC MEDICATION
+NOT REQUIRED
+» Follow-up in 3 months to
+assess for possible epilepsy [Clock with arrow icon]
+
+**Box 6**
+SKIP to STEP 3

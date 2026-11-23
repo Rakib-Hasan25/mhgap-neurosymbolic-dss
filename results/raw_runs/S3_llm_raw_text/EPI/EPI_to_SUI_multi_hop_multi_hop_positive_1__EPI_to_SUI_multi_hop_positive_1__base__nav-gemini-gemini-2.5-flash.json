@@ -1,0 +1,322 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "EPI",
+  "step_logs": [
+    {
+      "id": "EPI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Any sign of head or neck injury?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital."
+    },
+    {
+      "id": "EPI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+      "user_answer": "NO_ANSWER"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "EPI_A1",
+      "answer": "NO",
+      "to": "EPI_M2"
+    },
+    {
+      "from": "EPI_M2",
+      "answer": "NEXT",
+      "to": "EPI_A2"
+    }
+  ],
+  "stop_reason": "no_answer",
+  "stop_node_id": "EPI_A2",
+  "usage": {
+    "vp": {
+      "calls": 2,
+      "input_tokens": 1198,
+      "output_tokens": 6,
+      "total_tokens": 1204
+    },
+    "nav": {
+      "calls": 2,
+      "input_tokens": 8675,
+      "output_tokens": 33,
+      "total_tokens": 9362
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/EPI/EPI_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "case_id": "EPI_to_SUI_multi_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "EPI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Any sign of head or neck injury?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M2",
+      "type": "management",
+      "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A2",
+      "type": "assessment",
+      "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M4",
+      "type": "management",
+      "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A3",
+      "type": "assessment",
+      "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_A8",
+      "type": "assessment",
+      "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_A9",
+      "type": "assessment",
+      "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_D3",
+      "type": "diagnosis",
+      "text": "Suspect CONVULSIVE SEIZURES",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A10",
+      "type": "assessment",
+      "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_D4",
+      "type": "diagnosis",
+      "text": "Suspect EPILEPSY",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A13",
+      "type": "assessment",
+      "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_D7",
+      "type": "diagnosis",
+      "text": "EPILEPSY is likely",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A14",
+      "type": "assessment",
+      "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_R1",
+      "type": "referral",
+      "target_module": "SUI",
+      "text": "If there is imminent risk of suicide, assess and manage before continuing to Protocol 1."
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_M2",
+      "type": "management",
+      "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_M4",
+      "type": "management",
+      "text": "Manage the concurrent conditions. See relevant modules.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "text": "Does the person have chronic pain?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_M7",
+      "type": "management",
+      "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_E1",
+      "type": "exit",
+      "text": "End of Self-Harm / Suicide Assessment and Management."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "EPI_A1",
+      "EPI_M2",
+      "EPI_A2",
+      "EPI_M4",
+      "EPI_A3",
+      "EPI_A8",
+      "EPI_A9",
+      "EPI_D3",
+      "EPI_A10",
+      "EPI_D4",
+      "EPI_A13",
+      "EPI_D7",
+      "EPI_A14",
+      "EPI_R1",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1",
+      "SUI_M2",
+      "SUI_A4",
+      "SUI_M4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M7",
+      "SUI_E1"
+    ],
+    "actual_ids": [
+      "EPI_A1",
+      "EPI_M2",
+      "EPI_A2"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": true,
+    "finding_accuracy": 0.07692307692307693,
+    "missing_findings": [
+      {
+        "id": "EPI_A2",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "EPI_A3",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "EPI_A8",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "EPI_A9",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "EPI_A10",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "EPI_A13",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "EPI_A14",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "SUI_A1",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "SUI_A2",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "SUI_A4",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "SUI_A5",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "SUI_A6",
+        "expected": "NO",
+        "actual": null
+      }
+    ],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 13,
+      "matched": 1,
+      "missing": 12,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 10566
+}

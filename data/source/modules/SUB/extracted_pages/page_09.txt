@@ -1,0 +1,38 @@
+[B]
+
+Person has been drinking heavily in the last few days AND has any of the following signs:
+- nystagmus (involuntary, rapid and repetitive movement of the eyes)
+- ophthalmoplegia (weakness/paralysis of one or more of the muscles that control eye movement)
+- ataxia (uncoordinated movements).
+
+[Box: Suspect WERNICKE’S ENCEPHALOPATHY]
+
+[Arrow] ->
+
+» Treat with thiamine 100-500 mg 2-3 times daily i.v. or i.m. for 3-5 days.  
+» TRANSFER TO HOSPITAL. +
+
+--------------------------------------------------
+
+[C]
+
+Person has used stimulants in the last few days: Dilated pupils, excited, racing thoughts, disordered thinking, strange behaviour, recent use of psychoactive substances, raised pulse and blood pressure, aggressive, erratic, or violent behaviour.
+
+[Box: Suspect STIMULANT INTOXICATION]
+
+[Arrow] ->
+
+» Treat with diazepam 5-10 mg p.o., i.v. or p.r. until the patient is lightly sedated.  
+» If psychotic symptoms do not respond to diazepam, consider an antipsychotic such as haloperidol 1-2.5 mg p.o. or i.m.  
+» If psychotic symptoms persist, go to » PSY
+
+--------------------------------------------------
+
+[CLINICAL TIP]
+
+» Following the management of emergency presentation, GO to » SUB 1 assessment and » SUB 2 management protocols 1 to 6 as appropriate.
+
+--------------------------------------------------
+
+Footer:
+DISORDERS DUE TO SUBSTANCE USE ........................................ 113

@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "case_id": "CMH_to_SUI_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "CMH",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": null,
+      "node_sequence": [
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "type": "assessment",
+          "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "type": "assessment",
+          "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "type": "assessment",
+          "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_R1",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage suicide risk immediately."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+        }
+      ]
+    }
+  ]
+}

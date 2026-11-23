@@ -1,0 +1,19 @@
+You are performing structured OCR on a clinical guideline page.
+Extract ALL visible information from the image.
+
+Rules:
+1. Transcribe all text exactly as written.
+2. Preserve the logical reading order.
+3. If the page contains flowcharts or decision diagrams:
+   - Identify each box or node.
+   - Transcribe the text inside each box.
+   - Describe connections between boxes using arrows (e.g., [Box A] -> [Box B]).
+   - Explicitly label decision paths such as YES / NO.
+4. If there are tables:
+   - Convert them into a clear text table format or Markdown.
+5. If there are bullet lists:
+   - Preserve the list structure.
+6. Do NOT summarize or interpret.
+7. Do NOT skip any text.
+
+Output should be a structured transcription that preserves the layout and relationships.

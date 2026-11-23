@@ -1,0 +1,217 @@
+{
+    "module": {
+        "id": "SUI",
+        "name": "Self-Harm / Suicide"
+    },
+    "nodes": [
+        {
+            "id": "SUI_A1",
+            "type": "assessment",
+            "is_starting": true,
+            "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)"
+        },
+        {
+            "id": "SUI_M1",
+            "type": "management",
+            "text": "PROTOCOL 1: Medically serious act of self-harm. Place the person in a secure and supportive environment. DO NOT leave them alone. Medically treat injury or poisoning. Care for the person, offer psychosocial and carers support. Consult a mental health specialist. Follow-up: maintain regular contact, decrease contact as person improves (continue up to 2 years), or increase intensity and refer if not improving."
+        },
+        {
+            "id": "SUI_A2",
+            "type": "assessment",
+            "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)"
+        },
+        {
+            "id": "SUI_D1",
+            "type": "diagnosis",
+            "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+        },
+        {
+            "id": "SUI_M2",
+            "type": "management",
+            "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving."
+        },
+        {
+            "id": "SUI_A3",
+            "type": "assessment",
+            "text": "Is there a history of thoughts or plan of self-harm in the past month or act of self-harm in the past year?"
+        },
+        {
+            "id": "SUI_D2",
+            "type": "diagnosis",
+            "text": "Imminent risk of self-harm/suicide is unlikely, but a risk may still persist."
+        },
+        {
+            "id": "SUI_M3",
+            "type": "management",
+            "text": "PROTOCOL 3: Risk of self-harm/suicide. Offer and activate psychosocial support. Consult a mental health specialist, if available. Follow-up: maintain regular contact, decrease contact as person improves (continue up to 2 years), or increase intensity and refer if not improving."
+        },
+        {
+            "id": "SUI_D3",
+            "type": "diagnosis",
+            "text": "Risk of self-harm/suicide is unlikely."
+        },
+        {
+            "id": "SUI_A4",
+            "type": "assessment",
+            "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)"
+        },
+        {
+            "id": "SUI_M4",
+            "type": "management",
+            "text": "Manage the concurrent conditions. See relevant modules."
+        },
+        {
+            "id": "SUI_A5",
+            "type": "assessment",
+            "text": "Does the person have chronic pain?"
+        },
+        {
+            "id": "SUI_M5",
+            "type": "management",
+            "text": "Manage the pain and treat any relevant medical conditions."
+        },
+        {
+            "id": "SUI_A6",
+            "type": "assessment",
+            "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)"
+        },
+        {
+            "id": "SUI_M6",
+            "type": "management",
+            "text": "Manage the emotional symptoms."
+        },
+        {
+            "id": "SUI_R1",
+            "type": "referral",
+            "target_module": "OTH",
+            "text": "Go to Other Significant Mental Health Complaints module."
+        },
+        {
+            "id": "SUI_M7",
+            "type": "management",
+            "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving."
+        },
+        {
+            "id": "SUI_E1",
+            "type": "exit",
+            "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+    ],
+    "relationships": [
+        {
+            "from": "SUI_A1",
+            "to": "SUI_M1",
+            "condition": "YES"
+        },
+        {
+            "from": "SUI_M1",
+            "to": "SUI_A2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_A1",
+            "to": "SUI_A2",
+            "condition": "NO"
+        },
+        {
+            "from": "SUI_A2",
+            "to": "SUI_D1",
+            "condition": "YES"
+        },
+        {
+            "from": "SUI_D1",
+            "to": "SUI_M2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_M2",
+            "to": "SUI_A4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_A2",
+            "to": "SUI_A3",
+            "condition": "NO"
+        },
+        {
+            "from": "SUI_A3",
+            "to": "SUI_D2",
+            "condition": "YES"
+        },
+        {
+            "from": "SUI_D2",
+            "to": "SUI_M3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_M3",
+            "to": "SUI_A4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_A3",
+            "to": "SUI_D3",
+            "condition": "NO"
+        },
+        {
+            "from": "SUI_D3",
+            "to": "SUI_A4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_A4",
+            "to": "SUI_M4",
+            "condition": "YES"
+        },
+        {
+            "from": "SUI_M4",
+            "to": "SUI_A5",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_A4",
+            "to": "SUI_A5",
+            "condition": "NO"
+        },
+        {
+            "from": "SUI_A5",
+            "to": "SUI_M5",
+            "condition": "YES"
+        },
+        {
+            "from": "SUI_M5",
+            "to": "SUI_A6",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_A5",
+            "to": "SUI_A6",
+            "condition": "NO"
+        },
+        {
+            "from": "SUI_A6",
+            "to": "SUI_M6",
+            "condition": "YES"
+        },
+        {
+            "from": "SUI_M6",
+            "to": "SUI_R1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_R1",
+            "to": "SUI_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "SUI_A6",
+            "to": "SUI_M7",
+            "condition": "NO"
+        },
+        {
+            "from": "SUI_M7",
+            "to": "SUI_E1",
+            "condition": "NEXT"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+**PAGE HEADER**
+
+EPILEPSY >> Assessment
+62
+EPI 1
+
+---
+
+**FLOWCHART**
+
+[START]
+↓
+
+[BOX 1: Decision, labeled 4]
+Are there concurrent MNS conditions?
+↓
+
+[BOX 2: Action]
+>> Assess for other concurrent MNS conditions according to the mhGAP-IG Master Chart (MC)
+
+! Please note persons with EPILEPSY are at higher risk for DEPRESSION, DISORDERS DUE TO SUBSTANCE USE. CHILDREN AND ADOLSCENTS MAY HAVE ASSOCIATED MENTAL AND BEHAVIOURAL DISORDERS. SUBSTANCE USE DISORDERS
+
+↓
+
+[BOX 3: Navigation]
+>> Go to PROTOCOL 1
+
+[NOTE ASSOCIATED WITH BOX 3]
+! IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS AND MANAGE before continuing to Protocol. Go to >> SUI.

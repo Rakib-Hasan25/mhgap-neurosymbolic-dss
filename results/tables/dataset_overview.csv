@@ -1,0 +1,14 @@
+system_short,nav_label,rows,unique_cases,modules,categories
+S1 Graph Navigator,symbolic:deterministic_graph,22,22,6,3
+S2 LLM + Graph JSON,gemini:gemini-2.5-flash,22,22,6,3
+S2 LLM + Graph JSON,gemini:gemini-2.5-pro,22,22,6,3
+S2 LLM + Graph JSON,gemini:gemini-3.5-flash,22,22,6,3
+S2 LLM + Graph JSON,openai:gpt-4.1,22,22,6,3
+S2 LLM + Graph JSON,openai:gpt-4o,22,22,6,3
+S2 LLM + Graph JSON,openai:gpt-4o-mini,22,22,6,3
+S3 LLM + Guideline Text,gemini:gemini-2.5-flash,22,22,6,3
+S3 LLM + Guideline Text,gemini:gemini-2.5-pro,22,22,6,3
+S3 LLM + Guideline Text,gemini:gemini-3.5-flash,22,22,6,3
+S3 LLM + Guideline Text,openai:gpt-4.1,22,22,6,3
+S3 LLM + Guideline Text,openai:gpt-4o,22,22,6,3
+S3 LLM + Guideline Text,openai:gpt-4o-mini,22,22,6,3

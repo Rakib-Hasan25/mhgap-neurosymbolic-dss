@@ -1,0 +1,19 @@
+SUB » EMERGENCY
+
+If no emergency presentation present, go to » SUB 1, Assessment.
+
+EMERGENCY PRESENTATIONS OF DISORDERS DUE TO SUBSTANCE USE
+
+• Alcohol intoxication: Smell of alcohol on the breath, slurred speech, uninhibited behaviour; disturbance in the level of consciousness, cognition, perception, affect, or behaviour
+
+• Opioid overdose: Unresponsive or minimally responsive, slow respiratory rate, pinpoint pupils
+
+• Alcohol or other sedative withdrawal: Tremor in hands, sweating, vomiting, increased pulse and blood pressure, agitation, headache, nausea, anxiety; seizure and confusion in severe cases
+
+• Stimulant intoxication: Dilated pupils, excited, racing thoughts, disordered thinking, strange behaviour, recent use of psychoactive substances, raised pulse and blood pressure, aggressive, erratic, or violent behaviour
+
+• Delirium associated with substance use: Confusion, hallucination, racing thoughts, anxiety, agitation, disorientation, typically in association with either stimulant intoxication or alcohol (or other sedative) withdrawal
+
+DISORDERS DUE TO SUBSTANCE USE
+
+107

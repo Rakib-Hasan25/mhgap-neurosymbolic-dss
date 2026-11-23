@@ -1,0 +1,71 @@
+**HEADER**
+DEPRESSION >> Management
+28
+DEP 2
+
+**MAIN TITLE**
+PHARMACOLOGICAL INTERVENTIONS
+
+**2.5 Consider antidepressants**
+
+**LEFT COLUMN**
+
+>> Discuss with the person and decide together whether to prescribe antidepressants. Explain that:
+- Antidepressants are not addictive.
+- It is very important to take the medication every day as prescribed.
+- Some side effects may be experienced within the first few days but they usually resolve.
+- It usually takes several weeks before improvements in mood, interest or energy is noticed.
+
+>> Consider the person’s age, concurrent medical conditions, and drug side-effect profile.
+
+>> Start with only one medication at the lowest starting dose.
+
+>> Antidepressant medications usually need to be continued for at least 9-12 months after the resolution of symptoms..
+
+>> Medications should never be stopped just because the person experiences some improvement. Educate the person on the recommended timeframe to take medications.
+
+**MIDDLE COLUMN**
+
+**! CAUTION**
+
+>> If the person develops a manic episode, stop the antidepressant immediately; it may trigger a manic episode in untreated bipolar disorder.
+
+>> Do not combine with other antidepressants, as this may cause serotonin syndrome.
+
+>> Antidepressants may increase suicidal ideation, especially in adolescents and young adults.
+
+**Antidepressants in special populations**
+
+**ADOLESCENTS 12 YEARS OF AGE OR OLDER**
+
+>> If symptoms persist or worsen despite psychosocial interventions, consider fluoxetine (but no other selective serotonin reuptake inhibitor (SSRI) or tricyclic antidepressant (TCA)).
+
+>> If fluoxetine is prescribed, ask the adolescent to return weekly, for the first 4 weeks, to monitor thoughts or plans of suicide.
+
+**WOMEN WHO ARE PREGNANT OR BREASTFEEDING**
+
+>> Avoid antidepressants, if possible.
+
+>> Consider antidepressants at the lowest effective dose if there is no response to psychosocial interventions.
+
+>> If the woman is breastfeeding, avoid long acting antidepressant medication such as fluoxetine.
+
+>> Consult a specialist if available.
+
+**RIGHT COLUMN**
+
+**OLDER ADULTS**
+
+>> Avoid amitriptyline if possible.
+
+**! PEOPLE WITH CARDIOVASCULAR DISEASE**
+
+>> [X] Do NOT prescribe amitriptyline.
+
+**! ADULTS WITH THOUGHTS OR PLANS OF SUICIDE**
+
+>> SSRIs are the first choice. Overdose of TCAs such as amitriptyline may be fatal and therefore should be avoided in this group.
+
+>> If there is an imminent risk of self-harm or suicide (Go to **>> SUI**), give a limited supply of antidepressants (e.g. one week supply at a time).
+
+>> Ask the person’s carers to keep and monitor medications and to follow-up frequently to prevent medication overdose.

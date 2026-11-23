@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "case_id": "SUB_single_hop_negative_001",
+      "category": "single_hop_negative",
+      "source_module": "SUB",
+      "referred_module": null,
+      "final_module": "SUB",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "SUB_E9",
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A8",
+          "type": "assessment",
+          "text": "Does the person appear confused?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A12",
+          "type": "assessment",
+          "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_M15",
+          "type": "management",
+          "text": "Emphasise the health benefits of not using psychoactive substances.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_E9",
+          "type": "exit",
+          "text": "End of module: No substance use."
+        }
+      ]
+    }
+  ]
+}

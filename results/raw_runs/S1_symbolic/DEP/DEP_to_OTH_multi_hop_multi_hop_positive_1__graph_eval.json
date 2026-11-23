@@ -1,0 +1,61 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/DEP/DEP_to_OTH_multi_hop_multi_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "DEP_to_OTH_multi_hop_positive_1",
+      "prefix_ok": true,
+      "exact_ok": true,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [],
+      "counts": {
+        "expected_assessment_findings": 6,
+        "matched": 6,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 0
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": true,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "DEP_A1",
+        "DEP_R1",
+        "OTH_A1",
+        "OTH_A2",
+        "OTH_A3",
+        "OTH_D1",
+        "OTH_A4",
+        "OTH_A5",
+        "OTH_M4",
+        "OTH_E4"
+      ],
+      "expected_node_ids": [
+        "DEP_A1",
+        "DEP_R1",
+        "OTH_A1",
+        "OTH_A2",
+        "OTH_A3",
+        "OTH_D1",
+        "OTH_A4",
+        "OTH_A5",
+        "OTH_M4",
+        "OTH_E4"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "OTH_D1",
+        "engine_management_node_ids": [
+          "OTH_M4"
+        ],
+        "engine_referrals": [
+          "OTH"
+        ],
+        "engine_exit_node_id": "OTH_E4"
+      },
+      "stop_reason": "exit_reached",
+      "stop_node_id": "OTH_E4",
+      "vp_total_tokens": 3000
+    }
+  ]
+}

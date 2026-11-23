@@ -1,0 +1,513 @@
+{
+    "module": {
+        "id": "EPI",
+        "name": "Epilepsy"
+    },
+    "nodes": [
+        {
+            "id": "EPI_A1",
+            "type": "assessment",
+            "is_starting": true,
+            "text": "Any sign of head or neck injury?"
+        },
+        {
+            "id": "EPI_M1",
+            "type": "management",
+            "text": "Keep head and neck stable."
+        },
+        {
+            "id": "EPI_M2",
+            "type": "management",
+            "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital."
+        },
+        {
+            "id": "EPI_A2",
+            "type": "assessment",
+            "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?"
+        },
+        {
+            "id": "EPI_D1",
+            "type": "diagnosis",
+            "text": "Suspect ECLAMPSIA"
+        },
+        {
+            "id": "EPI_M3",
+            "type": "management",
+            "text": "Give magnesium sulphate 10 g intramuscular (i.m.). If diastolic blood pressure >110 mmHg, give hydralazine 5 mg i.v. slowly. Refer urgently to hospital."
+        },
+        {
+            "id": "EPI_E1",
+            "type": "exit",
+            "text": "Exit: Eclampsia management."
+        },
+        {
+            "id": "EPI_M4",
+            "type": "management",
+            "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.)."
+        },
+        {
+            "id": "EPI_A3",
+            "type": "assessment",
+            "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?"
+        },
+        {
+            "id": "EPI_M5",
+            "type": "management",
+            "text": "Give 2nd dose of emergency medication."
+        },
+        {
+            "id": "EPI_A4",
+            "type": "assessment",
+            "text": "Have the convulsions stopped?"
+        },
+        {
+            "id": "EPI_A5",
+            "type": "assessment",
+            "text": "Is the person in STATUS EPILEPTICUS? (i.e., convulsions continue after 2 doses of emergency medication, or no recovery in between convulsions)"
+        },
+        {
+            "id": "EPI_D2",
+            "type": "diagnosis",
+            "text": "STATUS EPILEPTICUS IS LIKELY"
+        },
+        {
+            "id": "EPI_M7",
+            "type": "management",
+            "text": "Continue to check ABCs, give oxygen, and monitor need for intubation/ventilation continuously. Give one of the following medications intravenously: Valproic acid, Phenobarbital, or Phenytoin."
+        },
+        {
+            "id": "EPI_A6",
+            "type": "assessment",
+            "text": "Have the convulsions stopped?"
+        },
+        {
+            "id": "EPI_M8",
+            "type": "management",
+            "text": "Use one of the other medications (if available) OR additional 10 mg/kg phenytoin. Monitor for respiratory depression, hypotension, arrhythmia."
+        },
+        {
+            "id": "EPI_M10",
+            "type": "management",
+            "text": "Evaluate (and treat as appropriate) for underlying cause of convulsions: Neuroinfection, Substance use, Trauma, Metabolic abnormality, Stroke, Tumor, Known epilepsy."
+        },
+        {
+            "id": "EPI_A7",
+            "type": "assessment",
+            "text": "Have the convulsions stopped?"
+        },
+        {
+            "id": "EPI_M9",
+            "type": "management",
+            "text": "Refer to specialist for further diagnostic evaluation."
+        },
+        {
+            "id": "EPI_E2",
+            "type": "exit",
+            "text": "Exit: Specialist referral for ongoing convulsions."
+        },
+        {
+            "id": "EPI_A8",
+            "type": "assessment",
+            "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?"
+        },
+        {
+            "id": "EPI_M11",
+            "type": "management",
+            "text": "Convulsive seizures unlikely. Consult a specialist for recurrent episodes."
+        },
+        {
+            "id": "EPI_E3",
+            "type": "exit",
+            "text": "Exit: Non-convulsive seizures."
+        },
+        {
+            "id": "EPI_A9",
+            "type": "assessment",
+            "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?"
+        },
+        {
+            "id": "EPI_D3",
+            "type": "diagnosis",
+            "text": "Suspect CONVULSIVE SEIZURES"
+        },
+        {
+            "id": "EPI_A10",
+            "type": "assessment",
+            "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)"
+        },
+        {
+            "id": "EPI_A11",
+            "type": "assessment",
+            "text": "Is it a child 6 months to 6 years old with a fever?"
+        },
+        {
+            "id": "EPI_A12",
+            "type": "assessment",
+            "text": "Are the convulsions focal, prolonged (lasts more than 15 min), or repetitive (more than 1 episode during current illness)?"
+        },
+        {
+            "id": "EPI_D5",
+            "type": "diagnosis",
+            "text": "SIMPLE FEBRILE SEIZURE"
+        },
+        {
+            "id": "EPI_M12",
+            "type": "management",
+            "text": "Look for cause. Observe over 24 hours. No antiepileptic treatment needed."
+        },
+        {
+            "id": "EPI_E4",
+            "type": "exit",
+            "text": "Exit: Simple Febrile Seizure."
+        },
+        {
+            "id": "EPI_D6",
+            "type": "diagnosis",
+            "text": "COMPLEX FEBRILE SEIZURE"
+        },
+        {
+            "id": "EPI_M13",
+            "type": "management",
+            "text": "Refer to hospital for admission."
+        },
+        {
+            "id": "EPI_E5",
+            "type": "exit",
+            "text": "Exit: Complex Febrile Seizure."
+        },
+        {
+            "id": "EPI_M14",
+            "type": "management",
+            "text": "Evaluate and treat medical condition. Refer to hospital if possible for head injury, meningitis, and metabolic abnormalities. Antiepileptic medication not required."
+        },
+        {
+            "id": "EPI_D4",
+            "type": "diagnosis",
+            "text": "Suspect EPILEPSY"
+        },
+        {
+            "id": "EPI_A13",
+            "type": "assessment",
+            "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?"
+        },
+        {
+            "id": "EPI_M15",
+            "type": "management",
+            "text": "Does not meet criteria for epilepsy. Maintenance antiepileptic medication not necessary."
+        },
+        {
+            "id": "EPI_E6",
+            "type": "exit",
+            "text": "Exit: Criteria for epilepsy not met."
+        },
+        {
+            "id": "EPI_D7",
+            "type": "diagnosis",
+            "text": "EPILEPSY is likely"
+        },
+        {
+            "id": "EPI_A14",
+            "type": "assessment",
+            "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?"
+        },
+        {
+            "id": "EPI_M16",
+            "type": "management",
+            "text": "Refer to specialist for further evaluation of cause."
+        },
+        {
+            "id": "EPI_E7",
+            "type": "exit",
+            "text": "Exit: Specialist referral for underlying cause."
+        },
+        {
+            "id": "EPI_R1",
+            "type": "referral",
+            "target_module": "SUI",
+            "text": "If there is imminent risk of suicide, assess and manage before continuing to Protocol 1."
+        },
+        {
+            "id": "EPI_R2",
+            "type": "referral",
+            "target_module": "CMH",
+            "text": "For children and adolescents with a developmental or behavioural disorder, manage the condition."
+        },
+        {
+            "id": "EPI_M17",
+            "type": "management",
+            "text": "PROTOCOL 1: Provide psychoeducation to the person and carers. Promote functioning in daily activities. Initiate antiepileptic medications (e.g., Carbamazepine, Phenobarbital, Phenytoin, or Sodium Valproate) starting at the lowest dose and increasing slowly. For women of childbearing age: advise folate (5 mg/day) and avoid valproate. For people living with HIV: check drug interactions, valproate preferred. Follow-up every 3-6 months: evaluate side-effects, review adherence, and review psychosocial interventions. If the person has no >50% reduction in convulsions, increase the dose to maximal tolerated or switch medication. If the person has been convulsion-free for several years, consider gradual discontinuation over 2 months while monitoring closely."
+        },
+        {
+            "id": "EPI_E8",
+            "type": "exit",
+            "text": "Exit: End of Epilepsy Management Protocol."
+        }
+    ],
+    "relationships": [
+        {
+            "from": "EPI_A1",
+            "to": "EPI_M1",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_M1",
+            "to": "EPI_M2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A1",
+            "to": "EPI_M2",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M2",
+            "to": "EPI_A2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A2",
+            "to": "EPI_D1",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_D1",
+            "to": "EPI_M3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_M3",
+            "to": "EPI_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A2",
+            "to": "EPI_M4",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M4",
+            "to": "EPI_A3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A3",
+            "to": "EPI_A8",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_A3",
+            "to": "EPI_M5",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M5",
+            "to": "EPI_A4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A4",
+            "to": "EPI_A8",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_A4",
+            "to": "EPI_A5",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_A5",
+            "to": "EPI_D2",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_D2",
+            "to": "EPI_M7",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_M7",
+            "to": "EPI_A6",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A6",
+            "to": "EPI_M8",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M8",
+            "to": "EPI_M10",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A6",
+            "to": "EPI_M10",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_A5",
+            "to": "EPI_M10",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M10",
+            "to": "EPI_A7",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A7",
+            "to": "EPI_M9",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M9",
+            "to": "EPI_E2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A7",
+            "to": "EPI_A8",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_A8",
+            "to": "EPI_M11",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M11",
+            "to": "EPI_E3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A8",
+            "to": "EPI_A9",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_A9",
+            "to": "EPI_M11",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_A9",
+            "to": "EPI_D3",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_D3",
+            "to": "EPI_A10",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A10",
+            "to": "EPI_A11",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_A11",
+            "to": "EPI_A12",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_A12",
+            "to": "EPI_D5",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_D5",
+            "to": "EPI_M12",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_M12",
+            "to": "EPI_E4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A12",
+            "to": "EPI_D6",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_D6",
+            "to": "EPI_M13",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_M13",
+            "to": "EPI_E5",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A11",
+            "to": "EPI_M14",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M14",
+            "to": "EPI_A13",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A10",
+            "to": "EPI_D4",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_D4",
+            "to": "EPI_A13",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A13",
+            "to": "EPI_M15",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_M15",
+            "to": "EPI_E6",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A13",
+            "to": "EPI_D7",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_D7",
+            "to": "EPI_A14",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A14",
+            "to": "EPI_M16",
+            "condition": "YES"
+        },
+        {
+            "from": "EPI_M16",
+            "to": "EPI_E7",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_A14",
+            "to": "EPI_R1",
+            "condition": "NO"
+        },
+        {
+            "from": "EPI_R1",
+            "to": "EPI_R2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_R2",
+            "to": "EPI_M17",
+            "condition": "NEXT"
+        },
+        {
+            "from": "EPI_M17",
+            "to": "EPI_E8",
+            "condition": "NEXT"
+        }
+    ]
+}

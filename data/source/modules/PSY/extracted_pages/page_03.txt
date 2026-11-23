@@ -1,0 +1,42 @@
+[ICON: Checklist on a clipboard] **PSY 1 » Assessment**
+
+**COMMON PRESENTATIONS OF PSYCHOSES**
+*   Marked behavioural changes, neglecting usual responsibilities related to work, school, domestic or social activities.
+*   Agitated, aggressive behaviour, decreased or increased activity.
+*   Fixed false beliefs not shared by others in the person's culture.
+*   Hearing voices or seeing things that are not there.
+*   Lack of realization that one is having mental health problems.
+
+***
+
+### **Flowchart**
+
+[Box 1, labeled "1"]
+Are there any other explanations for the symptoms?
+↓
+[Box 2]
+» **EVALUATE FOR MEDICAL CONDITIONS**
+By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting **delirium** due to an acute physical condition, e.g. infection, cerebral malaria, dehydration, metabolic abnormalities (such as hypoglycaemia or hyponatraemia); or **medication side effects**, e.g. due to some antimalarial medication or steroids?
+↓
+[Decision Point]
+/      \
+YES     NO
+|       |
+↓       ↓
+[Path continues downwards]
+
+**YES Path:**
+[Box 2] -> [YES] -> [Box 3]
+
+[Box 3]
+» Assess and manage the acute physical condition, and **refer to emergency services/ specialist as needed.** [ICON: Person presenting to a doctor]
+↓
+[Box 4]
+» If symptoms persist after management of the acute cause, go to **STEP 2**
+
+***
+
+**Footer**
+
+PSYCHOSES
+35

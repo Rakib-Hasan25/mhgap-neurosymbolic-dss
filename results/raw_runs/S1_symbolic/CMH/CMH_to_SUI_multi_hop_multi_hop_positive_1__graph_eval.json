@@ -1,0 +1,83 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/CMH/CMH_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "CMH_to_SUI_multi_hop_positive_1",
+      "prefix_ok": false,
+      "exact_ok": false,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [
+        {
+          "node_id": "SUI_A4",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "SUI_A5",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "SUI_A6",
+          "expected": null,
+          "actual": "YES"
+        }
+      ],
+      "counts": {
+        "expected_assessment_findings": 7,
+        "matched": 7,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 3
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": true,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "CMH_A1",
+        "CMH_A4",
+        "CMH_A7",
+        "CMH_A9",
+        "CMH_A15",
+        "CMH_R1",
+        "SUI_A1",
+        "SUI_A2",
+        "SUI_D1",
+        "SUI_M2",
+        "SUI_A4",
+        "SUI_A5",
+        "SUI_A6",
+        "SUI_M6",
+        "SUI_R1"
+      ],
+      "expected_node_ids": [
+        "CMH_A1",
+        "CMH_A4",
+        "CMH_A7",
+        "CMH_A9",
+        "CMH_A15",
+        "CMH_R1",
+        "SUI_A1",
+        "SUI_A2",
+        "SUI_D1"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "SUI_D1",
+        "engine_management_node_ids": [
+          "SUI_M2",
+          "SUI_M6"
+        ],
+        "engine_referrals": [
+          "SUI",
+          "OTH"
+        ],
+        "engine_exit_node_id": null
+      },
+      "stop_reason": "max_referral_hops",
+      "stop_node_id": "SUI_R1",
+      "vp_total_tokens": 5674
+    }
+  ]
+}

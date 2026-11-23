@@ -1,0 +1,41 @@
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS >> Assessment  
+80  
+CMH 1  
+
+[Box 1]  
+In adolescents, assess for moderate to severe depression.
+
+↓  
+
+[Box 2]  
+Does the adolescent have problems with mood (feeling irritable, down or sad)  
+OR has lost interest in or enjoyment of activities?
+
+Decision:  
+YES → continues downward  
+NO → [Box: SKIP to STEP 5]
+
+↓ (YES path)
+
+[Box 3]  
+Has the adolescent had several of the following additional symptoms most days for the last 2 weeks?  
+
+- Disturbed sleep or sleeping too much  
+- Significant change in appetite or weight (decrease or increase)  
+- Beliefs of worthlessness or excessive guilt  
+- Fatigue or loss of energy  
+- Reduced concentration  
+- Indecisiveness  
+- Observable agitation or physical restlessness  
+- Talking or moving more slowly than usual  
+- Hopelessness  
+- Suicidal thoughts or acts  
+
+↓  
+
+[Box 4]  
+Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?
+
+Decision:  
+YES → continues downward  
+NO → [Box: Consider PROBLEMS WITH EMOTIONS] → [Arrow] Go to PROTOCOL 5 → [Box: SKIP to STEP 5]

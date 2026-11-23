@@ -1,0 +1,50 @@
+**Header**
+
+EPILEPSY >> Emergency
+56
+EPI
+
+---
+
+**Flowchart**
+
+[START]
+  |
+  V
+[BOX 7: Decision]
+IS THE PERSON IN STATUS EPILEPTICUS?
+>> Convulsions continue after 2 doses of emergency medication, OR
+>> No recovery in between convulsions
+  |
+  +-------------------------------------------------------------+
+  |                                                             |
+  V (NO)                                                        V (YES)
+[Associated text for NO path]                             [Alert]
+(e.g. convulsions stopped after                             ❗️ STATUS EPILEPTICUS IS LIKELY
+second dose of emergency medication                            Management should occur in health facility
+on arrival to health facility)
+
+[ACTION BOX]
+SKIP to STEP 10                                               [BOX 8: Action]
+                                                              >> Continue to check AIRWAY, BREATHING, and CIRCULATION (ABCs)
+                                                              >> Give oxygen
+                                                              >> Monitor need for intubation/ventilation continuously
+                                                                |
+                                                                V
+                                                              [BOX 9: Action]
+                                                              GIVE ONE OF THE FOLLOWING MEDICATIONS INTRAVENOUSLY ➕
+                                                                |
+                                                                V
+                                                              [MEDICATION BOX]
+                                                              >> VALPROIC ACID:
+                                                                 20 mg/kg i.v. once up to maximum dose of 1 g, over 30 min
+                                                              
+                                                              >> PHENOBARBITAL:
+                                                                 15-20 mg/kg i.v.* up to maximum dose of 1 g, over 100 mg/min
+                                                                 *If no i.v. access, can use i.m. phenobarbital (same dose as i.v.)
+                                                              
+                                                              >> PHENYOTIN:
+                                                                 15-20 mg/kg i.v. up to max dose of 1 g, over 60 min
+                                                                 – use second i.v. line (DIFFERENT FROM DIAZEPAM)
+                                                                 ❗️ PHENYTOIN CAUSES SIGNIFICANT DAMAGE IF
+                                                                    EXTRAVASATES, MUST HAVE GOOD I.V. LINE

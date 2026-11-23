@@ -1,0 +1,77 @@
+{
+  "cases": [
+    {
+      "case_id": "SUB_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "SUB",
+      "referred_module": null,
+      "final_module": "SUB",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUB_D4",
+      "exit_node_id": "SUB_E11",
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A5",
+          "type": "assessment",
+          "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_D4",
+          "type": "diagnosis",
+          "text": "Suspect ALCOHOL or BENZODIAZEPINE WITHDRAWAL",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_M6",
+          "type": "management",
+          "text": "MANAGE WITHDRAWAL: Give diazepam 10-20 mg orally. Transfer to hospital or detoxification facility if possible. For alcohol withdrawal, give thiamine 100 mg daily for 5 days. TRANSFER IMMEDIATELY if seizures, delirium, or serious medical problems are present.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_A12",
+          "type": "assessment",
+          "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A14",
+          "type": "assessment",
+          "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_M16",
+          "type": "management",
+          "text": "PROTOCOL 2 (DEPENDENCE): Provide psychoeducation. Arrange detoxification or inpatient treatment if necessary. For opioids: assess for opioid agonist maintenance (methadone/buprenorphine) or planned detox. For benzodiazepines: gradually reduce dose. For alcohol: arrange safe cessation, provide thiamine 100mg/day, consider relapse prevention meds (acamprosate, naltrexone, disulfiram). Conduct motivational interviewing. Follow-up: Review several times per week in first 2 weeks, then weekly in first month. Decrease to monthly once improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_E11",
+          "type": "exit",
+          "text": "End of Substance Use Module (Dependence managed)."
+        }
+      ],
+      "user_story": "Thirty-eight-year-old Mahfuzur “Mahfuz” Rahman, a launch ticket clerk from Barishal Sadar, was brought to the upazila health complex by his younger brother after pacing all morning, snapping at family members, and saying his “body was shaking from inside.” He was fully awake and responsive, sitting upright and making sharp eye contact; he was not sleepy, nodding off, confused, or slurring his speech. Instead, he looked restless and frightened, with trembling hands, sweat soaking his shirt despite the fan, repeated retching, a pulse of 118, and blood pressure higher than usual for him.\n\nFor years Mahfuz has drunk locally bought spirits most evenings after work, gradually increasing from a few glasses to nearly a bottle, and he also began taking diazepam tablets from a nearby pharmacy to sleep. Two days ago, after his wife threatened to take their daughter to her parents’ home, he abruptly stopped both alcohol and the tablets. Since then he has slept almost none, vomited twice, craved alcohol badly, and became increasingly agitated. He admits he often promises to cut down but cannot, hides bottles near the launch ghat, spends money meant for household rice, and needs more alcohol than before to feel calm.\n\nHe has no current seizure, hallucination, or delirious behavior, and he recognizes his brother and the clinic staff. Although ashamed and worried about losing his family, Mahfuz clearly denies wanting to die or harm himself, has made no plan or attempt, and says he wants treatment so he can keep his job and bring his daughter back home."
+    }
+  ]
+}

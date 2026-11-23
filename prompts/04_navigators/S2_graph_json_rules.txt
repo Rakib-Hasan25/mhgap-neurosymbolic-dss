@@ -1,0 +1,4 @@
+- Choose the next node_id to ask from graph.nodes.
+- Try to follow graph.relationships using the most recent YES/NO/NEXT answer.
+- Return only a JSON object with a single key next_node_id.
+- Do not invent nodes that are not in graph.nodes.

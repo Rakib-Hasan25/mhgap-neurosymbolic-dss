@@ -1,0 +1,65 @@
+**PHARMACOLOGICAL INTERVENTIONS** [Pill bottle icon]
+
+[Red circle with exclamation mark icon] **FOR SPECIAL POPULATIONS**, (women who are pregnant or breastfeeding, children/adolescents, and older adults), see detailed recommendations.
+
+***
+
+### 2.5 Psychosis
+
+» Antipsychotics should routinely be offered to a person with psychosis.
+
+» **Start antipsychotic medication immediately.** See **Table 1**.
+
+» Prescribe one antipsychotic at a time.
+
+» Start at lowest dose and titrate up slowly to reduce risk of side effects.
+
+» Try the medication at a **typically effective dose for at least 4-6 weeks** before considering it ineffective.
+
+» Continue to monitor at that dose as frequently as possible and as required for the first 4-6 weeks of therapy. If there is no improvement, see **Follow-up** and **Table 4**. [Circular arrows icon]
+
+» Monitor weight, blood pressure, fasting sugar, cholesterol and ECG for persons on antipsychotics if possible (see below).
+
+[Gray box with red icon]
+**[Red circle with exclamation mark icon] CAUTION!**
+
+**» Side effects to look for:**
+- **Extrapyramidal side effects (EPS):** akathisia, acute dystonic reactions, tremor, cog- wheeling, muscular rigidity, and tardive dyskinesia. Treat with anticholinergic medications when indicated and available (see **Table 2**).
+- **Metabolic changes:** weight gain, high blood pressure, increased blood sugar and cholesterol.
+- **ECG changes (prolonged QT interval):** monitor ECG if possible.
+- **Neuroleptic malignant syndrome (NMS):** a rare, potentially life-threatening disorder characterized by muscular rigidity, elevated temperature, and high blood pressure.
+[/Gray box]
+
+***
+
+### 2.6 Manic Episode in Bipolar Disorder
+
+**If patient is on antidepressants:**
+
+» **DISCONTINUE ANTIDEPRESSANTS** to prevent further risk of mania.
+
+» **Begin treatment with lithium, valproate, carba-mazepine, or with antipsychotics** (see **Table 3**).
+
+**Lithium:** consider using lithium as first line treatment of bipolar disorder only if clinical and laboratory monitoring are available, and prescribe only under specialist supervision. If laboratory examinations are not available or feasible, lithium should be avoided and valproate or carbamazepine should be considered. Erratic compliance or stopping lithium treatment suddenly may increase the risk of relapse. Do not prescribe lithium where the lithium supply may be frequently interrupted. Obtain kidney and thyroid function, complete blood count, ECG, and pregnancy tests before beginning treatment if possible.
+
+**Valproate and Carbamazepine:** Consider these medications if clinical or laboratory monitoring for lithium is not available or if specialist is not available to supervise lithium prescription.
+
+**Haloperidol and risperidone:** consider haloperidol and risperidone only if no clinical or laboratory monitoring is available to start lithium or valproate. Risperidone can be used as an alternative to haloperidol in individuals with bipolar mania if availability can be assured, and cost is not a constraint.
+
+***
+
+**[Red circle with exclamation mark icon] CAUTION**
+
+[Red circle with pregnant person icon] For women who are pregnant or breastfeeding, avoid valproate, lithium and carbamazepine. Use of **low-dose haloperidol** is recommended with caution and under the care of a specialist, if available.
+
+» **Consider a short term (2-4 weeks maximum) benzodiazepine for behavioural disturbances or agitation:**
+- Persons with mania who are experiencing agitation may benefit from short-term (2-4 weeks maximum) use of a benzodiazepine such as diazepam.
+- Benzodiazepines should be discontinued gradually as soon as symptoms improve, as tolerance can develop.
+
+» Continue maintenance treatment for at least 2 years after the last bipolar episode. [Circular arrows icon]
+- Lithium or valproate can be offered for the maintenance treatment of bipolar disorder. If treatment with one of these agents is not feasible, haloperidol, chloropromazine or carbamazepine may be used. **Offer maintenance treatment in primary care settings under specialist supervision.**
+
+***
+
+**PSYCHOSES**
+**41**

@@ -1,0 +1,3137 @@
+{
+  "n_cases": 22,
+  "cases": [
+    {
+      "file": "data/cases/virtual_patients/CMH/CMH_single_hop_single_hop_negative_1.json",
+      "case_id": "CMH_single_hop_negative_1",
+      "category": "single_hop_negative",
+      "source_module": "CMH",
+      "referred_module": null,
+      "final_module": "CMH",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "CMH_E1",
+      "user_story": "Ten-year-old Samira Jahan lives with her parents and younger brother in a rented flat near the Rupsha River in Khulna, where her father repairs mobile phones in a small market stall and her mother teaches Qur’an to neighborhood children in the afternoons. She was brought to the local clinic after a school health worker suggested a general child wellbeing review, not because of any serious complaint.\n\nSamira was born at term without complications and, according to her mother, walked, spoke, fed herself, dressed, and learned toilet habits at expected ages. She reads Bangla storybooks fluently, keeps up with class four mathematics, helps pack her schoolbag, and manages bathing and dressing without reminders. Her teachers describe her as quiet but responsive, able to follow instructions, finish classwork, and take part in group reading.\n\nAt home she can sit through homework after Maghrib without constantly leaving her chair, and she is not known to fidget excessively or interrupt others. Her mother says Samira may daydream when tired, but she usually completes tasks if given clear instructions. She does not have frequent tantrums, fighting, stealing, bullying, or destructive behavior; when upset with her brother over shared crayons, she usually complains to her mother rather than hitting him. Neighbors know her as polite, and the school has not reported defiance or aggression.\n\nSamira has not been persistently sad, irritable, fearful, or withdrawn. She still enjoys drawing boats, playing ludo with cousins, and watching cartoons on Fridays. She does not avoid school, markets, family visits, or prayer gatherings, and she has not been repeatedly complaining of headaches, stomach pain, or other sickness without cause. When gently asked, she denies thoughts of harming herself or wishing she were dead, and her parents have never noticed self-injury, alarming statements, or unsafe behavior.\n\nThere is no history of seizures, fainting spells, substance use, intoxication, or other mental or neurological illness. The family home is modest but stable; there has been no domestic violence, maltreatment, recent frightening incident, displacement, or severe family crisis. Both parents appear attentive and emotionally available, with no signs of depression, alcohol or drug problems, or other conditions interfering with caregiving.\n\nSamira has regular chances to play and communicate: most evenings she skips rope in the courtyard with two girls from the next building, chats with her grandmother by phone, and helps her brother practice rhymes. She attends Shapla Government Primary School regularly, arriving by rickshaw with a neighbor’s daughter. Her teacher says she is included in class activities, has friends to sit with at tiffin, is not being teased or bullied, and participates in lessons without refusal or fear.",
+      "reference_path": [
+        {
+          "id": "CMH_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A15",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A16",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A17",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A18",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A19",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A20",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A21",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "type": "assessment",
+          "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "type": "assessment",
+          "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "type": "assessment",
+          "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A16",
+          "type": "assessment",
+          "text": "ASSESS FOR OTHER PRIORITY MNS CONDITIONS: Are there any other concurrent MNS conditions (e.g., disorders due to substance use, or epilepsy for children with developmental delay)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A17",
+          "type": "assessment",
+          "text": "ASSESS THE HOME ENVIRONMENT: Are the emotional, behavioural or developmental problems a reaction to or aggravated by a distressing or frightening situation (e.g., maltreatment, exposure to violence, severe stressors)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A18",
+          "type": "assessment",
+          "text": "Do the carers have any priority MNS condition that could impact their ability to care for the child/adolescent (especially depression and disorders due to substance use)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A19",
+          "type": "assessment",
+          "text": "Is the child getting adequate opportunities for play and social interaction/communication at home?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A20",
+          "type": "assessment",
+          "text": "ASSESS THE SCHOOL ENVIRONMENT: Is the child/adolescent in school?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A21",
+          "type": "assessment",
+          "text": "Is the child/adolescent being bullied, picked on, not able to participate and learn, or refusing to attend school?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_E1",
+          "type": "exit",
+          "text": "End of Assessment and Management for Child & Adolescent Mental & Behavioural Disorders."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/CMH/CMH_single_hop_single_hop_positive_1.json",
+      "case_id": "CMH_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "CMH",
+      "referred_module": null,
+      "final_module": "CMH",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "CMH_D1",
+      "exit_node_id": null,
+      "user_story": "Four-year-old Maisha Karim lives with her parents in a rented flat near the Karnaphuli EPZ in Chattogram, where her mother stitches garments and her father drives a CNG in the evenings. Maisha was born at term in a clinic in Agrabad and had no major illness as an infant, but her parents noticed early that she was slower than her cousins: she sat without support close to 10 months, walked after her second birthday, and still struggles to climb stairs without holding both the railing and her mother’s hand. She speaks mostly in single words like “pani” and “amma,” rarely joins two words, and often pulls adults by the hand instead of asking. At the neighbourhood playgroup, she prefers lining up bottle caps rather than playing with other children, becomes upset when routines change, and needs help with feeding, dressing, and using the toilet far more than other children her age.\n\nHer family meals are regular despite their modest income: rice, dal, egg or fish most days, vegetables from the bazaar, and iodized packet salt used at home. At her recent community clinic visit, she was active and well nourished, with no pallor, mouth ulcers, swollen neck, chronic diarrhoea, persistent cough, fever, weight loss, or enlarged lymph nodes. She has not had repeated ear discharge or ear pain, and there is no known HIV exposure or long-running infection in the household.\n\nMaisha appears to see and hear well in daily life. She looks directly at her mother’s face when teased, follows a rolling red ball across the room, points to pictures on her cousin’s phone, and picks up tiny beads from the floor. She turns immediately when the pressure cooker whistles or when her father calls her name from the doorway, startles at sudden loud honking outside, and enjoys dancing when music plays from the television. Despite intact hearing and vision and no signs of nutritional or infectious illness, her delays in language, motor skills, social interaction, and self-care have become increasingly clear to her family.",
+      "reference_path": [
+        {
+          "id": "CMH_A1",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A3",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_D1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A2",
+          "type": "assessment",
+          "text": "Are there signs/symptoms suggesting nutritional deficiency (including iodine), anaemia, malnutrition, or acute/chronic infectious illness (including ear infection and HIV/AIDS)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A3",
+          "type": "assessment",
+          "text": "Assess the child for visual and/or hearing impairment. Does the child fail visual assessments (fails to look at eyes, follow object) or hearing assessments (fails to react to loud noise, turn head)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_D1",
+          "type": "diagnosis",
+          "text": "Developmental Delay/Disorder"
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/CMH/CMH_to_SUI_multi_hop_multi_hop_positive_1.json",
+      "case_id": "CMH_to_SUI_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "CMH",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": null,
+      "user_story": "Fifteen-year-old Tasnim Jahan lives with her parents and younger brother in a rented flat near the railway station in Cumilla, where she attends class ten at a girls’ high school and helps her mother in the evenings by tutoring two neighborhood children. Her mother reports that Tasnim walked, spoke, learned to read, dressed herself, and managed daily routines at expected ages; she keeps up with schoolwork, communicates clearly with adults and peers, maintains friendships, and handles bathing, prayer, meals, and travel to school without needing unusual support.\n\nTeachers describe her as calm and attentive in class, not a child who fidgets, wanders around, interrupts, or loses materials. At home she can sit through lessons and complete sewing projects with her aunt, and her father says she is not unusually restless or distractible. She has no history of fighting, bullying, stealing, breaking things, running away, or repeated defiance; family disagreements are usually mild, and she is known in the building as polite and cooperative.\n\nUntil the past two days, Tasnim had been eating and sleeping normally, laughing with cousins, practicing for a school recitation, and making plans for the SSC exam. She has not had weeks of low mood, loss of interest, constant fearfulness, school avoidance, or frequent headaches or stomach pains. The crisis began suddenly after a classmate circulated an edited, humiliating photo of her in a Messenger group. Tasnim became intensely ashamed and frightened that her father would see it. This evening her mother found a goodbye note hidden in her schoolbag and saw messages to a friend saying, “I will jump from the roof tonight before everyone knows.” Tasnim admitted she had gone upstairs to check whether the rooftop gate was open and said she still intended to do it if taken home.\n\nShe has not swallowed tablets or poison, cut herself, hanged herself, lost consciousness, or become drowsy or intoxicated; on examination she is physically alert with no bleeding wounds or signs of poisoning. However, she is crying, refusing to promise safety, and repeatedly asking to be left alone because she believes death is the only way to stop the shame.",
+      "reference_path": [
+        {
+          "id": "CMH_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A15",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_R1",
+          "condition_met": null
+        },
+        {
+          "id": "SUI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "type": "assessment",
+          "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "type": "assessment",
+          "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "type": "assessment",
+          "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_R1",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage suicide risk immediately."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/DEP/DEP_single_hop_single_hop_negative_1.json",
+      "case_id": "DEP_single_hop_negative_001",
+      "category": "single_hop_negative",
+      "source_module": "DEP",
+      "referred_module": null,
+      "final_module": "DEP",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "DEP_E1",
+      "user_story": "Twenty-two-year-old Nusrat Jahan lives in a tin-roofed house near the tea gardens of Srimangal, where she helps her mother stitch kantha quilts and attends a local college. For nearly a month during the last exam term, her family noticed she had become unusually quiet and tearful, no longer enjoying evening walks to the bazar or chatting with her cousins on the veranda. She slept badly, felt exhausted even after resting, struggled to decide simple things like what to cook, lost interest in meals, and kept saying she was “becoming useless” because she could not concentrate on her books or sewing orders. She moved slowly around the house and once told her elder sister that the future felt empty, though she clearly denied wanting to harm herself and had made no attempt to do so.\n\nHer daily life suffered noticeably: she missed college classes, stopped helping with household work, left quilt orders unfinished, and avoided neighbors who came to visit. When taken to the upazila health complex, the doctor found she looked pale, had heavy menstrual bleeding for several months, ate little fish or meat because of family finances, and had low hemoglobin consistent with iron-deficiency anaemia. She was not using alcohol or recreational drugs, had not started any new medicine, and had no symptoms suggesting thyroid illness.\n\nAfter iron tablets, dietary advice with affordable iron-rich foods, and treatment for heavy periods, Nusrat’s strength gradually returned over the next several weeks. Her sleep and appetite normalized, she resumed classes and sewing, and she again enjoyed gossiping with her cousins in the evenings. At follow-up, she said the sadness and hopeless thoughts had lifted along with the fatigue, and her family felt she was back to her usual self.",
+      "reference_path": [
+        {
+          "id": "DEP_A1",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_M1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_M1",
+          "type": "management",
+          "text": "Manage the physical condition.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A5",
+          "type": "assessment",
+          "text": "Do depressive symptoms remain after treatment of the physical condition?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_M2",
+          "type": "management",
+          "text": "No treatment needed.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_E1",
+          "type": "exit",
+          "text": "End of Depression Module."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/DEP/DEP_single_hop_single_hop_positive_1.json",
+      "case_id": "DEP_single_hop_positive_001",
+      "category": "single_hop_positive",
+      "source_module": "DEP",
+      "referred_module": null,
+      "final_module": "DEP",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "DEP_D2",
+      "exit_node_id": "DEP_E1",
+      "user_story": "Thirty-two-year-old Mahbubur “Mahbub” Rahman lives in a rented two-room flat in Jatrabari, Dhaka, with his wife Shirin and their five-year-old daughter. He works as an accounts assistant for a small garments accessories supplier near Narayanganj, a job that used to suit his careful nature. He was known among colleagues for keeping tidy ledgers, bringing homemade paratha for breakfast, and joking during tea breaks about cricket and old Bangla films.\n\nFor the past five weeks, Shirin has noticed that Mahbub seems like a different person. He wakes up looking heavy and defeated, often sitting silently on the edge of the bed long after the Fajr azan, staring at the floor. When asked what is wrong, he says, “Mon ta bhalo na,” but cannot point to one clear reason. He no longer enjoys things he once looked forward to: Friday visits to his elder sister’s house in Keraniganj, playing carrom with neighbors downstairs, helping his daughter practice her Bangla letters, or watching Abahani matches with friends at the tea stall. Even his daughter’s attempts to make him laugh barely get a smile.\n\nHis sleep has become disturbed. Some nights he lies awake until 3 or 4 a.m., worrying without a clear chain of thought; other nights he wakes repeatedly and feels unrested in the morning. His appetite has reduced, and Shirin says he has lost weight because he often leaves rice and fish untouched, saying everything tastes like sand. At work, he has begun making mistakes in calculations and takes much longer than usual to enter invoice numbers. He rereads the same line again and again but cannot concentrate. When his supervisor asks simple questions, Mahbub freezes, becomes indecisive, and later berates himself for being “useless.” He moves more slowly than before, speaks in a low voice, and complains of constant tiredness even on days when he has done very little.\n\nOver the last month, his daily functioning has suffered noticeably. He has missed work several times, claiming stomach discomfort or headache, though the symptoms pass quickly and do not explain his overall state. On days he does go, he returns exhausted and withdraws into bed without bathing or talking much. Shirin has had to manage the bazar, school drop-off, rent discussions with the landlord, and family phone calls almost entirely by herself. Mahbub avoids relatives because he feels ashamed and believes he has become a burden to everyone. He has stopped sending money regularly to his mother in Kushtia, not because he refuses, but because he cannot organize himself to do the transfer and then feels guilty for days.\n\nA local doctor recently checked him because the family wondered whether weakness, thyroid problems, or anaemia might be causing the change. His blood pressure, pulse, physical examination, haemoglobin, blood sugar, and thyroid test were within normal limits, and he is not taking any regular medicine that could explain the low mood. He eats modestly but has no signs of severe malnutrition, and there has been no recent fever, chronic illness, substance use, or head injury. He does not drink alcohol and only occasionally chews betel nut at weddings.\n\nMahbub has never had periods of unusually elevated or irritable mood, days of feeling unstoppable, needing little sleep, spending recklessly, talking nonstop, or taking impulsive risks. His wife describes him as generally cautious and quiet, even in happier times. There has also been no recent death or major bereavement in the family; his parents are alive, and although money has been tight, there has been no single major loss in the past six months that would account for the depth and persistence of his symptoms.\n\nDuring a conversation with a community health worker, Mahbub admits that sometimes he thinks his family would be “better without this burden,” but he becomes frightened by the thought and says he has no plan or intention to harm himself. He has not tried to",
+      "reference_path": [
+        {
+          "id": "DEP_A1",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A10",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_M5",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "type": "assessment",
+          "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "type": "diagnosis",
+          "text": "DEPRESSION is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "type": "assessment",
+          "text": "Is the person a child or adolescent?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A10",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_M5",
+          "type": "management",
+          "text": "PROTOCOL 1: Provide psychoeducation, reduce stress, strengthen social supports, and promote functioning. Consider brief psychological treatments. Consider antidepressants if appropriate. For pregnant/breastfeeding women, avoid antidepressants if possible. Follow-up: Schedule the second appointment within 1 week. Initially maintain regular contact (e.g., monthly) for the first 3 months.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_E1",
+          "type": "exit",
+          "text": "End of Depression Module."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/DEP/DEP_to_CMH_multi_hop_multi_hop_positive_1.json",
+      "case_id": "DEP_to_CMH_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "CMH",
+      "final_module": "CMH",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "CMH_D8",
+      "exit_node_id": "CMH_E1",
+      "user_story": "Fariha Tasnim is a 15-year-old Class Nine student from a riverside village near Chandpur, living with her parents, younger brother, and grandmother in a busy but affectionate household. She used to love reciting poems at school assemblies, helping her mother make pitha, and chatting with cousins in the courtyard after Maghrib, but for the past month she has seemed persistently sad and withdrawn, saying nothing feels enjoyable anymore. Most nights she lies awake for hours, then wakes tired and slow in the morning; her appetite has dropped, she has lost some weight, and she often says she is “useless” because she cannot concentrate on her science lessons or decide even simple things like what to wear or whether to revise. Her notebooks are half-empty, her exam marks have fallen sharply, and at home she has stopped helping with chores unless repeatedly reminded, spending long periods staring at her books without reading.\n\nHer parents brought her to the local upazila health complex after her class teacher noticed the change. Fariha has no history of unusually elevated mood, needing very little sleep while becoming overactive, reckless, or disruptive, and there has been no recent death or major loss in the family. She reached childhood milestones on time, manages her self-care, communicates normally, and has never had persistent hyperactivity, aggression, stealing, fighting, or defiant behaviour. She is not using substances, has no seizures or other neurological problems, and takes no regular medicines; examination and basic history show no signs of anaemia, thyroid disease, infection, asthma, obesity, malnutrition, or medication side-effects.\n\nAlthough Fariha sometimes says the future feels dark, she denies wanting to die or planning to harm herself. Her home is stable, without violence, maltreatment, or frightening events, and both parents are emotionally available, with no substance use or severe mental health problems affecting their care. She still has chances to play and socialise with cousins and neighbourhood girls, though she rarely feels like joining. She continues attending school, is not being bullied or picked on, and teachers say she is welcome in class and able to participate when encouraged, but her low mood, fatigue, poor sleep, and reduced concentration are now clearly interfering with her studies, family life, and friendships.",
+      "reference_path": [
+        {
+          "id": "DEP_A1",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_R4",
+          "condition_met": null
+        },
+        {
+          "id": "CMH_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A10",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A11",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A12",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A13",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A14",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_D8",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "CMH_M12",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "CMH_A15",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A16",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A17",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A18",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A19",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A20",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A21",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "type": "assessment",
+          "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "type": "diagnosis",
+          "text": "DEPRESSION is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "type": "assessment",
+          "text": "Is the person a child or adolescent?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_R4",
+          "type": "referral",
+          "target_module": "CMH",
+          "text": "For management of depression in children/adolescents, refer to Child & Adolescent Mental & Behavioural Disorders."
+        },
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "type": "assessment",
+          "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "type": "assessment",
+          "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "type": "assessment",
+          "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A10",
+          "type": "assessment",
+          "text": "Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A11",
+          "type": "assessment",
+          "text": "Rule out physical conditions that can resemble or exacerbate emotional disorders. Are there any signs/symptoms of thyroid diseases, infectious illness, anaemia, obesity, malnutrition, asthma, or medication side-effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A12",
+          "type": "assessment",
+          "text": "Is the person an adolescent who has problems with mood (feeling irritable, down or sad) OR has lost interest in or enjoyment of activities?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A13",
+          "type": "assessment",
+          "text": "Has the adolescent had several additional symptoms (e.g., disturbed sleep, appetite/weight change, worthlessness/guilt, fatigue, reduced concentration, indecisiveness, agitation, hopelessness, suicidal thoughts) most days for the last 2 weeks?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A14",
+          "type": "assessment",
+          "text": "Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas due to these depressive symptoms?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_D8",
+          "type": "diagnosis",
+          "text": "Depression (Adolescent)",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "CMH_M12",
+          "type": "management",
+          "text": "Protocol 6 (Depression): Rule out manic episode or normal reaction to major loss. Provide psychoeducation, guidance on well-being, and carer support. Consider interpersonal therapy. Follow-up: Once a month. If psychological interventions are ineffective after 6 months and adolescent is >=12 years old, consult specialist for Fluoxetine (no other SSRIs or TCAs). Monitor weekly for first month if prescribed.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "CMH_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A16",
+          "type": "assessment",
+          "text": "ASSESS FOR OTHER PRIORITY MNS CONDITIONS: Are there any other concurrent MNS conditions (e.g., disorders due to substance use, or epilepsy for children with developmental delay)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A17",
+          "type": "assessment",
+          "text": "ASSESS THE HOME ENVIRONMENT: Are the emotional, behavioural or developmental problems a reaction to or aggravated by a distressing or frightening situation (e.g., maltreatment, exposure to violence, severe stressors)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A18",
+          "type": "assessment",
+          "text": "Do the carers have any priority MNS condition that could impact their ability to care for the child/adolescent (especially depression and disorders due to substance use)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A19",
+          "type": "assessment",
+          "text": "Is the child getting adequate opportunities for play and social interaction/communication at home?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A20",
+          "type": "assessment",
+          "text": "ASSESS THE SCHOOL ENVIRONMENT: Is the child/adolescent in school?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A21",
+          "type": "assessment",
+          "text": "Is the child/adolescent being bullied, picked on, not able to participate and learn, or refusing to attend school?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_E1",
+          "type": "exit",
+          "text": "End of Assessment and Management for Child & Adolescent Mental & Behavioural Disorders."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/DEP/DEP_to_OTH_multi_hop_multi_hop_positive_1.json",
+      "case_id": "DEP_to_OTH_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "OTH",
+      "final_module": "OTH",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "OTH_D1",
+      "exit_node_id": "OTH_E4",
+      "user_story": "Nusrat Jahan, a 29-year-old quality inspector at a knitwear factory in Gazipur, came to the local upazila health complex because of recurring tightness in her chest, a “heavy head,” and a shaky feeling in her hands that tends to appear before busy production deadlines or arguments at home about money. She has visited two pharmacies and one doctor already; her blood pressure, blood sugar, hemoglobin, thyroid test, and ECG were normal, and she has no fever, weight loss, fainting, seizures, or signs of heart or lung disease to explain the symptoms fully.\n\nNusrat is worried the sensations mean something serious, and the worry has begun affecting her work. She has taken three days off this month and sometimes asks another worker to recheck her measurements because she feels too tense to concentrate. Still, she does not describe being sad most of the day, nearly every day. Her mood often improves after chatting with her younger sister, watching Eid drama clips on her phone, or helping her mother cook on Fridays, and she still enjoys saving money for a tailoring course. She has not lost interest in her usual activities.\n\nShe sleeps lightly on some nights before overtime shifts but has no episodes of unusually high energy, reckless spending, hearing voices, seeing things others do not, confusion, memory decline, or substance use. She does not drink alcohol and only takes occasional paracetamol for headaches. When asked directly, she says she has never thought of killing or harming herself and wants to stay well so she can continue supporting her family and enroll in tailoring classes after the next bonus.\n\nThere has been no recent bereavement, assault, serious accident, forced displacement, or major loss in her life. Her complaints seem to rise with everyday pressure and family expectations rather than any extreme traumatic event, and she has come mainly because the symptoms feel distressing and are interfering with her daily routine.",
+      "reference_path": [
+        {
+          "id": "DEP_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_R1",
+          "condition_met": null
+        },
+        {
+          "id": "OTH_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "OTH_D1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_E4",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_R1",
+          "type": "referral",
+          "target_module": "OTH",
+          "text": "Depression is unlikely. Go to Other Significant Mental Health Complaints."
+        },
+        {
+          "id": "OTH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Is there a physical cause that fully explains the presenting symptoms?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A2",
+          "type": "assessment",
+          "text": "Is this depression or another MNS condition discussed in another module of this guide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A3",
+          "type": "assessment",
+          "text": "Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "OTH_D1",
+          "type": "diagnosis",
+          "text": "Other Significant Mental Health Complaints are likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_A4",
+          "type": "assessment",
+          "text": "Is there imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A5",
+          "type": "assessment",
+          "text": "Has the person been exposed to extreme stressors? (e.g., physical or sexual violence, major accidents, bereavement or other major losses)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_M4",
+          "type": "management",
+          "text": "Apply Protocol 1: Do not prescribe anti-anxiety or antidepressant medicines unless advised by a specialist. Reduce stress, teach relaxation techniques, and strengthen social supports (ECP). Acknowledge symptoms but avoid unnecessary investigations; explain that no serious disease has been identified. Encourage return to daily activities. Follow-up: Ask the person to return in 2-4 weeks if symptoms do not improve or worsen. If improving, continue treatment plan. If not improving or if insisting on further investigations, review Protocol 1 and consider consulting a specialist.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_E4",
+          "type": "exit",
+          "text": "Exit after Protocol 1 management."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/DEP/DEP_to_PSY_multi_hop_multi_hop_positive_1.json",
+      "case_id": "DEP_to_PSY_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "PSY",
+      "final_module": "PSY",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "PSY_D1",
+      "exit_node_id": "PSY_E1",
+      "user_story": "Md. Rashedul Karim, a 29-year-old launch ticket clerk from Chandpur Sadar, lives with his wife, their small son, and his widowed mother in a rented room near the river terminal. For nearly a month before his first clinic visit, his family noticed he was “not himself”: he sat silently after work, stopped playing carrom with neighbors, ignored his beloved fishing trips on the Meghna, and said everything felt empty. He slept only in broken stretches after fajr, lost interest in meals, and his trousers became loose after losing about 4 kg. At the ticket counter he made repeated fare mistakes, could not decide simple issues, moved and spoke slowly, and told his wife he was useless and had ruined the family’s future. He missed several shifts, stopped paying bills on time, and his mother had to remind him to bathe and eat.\n\nAt Chandpur District Hospital, examination found him afebrile, oriented, and neurologically normal. His hemoglobin, thyroid test, glucose, electrolytes, and liver and kidney tests were within normal limits; there was no sign of malnutrition, chronic infection, hypothyroidism, or anemia. He was not taking steroids, sedatives, or other regular medicines, and his wife confirmed he does not drink alcohol or use yaba, cannabis, or injectable drugs.\n\nHis wife then described a striking episode three years earlier that lasted almost two weeks: Rashedul slept one or two hours a night yet seemed full of energy, talked nonstop, claimed he would become the “king of river transport,” sold his motorbike to invest in a fantasy loudspeaker business, and tried to leave for Dhaka without telling anyone. That episode led to debt, family conflict, and suspension from work.\n\nBy the time he reached the psychiatry clinic, the low, withdrawn state had abruptly changed over the previous nine days. He was cheerful one moment and irritable the next, sleeping barely two hours without fatigue, pacing around the bazaar, calling relatives at midnight with grand business plans, and borrowing money impulsively to “buy a launch route.” Despite his pressured speech, he was not confused, drowsy, feverish, or disoriented, and his attention and memory were intact. There were no features of dementia, intoxication, or withdrawal, and the presentation was no longer explainable as depression alone. In the clinic he was loud but cooperative, made no threats, carried no weapon, and sat down when his wife asked. When asked directly, he denied wanting to die, had no plan to harm himself, and said he needed to stay alive to “build the family empire.”",
+      "reference_path": [
+        {
+          "id": "DEP_A1",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_D1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_M3",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_R2",
+          "condition_met": null
+        },
+        {
+          "id": "PSY_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_D1",
+          "type": "diagnosis",
+          "text": "DEPRESSIVE EPISODE IN BIPOLAR DISORDER is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_M3",
+          "type": "management",
+          "text": "PROTOCOL 2: Consult a specialist. If not immediately available, follow treatment for depression but NEVER prescribe antidepressants alone without a mood stabilizer. If symptoms of mania develop, stop antidepressant immediately and return for help.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_R2",
+          "type": "referral",
+          "target_module": "PSY",
+          "text": "Refer to Psychoses module for mood stabilizer management."
+        },
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A5",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D1",
+          "type": "diagnosis",
+          "text": "Bipolar Disorder, Manic Episode",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M4",
+          "type": "management",
+          "text": "Discontinue antidepressants. Begin treatment with lithium, valproate, carbamazepine, or antipsychotics (avoid valproate/lithium/carbamazepine in pregnancy). Provide psychoeducation, promote functioning, reduce stress. Follow-up: Assess for improvement, monitor adherence/side-effects. Continue maintenance medications for at least 2 years. Consider discontinuation if in full remission for 2 years.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E1",
+          "type": "exit",
+          "text": "End of Bipolar Disorder Manic Episode path."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/DEP/DEP_to_SUI_multi_hop_multi_hop_positive_1.json",
+      "case_id": "DEP_SUI_MHP_001",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": null,
+      "user_story": "Farhana Akhter is a 38-year-old woman from Patiya, a semi-urban area outside Chattogram, where she lives with her husband, two school-aged daughters, and her mother-in-law in a rented two-room flat above a stationery shop. She teaches Bangla at a local girls’ madrasa and is known by neighbors as quiet, dependable, and careful with money. Her husband drives a CNG auto-rickshaw and their household has always depended on both incomes, especially since the price of rice, cooking oil, and school supplies rose sharply.\n\nOver the past month, Farhana’s family has noticed a striking change in her. She used to wake early for Fajr prayer, prepare breakfast, braid her daughters’ hair, and leave for school with neatly marked exercise books under her arm. For at least three weeks now she has seemed persistently low, often sitting on the edge of the bed after prayer with a blank expression, saying she feels “empty inside” and that nothing in the house feels meaningful anymore. She no longer enjoys teaching poetry, which used to be her favorite part of the week, and she has stopped attending the women’s Qur’an reading circle at a neighbor’s home, saying she has no interest in talking to anyone.\n\nHer sleep has become badly disturbed. Some nights she lies awake until 3 or 4 a.m., listening to the ceiling fan and worrying about school fees and household debts; on other mornings she remains in bed long after sunrise, exhausted and unable to get up. Her appetite has fallen, and her shalwar kameez has become loose enough that her sister commented on the weight loss during a visit. At home she moves slowly, takes a long time to answer simple questions, and sometimes stands in the kitchen holding a spoon without remembering what she was doing. When her daughters ask for help with homework, she becomes tearful and says, “A useless mother like me cannot help anyone.” She has begun misplacing exam papers, forgetting lesson plans, and staring at pages without understanding them. Her headmistress has warned her twice because she missed classes and arrived late several days in a row, which is very unlike her.\n\nFarhana feels deeply hopeless and ashamed. She tells her younger brother that her family would be better off without her and that she has become a burden. She has not been able to cook regularly, the laundry piles up, and her mother-in-law has started complaining that Farhana is “lazy” or “possessed by worry.” Her husband, initially irritated, became frightened when he found her sitting alone on the rooftop after midnight, crying and looking down at the road below. Farhana admitted she had been thinking about jumping, then begged him not to tell anyone because people in the neighborhood would gossip.\n\nHer symptoms have not followed any recent bereavement or major loss; no close relative or friend has died in the past several months. There is financial pressure and conflict at home, but nothing like the death of a loved one. She has no past history of episodes where she felt unusually energetic, overly cheerful, or powerful, and there have never been periods when she needed very little sleep while becoming more active, talkative, reckless, or impulsive. Her husband says she has always been cautious and modest, never the kind of person to take sudden risks or behave out of character for days at a time.\n\nA local physician checked her recently because the family first wondered if she had “weak blood” or thyroid problems. Her blood pressure and pulse were normal, she was not pregnant, and basic tests including hemoglobin and thyroid function did not suggest anaemia or hypothyroidism. She has not been taking steroids, sedatives, or other medicines that might explain the change, and there is no sign of malnutrition beyond the recent reduced eating caused by her low mood. She does not use alcohol or yaba, and she has no chronic physical illness known to the family.",
+      "reference_path": [
+        {
+          "id": "DEP_A1",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A10",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_R3",
+          "condition_met": null
+        },
+        {
+          "id": "SUI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "type": "assessment",
+          "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "type": "diagnosis",
+          "text": "DEPRESSION is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "type": "assessment",
+          "text": "Is the person a child or adolescent?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A10",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_R3",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage for imminent risk of suicide before continuing."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/EPI/EPI_single_hop_single_hop_negative_1.json",
+      "case_id": "EPI_single_hop_negative_1",
+      "category": "single_hop_negative",
+      "source_module": "EPI",
+      "referred_module": null,
+      "final_module": "EPI",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "EPI_E3",
+      "user_story": "Thirty-two-year-old Md. Rashedul Karim, a mobile phone repairman from Shibganj, Chapainawabganj, was brought to the upazila health complex by his younger brother after a strange episode at his shop. While seated behind the counter after lunch, he suddenly stopped responding, stared blankly, and made small repetitive lip-smacking movements with brief twitching of his right fingers. He did not fall, hit his head, or complain of neck pain afterward; his brother and two customers eased him onto a mat, and the nurse later found no scalp swelling, bleeding, bruising, or neck tenderness.\n\nAt the clinic, staff checked that his airway was clear, breathing steady, and pulse present, moved nearby tools away, and kept his brother beside him while timing the episode. No one put anything in his mouth. An IV line was difficult to secure at first, so when the abnormal movements and unresponsiveness continued, he was given buccal midazolam. The episode settled within about five minutes of the first dose, and he gradually became drowsy but arousable.\n\nRashedul is male, unmarried, and has no pregnancy or postpartum relevance. He has never been diagnosed with epilepsy, though his family says he has had two similar brief “blank spells” over the past month, each lasting less than a minute and without full-body shaking. During today’s event, there were no sustained generalized convulsions; the visible movements were limited to mild facial automatisms and finger twitching, never lasting more than about 45 seconds at a stretch. His relatives were worried because he seemed absent rather than because of any long, violent shaking.",
+      "reference_path": [
+        {
+          "id": "EPI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A8",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M11",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_E3",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "EPI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Any sign of head or neck injury?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M2",
+          "type": "management",
+          "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A2",
+          "type": "assessment",
+          "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M4",
+          "type": "management",
+          "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A3",
+          "type": "assessment",
+          "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A8",
+          "type": "assessment",
+          "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M11",
+          "type": "management",
+          "text": "Convulsive seizures unlikely. Consult a specialist for recurrent episodes.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_E3",
+          "type": "exit",
+          "text": "Exit: Non-convulsive seizures."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/EPI/EPI_single_hop_single_hop_positive_1.json",
+      "case_id": "EPI_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "EPI",
+      "referred_module": null,
+      "final_module": "EPI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "EPI_D7",
+      "exit_node_id": "EPI_E7",
+      "user_story": "Thirty-two-year-old Mizanur Rahman, a quiet launch mechanic from Char Fasson in Bhola, was brought to the upazila health complex after collapsing beside a tea stall near the river jetty. Witnesses said he had not fallen from a height or been struck; he simply stiffened, slid from the bench onto the packed earth, and was quickly moved away from the stove and sharp tools. On arrival there were no cuts, swelling, bruises, or tenderness on his scalp, face, neck, or spine, and his wife insisted there had been no accident or quarrel before the episode.\n\nThe nurse checked his airway, breathing, and pulse while his brother timed the fit. Nobody put anything in his mouth, though an older bystander tried to suggest it. Mizanur’s whole body remained rigid and jerking for about four minutes, with froth at the lips and unresponsiveness. He wet his lungi and later had a sore bitten edge of his tongue. An IV line was placed, normal saline started, and IV diazepam was given; within seven minutes of the first dose the convulsions stopped, though he stayed drowsy and confused, complaining of a heavy headache when he began to wake.\n\nMizanur is male, and his wife is not the patient, so pregnancy or postpartum eclampsia was not relevant. He had no fever, neck stiffness, rash, ear discharge, severe vomiting, recent illness, or signs of meningitis. His random glucose at the clinic was normal, he had eaten rice and lentils that morning, and his family denied alcohol use, yaba, sedatives, pesticide exposure, or withdrawal from any substance.\n\nThis was not his first episode. His wife described a similar convulsion at home three months ago after Fajr prayer and another one eight months ago while repairing an engine, both on separate days and followed by deep sleep and confusion. He had never received regular antiseizure medicine. During history-taking, his mother recalled that Mizanur had been born after a prolonged obstructed labor in their village, did not cry immediately, and was “blue and silent” for several minutes before a dai revived him. She also mentioned that one maternal uncle had recurrent fits in adulthood. Because of these possible underlying causes, the medical officer planned referral to a specialist in Barishal for further evaluation.",
+      "reference_path": [
+        {
+          "id": "EPI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A8",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A9",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D3",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A10",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_D4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A13",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D7",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A14",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_M16",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_E7",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "EPI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Any sign of head or neck injury?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M2",
+          "type": "management",
+          "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A2",
+          "type": "assessment",
+          "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M4",
+          "type": "management",
+          "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A3",
+          "type": "assessment",
+          "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A8",
+          "type": "assessment",
+          "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A9",
+          "type": "assessment",
+          "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D3",
+          "type": "diagnosis",
+          "text": "Suspect CONVULSIVE SEIZURES",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A10",
+          "type": "assessment",
+          "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_D4",
+          "type": "diagnosis",
+          "text": "Suspect EPILEPSY",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A13",
+          "type": "assessment",
+          "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D7",
+          "type": "diagnosis",
+          "text": "EPILEPSY is likely",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A14",
+          "type": "assessment",
+          "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_M16",
+          "type": "management",
+          "text": "Refer to specialist for further evaluation of cause.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_E7",
+          "type": "exit",
+          "text": "Exit: Specialist referral for underlying cause."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/EPI/EPI_to_SUI_multi_hop_multi_hop_positive_1.json",
+      "case_id": "EPI_to_SUI_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "EPI",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": "SUI_E1",
+      "user_story": "Hasibul Karim, a 28-year-old mobile money agent from Char Fasson in Bhola, was brought to the upazila health complex after collapsing behind his bKash counter during the evening rush. His younger brother saw him suddenly become stiff, fall sideways onto a sack of rice rather than striking the floor, and then jerk all over for about three minutes. When the clinic staff checked him, there were no cuts, swelling, bruises, neck pain, or signs that he had hit his head or injured his neck.\n\nThe nurse kept him on his side, cleared space around him, checked his breathing and pulse, timed the convulsion, and did not put anything in his mouth. An IV line was placed, and after IV diazepam was given, the jerking stopped within about six minutes. During the episode he was unresponsive, rigid, wet his lungi with urine, and afterward remained confused and exhausted with a headache for nearly half an hour. He had no fever, neck stiffness, rash, recent infection, vomiting, alcohol or drug use, pesticide exposure, or withdrawal symptoms; his random blood glucose was normal, and his family denied any recent head injury.\n\nHasibul is not a pregnant or postpartum woman, and this was not his first seizure. His wife reported two similar convulsive episodes earlier this year on separate days, one in Ramadan before sehri and another at the ferry ghat, both followed by confusion and sleepiness. He had never had birth complications according to his mother, no childhood brain infection, no significant head trauma, and no known relatives with seizures.\n\nAfter he became fully awake, Hasibul was ashamed and frightened that customers would stop trusting him with money. He had not swallowed poison, cut himself, lost consciousness from self-harm, or appeared intoxicated or extremely lethargic from any deliberate act. However, while sitting on the examination bed he quietly told his brother that he had been thinking since last week about walking into the Meghna River at night so his family would no longer have to “carry this curse,” and he asked to be allowed to leave alone. His family removed his razor and pesticide bottle from home and agreed not to leave him unattended.\n\nApart from epilepsy, he had no chronic pain condition. He denied persistent low mood, repeated self-medication for distress, unexplained bodily complaints, or inability to manage his shop and household duties between seizures; his main crisis was the immediate suicidal plan triggered by fear and stigma after the seizure.",
+      "reference_path": [
+        {
+          "id": "EPI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A8",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A9",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D3",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A10",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_D4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A13",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D7",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A14",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_R1",
+          "condition_met": null
+        },
+        {
+          "id": "SUI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "EPI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Any sign of head or neck injury?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M2",
+          "type": "management",
+          "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A2",
+          "type": "assessment",
+          "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_M4",
+          "type": "management",
+          "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A3",
+          "type": "assessment",
+          "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A8",
+          "type": "assessment",
+          "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_A9",
+          "type": "assessment",
+          "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D3",
+          "type": "diagnosis",
+          "text": "Suspect CONVULSIVE SEIZURES",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A10",
+          "type": "assessment",
+          "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_D4",
+          "type": "diagnosis",
+          "text": "Suspect EPILEPSY",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A13",
+          "type": "assessment",
+          "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "EPI_D7",
+          "type": "diagnosis",
+          "text": "EPILEPSY is likely",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "EPI_A14",
+          "type": "assessment",
+          "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "EPI_R1",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "If there is imminent risk of suicide, assess and manage before continuing to Protocol 1."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "type": "management",
+          "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M4",
+          "type": "management",
+          "text": "Manage the concurrent conditions. See relevant modules.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "type": "management",
+          "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "type": "exit",
+          "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/PSY/PSY_single_hop_single_hop_negative_1.json",
+      "case_id": "PSY_single_hop_negative_001",
+      "category": "single_hop_negative",
+      "source_module": "PSY",
+      "referred_module": null,
+      "final_module": "PSY",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "PSY_E2",
+      "user_story": "Twenty-seven-year-old Rafiq Hasan lives in a rented room near Agrabad in Chattogram and works night shifts as a quality-check assistant at a garment export warehouse while studying accounting on Fridays. His mother brought him to the local clinic after he became worried that he “might be going mad” because, during two recent exam-preparation nights, he felt unreal, shaky, and intensely anxious for about ten minutes, then recovered fully after drinking water and stepping outside.\n\nAt assessment he was calm, neatly dressed, cooperative, and fully oriented to date, place, and situation. His attention was steady, he could repeat numbers and follow instructions, and his symptoms had not fluctuated over the day. He had no fever, head injury, seizure, urinary symptoms, recent infection, or new medicines; he only takes occasional paracetamol for headaches. Blood pressure, pulse, glucose, and basic examination at the clinic were unremarkable.\n\nRafiq has no history of progressive forgetfulness, getting lost, or difficulty managing money or work tasks. He denies persistent low mood, loss of interest, hopelessness, or suicidal thoughts, and his appetite remains normal during family meals. He does not drink alcohol, use yaba, cannabis, sedatives, or other drugs, and there has been no recent stopping of any substance that could explain withdrawal.\n\nHe was not aggressive or agitated in the clinic; his mother said he has not threatened anyone, broken objects, shouted in the street, or required restraint. He sleeps six to seven hours most nights when not on shift, has not had a week of unusually high energy, grand plans, excessive talking, impulsive spending, sexual risk-taking, or an elevated or persistently irritable mood.\n\nWhen asked directly, Rafiq denied hearing voices, seeing things others cannot see, receiving special messages, being followed, or believing others are controlling his thoughts. His speech was coherent and goal-directed, and his behavior was organized. Because his family remained concerned about the episodes and their meaning, the clinic planned a specialist mental health consultation to review other possible causes and provide reassurance.",
+      "reference_path": [
+        {
+          "id": "PSY_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_M5",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E2",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "type": "assessment",
+          "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_M5",
+          "type": "management",
+          "text": "Consider consultation with a specialist to review other possible causes of psychosis.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E2",
+          "type": "exit",
+          "text": "End of unconfirmed psychosis path."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/PSY/PSY_single_hop_single_hop_positive_1.json",
+      "case_id": "PSY_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "PSY",
+      "referred_module": null,
+      "final_module": "PSY",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "PSY_D2",
+      "exit_node_id": "PSY_E3",
+      "user_story": "Twenty-six-year-old Tareq Mahmud, a quiet tailor from Shibganj in Chapainawabganj, lives with his parents and younger sister above their small roadside sewing shop. Over the past three months, his family noticed he had become increasingly withdrawn and suspicious. He began insisting that two men from the local market had installed a hidden microphone in the ceiling fan to record his thoughts, and he often covered the fan with a gamcha before sleeping. Several evenings he was seen answering voices no one else could hear, whispering back to “the announcer” who, he said, commented on his stitching and warned him not to trust customers.\n\nWhen brought to the district hospital outpatient clinic by his father, Tareq was calm, neatly dressed, and cooperative, though guarded. He was fully awake, knew the date, place, and why he had come, and could follow the conversation without fluctuating attention. He had no fever, headache, seizure, recent infection, head injury, or new medication use; his pulse, blood pressure, glucose, and basic examination were unremarkable. His family said he does not drink alcohol, use yaba, cannabis, sedatives, or cough syrup recreationally, and there had been no period of withdrawal or intoxication. He had always managed accounts at the shop until recently, with no gradual memory decline or confusion suggesting dementia. He denied persistent sadness, loss of interest, guilt, or appetite change, and his parents had not seen him tearful or slowed in the way they associate with depression.\n\nAlthough frightened by the voices, Tareq had not shouted, threatened anyone, damaged property, or needed restraint; he sat quietly during the visit and answered questions after brief pauses. He had not shown a week of elevated mood, excessive energy, grand plans, reckless spending, sexual disinhibition, or decreased need for sleep—if anything, he slept lightly because he was listening for the voices. When asked directly, he denied wanting to die, harming himself, or having a plan to end his life, and his family confirmed there were no attempts, farewell messages, or access to pesticides kept at home. The clinician explained to Tareq and his father that these experiences were consistent with psychosis, discussed safety and family support, and planned to start one low-dose antipsychotic with close follow-up for benefit, adherence, and side effects while encouraging him to keep helping at the tailor shop as much as he could.",
+      "reference_path": [
+        {
+          "id": "PSY_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A7",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M6",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E3",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "type": "assessment",
+          "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A7",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D2",
+          "type": "diagnosis",
+          "text": "Psychosis",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M6",
+          "type": "management",
+          "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E3",
+          "type": "exit",
+          "text": "End of Psychosis path."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/PSY/PSY_to_SUI_multi_hop_multi_hop_positive_1.json",
+      "case_id": "multi_hop_positive_PSY_R1_SUI_D1",
+      "category": "multi_hop_positive",
+      "source_module": "PSY",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": "SUI_E1",
+      "user_story": "Twenty-six-year-old Tasmia Rahman teaches English at a girls’ madrasa in Beanibazar, Sylhet, and lives with her parents and younger brother above their family’s stationery shop. Until recently she was known as careful and modest, keeping lesson plans neatly filed and helping her mother after Maghrib prayer. Over the last nine days, however, her family says she has slept only one or two hours a night yet wakes “full of electricity,” rearranging the shop at dawn, calling relatives with grand plans to open five branches, and spending nearly all her savings on microphones and banners for a “national education movement.” She talks rapidly, jumps from one idea to another, and insists Allah has chosen her to “correct the whole country,” but in the clinic she remains seated, answers questions, and does not threaten or hit anyone.\n\nHer father brought her to the upazila health complex after she whispered that she must drink pesticide before Fajr so her family would be spared from a coming disaster. A bottle of insecticide is kept in the storeroom for the paddy field, and she had asked her brother where the key was. She has not swallowed anything, cut herself, hanged herself, lost consciousness, or become drowsy; examination shows no bleeding, no smell of poison, and she is alert. She is currently clear that she still intends to die “tonight if they let me,” and becomes tearful only when her mother says the pesticide has been removed.\n\nThere is no fever, head injury, seizure, dehydration, recent infection, or new medicine; her pulse, blood pressure, glucose, and basic examination are unremarkable, and she is oriented to date, place, and family members. She has no history of gradual memory loss or decline in daily skills, and she does not drink alcohol, take yaba, cannabis, sedatives, or cough syrup; her family reports no signs of intoxication or withdrawal. Before this week she was not persistently sad, slowed, hopeless, or unable to enjoy teaching, and she had not been repeatedly visiting doctors for unexplained bodily complaints or taking medicines to calm herself.\n\nTasmia has no chronic back, joint, abdominal, or headache pain and normally carries water, teaches classes, and helps in the shop without limitation. Her current risk is tied to the manic state with grandiose and religious delusional beliefs, making her family fearful to leave her alone even for a few minutes.",
+      "reference_path": [
+        {
+          "id": "PSY_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A5",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_R1",
+          "condition_met": null
+        },
+        {
+          "id": "SUI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A5",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_R1",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage imminent risk of suicide before continuing."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "type": "management",
+          "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M4",
+          "type": "management",
+          "text": "Manage the concurrent conditions. See relevant modules.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "type": "management",
+          "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "type": "exit",
+          "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/SUB/SUB_single_hop_single_hop_negative_1.json",
+      "case_id": "SUB_single_hop_negative_001",
+      "category": "single_hop_negative",
+      "source_module": "SUB",
+      "referred_module": null,
+      "final_module": "SUB",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "SUB_E9",
+      "user_story": "Shahnaz Parvin, a 34-year-old primary school teacher from Chandpur town, came to the community clinic during her lunch break for a routine health check required by her school. She was neatly dressed in a cotton salwar kameez, greeted the nurse politely, and sat upright while waiting, fully alert and attentive. Her speech was clear and steady, her eyes were open and focused, and she did not look drowsy, slowed, or intoxicated.\n\nDuring the consultation, Shahnaz remained calm and composed. She answered questions without restlessness, trembling, pacing, irritability, or pressured speech. She said she had slept normally the night before after preparing exam papers for her students and did not feel unusually worried or tense. She understood where she was, gave the correct date and her school’s name, and described the reason for her visit coherently, showing no signs of confusion.\n\nWhen asked about substance use, Shahnaz explained that she has never smoked cigarettes or used jarda, gul, or other tobacco products, and she avoids alcohol because it is not part of her family or social life. She has never tried cannabis or yaba, and she does not take sleeping pills, pain tablets, cough syrup, or any prescription medicine unless prescribed; currently she is not taking any regular medication. She drinks tea with her colleagues but no other psychoactive substances. The clinician praised her for maintaining these habits and briefly reinforced how avoiding tobacco, alcohol, and unnecessary medicines helps protect her lungs, liver, sleep, mood, and long-term health.",
+      "reference_path": [
+        {
+          "id": "SUB_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A8",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A12",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_M15",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_E9",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A8",
+          "type": "assessment",
+          "text": "Does the person appear confused?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A12",
+          "type": "assessment",
+          "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_M15",
+          "type": "management",
+          "text": "Emphasise the health benefits of not using psychoactive substances.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_E9",
+          "type": "exit",
+          "text": "End of module: No substance use."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/SUB/SUB_single_hop_single_hop_positive_1.json",
+      "case_id": "SUB_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "SUB",
+      "referred_module": null,
+      "final_module": "SUB",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUB_D4",
+      "exit_node_id": "SUB_E11",
+      "user_story": "Thirty-eight-year-old Mahfuzur “Mahfuz” Rahman, a launch ticket clerk from Barishal Sadar, was brought to the upazila health complex by his younger brother after pacing all morning, snapping at family members, and saying his “body was shaking from inside.” He was fully awake and responsive, sitting upright and making sharp eye contact; he was not sleepy, nodding off, confused, or slurring his speech. Instead, he looked restless and frightened, with trembling hands, sweat soaking his shirt despite the fan, repeated retching, a pulse of 118, and blood pressure higher than usual for him.\n\nFor years Mahfuz has drunk locally bought spirits most evenings after work, gradually increasing from a few glasses to nearly a bottle, and he also began taking diazepam tablets from a nearby pharmacy to sleep. Two days ago, after his wife threatened to take their daughter to her parents’ home, he abruptly stopped both alcohol and the tablets. Since then he has slept almost none, vomited twice, craved alcohol badly, and became increasingly agitated. He admits he often promises to cut down but cannot, hides bottles near the launch ghat, spends money meant for household rice, and needs more alcohol than before to feel calm.\n\nHe has no current seizure, hallucination, or delirious behavior, and he recognizes his brother and the clinic staff. Although ashamed and worried about losing his family, Mahfuz clearly denies wanting to die or harm himself, has made no plan or attempt, and says he wants treatment so he can keep his job and bring his daughter back home.",
+      "reference_path": [
+        {
+          "id": "SUB_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A5",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_D4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_M6",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_A12",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A14",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A15",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_M16",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_E11",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A5",
+          "type": "assessment",
+          "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_D4",
+          "type": "diagnosis",
+          "text": "Suspect ALCOHOL or BENZODIAZEPINE WITHDRAWAL",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_M6",
+          "type": "management",
+          "text": "MANAGE WITHDRAWAL: Give diazepam 10-20 mg orally. Transfer to hospital or detoxification facility if possible. For alcohol withdrawal, give thiamine 100 mg daily for 5 days. TRANSFER IMMEDIATELY if seizures, delirium, or serious medical problems are present.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_A12",
+          "type": "assessment",
+          "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A14",
+          "type": "assessment",
+          "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_M16",
+          "type": "management",
+          "text": "PROTOCOL 2 (DEPENDENCE): Provide psychoeducation. Arrange detoxification or inpatient treatment if necessary. For opioids: assess for opioid agonist maintenance (methadone/buprenorphine) or planned detox. For benzodiazepines: gradually reduce dose. For alcohol: arrange safe cessation, provide thiamine 100mg/day, consider relapse prevention meds (acamprosate, naltrexone, disulfiram). Conduct motivational interviewing. Follow-up: Review several times per week in first 2 weeks, then weekly in first month. Decrease to monthly once improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_E11",
+          "type": "exit",
+          "text": "End of Substance Use Module (Dependence managed)."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/SUB/SUB_to_PSY_multi_hop_multi_hop_positive_1.json",
+      "case_id": "SUB_to_PSY_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "SUB",
+      "referred_module": "PSY",
+      "final_module": "PSY",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "PSY_D2",
+      "exit_node_id": "PSY_E3",
+      "user_story": "Twenty-six-year-old Rafiq Hasan, a night-shift courier rider from Keraniganj, was brought to the emergency room at Sir Salimullah Medical College Hospital by his elder sister after neighbors found him pacing in the lane outside their rented house, shouting that “men from the bridge are tracking my phone.” He was wide awake, standing and scanning the room, not drowsy or slowed, and answered loudly when spoken to, though he kept interrupting with suspicious comments.\n\nRafiq looked frightened and keyed up: his pupils were noticeably large, his hands were restless, and he could not sit still. His pulse was 124/min and blood pressure 160/96 mmHg, but he denied chest pain, had a regular rhythm on examination, and showed no weakness, seizure, facial droop, or other neurological signs. His sister said he does not drink alcohol, has no diazepam or sleeping-pill habit, and had not recently stopped any sedatives; there had been no vomiting, and his sweating and agitation began only after last night’s outing.\n\nA friend later admitted that Rafiq had taken several yaba tablets during a long delivery run to stay awake. Since then he had been talking rapidly, saying his thoughts were racing, accusing strangers of planting cameras, and claiming he could hear two men whispering threats from the ceiling fan. After titrated diazepam in the emergency unit he became less physically restless, but the voices and paranoid beliefs continued, and he still spoke in a disorganized way about coded messages in rickshaw horns.\n\nOn further assessment he was oriented to his name, place, and date, with no fever, head injury, low glucose, abnormal oxygen level, or new medication that could explain delirium. Basic checks did not suggest an acute infection or metabolic problem, and his family reported no memory decline or depressive episode. The most obvious concurrent explanation was recent stimulant intoxication.\n\nHe remained acutely agitated when staff approached too quickly, once pushing away a tray because he believed it contained poison, though he did not strike anyone when spoken to calmly. His family described him as usually quiet and hardworking; he had not had a week or more of elevated mood, grand plans, increased spending, sexual disinhibition, or a sustained decreased need for sleep before this episode. When asked directly, Rafiq denied wanting to die, had made no self-harm attempt, had no plan or means, and said he only wanted “the watchers to leave me alone.”",
+      "reference_path": [
+        {
+          "id": "SUB_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A6",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_D5",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_M7",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_A6_1",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_R1",
+          "condition_met": null
+        },
+        {
+          "id": "PSY_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_M3",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A7",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M6",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E3",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A5",
+          "type": "assessment",
+          "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A6",
+          "type": "assessment",
+          "text": "Has the person recently used stimulants (cocaine, amphetamines) AND is showing dilated pupils, anxiety, agitation, hyper-excitable state, racing thoughts, or raised pulse and BP?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_D5",
+          "type": "diagnosis",
+          "text": "Suspect ACUTE STIMULANT INTOXICATION",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_M7",
+          "type": "management",
+          "text": "Give diazepam 5-10 mg in titrated doses until calm. If psychotic symptoms not responsive to diazepam, consider haloperidol 1-2.5 mg. TRANSFER TO HOSPITAL if chest pain, tachyarrhythmias, or neurological signs.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_A6_1",
+          "type": "assessment",
+          "text": "Do psychotic symptoms persist despite treatment?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_R1",
+          "type": "referral",
+          "target_module": "PSY",
+          "text": "Refer to Psychoses module for persistent psychotic symptoms."
+        },
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_M2",
+          "type": "management",
+          "text": "Manage concurrent conditions. Consider consultation with a mental health specialist.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_M3",
+          "type": "management",
+          "text": "Ensure safety. Communicate calmly. Treat underlying causes. Sedate as appropriate (e.g., haloperidol or diazepam) to prevent injury. In extreme violence, seek help from police/staff.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "type": "assessment",
+          "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A7",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D2",
+          "type": "diagnosis",
+          "text": "Psychosis",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M6",
+          "type": "management",
+          "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E3",
+          "type": "exit",
+          "text": "End of Psychosis path."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/SUB/SUB_to_SUI_multi_hop_multi_hop_positive_1.json",
+      "case_id": "SUB_to_SUI_R4_positive_001",
+      "category": "multi_hop_positive",
+      "source_module": "SUB",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": "SUI_E1",
+      "user_story": "Mohammad Tareq Hasan, a 32-year-old launch engine helper from Char Fasson in Bhola, came to the upazila health complex with his elder cousin after a tense family argument about debts. He was sitting upright, alert, and neatly answering questions; his speech was normal in pace and volume, his eyes stayed open, and he walked steadily without drowsiness, slurring, extreme lethargy, or signs of intoxication. He was not pacing, shouting, sweating, trembling, or restless, and although he looked ashamed, he remained calm and cooperative. He knew his name, the date, where he was, and why his cousin had brought him.\n\nFor the past three years Tareq has smoked cigarettes heavily and used yaba tablets, first during overnight river trips to stay awake and later almost every day. In recent months he has needed more tablets to feel the same effect, thinks about them throughout the day, and has repeatedly failed to stop despite quarrels with his wife and warnings from his employer. When he tries to go without them, he becomes irritable, sleepless, and gets body aches and intense cravings, so he usually borrows money to buy more.\n\nThat morning his wife found him quietly putting a length of nylon rope into his work bag after he had said, “Tonight after everyone sleeps, I’ll finish this near the cowshed.” He admitted to the health worker that he had been thinking about hanging himself for the past week and had chosen the beam behind their house because he believed his debts and drug use had ruined his family. He had not yet harmed himself: there were no cuts or bleeding, no pesticide or medicine ingestion, no loss of consciousness, no vomiting, and no extreme lethargy. His cousin brought the rope along and said no tablets, blades, or pesticides were found on him.\n\nTareq has no history of epilepsy, psychosis, or adolescent behavioral disorder, but his yaba and tobacco use has clearly become a substance use disorder needing care. He denies long-standing sadness, panic attacks, or hearing voices, and he has continued going to the launch ghat most days when work is available. He has not been repeatedly visiting doctors for unexplained physical complaints, does not take medicines to numb emotional pain, and is not seeking help again and again for distress; this visit happened because his family discovered the rope and plan. He also has no chronic pain—only occasional tiredness after work that settles with rest.",
+      "reference_path": [
+        {
+          "id": "SUB_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A8",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A12",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A14",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A15",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_R4",
+          "condition_met": null
+        },
+        {
+          "id": "SUI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A8",
+          "type": "assessment",
+          "text": "Does the person appear confused?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A12",
+          "type": "assessment",
+          "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A14",
+          "type": "assessment",
+          "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_R4",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage imminent risk of suicide before continuing."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "type": "management",
+          "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M4",
+          "type": "management",
+          "text": "Manage the concurrent conditions. See relevant modules.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "type": "management",
+          "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "type": "exit",
+          "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/SUI/SUI_single_hop_single_hop_negative_1.json",
+      "case_id": "SUI_single_hop_negative_1",
+      "category": "single_hop_negative",
+      "source_module": "SUI",
+      "referred_module": null,
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D3",
+      "exit_node_id": "SUI_E1",
+      "user_story": "Thirty-two-year-old Nusrat Jahan lives in a rented flat near Shibbari Mor in Khulna with her husband and their five-year-old daughter. She works as a quality checker in a small shrimp-processing office and is known by coworkers for being punctual and talkative during tea breaks. Her elder sister brought her to the local clinic after Nusrat cried during a family dispute about money and said, “I feel exhausted by everyone’s pressure,” which frightened the family.\n\nAt the clinic, Nusrat was alert, neatly dressed, and able to describe the incident clearly. There was no smell of chemicals or alcohol, no drowsiness, vomiting, bleeding, injury marks, or loss of consciousness. She had not taken extra tablets, poison, or harmed herself; she said she had come straight from work after her sister insisted. She denied having any current wish to die, any plan to hurt herself, or access preparations such as saving pills or buying poison. She was upset about the argument but calm, cooperative, and not agitated or aggressive.\n\nWhen asked carefully, Nusrat said she had never attempted self-harm, and in the past month she had not had thoughts or plans of suicide or self-injury. She described the family stress as “temporary tension,” not hopelessness. She sleeps about seven hours most nights, eats normally, enjoys watching dramas with her daughter, and continues attending work and managing household tasks. She has no history of depression treatment, psychosis, seizures, or substance use; she does not drink alcohol or use yaba, cannabis, or sedatives. She has no chronic back, joint, abdominal, or headache pain, only occasional tiredness after long shifts that resolves with rest.\n\nNusrat had not been repeatedly visiting doctors for vague physical complaints and had not been taking sleeping pills, painkillers, or herbal sedatives to cope with emotions. She agreed to let her sister and husband check in with her over the next few days, and she accepted a follow-up call from the clinic mainly for reassurance and support while the family tension settles.",
+      "reference_path": [
+        {
+          "id": "SUI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A3",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_D3",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A3",
+          "type": "assessment",
+          "text": "Is there a history of thoughts or plan of self-harm in the past month or act of self-harm in the past year?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_D3",
+          "type": "diagnosis",
+          "text": "Risk of self-harm/suicide is unlikely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "type": "management",
+          "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "type": "exit",
+          "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/SUI/SUI_single_hop_single_hop_positive_1.json",
+      "case_id": "SUI_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "SUI",
+      "referred_module": null,
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": "SUI_E1",
+      "user_story": "Shafiqur Rahman, a 37-year-old mechanic at a rickshaw garage near Rupatali bus stand in Barishal, was brought to the upazila health complex by his elder sister after a heated family dispute over unpaid loan installments. He was sitting rigidly, clutching his prayer cap, and admitted in a low voice that he had decided to kill himself that night by drinking the pesticide kept in their storeroom, or by using the nylon rope from his workshop if the bottle was taken away. His sister had found him writing a short farewell message on his phone, but he had not swallowed anything, cut himself, tied the rope, or lost consciousness. On examination he was alert, able to answer clearly, not drowsy or intoxicated, with no smell of chemicals, no bleeding, and no injuries.\n\nThe family immediately removed the pesticide, rope, and sharp tools from the house, and his sister stayed beside him while his wife arranged for a cousin to remain overnight so he would not be left alone. Shafiqur said he had never tried to harm himself before, but the plan still felt “too close” when he imagined facing the moneylender the next morning.\n\nOutside this crisis, Shafiqur had been functioning much as usual: opening the garage after Fajr, eating regular meals, joking with coworkers, and sleeping normally until the previous night. He denied persistent sadness, loss of interest, hearing voices, unusual beliefs, seizures, or use of alcohol, yaba, cannabis, or sedatives; his sister confirmed he is known in the family for avoiding intoxicants. He has no long-standing back, joint, abdominal, or headache pain and had not been repeatedly visiting doctors or taking pills to calm himself. This was the first time his family sought help for emotional distress, and apart from the immediate suicidal plan linked to the loan crisis, he had been carrying out his daily responsibilities.",
+      "reference_path": [
+        {
+          "id": "SUI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "type": "management",
+          "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "type": "management",
+          "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "type": "exit",
+          "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+      ]
+    },
+    {
+      "file": "data/cases/virtual_patients/SUI/SUI_to_OTH_multi_hop_multi_hop_positive_1.json",
+      "case_id": "multi_hop_positive_SUI_to_OTH_1",
+      "category": "multi_hop_positive",
+      "source_module": "SUI",
+      "referred_module": "OTH",
+      "final_module": "OTH",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "OTH_D1",
+      "exit_node_id": "OTH_E4",
+      "user_story": "Shamsun Nahar, a 34-year-old tailoring supervisor from Sonadanga, Khulna, comes to the upazila health complex after three weeks of sudden chest tightness, trembling, “air hunger,” and stomach fluttering whenever she thinks about delayed garment orders and rising household expenses. She has visited two pharmacies and a local doctor already; antacids, vitamins, and repeated blood pressure checks have not reassured her for long. Her pulse, blood pressure, glucose, hemoglobin, thyroid screening, and ECG are normal, and she has no fever, weight loss, injury, or medical illness that explains the episodes.\n\nShe is embarrassed that the symptoms have begun interfering with her work: she has missed two shifts, avoids supervising the cutting room when it feels crowded, and asks her younger sister to accompany her on rickshaw rides because she fears another spell. She still enjoys evening tea with her children and watching dramas with her mother-in-law, eats normally, and says she wants to “get steady again,” not disappear from life. She denies feeling persistently hopeless or depressed, has no hallucinations, unusual beliefs, seizures, alcohol or drug use, or history of mental health treatment. She is 34, not an adolescent, and her family describes her as communicative, calm, and cooperative, though visibly worried.\n\nWhen asked privately, Shamsun clearly says she has never swallowed poison, cut herself, tried hanging, or harmed herself in any way; there are no wounds, intoxication, lethargy, or loss of consciousness. She denies any current wish to die, any plan to hurt herself, and any suicidal thoughts in the past month or self-harm in the past year. She has ordinary financial stress but no recent bereavement, assault, major accident, displacement, or other extreme traumatic event. She also denies chronic pain, saying her body aches only briefly after long sewing shifts and resolves with rest. Her main request is help controlling the frightening physical sensations and worry so she can return to work and manage her household normally.",
+      "reference_path": [
+        {
+          "id": "SUI_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A3",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_D3",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M6",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_R1",
+          "condition_met": null
+        },
+        {
+          "id": "OTH_A1",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A2",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A3",
+          "condition_met": "YES"
+        },
+        {
+          "id": "OTH_D1",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_A4",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A5",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_M4",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_E4",
+          "condition_met": null
+        }
+      ],
+      "node_sequence": [
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A3",
+          "type": "assessment",
+          "text": "Is there a history of thoughts or plan of self-harm in the past month or act of self-harm in the past year?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_D3",
+          "type": "diagnosis",
+          "text": "Risk of self-harm/suicide is unlikely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M6",
+          "type": "management",
+          "text": "Manage the emotional symptoms.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_R1",
+          "type": "referral",
+          "target_module": "OTH",
+          "text": "Go to Other Significant Mental Health Complaints module."
+        },
+        {
+          "id": "OTH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Is there a physical cause that fully explains the presenting symptoms?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A2",
+          "type": "assessment",
+          "text": "Is this depression or another MNS condition discussed in another module of this guide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A3",
+          "type": "assessment",
+          "text": "Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "OTH_D1",
+          "type": "diagnosis",
+          "text": "Other Significant Mental Health Complaints are likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_A4",
+          "type": "assessment",
+          "text": "Is there imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A5",
+          "type": "assessment",
+          "text": "Has the person been exposed to extreme stressors? (e.g., physical or sexual violence, major accidents, bereavement or other major losses)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_M4",
+          "type": "management",
+          "text": "Apply Protocol 1: Do not prescribe anti-anxiety or antidepressant medicines unless advised by a specialist. Reduce stress, teach relaxation techniques, and strengthen social supports (ECP). Acknowledge symptoms but avoid unnecessary investigations; explain that no serious disease has been identified. Encourage return to daily activities. Follow-up: Ask the person to return in 2-4 weeks if symptoms do not improve or worsen. If improving, continue treatment plan. If not improving or if insisting on further investigations, review Protocol 1 and consider consulting a specialist.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_E4",
+          "type": "exit",
+          "text": "Exit after Protocol 1 management."
+        }
+      ]
+    }
+  ]
+}

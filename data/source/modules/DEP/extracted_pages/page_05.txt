@@ -1,0 +1,52 @@
+Here is the structured transcription of the clinical guideline flowchart:
+
+**[Incoming vertical arrow pointing down]**
+
+**[Node: Purple Circle]**
+*   Text: 2
+
+-> **[Node: Solid Purple Box]**
+*   Text:
+    Are there other possible explanations
+    for the symptoms?
+
+-> **[Node: White Box with Purple Border]**
+*   Text:
+    IS THIS A PHYSICAL CONDITION THAT CAN RESEMBLE OR EXACERBATE DEPRESSION?
+    Are there signs and symptoms suggesting anaemia, malnutrition,
+    hypothyroidism, mood changes from substance use and medication side-effects
+    (e.g. mood changes from steroids)?
+
+    *   **[Decision Path: YES]** (Purple Diamond)
+        -> **[Node: White Box with Purple Border]**
+        *   Text:
+            » MANAGE THE
+            PHYSICAL CONDITION
+        
+        -> **[Arrow pointing down]**
+        -> **[Node: White Box with thick Purple Border]**
+        *   Text:
+            Do depressive symptoms remain
+            after treatment?
+
+            *   **[Decision Path: NO]** (Grey Circle pointing left)
+                -> **[Node: White Box with purple border and striped bottom section]**
+                *   Text:
+                    No treatment
+                    needed.
+                -> **[Large Exit Arrow pointing left out of the box]**
+
+            *   **[Decision Path: YES]** (Purple Diamond pointing right then down)
+                -> **[Path connects to the main downward path line]**
+
+    *   **[Decision Path: NO]** (Grey Circle pointing down-right)
+        -> **[Main Downward Path]**
+        -> **[Path continues downwards vertically, where it is joined by the YES path from the "remain after treatment?" decision node, and then continues off the bottom of the page.]**
+
+---
+
+**[Footer - Bottom Left]**
+DEPRESSION
+
+**[Footer - Bottom Center]**
+23

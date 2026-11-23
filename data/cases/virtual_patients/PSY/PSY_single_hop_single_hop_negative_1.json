@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "case_id": "PSY_single_hop_negative_001",
+      "category": "single_hop_negative",
+      "source_module": "PSY",
+      "referred_module": null,
+      "final_module": "PSY",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "PSY_E2",
+      "node_sequence": [
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "type": "assessment",
+          "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_M5",
+          "type": "management",
+          "text": "Consider consultation with a specialist to review other possible causes of psychosis.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E2",
+          "type": "exit",
+          "text": "End of unconfirmed psychosis path."
+        }
+      ],
+      "user_story": "Twenty-seven-year-old Rafiq Hasan lives in a rented room near Agrabad in Chattogram and works night shifts as a quality-check assistant at a garment export warehouse while studying accounting on Fridays. His mother brought him to the local clinic after he became worried that he “might be going mad” because, during two recent exam-preparation nights, he felt unreal, shaky, and intensely anxious for about ten minutes, then recovered fully after drinking water and stepping outside.\n\nAt assessment he was calm, neatly dressed, cooperative, and fully oriented to date, place, and situation. His attention was steady, he could repeat numbers and follow instructions, and his symptoms had not fluctuated over the day. He had no fever, head injury, seizure, urinary symptoms, recent infection, or new medicines; he only takes occasional paracetamol for headaches. Blood pressure, pulse, glucose, and basic examination at the clinic were unremarkable.\n\nRafiq has no history of progressive forgetfulness, getting lost, or difficulty managing money or work tasks. He denies persistent low mood, loss of interest, hopelessness, or suicidal thoughts, and his appetite remains normal during family meals. He does not drink alcohol, use yaba, cannabis, sedatives, or other drugs, and there has been no recent stopping of any substance that could explain withdrawal.\n\nHe was not aggressive or agitated in the clinic; his mother said he has not threatened anyone, broken objects, shouted in the street, or required restraint. He sleeps six to seven hours most nights when not on shift, has not had a week of unusually high energy, grand plans, excessive talking, impulsive spending, sexual risk-taking, or an elevated or persistently irritable mood.\n\nWhen asked directly, Rafiq denied hearing voices, seeing things others cannot see, receiving special messages, being followed, or believing others are controlling his thoughts. His speech was coherent and goal-directed, and his behavior was organized. Because his family remained concerned about the episodes and their meaning, the clinic planned a specialist mental health consultation to review other possible causes and provide reassurance."
+    }
+  ]
+}

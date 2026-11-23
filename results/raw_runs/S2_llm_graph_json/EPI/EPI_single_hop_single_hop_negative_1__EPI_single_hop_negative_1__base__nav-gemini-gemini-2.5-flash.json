@@ -1,0 +1,164 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "EPI",
+  "step_logs": [
+    {
+      "id": "EPI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Any sign of head or neck injury?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital."
+    },
+    {
+      "id": "EPI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+      "user_answer": "NO_ANSWER"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "EPI_A1",
+      "answer": "NO",
+      "to": "EPI_M2"
+    },
+    {
+      "from": "EPI_M2",
+      "answer": "NEXT",
+      "to": "EPI_A2"
+    }
+  ],
+  "stop_reason": "no_answer",
+  "stop_node_id": "EPI_A2",
+  "usage": {
+    "vp": {
+      "calls": 2,
+      "input_tokens": 868,
+      "output_tokens": 6,
+      "total_tokens": 874
+    },
+    "nav": {
+      "calls": 2,
+      "input_tokens": 7243,
+      "output_tokens": 38,
+      "total_tokens": 7550
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/EPI/EPI_single_hop_single_hop_negative_1.json",
+  "case_id": "EPI_single_hop_negative_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "EPI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Any sign of head or neck injury?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M2",
+      "type": "management",
+      "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A2",
+      "type": "assessment",
+      "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M4",
+      "type": "management",
+      "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A3",
+      "type": "assessment",
+      "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_A8",
+      "type": "assessment",
+      "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M11",
+      "type": "management",
+      "text": "Convulsive seizures unlikely. Consult a specialist for recurrent episodes.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_E3",
+      "type": "exit",
+      "text": "Exit: Non-convulsive seizures."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "EPI_A1",
+      "EPI_M2",
+      "EPI_A2",
+      "EPI_M4",
+      "EPI_A3",
+      "EPI_A8",
+      "EPI_M11",
+      "EPI_E3"
+    ],
+    "actual_ids": [
+      "EPI_A1",
+      "EPI_M2",
+      "EPI_A2"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": true,
+    "finding_accuracy": 0.25,
+    "missing_findings": [
+      {
+        "id": "EPI_A2",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "EPI_A3",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "EPI_A8",
+        "expected": "NO",
+        "actual": null
+      }
+    ],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 4,
+      "matched": 1,
+      "missing": 3,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 8424
+}

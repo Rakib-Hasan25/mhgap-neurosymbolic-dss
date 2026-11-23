@@ -1,0 +1,40 @@
+[Box 1]  
+Do the carers have any priority MNS condition that could impact their ability to care for the child/adolescent?  
+Consider especially depression and disorders due to substance use.
+
+[Side box – CLINICAL TIP]  
+CLINICAL TIP  
+» Depressive disorder in carers can worsen emotional, behavioural or developmental disorders in their children/adolescents.
+
+[Decision Node]  
+YES / NO
+
+Connections:  
+[Box 1] -> YES -> [Box 2]  
+[Box 1] -> NO -> [Box 3]
+
+[Box 2]  
+» Assess and manage for carer MNS conditions.  
+» Go to Management 2.6 (Carer support)
+
+[Box 3]  
+Is the child getting adequate opportunities for play and social interaction/communication at home?  
+
+Consider asking:  
+» With whom does the child spend most of their time?  
+» How do you/they play with the child? How often?  
+» How do you/they communicate with the child? How often?
+
+[Decision Node]  
+YES / NO
+
+Connections:  
+[Box 3] -> YES -> [Box 4]  
+[Box 3] -> NO -> (downward continuation not visible in image)
+
+[Box 4]  
+» Provide advise on age-appropriate stimulation and parenting. Refer to Care for Child Development http://www.who.int/maternal_child_adolescent/documents/care_child_development/en/  
+» Consider need for additional support for the child including referral to child protection services where available.
+
+Footer:  
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS                                     83

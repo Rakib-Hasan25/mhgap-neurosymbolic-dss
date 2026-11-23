@@ -1,0 +1,91 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/DEP/DEP_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "DEP_SUI_MHP_001",
+      "prefix_ok": false,
+      "exact_ok": false,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [
+        {
+          "node_id": "SUI_A4",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "SUI_A5",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "SUI_A6",
+          "expected": null,
+          "actual": "YES"
+        }
+      ],
+      "counts": {
+        "expected_assessment_findings": 10,
+        "matched": 10,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 3
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": false,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "DEP_A1",
+        "DEP_A2",
+        "DEP_A3",
+        "DEP_A4",
+        "DEP_A6",
+        "DEP_A7",
+        "DEP_D2",
+        "DEP_A11",
+        "DEP_A10",
+        "DEP_R3",
+        "SUI_A1",
+        "SUI_A2",
+        "SUI_D1",
+        "SUI_M2",
+        "SUI_A4",
+        "SUI_A5",
+        "SUI_A6",
+        "SUI_M6",
+        "SUI_R1"
+      ],
+      "expected_node_ids": [
+        "DEP_A1",
+        "DEP_A2",
+        "DEP_A3",
+        "DEP_A4",
+        "DEP_A6",
+        "DEP_A7",
+        "DEP_D2",
+        "DEP_A11",
+        "DEP_A10",
+        "DEP_R3",
+        "SUI_A1",
+        "SUI_A2",
+        "SUI_D1"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "DEP_D2",
+        "engine_management_node_ids": [
+          "SUI_M2",
+          "SUI_M6"
+        ],
+        "engine_referrals": [
+          "SUI",
+          "OTH"
+        ],
+        "engine_exit_node_id": null
+      },
+      "stop_reason": "max_referral_hops",
+      "stop_node_id": "SUI_R1",
+      "vp_total_tokens": 12009
+    }
+  ]
+}

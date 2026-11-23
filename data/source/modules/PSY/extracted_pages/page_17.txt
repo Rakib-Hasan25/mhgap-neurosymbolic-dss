@@ -1,0 +1,58 @@
+[FLOWCHART START]
+
+[An arrow points down from the top of the page to a circle labeled 2.]
+
+[Circle]
+2
+
+[Arrow points from circle 2 to the box below.]
+
+[Box]
+ROUTINELY MONITOR TREATMENT
+
+[Arrow points from the box above to the box below.]
+
+[Box with list]
+>> Review and provide psychosocial interventions.
+>> If on medication, review adherence, side effects and dosing. See Table 4.
+>> If the person starts any other medications with the potential for drug-drug interactions, consider reviewing the medication dose.
+
+[Arrow points from the box above to the circle below.]
+
+[Circle]
+3
+
+[Arrow points from circle 3 to the box below.]
+
+[Box]
+DISCONTINUE MEDICATIONS
+
+[Arrow points from the box above to the decision box below.]
+
+[Decision Box]
+Has the person been in full remission of symptoms with no episodes of bipolar disorder for at least two years?
+
+[Two paths lead from this decision box: YES and NO.]
+
+[Path 1: YES]
+[An arrow labeled YES points from the decision box to the box on the left.]
+
+[Box with list]
+**>> Consider discontinuation of medications**
+– Discuss with person/carer the risk of discontinuation.
+– Consult a specialist regarding the decision to discontinue maintenance treatment after 2 years. [icon of two people talking]
+– Reduce gradually over period of weeks or months.
+
+[Path 2: NO]
+[An arrow labeled NO points from the decision box to the box on the right.]
+
+[Box]
+>> Routinely follow up and monitor treatment. [circular arrow icon]
+
+[A long arrow loops from the "Routinely follow up..." box back up to the top of the flowchart, pointing to the area before the circle labeled 2.]
+
+[FLOWCHART END]
+
+[Footer]
+PSYCHOSES
+49

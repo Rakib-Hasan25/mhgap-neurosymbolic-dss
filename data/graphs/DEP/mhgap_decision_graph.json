@@ -1,0 +1,295 @@
+{
+    "module": {
+        "id": "DEP",
+        "name": "Depression"
+    },
+    "nodes": [
+        {
+            "id": "DEP_A1",
+            "type": "assessment",
+            "is_starting": true,
+            "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)"
+        },
+        {
+            "id": "DEP_A2",
+            "type": "assessment",
+            "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?"
+        },
+        {
+            "id": "DEP_A3",
+            "type": "assessment",
+            "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?"
+        },
+        {
+            "id": "DEP_A4",
+            "type": "assessment",
+            "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)"
+        },
+        {
+            "id": "DEP_M1",
+            "type": "management",
+            "text": "Manage the physical condition."
+        },
+        {
+            "id": "DEP_A5",
+            "type": "assessment",
+            "text": "Do depressive symptoms remain after treatment of the physical condition?"
+        },
+        {
+            "id": "DEP_M2",
+            "type": "management",
+            "text": "No treatment needed."
+        },
+        {
+            "id": "DEP_A6",
+            "type": "assessment",
+            "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)"
+        },
+        {
+            "id": "DEP_D1",
+            "type": "diagnosis",
+            "text": "DEPRESSIVE EPISODE IN BIPOLAR DISORDER is likely."
+        },
+        {
+            "id": "DEP_M3",
+            "type": "management",
+            "text": "PROTOCOL 2: Consult a specialist. If not immediately available, follow treatment for depression but NEVER prescribe antidepressants alone without a mood stabilizer. If symptoms of mania develop, stop antidepressant immediately and return for help."
+        },
+        {
+            "id": "DEP_R2",
+            "type": "referral",
+            "target_module": "PSY",
+            "text": "Refer to Psychoses module for mood stabilizer management."
+        },
+        {
+            "id": "DEP_A7",
+            "type": "assessment",
+            "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?"
+        },
+        {
+            "id": "DEP_A8",
+            "type": "assessment",
+            "text": "Are any of the following symptoms present: Suicidal ideation, beliefs of worthlessness, psychotic symptoms, or talking/moving more slowly than normal?"
+        },
+        {
+            "id": "DEP_A9",
+            "type": "assessment",
+            "text": "Does the person have a previous history of depression?"
+        },
+        {
+            "id": "DEP_M4",
+            "type": "management",
+            "text": "Do not manage for depression."
+        },
+        {
+            "id": "DEP_D2",
+            "type": "diagnosis",
+            "text": "DEPRESSION is likely."
+        },
+        {
+            "id": "DEP_A11",
+            "type": "assessment",
+            "text": "Is the person a child or adolescent?"
+        },
+        {
+            "id": "DEP_R4",
+            "type": "referral",
+            "target_module": "CMH",
+            "text": "For management of depression in children/adolescents, refer to Child & Adolescent Mental & Behavioural Disorders."
+        },
+        {
+            "id": "DEP_A10",
+            "type": "assessment",
+            "text": "Is there an imminent risk of suicide?"
+        },
+        {
+            "id": "DEP_R3",
+            "type": "referral",
+            "target_module": "SUI",
+            "text": "Assess and manage for imminent risk of suicide before continuing."
+        },
+        {
+            "id": "DEP_M5",
+            "type": "management",
+            "text": "PROTOCOL 1: Provide psychoeducation, reduce stress, strengthen social supports, and promote functioning. Consider brief psychological treatments. Consider antidepressants if appropriate. For pregnant/breastfeeding women, avoid antidepressants if possible. Follow-up: Schedule the second appointment within 1 week. Initially maintain regular contact (e.g., monthly) for the first 3 months."
+        },
+        {
+            "id": "DEP_R1",
+            "type": "referral",
+            "target_module": "OTH",
+            "text": "Depression is unlikely. Go to Other Significant Mental Health Complaints."
+        },
+        {
+            "id": "DEP_E1",
+            "type": "exit",
+            "text": "End of Depression Module."
+        }
+    ],
+    "relationships": [
+        {
+            "from": "DEP_A1",
+            "to": "DEP_A2",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A1",
+            "to": "DEP_R1",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_A2",
+            "to": "DEP_A3",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A2",
+            "to": "DEP_R1",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_A3",
+            "to": "DEP_A4",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A3",
+            "to": "DEP_R1",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_A4",
+            "to": "DEP_M1",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A4",
+            "to": "DEP_A6",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_M1",
+            "to": "DEP_A5",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_A5",
+            "to": "DEP_A6",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A5",
+            "to": "DEP_M2",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_M2",
+            "to": "DEP_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_A6",
+            "to": "DEP_D1",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A6",
+            "to": "DEP_A7",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_D1",
+            "to": "DEP_M3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_M3",
+            "to": "DEP_R2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_R2",
+            "to": "DEP_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_A7",
+            "to": "DEP_A8",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A7",
+            "to": "DEP_D2",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_A8",
+            "to": "DEP_D2",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A8",
+            "to": "DEP_A9",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_A9",
+            "to": "DEP_D2",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A9",
+            "to": "DEP_M4",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_M4",
+            "to": "DEP_R1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_D2",
+            "to": "DEP_A11",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_A11",
+            "to": "DEP_R4",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A11",
+            "to": "DEP_A10",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_R4",
+            "to": "DEP_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_A10",
+            "to": "DEP_R3",
+            "condition": "YES"
+        },
+        {
+            "from": "DEP_A10",
+            "to": "DEP_M5",
+            "condition": "NO"
+        },
+        {
+            "from": "DEP_R3",
+            "to": "DEP_M5",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_M5",
+            "to": "DEP_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "DEP_R1",
+            "to": "DEP_E1",
+            "condition": "NEXT"
+        }
+    ]
+}

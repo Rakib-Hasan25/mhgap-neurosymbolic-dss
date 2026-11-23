@@ -1,0 +1,371 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "PSY",
+  "step_logs": [
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "PSY_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "PSY_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Assess and manage imminent risk of suicide before continuing.",
+      "target_module": "SUI"
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+    },
+    {
+      "id": "SUI_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving."
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have chronic pain?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_M6",
+      "type": "management",
+      "is_starting": false,
+      "text": "Manage the emotional symptoms."
+    },
+    {
+      "id": "SUI_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Go to Other Significant Mental Health Complaints module.",
+      "target_module": "OTH"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "PSY_A1",
+      "answer": "NO",
+      "to": "PSY_A2"
+    },
+    {
+      "from": "PSY_A2",
+      "answer": "NO",
+      "to": "PSY_A3"
+    },
+    {
+      "from": "PSY_A3",
+      "answer": "NO",
+      "to": "PSY_A4"
+    },
+    {
+      "from": "PSY_A4",
+      "answer": "YES",
+      "to": "PSY_A5"
+    },
+    {
+      "from": "PSY_A5",
+      "answer": "YES",
+      "to": "PSY_R1"
+    },
+    {
+      "from": "PSY_R1",
+      "answer": "REFERRAL",
+      "to": "SUI_A1",
+      "target_module": "SUI"
+    },
+    {
+      "from": "SUI_A1",
+      "answer": "NO",
+      "to": "SUI_A2"
+    },
+    {
+      "from": "SUI_A2",
+      "answer": "YES",
+      "to": "SUI_D1"
+    },
+    {
+      "from": "SUI_D1",
+      "answer": "NEXT",
+      "to": "SUI_M2"
+    },
+    {
+      "from": "SUI_M2",
+      "answer": "NEXT",
+      "to": "SUI_A4"
+    },
+    {
+      "from": "SUI_A4",
+      "answer": "NO",
+      "to": "SUI_A5"
+    },
+    {
+      "from": "SUI_A5",
+      "answer": "NO",
+      "to": "SUI_A6"
+    },
+    {
+      "from": "SUI_A6",
+      "answer": "YES",
+      "to": "SUI_M6"
+    },
+    {
+      "from": "SUI_M6",
+      "answer": "NEXT",
+      "to": "SUI_R1"
+    }
+  ],
+  "stop_reason": "max_referral_hops",
+  "stop_node_id": "SUI_R1",
+  "usage": {
+    "vp": {
+      "calls": 10,
+      "input_tokens": 6017,
+      "output_tokens": 20,
+      "total_tokens": 6037
+    },
+    "nav": {
+      "calls": 13,
+      "input_tokens": 27027,
+      "output_tokens": 175,
+      "total_tokens": 30079
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/PSY/PSY_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "case_id": "multi_hop_positive_PSY_R1_SUI_D1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "PSY_A5",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "PSY_R1",
+      "type": "referral",
+      "target_module": "SUI",
+      "text": "Assess and manage imminent risk of suicide before continuing."
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_M2",
+      "type": "management",
+      "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_M4",
+      "type": "management",
+      "text": "Manage the concurrent conditions. See relevant modules.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "text": "Does the person have chronic pain?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_M7",
+      "type": "management",
+      "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_E1",
+      "type": "exit",
+      "text": "End of Self-Harm / Suicide Assessment and Management."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_A3",
+      "PSY_A4",
+      "PSY_A5",
+      "PSY_R1",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1",
+      "SUI_M2",
+      "SUI_A4",
+      "SUI_M4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M7",
+      "SUI_E1"
+    ],
+    "actual_ids": [
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_A3",
+      "PSY_A4",
+      "PSY_A5",
+      "PSY_R1",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1",
+      "SUI_M2",
+      "SUI_A4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M6",
+      "SUI_R1"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": false,
+    "finding_accuracy": 0.8,
+    "missing_findings": [],
+    "mismatched_findings": [
+      {
+        "id": "SUI_A4",
+        "expected": "YES",
+        "actual": "NO"
+      },
+      {
+        "id": "SUI_A6",
+        "expected": "NO",
+        "actual": "YES"
+      }
+    ],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 10,
+      "matched": 8,
+      "missing": 0,
+      "mismatched": 2,
+      "extra": 0
+    }
+  },
+  "total_tokens": 36116
+}

@@ -1,0 +1,32 @@
+PROTOCOL  
+2  
+Dependence
+
+IF THE PERSON IS DEPENDENT ON OPIOIDS:
+» Maintenance treatment is generally more effective than detoxification.  
+» Assess the severity of dependence and, if appropriate, provide or refer the person for opioid agonist maintenance treatment, also known as opioid substitution therapy (OST), after detoxification. Go to PROTOCOL 5 (Opioid Agonist Maintenance Treatment).  
+» In the remainder of cases arrange planned detoxification, if necessary. Go to PROTOCOL 4 (Opioid Withdrawal).
+
+IF THE PERSON IS DEPENDENT ON BENZODIAZEPINES:
+» Sudden cessation can lead to seizures and delirium. Consider gradually reducing the dose of benzodiazepine with supervised dispensing or a more rapid reduction in an inpatient setting. Go to PROTOCOL 6 (Benzodiazepine Withdrawal).
+
+IF THE PERSON IS DEPENDENT ON ALCOHOL:
+» Sudden alcohol cessation can lead to seizures and delirium; however, if the person is willing to stop using alcohol, facilitate this. Determine the appropriate setting to cease alcohol use, and arrange inpatient detoxification, if necessary. Go to PROTOCOL 3 (Alcohol Withdrawal).  
+» Advise consumption of thiamine at a dose of 100 mg/day p.o.  
+» Consider pharmacologic intervention to prevent relapse in alcohol dependence; medications include acamprosate, naltrexone and disulfiram. Baclofen can also be used, however, its sedating effects and risk of abuse make it best reserved for specialist settings. With these medications, an effective response may include a reduction in the quantity and frequency of alcohol consumption, if not complete abstinence. Go to Table 1.
+
+FOR ALL OTHER SUBSTANCES:
+» Advise stopping the substance completely and verbalise your intention to support the person in doing so. Ask them if they are ready to do this.  
+» Explore STRATEGIES FOR REDUCING OR STOPPING USE and STRATEGIES FOR REDUCING HARM.  
+» Consider referral to peer help groups or rehabilitation/residential therapeutic communities, if available.  
+» Address food, housing, and employment needs.  
+» Assess and treat any physical or mental health co-morbidity, ideally after 2-3 weeks of abstinence, as some problems will resolve with abstinence.
+
+IN ALL CASES:
+» Provide psychoeducation.  
+» Arrange for detoxification services if necessary or treatment in an inpatient facility where available. Treat withdrawal symptoms as needed.  
+» Provide a brief intervention using motivational interviewing to encourage the person to engage in treatment of their substance dependence.  
+» Consider longer-term psychosocial treatment for persons with ongoing problems related to their substance use, if they do not respond to the initial brief interventions. Evidence-based psychological therapies for disorders due to substance use include structured individual and group programmes that are run over 6-12 weeks or more, and that use techniques such as cognitive behavioural therapy, motivational enhancement therapy, contingency management therapy, community reinforcement approach, and family therapy. Evidence-based social support approaches include employment and accommodation support.
+
+DISORDERS DUE TO SUBSTANCE USE  
+119

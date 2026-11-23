@@ -1,0 +1,67 @@
+case_id,module_folder,case_category,system_short,runs,exact_path_rate,prefix_path_rate,finding_accuracy,missing,mismatched,extra,total_tokens
+CMH_single_hop_negative_1,CMH,single_hop_negative,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,1.0,0.0,0.0,0.0,61980.333333333336
+CMH_single_hop_negative_1,CMH,single_hop_negative,S3 LLM + Guideline Text,6,0.5,0.5,0.9545454545454546,0.5,0.0,0.16666666666666666,66042.0
+CMH_single_hop_positive_1,CMH,single_hop_positive,S2 LLM + Graph JSON,6,0.0,0.0,1.0,0.0,0.0,0.6666666666666666,30524.5
+CMH_single_hop_positive_1,CMH,single_hop_positive,S3 LLM + Guideline Text,6,0.0,0.0,1.0,0.0,0.0,0.3333333333333333,30447.0
+CMH_single_hop_single_hop_negative_1__CMH_single_hop_negative_1,CMH,single_hop_negative,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,7464.0
+CMH_single_hop_single_hop_positive_1__CMH_single_hop_positive_1,CMH,single_hop_positive,S1 Graph Navigator,1,0.0,0.0,1.0,0.0,0.0,6.0,5457.0
+CMH_to_SUI_multi_hop_multi_hop_positive_1__CMH_to_SUI_multi_hop_positive_1,CMH,multi_hop_positive,S1 Graph Navigator,1,0.0,0.0,1.0,0.0,0.0,3.0,5674.0
+CMH_to_SUI_multi_hop_positive_1,CMH,multi_hop_positive,S2 LLM + Graph JSON,6,0.0,0.0,1.0,0.0,0.0,3.0,48884.0
+CMH_to_SUI_multi_hop_positive_1,CMH,multi_hop_positive,S3 LLM + Guideline Text,6,0.0,0.0,0.7142857142857143,2.0,0.0,1.1666666666666667,38330.5
+DEP_SUI_MHP_001,DEP,multi_hop_positive,S2 LLM + Graph JSON,6,0.0,0.0,0.9,1.0,0.0,1.8333333333333333,47681.666666666664
+DEP_SUI_MHP_001,DEP,multi_hop_positive,S3 LLM + Guideline Text,6,0.0,0.0,0.7666666666666666,2.3333333333333335,0.0,2.1666666666666665,60356.5
+DEP_single_hop_negative_001,DEP,single_hop_negative,S2 LLM + Graph JSON,6,1.0,1.0,1.0,0.0,0.0,0.0,18289.666666666668
+DEP_single_hop_negative_001,DEP,single_hop_negative,S3 LLM + Guideline Text,6,1.0,1.0,1.0,0.0,0.0,0.0,28189.5
+DEP_single_hop_positive_001,DEP,single_hop_positive,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,0.9166666666666666,0.6666666666666666,0.0,0.0,28791.5
+DEP_single_hop_positive_001,DEP,single_hop_positive,S3 LLM + Guideline Text,6,0.3333333333333333,0.3333333333333333,0.8333333333333334,1.3333333333333333,0.0,0.0,41523.833333333336
+DEP_single_hop_single_hop_negative_1__DEP_single_hop_negative_001,DEP,single_hop_negative,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,2385.0
+DEP_single_hop_single_hop_positive_1__DEP_single_hop_positive_001,DEP,single_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,7488.0
+DEP_to_CMH_multi_hop_multi_hop_positive_1__DEP_to_CMH_multi_hop_positive_1,DEP,multi_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,13528.0
+DEP_to_CMH_multi_hop_positive_1,DEP,multi_hop_positive,S2 LLM + Graph JSON,6,0.0,0.8333333333333334,0.608695652173913,9.0,0.0,0.0,75141.0
+DEP_to_CMH_multi_hop_positive_1,DEP,multi_hop_positive,S3 LLM + Guideline Text,6,0.0,0.3333333333333333,0.5217391304347826,11.0,0.0,0.3333333333333333,79629.5
+DEP_to_OTH_multi_hop_multi_hop_positive_1__DEP_to_OTH_multi_hop_positive_1,DEP,multi_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,3000.0
+DEP_to_OTH_multi_hop_positive_1,DEP,multi_hop_positive,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,1.0,0.0,0.0,0.0,17254.5
+DEP_to_OTH_multi_hop_positive_1,DEP,multi_hop_positive,S3 LLM + Guideline Text,6,0.0,0.0,1.0,0.0,0.0,0.0,26271.0
+DEP_to_PSY_multi_hop_multi_hop_positive_1__DEP_to_PSY_multi_hop_positive_1,DEP,multi_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,6611.0
+DEP_to_PSY_multi_hop_positive_1,DEP,multi_hop_positive,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,0.9,1.0,0.0,0.16666666666666666,36234.666666666664
+DEP_to_PSY_multi_hop_positive_1,DEP,multi_hop_positive,S3 LLM + Guideline Text,6,0.3333333333333333,0.3333333333333333,0.85,1.5,0.0,0.3333333333333333,57460.166666666664
+DEP_to_SUI_multi_hop_multi_hop_positive_1__DEP_SUI_MHP_001,DEP,multi_hop_positive,S1 Graph Navigator,1,0.0,0.0,1.0,0.0,0.0,3.0,12009.0
+EPI_single_hop_negative_1,EPI,single_hop_negative,S2 LLM + Graph JSON,6,0.5,1.0,0.625,1.5,0.0,0.0,18904.833333333332
+EPI_single_hop_negative_1,EPI,single_hop_negative,S3 LLM + Guideline Text,6,0.6666666666666666,0.8333333333333334,0.8333333333333334,0.6666666666666666,0.0,0.0,30378.5
+EPI_single_hop_positive_1,EPI,single_hop_positive,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,0.9166666666666666,0.6666666666666666,0.0,0.0,57098.833333333336
+EPI_single_hop_positive_1,EPI,single_hop_positive,S3 LLM + Guideline Text,6,0.3333333333333333,0.3333333333333333,0.9166666666666666,0.6666666666666666,0.0,0.16666666666666666,68072.5
+EPI_single_hop_single_hop_negative_1__EPI_single_hop_negative_1,EPI,single_hop_negative,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,1813.0
+EPI_single_hop_single_hop_positive_1__EPI_single_hop_positive_1,EPI,single_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,4810.0
+EPI_to_SUI_multi_hop_multi_hop_positive_1__EPI_to_SUI_multi_hop_positive_1,EPI,multi_hop_positive,S1 Graph Navigator,1,0.0,0.0,0.9230769230769231,0.0,1.0,0.0,8191.0
+EPI_to_SUI_multi_hop_positive_1,EPI,multi_hop_positive,S2 LLM + Graph JSON,6,0.0,0.3333333333333333,0.5,6.0,0.5,0.0,46397.666666666664
+EPI_to_SUI_multi_hop_positive_1,EPI,multi_hop_positive,S3 LLM + Guideline Text,6,0.0,0.16666666666666666,0.576923076923077,5.0,0.5,0.16666666666666666,70936.83333333333
+PSY_single_hop_negative_001,PSY,single_hop_negative,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,1.0,0.0,0.0,0.0,14508.333333333334
+PSY_single_hop_negative_001,PSY,single_hop_negative,S3 LLM + Guideline Text,6,0.5,0.5,0.9333333333333332,0.3333333333333333,0.0,0.0,23943.833333333332
+PSY_single_hop_positive_1,PSY,single_hop_positive,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,1.0,0.0,0.0,0.0,19590.0
+PSY_single_hop_positive_1,PSY,single_hop_positive,S3 LLM + Guideline Text,6,0.5,0.5,0.888888888888889,0.6666666666666666,0.0,0.0,31750.333333333332
+PSY_single_hop_single_hop_negative_1__PSY_single_hop_negative_001,PSY,single_hop_negative,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,2713.0
+PSY_single_hop_single_hop_positive_1__PSY_single_hop_positive_1,PSY,single_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,3689.0
+PSY_to_SUI_multi_hop_multi_hop_positive_1__multi_hop_positive_PSY_R1_SUI_D1,PSY,multi_hop_positive,S1 Graph Navigator,1,0.0,0.0,0.8,0.0,2.0,0.0,6217.0
+SUB_single_hop_negative_001,SUB,single_hop_negative,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,1.0,0.0,0.0,0.0,25399.666666666668
+SUB_single_hop_negative_001,SUB,single_hop_negative,S3 LLM + Guideline Text,6,0.8333333333333334,0.8333333333333334,0.9166666666666666,0.3333333333333333,0.0,0.0,26725.5
+SUB_single_hop_positive_1,SUB,single_hop_positive,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,0.9444444444444445,0.3333333333333333,0.0,0.0,46193.833333333336
+SUB_single_hop_positive_1,SUB,single_hop_positive,S3 LLM + Guideline Text,6,0.0,0.0,0.8055555555555557,1.1666666666666667,0.0,1.6666666666666667,58555.5
+SUB_single_hop_single_hop_negative_1__SUB_single_hop_negative_001,SUB,single_hop_negative,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,1701.0
+SUB_single_hop_single_hop_positive_1__SUB_single_hop_positive_1,SUB,single_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,2679.0
+SUB_to_PSY_multi_hop_multi_hop_positive_1__SUB_to_PSY_multi_hop_positive_1,SUB,multi_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,6852.0
+SUB_to_PSY_multi_hop_positive_1,SUB,multi_hop_positive,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,0.9848484848484849,0.0,0.16666666666666666,0.0,65308.833333333336
+SUB_to_PSY_multi_hop_positive_1,SUB,multi_hop_positive,S3 LLM + Guideline Text,6,0.5,0.5,0.9545454545454546,0.5,0.0,0.16666666666666666,83393.83333333333
+SUB_to_SUI_R4_positive_001,SUB,multi_hop_positive,S2 LLM + Graph JSON,6,0.0,0.0,0.8181818181818182,1.1666666666666667,0.8333333333333334,0.0,51620.833333333336
+SUB_to_SUI_R4_positive_001,SUB,multi_hop_positive,S3 LLM + Guideline Text,6,0.0,0.0,0.787878787878788,1.5,0.8333333333333334,1.3333333333333333,73378.83333333333
+SUB_to_SUI_multi_hop_multi_hop_positive_1__SUB_to_SUI_R4_positive_001,SUB,multi_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,6824.0
+SUI_single_hop_negative_1,SUI,single_hop_negative,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,0.9722222222222222,0.16666666666666666,0.0,0.0,19219.666666666668
+SUI_single_hop_negative_1,SUI,single_hop_negative,S3 LLM + Guideline Text,6,0.6666666666666666,0.6666666666666666,0.9722222222222223,0.16666666666666666,0.0,0.0,28517.5
+SUI_single_hop_positive_1,SUI,single_hop_positive,S2 LLM + Graph JSON,6,1.0,1.0,1.0,0.0,0.0,0.0,19876.666666666668
+SUI_single_hop_positive_1,SUI,single_hop_positive,S3 LLM + Guideline Text,6,0.6666666666666666,0.6666666666666666,1.0,0.0,0.0,0.3333333333333333,38403.666666666664
+SUI_single_hop_single_hop_negative_1__SUI_single_hop_negative_1,SUI,single_hop_negative,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,3280.0
+SUI_single_hop_single_hop_positive_1__SUI_single_hop_positive_1,SUI,single_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,2611.0
+SUI_to_OTH_multi_hop_multi_hop_positive_1__multi_hop_positive_SUI_to_OTH_1,SUI,multi_hop_positive,S1 Graph Navigator,1,1.0,1.0,1.0,0.0,0.0,0.0,5914.0
+multi_hop_positive_PSY_R1_SUI_D1,PSY,multi_hop_positive,S2 LLM + Graph JSON,6,0.0,0.0,0.8500000000000001,0.0,1.5,0.0,35573.666666666664
+multi_hop_positive_PSY_R1_SUI_D1,PSY,multi_hop_positive,S3 LLM + Guideline Text,6,0.0,0.0,0.8500000000000001,0.5,1.0,0.3333333333333333,54364.5
+multi_hop_positive_SUI_to_OTH_1,SUI,multi_hop_positive,S2 LLM + Graph JSON,6,0.8333333333333334,0.8333333333333334,0.9090909090909091,1.0,0.0,0.0,34187.166666666664
+multi_hop_positive_SUI_to_OTH_1,SUI,multi_hop_positive,S3 LLM + Guideline Text,6,0.0,0.0,0.9393939393939394,0.6666666666666666,0.0,0.0,51556.5

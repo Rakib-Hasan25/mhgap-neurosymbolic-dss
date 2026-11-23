@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "case_id": "CMH_single_hop_positive_1",
+      "category": "single_hop_positive",
+      "source_module": "CMH",
+      "referred_module": null,
+      "final_module": "CMH",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "CMH_D1",
+      "exit_node_id": null,
+      "node_sequence": [
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A2",
+          "type": "assessment",
+          "text": "Are there signs/symptoms suggesting nutritional deficiency (including iodine), anaemia, malnutrition, or acute/chronic infectious illness (including ear infection and HIV/AIDS)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A3",
+          "type": "assessment",
+          "text": "Assess the child for visual and/or hearing impairment. Does the child fail visual assessments (fails to look at eyes, follow object) or hearing assessments (fails to react to loud noise, turn head)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_D1",
+          "type": "diagnosis",
+          "text": "Developmental Delay/Disorder"
+        }
+      ],
+      "user_story": "Four-year-old Maisha Karim lives with her parents in a rented flat near the Karnaphuli EPZ in Chattogram, where her mother stitches garments and her father drives a CNG in the evenings. Maisha was born at term in a clinic in Agrabad and had no major illness as an infant, but her parents noticed early that she was slower than her cousins: she sat without support close to 10 months, walked after her second birthday, and still struggles to climb stairs without holding both the railing and her mother’s hand. She speaks mostly in single words like “pani” and “amma,” rarely joins two words, and often pulls adults by the hand instead of asking. At the neighbourhood playgroup, she prefers lining up bottle caps rather than playing with other children, becomes upset when routines change, and needs help with feeding, dressing, and using the toilet far more than other children her age.\n\nHer family meals are regular despite their modest income: rice, dal, egg or fish most days, vegetables from the bazaar, and iodized packet salt used at home. At her recent community clinic visit, she was active and well nourished, with no pallor, mouth ulcers, swollen neck, chronic diarrhoea, persistent cough, fever, weight loss, or enlarged lymph nodes. She has not had repeated ear discharge or ear pain, and there is no known HIV exposure or long-running infection in the household.\n\nMaisha appears to see and hear well in daily life. She looks directly at her mother’s face when teased, follows a rolling red ball across the room, points to pictures on her cousin’s phone, and picks up tiny beads from the floor. She turns immediately when the pressure cooker whistles or when her father calls her name from the doorway, startles at sudden loud honking outside, and enjoys dancing when music plays from the television. Despite intact hearing and vision and no signs of nutritional or infectious illness, her delays in language, motor skills, social interaction, and self-care have become increasingly clear to her family."
+    }
+  ]
+}

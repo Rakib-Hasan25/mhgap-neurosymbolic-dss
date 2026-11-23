@@ -1,0 +1,96 @@
+{
+  "cases": [
+    {
+      "case_id": "DEP_SUI_MHP_001",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": null,
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "type": "assessment",
+          "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "type": "diagnosis",
+          "text": "DEPRESSION is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "type": "assessment",
+          "text": "Is the person a child or adolescent?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A10",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_R3",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage for imminent risk of suicide before continuing."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+        }
+      ],
+      "user_story": "Farhana Akhter is a 38-year-old woman from Patiya, a semi-urban area outside Chattogram, where she lives with her husband, two school-aged daughters, and her mother-in-law in a rented two-room flat above a stationery shop. She teaches Bangla at a local girls’ madrasa and is known by neighbors as quiet, dependable, and careful with money. Her husband drives a CNG auto-rickshaw and their household has always depended on both incomes, especially since the price of rice, cooking oil, and school supplies rose sharply.\n\nOver the past month, Farhana’s family has noticed a striking change in her. She used to wake early for Fajr prayer, prepare breakfast, braid her daughters’ hair, and leave for school with neatly marked exercise books under her arm. For at least three weeks now she has seemed persistently low, often sitting on the edge of the bed after prayer with a blank expression, saying she feels “empty inside” and that nothing in the house feels meaningful anymore. She no longer enjoys teaching poetry, which used to be her favorite part of the week, and she has stopped attending the women’s Qur’an reading circle at a neighbor’s home, saying she has no interest in talking to anyone.\n\nHer sleep has become badly disturbed. Some nights she lies awake until 3 or 4 a.m., listening to the ceiling fan and worrying about school fees and household debts; on other mornings she remains in bed long after sunrise, exhausted and unable to get up. Her appetite has fallen, and her shalwar kameez has become loose enough that her sister commented on the weight loss during a visit. At home she moves slowly, takes a long time to answer simple questions, and sometimes stands in the kitchen holding a spoon without remembering what she was doing. When her daughters ask for help with homework, she becomes tearful and says, “A useless mother like me cannot help anyone.” She has begun misplacing exam papers, forgetting lesson plans, and staring at pages without understanding them. Her headmistress has warned her twice because she missed classes and arrived late several days in a row, which is very unlike her.\n\nFarhana feels deeply hopeless and ashamed. She tells her younger brother that her family would be better off without her and that she has become a burden. She has not been able to cook regularly, the laundry piles up, and her mother-in-law has started complaining that Farhana is “lazy” or “possessed by worry.” Her husband, initially irritated, became frightened when he found her sitting alone on the rooftop after midnight, crying and looking down at the road below. Farhana admitted she had been thinking about jumping, then begged him not to tell anyone because people in the neighborhood would gossip.\n\nHer symptoms have not followed any recent bereavement or major loss; no close relative or friend has died in the past several months. There is financial pressure and conflict at home, but nothing like the death of a loved one. She has no past history of episodes where she felt unusually energetic, overly cheerful, or powerful, and there have never been periods when she needed very little sleep while becoming more active, talkative, reckless, or impulsive. Her husband says she has always been cautious and modest, never the kind of person to take sudden risks or behave out of character for days at a time.\n\nA local physician checked her recently because the family first wondered if she had “weak blood” or thyroid problems. Her blood pressure and pulse were normal, she was not pregnant, and basic tests including hemoglobin and thyroid function did not suggest anaemia or hypothyroidism. She has not been taking steroids, sedatives, or other medicines that might explain the change, and there is no sign of malnutrition beyond the recent reduced eating caused by her low mood. She does not use alcohol or yaba, and she has no chronic physical illness known to the family."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS » Follow-up  
+90  
+CMH 3  
+
+CMH 3 » Follow-up  
+
+[Step 1]  
+ASSESS FOR IMPROVEMENT  
+
+[Decision Box]  
+Is the person improving?  
+Reassess and monitor the child/adolescent’s symptoms, behaviour, and functioning at every visit.
+
+Flow:
+
+[Decision Box] -> YES  
+[Decision Box] -> NO  
+
+---
+
+[YES branch]
+
+[Box]  
+» Continue with management plan and follow-up until symptoms cease or remit.  
+» Provide additional psychoeducation and advice on parenting.  
+» If on medication, consider gradually reducing medication dose in consultation with a specialist.  
+» If not on medication, decrease frequency of follow up once symptoms have subsided and the child/adolescent is able to perform well in daily life.
+
+---
+
+[NO branch]
+
+[Box]  
+» Provide additional psychoeducation and advice on parenting, as appropriate.  
+» Review psychosocial interventions and revise management plan as needed. Involve child/adolescent and carers in decision-making, as appropriate.  
+» Offer regular follow-up.
+
+↓
+
+[Box]  
+If NO improvement in symptoms and/or functioning in 6 months:  
+» Provide additional interventions if available.  
+» Increase the frequency of follow-up visits as needed.  
+» REFER TO SPECIALIST if available, for further assessment and management.
+
+---
+
+[Side Box – CLINICAL TIP]  
+CLINICAL TIP  
+» If exposure to one or more types of maltreatment was identified in the assessment, assess ongoing exposure and risks to the child/adolescent.

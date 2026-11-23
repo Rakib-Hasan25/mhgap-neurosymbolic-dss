@@ -1,0 +1,57 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/PSY/PSY_single_hop_single_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "PSY_single_hop_positive_1",
+      "prefix_ok": true,
+      "exact_ok": true,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [],
+      "counts": {
+        "expected_assessment_findings": 6,
+        "matched": 6,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 0
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": true,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "PSY_A1",
+        "PSY_A2",
+        "PSY_A3",
+        "PSY_A4",
+        "PSY_A6",
+        "PSY_A7",
+        "PSY_D2",
+        "PSY_M6",
+        "PSY_E3"
+      ],
+      "expected_node_ids": [
+        "PSY_A1",
+        "PSY_A2",
+        "PSY_A3",
+        "PSY_A4",
+        "PSY_A6",
+        "PSY_A7",
+        "PSY_D2",
+        "PSY_M6",
+        "PSY_E3"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "PSY_D2",
+        "engine_management_node_ids": [
+          "PSY_M6"
+        ],
+        "engine_referrals": [],
+        "engine_exit_node_id": "PSY_E3"
+      },
+      "stop_reason": "exit_reached",
+      "stop_node_id": "PSY_E3",
+      "vp_total_tokens": 3689
+    }
+  ]
+}

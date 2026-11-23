@@ -1,0 +1,73 @@
+Here is the structured transcription of the clinical guideline page, preserving the layout, text, and flowchart logic.
+
+**HEADER**
+[Left] DEPRESSION » Follow-up
+[Center] 30
+[Right] DEP 3
+
+---
+
+**MAIN TITLE**
+[Icon: Circular arrow with a plus sign inside] DEP 3 » Follow-up
+
+---
+
+**SIDEBAR / CALLOUT BOX (Right side of page)**
+**RECOMMENDATIONS ON FREQUENCY OF CONTACT**
+» Schedule the second appointment within 1 week.
+» Initially maintain regular contact via telephone, home visits, letters, or contact cards more frequently, e.g. monthly, for the first 3 months.
+
+---
+
+**FLOWCHART**
+
+**Start Node:** [Circle icon] 1
+↓ connects to
+**Node:** [Purple rectangle] ASSESS FOR IMPROVEMENT
+↓ connects to
+**Decision Node:** [White rectangle with purple border] Is the person improving?
+
+**Decision Paths:**
+From "Is the person improving?", the path splits into two directions: **NO** and **YES**.
+
+---
+
+**PATH: NO**
+[Arrow from "Is the person improving?" leads down and left through a grey circle labeled "NO" to the following box]
+
+**[Box Content - NO]**
+» **If not yet receiving psychological treatment**, consider psychological treatment.
+
+» **If receiving a psychological treatment**, evaluate engagement in and experience of current psychological treatment.
+
+» **If not yet on antidepressants**, consider antidepressants.
+
+» **If on antidepressants**, assess:
+
+– **Does the person take the medication as prescribed?**
+If not, explore reasons why and encourage adherence.
+
+– **Are there side effects?**
+
+**If yes**, evaluate and weigh benefits of treatment.
+**If no** to side effects to antidepressants, increase dose (**TABLE 1**).
+Follow-up in 1-2 weeks. [Icon: Circular arrow with a plus sign]
+**[Red Warning Icon] CAUTION WITH DOSE INCREASE.** CLOSE FOLLOW-UP NEEDED DUE TO POSSIBLE INCREASE IN SIDE EFFECTS.
+
+*(A downward grey line exits the bottom of this box).*
+
+---
+
+**PATH: YES**
+[Arrow from "Is the person improving?" leads down and right through a purple diamond labeled "YES" to the following box]
+
+**[Box Content - YES]**
+» Encourage the person to continue with their current management plan until they are *symptom free for 9-12 months*.
+
+» **Arrange a further follow up appointment in 1-2 weeks.** [Icon: Circular arrow with a plus sign]
+
+» Decrease contact as the person's symptoms improve, e.g. once every 3 months after the initial 3 months.
+
+*Note: follow up should continue until the person no longer has any symptoms of depression.*
+
+*(A downward purple line exits the bottom of this box).*

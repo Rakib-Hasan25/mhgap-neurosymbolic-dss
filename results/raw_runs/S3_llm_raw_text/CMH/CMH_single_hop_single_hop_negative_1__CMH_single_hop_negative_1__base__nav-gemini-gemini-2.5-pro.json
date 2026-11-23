@@ -1,0 +1,293 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "CMH",
+  "step_logs": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A15",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A16",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR OTHER PRIORITY MNS CONDITIONS: Are there any other concurrent MNS conditions (e.g., disorders due to substance use, or epilepsy for children with developmental delay)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A17",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS THE HOME ENVIRONMENT: Are the emotional, behavioural or developmental problems a reaction to or aggravated by a distressing or frightening situation (e.g., maltreatment, exposure to violence, severe stressors)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A18",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Do the carers have any priority MNS condition that could impact their ability to care for the child/adolescent (especially depression and disorders due to substance use)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A19",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the child getting adequate opportunities for play and social interaction/communication at home?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_A20",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS THE SCHOOL ENVIRONMENT: Is the child/adolescent in school?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_A21",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the child/adolescent being bullied, picked on, not able to participate and learn, or refusing to attend school?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_E1",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of Assessment and Management for Child & Adolescent Mental & Behavioural Disorders."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "CMH_A1",
+      "answer": "NO",
+      "to": "CMH_A4"
+    },
+    {
+      "from": "CMH_A4",
+      "answer": "NO",
+      "to": "CMH_A7"
+    },
+    {
+      "from": "CMH_A7",
+      "answer": "NO",
+      "to": "CMH_A9"
+    },
+    {
+      "from": "CMH_A9",
+      "answer": "NO",
+      "to": "CMH_A15"
+    },
+    {
+      "from": "CMH_A15",
+      "answer": "NO",
+      "to": "CMH_A16"
+    },
+    {
+      "from": "CMH_A16",
+      "answer": "NO",
+      "to": "CMH_A17"
+    },
+    {
+      "from": "CMH_A17",
+      "answer": "NO",
+      "to": "CMH_A18"
+    },
+    {
+      "from": "CMH_A18",
+      "answer": "NO",
+      "to": "CMH_A19"
+    },
+    {
+      "from": "CMH_A19",
+      "answer": "YES",
+      "to": "CMH_A20"
+    },
+    {
+      "from": "CMH_A20",
+      "answer": "YES",
+      "to": "CMH_A21"
+    },
+    {
+      "from": "CMH_A21",
+      "answer": "NO",
+      "to": "CMH_E1"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "CMH_E1",
+  "usage": {
+    "vp": {
+      "calls": 11,
+      "input_tokens": 7244,
+      "output_tokens": 22,
+      "total_tokens": 7266
+    },
+    "nav": {
+      "calls": 11,
+      "input_tokens": 56757,
+      "output_tokens": 221,
+      "total_tokens": 65326
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/CMH/CMH_single_hop_single_hop_negative_1.json",
+  "case_id": "CMH_single_hop_negative_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-pro"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A15",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A16",
+      "type": "assessment",
+      "text": "ASSESS FOR OTHER PRIORITY MNS CONDITIONS: Are there any other concurrent MNS conditions (e.g., disorders due to substance use, or epilepsy for children with developmental delay)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A17",
+      "type": "assessment",
+      "text": "ASSESS THE HOME ENVIRONMENT: Are the emotional, behavioural or developmental problems a reaction to or aggravated by a distressing or frightening situation (e.g., maltreatment, exposure to violence, severe stressors)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A18",
+      "type": "assessment",
+      "text": "Do the carers have any priority MNS condition that could impact their ability to care for the child/adolescent (especially depression and disorders due to substance use)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A19",
+      "type": "assessment",
+      "text": "Is the child getting adequate opportunities for play and social interaction/communication at home?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A20",
+      "type": "assessment",
+      "text": "ASSESS THE SCHOOL ENVIRONMENT: Is the child/adolescent in school?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A21",
+      "type": "assessment",
+      "text": "Is the child/adolescent being bullied, picked on, not able to participate and learn, or refusing to attend school?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_E1",
+      "type": "exit",
+      "text": "End of Assessment and Management for Child & Adolescent Mental & Behavioural Disorders."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "CMH_A1",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A15",
+      "CMH_A16",
+      "CMH_A17",
+      "CMH_A18",
+      "CMH_A19",
+      "CMH_A20",
+      "CMH_A21",
+      "CMH_E1"
+    ],
+    "actual_ids": [
+      "CMH_A1",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A15",
+      "CMH_A16",
+      "CMH_A17",
+      "CMH_A18",
+      "CMH_A19",
+      "CMH_A20",
+      "CMH_A21",
+      "CMH_E1"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 11,
+      "matched": 11,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 72592
+}

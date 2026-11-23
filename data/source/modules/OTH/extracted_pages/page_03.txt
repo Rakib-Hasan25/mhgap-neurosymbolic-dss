@@ -1,0 +1,29 @@
+OTH 1 » Assessment
+
+COMMON PRESENTATIONS OF OTHER SIGNIFICANT MENTAL HEALTH COMPLAINTS
+• Feeling extremely tired, depressed, irritated, anxious or stressed.
+• Medically unexplained somatic complaints (i.e. somatic symptoms that do not have a known physical cause that fully explains the symptom).
+
+[Box 1]
+Is there a physical cause that fully explains the presenting symptoms?
+
+Decision paths from Box 1:
+[Box 1] -> YES -> [Action Box A]
+[Box 1] -> NO -> [Box 2]
+
+[Action Box A]
+» Manage any physical cause identified and recheck to see if the symptoms persist.
+
+[Box 2]
+Is this depression or another MNS condition discussed in another module of this guide?
+
+Decision paths from Box 2:
+[Box 2] -> YES -> [Action Box B]
+[Box 2] -> NO -> (continues, not shown)
+
+[Action Box B]
+» Go to relevant module.
+
+Footer:
+OTHER SIGNIFICANT MENTAL HEALTH COMPLAINTS
+143

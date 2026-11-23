@@ -1,0 +1,10 @@
+module_id,module_name,in_benchmark,nodes,edges,assessment,management,diagnosis,referral,exit
+DEP,Depression,True,23,33,11,5,2,4,1
+SUB,Disorders due to Substance Use,True,65,72,21,16,9,5,14
+CMH,Child & Adolescent Mental & Behavioural Disorders,True,47,67,21,17,7,1,1
+EPI,Epilepsy,True,47,53,14,16,7,2,8
+PSY,Psychoses,True,20,24,7,6,2,2,3
+SUI,Self-Harm / Suicide,True,18,23,6,7,3,1,1
+OTH,Other Significant Mental Health Complaints,False,17,17,5,5,1,1,5
+TOTAL_6,Six benchmark modules,,220,272,80,67,30,15,28
+TOTAL_7,All graphs,,237,289,85,72,31,16,33

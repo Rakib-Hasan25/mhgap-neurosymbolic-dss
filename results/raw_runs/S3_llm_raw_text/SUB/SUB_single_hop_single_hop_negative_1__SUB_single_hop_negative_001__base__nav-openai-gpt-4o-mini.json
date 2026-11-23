@@ -1,0 +1,145 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "SUB",
+  "step_logs": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUB_E11",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of Substance Use Module (Dependence managed)."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "SUB_A1",
+      "answer": "NO",
+      "to": "SUB_A4"
+    },
+    {
+      "from": "SUB_A4",
+      "answer": "NO",
+      "to": "SUB_E11"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "SUB_E11",
+  "usage": {
+    "vp": {
+      "calls": 2,
+      "input_tokens": 807,
+      "output_tokens": 4,
+      "total_tokens": 811
+    },
+    "nav": {
+      "calls": 2,
+      "input_tokens": 10438,
+      "output_tokens": 28,
+      "total_tokens": 10466
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "openai",
+      "model": "gpt-4o-mini"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/SUB/SUB_single_hop_single_hop_negative_1.json",
+  "case_id": "SUB_single_hop_negative_001",
+  "nav_model_spec": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "SUB_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A4",
+      "type": "assessment",
+      "text": "Does the person appear overstimulated, anxious, or agitated?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A8",
+      "type": "assessment",
+      "text": "Does the person appear confused?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_A12",
+      "type": "assessment",
+      "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUB_M15",
+      "type": "management",
+      "text": "Emphasise the health benefits of not using psychoactive substances.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUB_E9",
+      "type": "exit",
+      "text": "End of module: No substance use."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_A8",
+      "SUB_A12",
+      "SUB_M15",
+      "SUB_E9"
+    ],
+    "actual_ids": [
+      "SUB_A1",
+      "SUB_A4",
+      "SUB_E11"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": false,
+    "finding_accuracy": 0.5,
+    "missing_findings": [
+      {
+        "id": "SUB_A8",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "SUB_A12",
+        "expected": "NO",
+        "actual": null
+      }
+    ],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 4,
+      "matched": 2,
+      "missing": 2,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 11277
+}

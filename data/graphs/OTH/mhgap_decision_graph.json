@@ -1,0 +1,182 @@
+{
+    "module": {
+        "id": "OTH",
+        "name": "Other Significant Mental Health Complaints"
+    },
+    "nodes": [
+        {
+            "id": "OTH_A1",
+            "type": "assessment",
+            "is_starting": true,
+            "text": "Is there a physical cause that fully explains the presenting symptoms?"
+        },
+        {
+            "id": "OTH_M1",
+            "type": "management",
+            "text": "Manage any physical cause identified and recheck to see if the symptoms persist."
+        },
+        {
+            "id": "OTH_E1",
+            "type": "exit",
+            "text": "Exit after managing physical cause."
+        },
+        {
+            "id": "OTH_A2",
+            "type": "assessment",
+            "text": "Is this depression or another MNS condition discussed in another module of this guide?"
+        },
+        {
+            "id": "OTH_M2",
+            "type": "management",
+            "text": "Go to the relevant module for the specific MNS condition."
+        },
+        {
+            "id": "OTH_E2",
+            "type": "exit",
+            "text": "Exit to another MNS condition module."
+        },
+        {
+            "id": "OTH_A3",
+            "type": "assessment",
+            "text": "Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?"
+        },
+        {
+            "id": "OTH_M3",
+            "type": "management",
+            "text": "No treatment needed."
+        },
+        {
+            "id": "OTH_E3",
+            "type": "exit",
+            "text": "Exit as no treatment is needed."
+        },
+        {
+            "id": "OTH_D1",
+            "type": "diagnosis",
+            "text": "Other Significant Mental Health Complaints are likely."
+        },
+        {
+            "id": "OTH_A4",
+            "type": "assessment",
+            "text": "Is there imminent risk of suicide?"
+        },
+        {
+            "id": "OTH_R1",
+            "type": "referral",
+            "target_module": "SUI",
+            "text": "Assess and manage imminent risk of suicide before continuing."
+        },
+        {
+            "id": "OTH_A5",
+            "type": "assessment",
+            "text": "Has the person been exposed to extreme stressors? (e.g., physical or sexual violence, major accidents, bereavement or other major losses)"
+        },
+        {
+            "id": "OTH_M4",
+            "type": "management",
+            "text": "Apply Protocol 1: Do not prescribe anti-anxiety or antidepressant medicines unless advised by a specialist. Reduce stress, teach relaxation techniques, and strengthen social supports (ECP). Acknowledge symptoms but avoid unnecessary investigations; explain that no serious disease has been identified. Encourage return to daily activities. Follow-up: Ask the person to return in 2-4 weeks if symptoms do not improve or worsen. If improving, continue treatment plan. If not improving or if insisting on further investigations, review Protocol 1 and consider consulting a specialist."
+        },
+        {
+            "id": "OTH_E4",
+            "type": "exit",
+            "text": "Exit after Protocol 1 management."
+        },
+        {
+            "id": "OTH_M5",
+            "type": "management",
+            "text": "Apply Protocols 1 and 2: Provide support as in Protocol 1. Address social needs and connect with supports. Do not pressure the person to talk. Explain normal grieving and psychological reactions to trauma (somatic and emotional symptoms are common and usually diminish). Support culturally appropriate mourning. If prolonged grief disorder or PTSD is suspected, consult a specialist. Follow-up: Ask the person to return in 2-4 weeks if symptoms do not improve or worsen. If improving, continue treatment plan. If not improving, review Protocols 1 and 2 and consider consulting a specialist."
+        },
+        {
+            "id": "OTH_E5",
+            "type": "exit",
+            "text": "Exit after Protocols 1 and 2 management."
+        }
+    ],
+    "relationships": [
+        {
+            "from": "OTH_A1",
+            "to": "OTH_M1",
+            "condition": "YES"
+        },
+        {
+            "from": "OTH_M1",
+            "to": "OTH_E1",
+            "condition": "NEXT"
+        },
+        {
+            "from": "OTH_A1",
+            "to": "OTH_A2",
+            "condition": "NO"
+        },
+        {
+            "from": "OTH_A2",
+            "to": "OTH_M2",
+            "condition": "YES"
+        },
+        {
+            "from": "OTH_M2",
+            "to": "OTH_E2",
+            "condition": "NEXT"
+        },
+        {
+            "from": "OTH_A2",
+            "to": "OTH_A3",
+            "condition": "NO"
+        },
+        {
+            "from": "OTH_A3",
+            "to": "OTH_M3",
+            "condition": "NO"
+        },
+        {
+            "from": "OTH_M3",
+            "to": "OTH_E3",
+            "condition": "NEXT"
+        },
+        {
+            "from": "OTH_A3",
+            "to": "OTH_D1",
+            "condition": "YES"
+        },
+        {
+            "from": "OTH_D1",
+            "to": "OTH_A4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "OTH_A4",
+            "to": "OTH_R1",
+            "condition": "YES"
+        },
+        {
+            "from": "OTH_R1",
+            "to": "OTH_A5",
+            "condition": "NEXT"
+        },
+        {
+            "from": "OTH_A4",
+            "to": "OTH_A5",
+            "condition": "NO"
+        },
+        {
+            "from": "OTH_A5",
+            "to": "OTH_M4",
+            "condition": "NO"
+        },
+        {
+            "from": "OTH_M4",
+            "to": "OTH_E4",
+            "condition": "NEXT"
+        },
+        {
+            "from": "OTH_A5",
+            "to": "OTH_M5",
+            "condition": "YES"
+        },
+        {
+            "from": "OTH_M5",
+            "to": "OTH_E5",
+            "condition": "NEXT"
+        }
+    ]
+}

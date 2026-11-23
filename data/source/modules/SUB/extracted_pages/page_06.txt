@@ -1,0 +1,50 @@
+DISORDERS DUE TO SUBSTANCE USE ........................................ 110 ........................................ SUB
+
+[Step 2 Box]
+"2  
+Does the person appear overstimulated, anxious, or agitated?"
+
+Decision paths:
+[Step 2 Box] -> YES  
+[Step 2 Box] -> NO
+
+YES path:
+[YES] -> ASSESS AND MANAGE A – D
+
+NO path:
+[NO] -> SKIP to STEP 3
+
+---
+
+ASSESS AND MANAGE A – D
+
+[Box A]
+"A  
+Person has recently stopped drinking or using sedatives and is now showing any of the following signs: Tremors, sweating, vomiting, increased blood pressure (BP) & heart rate, and agitation."
+
+[Box A] -> [Next Box]
+
+[Next Box]
+"Suspect  
+ALCOHOL or  
+BENZODIAZEPINE  
+WITHDRAWAL"
+
+[Next Box] -> [MANAGE WITHDRAWAL]
+
+---
+
+[MANAGE WITHDRAWAL Box]
+"» MANAGE WITHDRAWAL  
+– If the person has tremors, sweating, or vital sign changes then give diazepam 10-20 mg orally (p.o.) and transfer to hospital or detoxification facility if possible.  
+– Observe and repeat doses as needed for continued signs of withdrawal (tremors, sweating, increased BP and heart rate).  
+– For alcohol withdrawal only: Give thiamine 100 mg daily for five days."
+
+---
+
+[Warning / Transfer Box]
+"TRANSFER IMMEDIATELY TO A HOSPITAL  
+if the following are present:  
+– Other serious medical problems, e.g. hepatic encephalopathy, gastrointestinal bleeding, or head injury.  
+– Seizures: give diazepam 10-20 mg p.o., i.v. or rectum (p.r.) first.  
+– Delirium: give diazepam 10-20 mg p.o., i.v. or p.r. first. If severe and not responsive to diazepam, give an anti-psychotic medication such as haloperidol 1-2.5 mg p.o. or i.m. Continue to treat other signs of withdrawal (tremors, sweating, vital signs changes) with diazepam p.o., i.v. or p.r."

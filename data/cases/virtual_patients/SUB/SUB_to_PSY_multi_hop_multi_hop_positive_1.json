@@ -1,0 +1,132 @@
+{
+  "cases": [
+    {
+      "case_id": "SUB_to_PSY_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "SUB",
+      "referred_module": "PSY",
+      "final_module": "PSY",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "PSY_D2",
+      "exit_node_id": "PSY_E3",
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A5",
+          "type": "assessment",
+          "text": "Has the person recently stopped drinking or using sedatives AND is now showing signs such as tremors, sweating, vomiting, increased BP & HR, or agitation?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A6",
+          "type": "assessment",
+          "text": "Has the person recently used stimulants (cocaine, amphetamines) AND is showing dilated pupils, anxiety, agitation, hyper-excitable state, racing thoughts, or raised pulse and BP?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_D5",
+          "type": "diagnosis",
+          "text": "Suspect ACUTE STIMULANT INTOXICATION",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_M7",
+          "type": "management",
+          "text": "Give diazepam 5-10 mg in titrated doses until calm. If psychotic symptoms not responsive to diazepam, consider haloperidol 1-2.5 mg. TRANSFER TO HOSPITAL if chest pain, tachyarrhythmias, or neurological signs.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUB_A6_1",
+          "type": "assessment",
+          "text": "Do psychotic symptoms persist despite treatment?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_R1",
+          "type": "referral",
+          "target_module": "PSY",
+          "text": "Refer to Psychoses module for persistent psychotic symptoms."
+        },
+        {
+          "id": "PSY_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A2",
+          "type": "assessment",
+          "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_M2",
+          "type": "management",
+          "text": "Manage concurrent conditions. Consider consultation with a mental health specialist.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_A3",
+          "type": "assessment",
+          "text": "Does the person present with acute agitation and/or acute aggression?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_M3",
+          "type": "management",
+          "text": "Ensure safety. Communicate calmly. Treat underlying causes. Sedate as appropriate (e.g., haloperidol or diazepam) to prevent injury. In extreme violence, seek help from police/staff.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_A4",
+          "type": "assessment",
+          "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_A6",
+          "type": "assessment",
+          "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "PSY_A7",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "PSY_D2",
+          "type": "diagnosis",
+          "text": "Psychosis",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_M6",
+          "type": "management",
+          "text": "Begin antipsychotic medication immediately, starting at lowest dose and titrating up. Prescribe one at a time. Provide psychoeducation, promote functioning, ensure safety. Follow-up: Assess improvement, monitor adherence/side-effects. Consider discontinuing medications 12 months after symptoms resolve for first episode, or after several years of full remission for persistent symptoms.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "PSY_E3",
+          "type": "exit",
+          "text": "End of Psychosis path."
+        }
+      ],
+      "user_story": "Twenty-six-year-old Rafiq Hasan, a night-shift courier rider from Keraniganj, was brought to the emergency room at Sir Salimullah Medical College Hospital by his elder sister after neighbors found him pacing in the lane outside their rented house, shouting that “men from the bridge are tracking my phone.” He was wide awake, standing and scanning the room, not drowsy or slowed, and answered loudly when spoken to, though he kept interrupting with suspicious comments.\n\nRafiq looked frightened and keyed up: his pupils were noticeably large, his hands were restless, and he could not sit still. His pulse was 124/min and blood pressure 160/96 mmHg, but he denied chest pain, had a regular rhythm on examination, and showed no weakness, seizure, facial droop, or other neurological signs. His sister said he does not drink alcohol, has no diazepam or sleeping-pill habit, and had not recently stopped any sedatives; there had been no vomiting, and his sweating and agitation began only after last night’s outing.\n\nA friend later admitted that Rafiq had taken several yaba tablets during a long delivery run to stay awake. Since then he had been talking rapidly, saying his thoughts were racing, accusing strangers of planting cameras, and claiming he could hear two men whispering threats from the ceiling fan. After titrated diazepam in the emergency unit he became less physically restless, but the voices and paranoid beliefs continued, and he still spoke in a disorganized way about coded messages in rickshaw horns.\n\nOn further assessment he was oriented to his name, place, and date, with no fever, head injury, low glucose, abnormal oxygen level, or new medication that could explain delirium. Basic checks did not suggest an acute infection or metabolic problem, and his family reported no memory decline or depressive episode. The most obvious concurrent explanation was recent stimulant intoxication.\n\nHe remained acutely agitated when staff approached too quickly, once pushing away a tray because he believed it contained poison, though he did not strike anyone when spoken to calmly. His family described him as usually quiet and hardworking; he had not had a week or more of elevated mood, grand plans, increased spending, sexual disinhibition, or a sustained decreased need for sleep before this episode. When asked directly, Rafiq denied wanting to die, had made no self-harm attempt, had no plan or means, and said he only wanted “the watchers to leave me alone.”"
+    }
+  ]
+}

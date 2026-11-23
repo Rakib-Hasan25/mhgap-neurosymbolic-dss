@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "case_id": "DEP_single_hop_negative_001",
+      "category": "single_hop_negative",
+      "source_module": "DEP",
+      "referred_module": null,
+      "final_module": "DEP",
+      "diagnosis_reached": false,
+      "diagnosis_node_id": null,
+      "exit_node_id": "DEP_E1",
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_M1",
+          "type": "management",
+          "text": "Manage the physical condition.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A5",
+          "type": "assessment",
+          "text": "Do depressive symptoms remain after treatment of the physical condition?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_M2",
+          "type": "management",
+          "text": "No treatment needed.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_E1",
+          "type": "exit",
+          "text": "End of Depression Module."
+        }
+      ]
+    }
+  ]
+}

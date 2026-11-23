@@ -1,0 +1,24 @@
+```json
+[
+  {"box_type": "flowchart", "content": [
+    {"box_id": 1, "type": "step", "text": "5"},
+    {"box_id": 2, "type": "decision", "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?"},
+    {"box_id": 3, "type": "process", "text": ">> Proceed to EPI 1 (Assessment)"},
+    {"box_id": 4, "type": "process", "text": ">> GIVE 2nd DOSE OF EMERGENCY MEDICATION ➕"},
+    {"box_id": 5, "type": "step", "text": "6"},
+    {"box_id": 6, "type": "decision", "text": "Have the convulsions stopped?"},
+    {"box_id": 7, "type": "process", "text": ">> Proceed to EPI 1 (Assessment)"},
+    {"box_id": 8, "type": "process", "text": "❗️\n>> REFER URGENTLY TO HEALTH FACILITY ➕\n❌ DO NOT GIVE MORE THAN 2 DOSES OF EMERGENCY MEDICATION"},
+    {"connections": [
+      {"from": 1, "to": 2, "label": null, "type": "arrow"},
+      {"from": 2, "to": 3, "label": "YES", "type": "arrow"},
+      {"from": 2, "to": 4, "label": "NO", "type": "arrow"},
+      {"from": 4, "to": 5, "label": null, "type": "arrow"},
+      {"from": 5, "to": 6, "label": null, "type": "arrow"},
+      {"from": 6, "to": 7, "label": "YES", "type": "arrow"},
+      {"from": 6, "to": 8, "label": "NO", "type": "arrow"}
+    ]}
+  ]},
+  {"box_type": "footer", "content": "EPILEPSY\n\n55"}
+]
+```

@@ -1,0 +1,199 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "CMH",
+  "step_logs": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A16",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR OTHER PRIORITY MNS CONDITIONS: Are there any other concurrent MNS conditions (e.g., disorders due to substance use, or epilepsy for children with developmental delay)?",
+      "user_answer": "NO_ANSWER"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "CMH_A1",
+      "answer": "NO",
+      "to": "CMH_A4"
+    },
+    {
+      "from": "CMH_A4",
+      "answer": "NO",
+      "to": "CMH_A7"
+    },
+    {
+      "from": "CMH_A7",
+      "answer": "NO",
+      "to": "CMH_A9"
+    },
+    {
+      "from": "CMH_A9",
+      "answer": "NO",
+      "to": "CMH_A16"
+    }
+  ],
+  "stop_reason": "no_answer",
+  "stop_node_id": "CMH_A16",
+  "usage": {
+    "vp": {
+      "calls": 5,
+      "input_tokens": 2763,
+      "output_tokens": 12,
+      "total_tokens": 2775
+    },
+    "nav": {
+      "calls": 4,
+      "input_tokens": 19655,
+      "output_tokens": 64,
+      "total_tokens": 19719
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/CMH/CMH_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "case_id": "CMH_to_SUI_multi_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "openai",
+    "model": "gpt-4o"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A15",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_R1",
+      "type": "referral",
+      "target_module": "SUI",
+      "text": "Assess and manage suicide risk immediately."
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "CMH_A1",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A15",
+      "CMH_R1",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1"
+    ],
+    "actual_ids": [
+      "CMH_A1",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A16"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": false,
+    "finding_accuracy": 0.5714285714285714,
+    "missing_findings": [
+      {
+        "id": "CMH_A15",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "SUI_A1",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "SUI_A2",
+        "expected": "YES",
+        "actual": null
+      }
+    ],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 7,
+      "matched": 4,
+      "missing": 3,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 22494
+}

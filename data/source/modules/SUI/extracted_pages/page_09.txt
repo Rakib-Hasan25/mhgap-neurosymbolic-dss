@@ -1,0 +1,39 @@
+SUI 3 » Follow-up
+
+[1]
+ASSESS FOR IMPROVEMENT
+
+[Decision Box]
+Is the person improving?
+
+Decision paths:
+[Is the person improving?] -> YES
+[Is the person improving?] -> NO
+
+YES path:
+[YES] -> 
+- Decrease contact as the person improves.
+- Continue following-up for 2 years, further decreasing contact according to improvement (e.g. once every 2-4 weeks after the initial 2 months, and twice in the second year).
+
+NO path:
+[NO] ->
+- Increase intensity or duration of contact as necessary.
+- Refer to specialist as needed.
+
+Both paths converge to:
+
+[2]
+ROUTINELY ASSESS FOR THOUGHTS AND PLANS OF SELF-HARM/SUICIDE
+
+- At every contact, routinely assess for suicidal thoughts and plans.
+- Is the risk of self-harm/suicide imminent? See SUI 1 (Assessment).
+
+Right-side box:
+RECOMMENDATIONS ON FREQUENCY OF CONTACT
+
+- MAINTAIN REGULAR CONTACT (via telephone, home visits, letters or contact cards) more frequently initially (e.g. daily, weekly) for the first 2 months.
+- Follow-up for as long as the risk of self-harm/suicide persists.
+
+Footer:
+SELF-HARM/SUICIDE
+139

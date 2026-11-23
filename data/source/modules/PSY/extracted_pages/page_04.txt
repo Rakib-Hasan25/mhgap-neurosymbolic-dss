@@ -1,0 +1,76 @@
+**Header**
+
+| PSYCHOSES >> Assessment | 36 | PSY 1 |
+| :--- | :--- | :--- |
+
+**Flowchart**
+
+[START]
+↓
+[BOX 1]
+>> EVALUATE FOR DEMENTIA, DEPRESSION, DRUG/ ALCOHOL INTOXICATION OR WITHDRAWAL.
+↓
+[DECISION]
+
+---
+**(Decision Path 1: YES)**
+→ YES → 
+[BOX]
+>> Consider consultation with a mental health specialist for management of concurrent conditions.
+>> Manage concurrent conditions.
+Go to relevant modules.
+
+---
+**(Decision Path 2: NO)**
+→ NO → [Connection Point 2]
+
+---
+[SIDE BOX connected to the NO path]
+**MANAGEMENT OF ACUTE AGITATION AND/OR AGRESSION**
+
+If the person presents with either acute agitation and/or acute agression
+>> Go to "Management of persons with agitated and/or aggressive behaviour" (Table 5) in this module before continuing.
+---
+
+[Connection Point 2]
+↓
+[BOX 2]
+Is the person having an acute manic episode?
+↓
+[BOX]
+Have several of the following symptoms occurred simultaneously, lasting for at least 1 week, and severely enough to interfere significantly with work and social activities or requiring confinement or hospitalization:
+
+*   – Elevated or irritable mood
+*   – Decreased need for sleep
+*   – Increased activity, feeling of increased energy, increased talkativeness or rapid speech
+
+*   – Loss of normal social inhibitions such as sexual indiscretion
+*   – Impulsive or reckless behaviours such as excessive spending, making important decisions without planning
+
+*   – Being easily distracted
+*   – Unrealistically inflated self-esteem
+↓
+[DECISION]
+
+---
+**(Decision Path 3: NO)**
+→ NO
+
+[SIDE BOX connected to the NO path]
+**CLINICAL TIP** Persons with bipolar disorder can experience manic episodes only or a combination of manic and depressive episodes in their lifetime.
+
+>> To learn how to assess and manage depressive episode of bipolar disorder, go to >> DEP.
+---
+
+**(Decision Path 4: YES)**
+→ YES → 
+[BOX]
+Suspect
+BIPOLAR DISORDER Manic Episode
+
+[ALERT connected to the YES path]
+**! IF THERE IS IMMINENT RISK OF SUICIDE, ASSESS AND MANAGE before continuing. Go to >> SUI.**
+
+↓
+[BOX]
+>> Go to PROTOCOL 1

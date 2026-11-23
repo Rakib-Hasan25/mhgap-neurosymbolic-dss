@@ -1,0 +1,550 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "DEP",
+  "step_logs": [
+    {
+      "id": "DEP_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_D2",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "DEPRESSION is likely."
+    },
+    {
+      "id": "DEP_A11",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person a child or adolescent?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_R4",
+      "type": "referral",
+      "is_starting": false,
+      "text": "For management of depression in children/adolescents, refer to Child & Adolescent Mental & Behavioural Disorders.",
+      "target_module": "CMH"
+    },
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_A10",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_A11",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Rule out physical conditions that can resemble or exacerbate emotional disorders. Are there any signs/symptoms of thyroid diseases, infectious illness, anaemia, obesity, malnutrition, asthma, or medication side-effects?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A12",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person an adolescent who has problems with mood (feeling irritable, down or sad) OR has lost interest in or enjoyment of activities?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_A13",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the adolescent had several additional symptoms (e.g., disturbed sleep, appetite/weight change, worthlessness/guilt, fatigue, reduced concentration, indecisiveness, agitation, hopelessness, suicidal thoughts) most days for the last 2 weeks?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_A14",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas due to these depressive symptoms?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_D8",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Depression (Adolescent)"
+    },
+    {
+      "id": "CMH_M12",
+      "type": "management",
+      "is_starting": false,
+      "text": "Protocol 6 (Depression): Rule out manic episode or normal reaction to major loss. Provide psychoeducation, guidance on well-being, and carer support. Consider interpersonal therapy. Follow-up: Once a month. If psychological interventions are ineffective after 6 months and adolescent is >=12 years old, consult specialist for Fluoxetine (no other SSRIs or TCAs). Monitor weekly for first month if prescribed."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "DEP_A1",
+      "answer": "YES",
+      "to": "DEP_A2"
+    },
+    {
+      "from": "DEP_A2",
+      "answer": "YES",
+      "to": "DEP_A3"
+    },
+    {
+      "from": "DEP_A3",
+      "answer": "YES",
+      "to": "DEP_A4"
+    },
+    {
+      "from": "DEP_A4",
+      "answer": "NO",
+      "to": "DEP_A6"
+    },
+    {
+      "from": "DEP_A6",
+      "answer": "NO",
+      "to": "DEP_A7"
+    },
+    {
+      "from": "DEP_A7",
+      "answer": "NO",
+      "to": "DEP_D2"
+    },
+    {
+      "from": "DEP_D2",
+      "answer": "NEXT",
+      "to": "DEP_A11"
+    },
+    {
+      "from": "DEP_A11",
+      "answer": "YES",
+      "to": "DEP_R4"
+    },
+    {
+      "from": "DEP_R4",
+      "answer": "REFERRAL",
+      "to": "CMH_A1",
+      "target_module": "CMH"
+    },
+    {
+      "from": "CMH_A1",
+      "answer": "NO",
+      "to": "CMH_A4"
+    },
+    {
+      "from": "CMH_A4",
+      "answer": "NO",
+      "to": "CMH_A7"
+    },
+    {
+      "from": "CMH_A7",
+      "answer": "NO",
+      "to": "CMH_A9"
+    },
+    {
+      "from": "CMH_A9",
+      "answer": "YES",
+      "to": "CMH_A10"
+    },
+    {
+      "from": "CMH_A10",
+      "answer": "YES",
+      "to": "CMH_A11"
+    },
+    {
+      "from": "CMH_A11",
+      "answer": "NO",
+      "to": "CMH_A12"
+    },
+    {
+      "from": "CMH_A12",
+      "answer": "YES",
+      "to": "CMH_A13"
+    },
+    {
+      "from": "CMH_A13",
+      "answer": "YES",
+      "to": "CMH_A14"
+    },
+    {
+      "from": "CMH_A14",
+      "answer": "YES",
+      "to": "CMH_D8"
+    },
+    {
+      "from": "CMH_D8",
+      "answer": "NEXT",
+      "to": "CMH_M12"
+    },
+    {
+      "from": "CMH_M12",
+      "answer": "NEXT",
+      "to": "CMH_A15"
+    }
+  ],
+  "stop_reason": "max_iterations",
+  "stop_node_id": "CMH_A15",
+  "usage": {
+    "vp": {
+      "calls": 16,
+      "input_tokens": 9141,
+      "output_tokens": 32,
+      "total_tokens": 9173
+    },
+    "nav": {
+      "calls": 19,
+      "input_tokens": 76167,
+      "output_tokens": 265,
+      "total_tokens": 80573
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/DEP/DEP_to_CMH_multi_hop_multi_hop_positive_1.json",
+  "case_id": "DEP_to_CMH_multi_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "DEP_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A2",
+      "type": "assessment",
+      "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A3",
+      "type": "assessment",
+      "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A4",
+      "type": "assessment",
+      "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_A6",
+      "type": "assessment",
+      "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_A7",
+      "type": "assessment",
+      "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_D2",
+      "type": "diagnosis",
+      "text": "DEPRESSION is likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "DEP_A11",
+      "type": "assessment",
+      "text": "Is the person a child or adolescent?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_R4",
+      "type": "referral",
+      "target_module": "CMH",
+      "text": "For management of depression in children/adolescents, refer to Child & Adolescent Mental & Behavioural Disorders."
+    },
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A10",
+      "type": "assessment",
+      "text": "Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A11",
+      "type": "assessment",
+      "text": "Rule out physical conditions that can resemble or exacerbate emotional disorders. Are there any signs/symptoms of thyroid diseases, infectious illness, anaemia, obesity, malnutrition, asthma, or medication side-effects?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A12",
+      "type": "assessment",
+      "text": "Is the person an adolescent who has problems with mood (feeling irritable, down or sad) OR has lost interest in or enjoyment of activities?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A13",
+      "type": "assessment",
+      "text": "Has the adolescent had several additional symptoms (e.g., disturbed sleep, appetite/weight change, worthlessness/guilt, fatigue, reduced concentration, indecisiveness, agitation, hopelessness, suicidal thoughts) most days for the last 2 weeks?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A14",
+      "type": "assessment",
+      "text": "Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas due to these depressive symptoms?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_D8",
+      "type": "diagnosis",
+      "text": "Depression (Adolescent)",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "CMH_M12",
+      "type": "management",
+      "text": "Protocol 6 (Depression): Rule out manic episode or normal reaction to major loss. Provide psychoeducation, guidance on well-being, and carer support. Consider interpersonal therapy. Follow-up: Once a month. If psychological interventions are ineffective after 6 months and adolescent is >=12 years old, consult specialist for Fluoxetine (no other SSRIs or TCAs). Monitor weekly for first month if prescribed.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "CMH_A15",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A16",
+      "type": "assessment",
+      "text": "ASSESS FOR OTHER PRIORITY MNS CONDITIONS: Are there any other concurrent MNS conditions (e.g., disorders due to substance use, or epilepsy for children with developmental delay)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A17",
+      "type": "assessment",
+      "text": "ASSESS THE HOME ENVIRONMENT: Are the emotional, behavioural or developmental problems a reaction to or aggravated by a distressing or frightening situation (e.g., maltreatment, exposure to violence, severe stressors)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A18",
+      "type": "assessment",
+      "text": "Do the carers have any priority MNS condition that could impact their ability to care for the child/adolescent (especially depression and disorders due to substance use)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A19",
+      "type": "assessment",
+      "text": "Is the child getting adequate opportunities for play and social interaction/communication at home?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A20",
+      "type": "assessment",
+      "text": "ASSESS THE SCHOOL ENVIRONMENT: Is the child/adolescent in school?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A21",
+      "type": "assessment",
+      "text": "Is the child/adolescent being bullied, picked on, not able to participate and learn, or refusing to attend school?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_E1",
+      "type": "exit",
+      "text": "End of Assessment and Management for Child & Adolescent Mental & Behavioural Disorders."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "DEP_A1",
+      "DEP_A2",
+      "DEP_A3",
+      "DEP_A4",
+      "DEP_A6",
+      "DEP_A7",
+      "DEP_D2",
+      "DEP_A11",
+      "DEP_R4",
+      "CMH_A1",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A10",
+      "CMH_A11",
+      "CMH_A12",
+      "CMH_A13",
+      "CMH_A14",
+      "CMH_D8",
+      "CMH_M12",
+      "CMH_A15",
+      "CMH_A16",
+      "CMH_A17",
+      "CMH_A18",
+      "CMH_A19",
+      "CMH_A20",
+      "CMH_A21",
+      "CMH_E1"
+    ],
+    "actual_ids": [
+      "DEP_A1",
+      "DEP_A2",
+      "DEP_A3",
+      "DEP_A4",
+      "DEP_A6",
+      "DEP_A7",
+      "DEP_D2",
+      "DEP_A11",
+      "DEP_R4",
+      "CMH_A1",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A10",
+      "CMH_A11",
+      "CMH_A12",
+      "CMH_A13",
+      "CMH_A14",
+      "CMH_D8",
+      "CMH_M12"
+    ],
+    "exact_path_match": false,
+    "prefix_path_match": true,
+    "finding_accuracy": 0.6956521739130435,
+    "missing_findings": [
+      {
+        "id": "CMH_A15",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "CMH_A16",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "CMH_A17",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "CMH_A18",
+        "expected": "NO",
+        "actual": null
+      },
+      {
+        "id": "CMH_A19",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "CMH_A20",
+        "expected": "YES",
+        "actual": null
+      },
+      {
+        "id": "CMH_A21",
+        "expected": "NO",
+        "actual": null
+      }
+    ],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 23,
+      "matched": 16,
+      "missing": 7,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 89746
+}

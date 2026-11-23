@@ -1,0 +1,58 @@
+[Top Title Box]
+“1  
+ASSESS FOR DEVELOPMENTAL DISORDERS”
+
+[Main Instruction Box]
+“Assess all domains – motor, cognitive, social, communication, and adaptive.
+
+For toddlers and young children:
+Has the child had any difficulties with age-appropriate milestones across all developmental areas?
+
+For older children and adolescents:
+Are there difficulties with school (learning, reading, and writing), communicating and interacting with others, self-care, and everyday household activities?”
+
+[Decision Flow]
+
+From [Main Instruction Box]:
+→ [Decision Diamond: YES]
+→ [Decision Circle: NO]
+
+[NO path]:
+[NO] → “SKIP to STEP 2”
+
+[YES path]:
+[YES] → [Box]
+“Suspect DEVELOPMENTAL DELAY/DISORDER”
+
+↓
+
+[Next Box]
+“Are there signs/symptoms suggesting any of the following:
+– Nutritional deficiency, including iodine deficiency
+– Anaemia
+– Malnutrition
+– Acute or chronic infectious illness, including ear infection and HIV/AIDS”
+
+↓
+
+From this box:
+→ [Decision Diamond: YES]
+→ [Decision Circle: NO]
+
+[YES path]:
+[YES] → [Box]
+“Manage conditions using Integrated Management of Childhood Illness (IMCI)
+(www.who.int/maternal_child_adolescent/documents/IMCI_chartbooklet) or other available guidelines.”
+
+[NO path]:
+[NO] → (arrow continues downward; no further visible box in image)
+
+[Side Panel – CLINICAL TIP]
+“CLINICAL TIP
+» Adolescents should always be offered the opportunity to be seen on their own, without carers present.
+» Clarify the confidential nature of the discussion.
+» Indicate in what circumstances parents or other adults will be given information.
+» Explore the presenting complaint with the child/adolescent and carer.”
+
+[Footer]
+“CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS    73”

@@ -1,0 +1,271 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "DEP",
+  "step_logs": [
+    {
+      "id": "DEP_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_D2",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "DEPRESSION is likely."
+    },
+    {
+      "id": "DEP_A11",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person a child or adolescent?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_A10",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_M5",
+      "type": "management",
+      "is_starting": false,
+      "text": "PROTOCOL 1: Provide psychoeducation, reduce stress, strengthen social supports, and promote functioning. Consider brief psychological treatments. Consider antidepressants if appropriate. For pregnant/breastfeeding women, avoid antidepressants if possible. Follow-up: Schedule the second appointment within 1 week. Initially maintain regular contact (e.g., monthly) for the first 3 months."
+    },
+    {
+      "id": "DEP_E1",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of Depression Module."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "DEP_A1",
+      "answer": "YES",
+      "to": "DEP_A2"
+    },
+    {
+      "from": "DEP_A2",
+      "answer": "YES",
+      "to": "DEP_A3"
+    },
+    {
+      "from": "DEP_A3",
+      "answer": "YES",
+      "to": "DEP_A4"
+    },
+    {
+      "from": "DEP_A4",
+      "answer": "NO",
+      "to": "DEP_A6"
+    },
+    {
+      "from": "DEP_A6",
+      "answer": "NO",
+      "to": "DEP_A7"
+    },
+    {
+      "from": "DEP_A7",
+      "answer": "NO",
+      "to": "DEP_D2"
+    },
+    {
+      "from": "DEP_D2",
+      "answer": "NEXT",
+      "to": "DEP_A11"
+    },
+    {
+      "from": "DEP_A11",
+      "answer": "NO",
+      "to": "DEP_A10"
+    },
+    {
+      "from": "DEP_A10",
+      "answer": "NO",
+      "to": "DEP_M5"
+    },
+    {
+      "from": "DEP_M5",
+      "answer": "NEXT",
+      "to": "DEP_E1"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "DEP_E1",
+  "usage": {
+    "vp": {
+      "calls": 8,
+      "input_tokens": 7328,
+      "output_tokens": 16,
+      "total_tokens": 7344
+    },
+    "nav": {
+      "calls": 10,
+      "input_tokens": 34523,
+      "output_tokens": 217,
+      "total_tokens": 45471
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/DEP/DEP_single_hop_single_hop_positive_1.json",
+  "case_id": "DEP_single_hop_positive_001",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-pro"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "DEP_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A2",
+      "type": "assessment",
+      "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A3",
+      "type": "assessment",
+      "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A4",
+      "type": "assessment",
+      "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_A6",
+      "type": "assessment",
+      "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_A7",
+      "type": "assessment",
+      "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_D2",
+      "type": "diagnosis",
+      "text": "DEPRESSION is likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "DEP_A11",
+      "type": "assessment",
+      "text": "Is the person a child or adolescent?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_A10",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_M5",
+      "type": "management",
+      "text": "PROTOCOL 1: Provide psychoeducation, reduce stress, strengthen social supports, and promote functioning. Consider brief psychological treatments. Consider antidepressants if appropriate. For pregnant/breastfeeding women, avoid antidepressants if possible. Follow-up: Schedule the second appointment within 1 week. Initially maintain regular contact (e.g., monthly) for the first 3 months.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "DEP_E1",
+      "type": "exit",
+      "text": "End of Depression Module."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "DEP_A1",
+      "DEP_A2",
+      "DEP_A3",
+      "DEP_A4",
+      "DEP_A6",
+      "DEP_A7",
+      "DEP_D2",
+      "DEP_A11",
+      "DEP_A10",
+      "DEP_M5",
+      "DEP_E1"
+    ],
+    "actual_ids": [
+      "DEP_A1",
+      "DEP_A2",
+      "DEP_A3",
+      "DEP_A4",
+      "DEP_A6",
+      "DEP_A7",
+      "DEP_D2",
+      "DEP_A11",
+      "DEP_A10",
+      "DEP_M5",
+      "DEP_E1"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 8,
+      "matched": 8,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 52815
+}

@@ -1,0 +1,49 @@
+[Top arrow pointing downward into main box]
+
+[Box 1]
+Are symptoms persistent, severe, and inappropriate for the child/adolescent’s developmental level:
+
+– Symptoms are present in different settings (e.g. at home, at school and in other social settings).  
+– Symptoms have been present for at least 6 months.  
+– More severe than ordinary childish mischief or adolescent rebelliousness.  
+– Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?
+
+[Decision node below Box 1]
+NO (left path)  
+YES (right path)
+
+Connections:
+[Box 1] -> NO  
+[Box 1] -> YES
+
+LEFT PATH (NO):
+
+[Box 2]
+Consider  
+PROBLEMS WITH  
+BEHAVIOUR
+
+[Arrow from Box 2 to next box]
+
+[Box 3]
+» Go to PROTOCOL 2
+
+Connections:
+NO -> [Box 2] -> [Box 3]
+
+RIGHT PATH (YES):
+
+[Box 4]
+Consider  
+CONDUCT DISORDER
+
+[Arrow from Box 4 to next box]
+
+[Box 5]
+» Go to PROTOCOL 4
+
+Connections:
+YES -> [Box 4] -> [Box 5]
+
+[Footer]
+CHILD & ADOLESCENT MENTAL & BEHAVIOURAL DISORDERS     77

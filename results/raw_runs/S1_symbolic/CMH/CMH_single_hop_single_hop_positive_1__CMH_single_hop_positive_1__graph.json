@@ -1,0 +1,276 @@
+{
+  "module_id": "CMH",
+  "collected_answers": {
+    "CMH_A1": "YES",
+    "CMH_A2": "NO",
+    "CMH_A3": "NO",
+    "CMH_A4": "NO",
+    "CMH_A7": "NO",
+    "CMH_A9": "NO",
+    "CMH_A15": "NO",
+    "CMH_A16": "NO",
+    "CMH_A17": "NO",
+    "CMH_A18": "NO_ANSWER"
+  },
+  "step_logs": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "CMH_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there signs/symptoms suggesting nutritional deficiency (including iodine), anaemia, malnutrition, or acute/chronic infectious illness (including ear infection and HIV/AIDS)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Assess the child for visual and/or hearing impairment. Does the child fail visual assessments (fails to look at eyes, follow object) or hearing assessments (fails to react to loud noise, turn head)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Developmental Delay/Disorder"
+    },
+    {
+      "id": "CMH_M3",
+      "type": "management",
+      "is_starting": false,
+      "text": "Protocol 1 (Developmental Delay/Disorder): Provide guidance on child well-being, psychoeducation, and parenting advice. Provide carer support, liaise with teachers, and link with Community-Based Rehabilitation. Offer Parent Skills Training. Refer to specialist for further assessment. DO NOT offer pharmacological treatment. Follow-up: Reassess every 3 months or more; if no improvement, further deterioration, or danger, refer to specialist."
+    },
+    {
+      "id": "CMH_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A7",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A9",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A15",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A16",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS FOR OTHER PRIORITY MNS CONDITIONS: Are there any other concurrent MNS conditions (e.g., disorders due to substance use, or epilepsy for children with developmental delay)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A17",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "ASSESS THE HOME ENVIRONMENT: Are the emotional, behavioural or developmental problems a reaction to or aggravated by a distressing or frightening situation (e.g., maltreatment, exposure to violence, severe stressors)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "CMH_A18",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Do the carers have any priority MNS condition that could impact their ability to care for the child/adolescent (especially depression and disorders due to substance use)?",
+      "user_answer": "NO_ANSWER"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "CMH_A1",
+      "answer": "YES",
+      "to": "CMH_A2"
+    },
+    {
+      "from": "CMH_A2",
+      "answer": "NO",
+      "to": "CMH_A3"
+    },
+    {
+      "from": "CMH_A3",
+      "answer": "NO",
+      "to": "CMH_D1"
+    },
+    {
+      "from": "CMH_D1",
+      "answer": "NEXT",
+      "to": "CMH_M3"
+    },
+    {
+      "from": "CMH_M3",
+      "answer": "NEXT",
+      "to": "CMH_A4"
+    },
+    {
+      "from": "CMH_A4",
+      "answer": "NO",
+      "to": "CMH_A7"
+    },
+    {
+      "from": "CMH_A7",
+      "answer": "NO",
+      "to": "CMH_A9"
+    },
+    {
+      "from": "CMH_A9",
+      "answer": "NO",
+      "to": "CMH_A15"
+    },
+    {
+      "from": "CMH_A15",
+      "answer": "NO",
+      "to": "CMH_A16"
+    },
+    {
+      "from": "CMH_A16",
+      "answer": "NO",
+      "to": "CMH_A17"
+    },
+    {
+      "from": "CMH_A17",
+      "answer": "NO",
+      "to": "CMH_A18"
+    }
+  ],
+  "stop_reason": "no_answer",
+  "stop_node_id": "CMH_A18",
+  "usage": {
+    "vp": {
+      "calls": 10,
+      "input_tokens": 5435,
+      "output_tokens": 22,
+      "total_tokens": 5457
+    }
+  },
+  "dataset_path": "detector_outputs/phase1_userstories/CMH/CMH_single_hop_single_hop_positive_1.json",
+  "case_id": "CMH_single_hop_positive_1",
+  "expected_node_sequence": [
+    {
+      "id": "CMH_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "CMH_A2",
+      "type": "assessment",
+      "text": "Are there signs/symptoms suggesting nutritional deficiency (including iodine), anaemia, malnutrition, or acute/chronic infectious illness (including ear infection and HIV/AIDS)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_A3",
+      "type": "assessment",
+      "text": "Assess the child for visual and/or hearing impairment. Does the child fail visual assessments (fails to look at eyes, follow object) or hearing assessments (fails to react to loud noise, turn head)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "CMH_D1",
+      "type": "diagnosis",
+      "text": "Developmental Delay/Disorder"
+    }
+  ],
+  "evaluation": {
+    "case_id": "CMH_single_hop_positive_1",
+    "prefix_ok": false,
+    "exact_ok": false,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [
+      {
+        "node_id": "CMH_A4",
+        "expected": null,
+        "actual": "NO"
+      },
+      {
+        "node_id": "CMH_A7",
+        "expected": null,
+        "actual": "NO"
+      },
+      {
+        "node_id": "CMH_A9",
+        "expected": null,
+        "actual": "NO"
+      },
+      {
+        "node_id": "CMH_A15",
+        "expected": null,
+        "actual": "NO"
+      },
+      {
+        "node_id": "CMH_A16",
+        "expected": null,
+        "actual": "NO"
+      },
+      {
+        "node_id": "CMH_A17",
+        "expected": null,
+        "actual": "NO"
+      }
+    ],
+    "counts": {
+      "expected_assessment_findings": 3,
+      "matched": 3,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 6
+    },
+    "mismatched_answers": [],
+    "diagnosis_ok": true,
+    "exit_ok": true,
+    "actual_node_ids": [
+      "CMH_A1",
+      "CMH_A2",
+      "CMH_A3",
+      "CMH_D1",
+      "CMH_M3",
+      "CMH_A4",
+      "CMH_A7",
+      "CMH_A9",
+      "CMH_A15",
+      "CMH_A16",
+      "CMH_A17",
+      "CMH_A18"
+    ],
+    "expected_node_ids": [
+      "CMH_A1",
+      "CMH_A2",
+      "CMH_A3",
+      "CMH_D1"
+    ],
+    "engine_outcomes": {
+      "engine_diagnosis_node_id": "CMH_D1",
+      "engine_management_node_ids": [
+        "CMH_M3"
+      ],
+      "engine_referrals": [],
+      "engine_exit_node_id": null
+    },
+    "stop_reason": "no_answer",
+    "stop_node_id": "CMH_A18",
+    "vp_total_tokens": 5457
+  },
+  "vp_total_tokens": 5457
+}

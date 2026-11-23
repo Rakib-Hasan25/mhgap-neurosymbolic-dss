@@ -1,0 +1,53 @@
+[START OF FLOWCHART]
+
+[Incoming arrow from top of page]
+
+**[Decision Box]**
+Have the convulsions stopped?
+
+**[Decision Path: NO]**
+-> NO ->
+
+**[Action Box]**
+>> Use one of the other medications (if available) OR additional 10 mg/kg phenytoin (given over 30 min)
+>> Monitor for respiratory depression, hypotension, arrhythmia.
+
+**[Decision Path: YES]**
+-> YES ->
+
+[The "NO" path from the first decision box (after the Action Box) and the "YES" path both lead to the following step, marked with a number 10]
+
+**[Numbered Step: 10]**
+
+**[Action Box]**
+>> EVALUATE (AND TREAT AS APPROPRIATE) FOR UNDERLYING CAUSE OF CONVULSIONS:
+- Neuroinfection (fever, stiff neck, headache, confusion)
+- Substance use (alcohol withdrawal or drug ingestion)
+- Trauma
+- Metabolic abnormality (hypernatraemia or hypoglycaemia)
+- Stroke (focal deficit)
+- Tumor (focal deficit)
+- Known epilepsy (prior history of seizures)
+
+[Arrow pointing down]
+
+**[Decision Box]**
+Have the convulsions stopped?
+
+**[Decision Path: NO]**
+-> NO ->
+
+**[Action Box with red border and arrow icon pointing left]**
+>> REFER TO SPECIALIST FOR FURTHER DIAGNOSTIC EVALUATION [Icon of a medical professional]
+
+**[Decision Path: YES]**
+-> YES ->
+
+**[Action Box shaped like a right-pointing arrow]**
+>> Proceed to EPI 1 (Assessment)
+
+[END OF FLOWCHART]
+
+**[Footer]**
+EPILEPSY
+57

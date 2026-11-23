@@ -1,0 +1,49 @@
+[Header]
+! EPI » EMERGENCY
+
+[Flowchart Start]
+
+[Box 1]
+PERSON PRESENTS WITH CONVULSION OR IS UNRESPONSIVE AND STIFF
+--> [Decision 1]
+
+[Side note pointing to the flowchart]
+CLINICAL TIP:
+Assessment and management should occur simultaneously.
+
+[Decision 1, numbered 1]
+Any sign of head or neck injury?
+--> [Path: YES]
+--> [Path: NO]
+
+[Path: YES]
+--> YES --> [Action 1]
+[Action 1]
+» KEEP HEAD AND NECK STABLE
+--> [Step 2]
+
+[Path: NO]
+--> NO --> [Step 2]
+
+[Step 2, numbered 2]
+--> [Action Box 2]
+
+[Action Box 2]
+A large box containing two columns of instructions. A red exclamation mark icon is on the right border of this box.
+
+[Left Column]
+*   » Check AIRWAY, BREATHING, CIRCULATION (ABCs)
+    Ensure the person has nothing in their airway, is breathing well and has a stable pulse
+*   » Check BLOOD PRESSURE, TEMPERATURE and RESPIRATORY RATE
+*   » Start timing the duration of the convulsions, if possible
+*   » Make sure the person is in a safe place and if possible, put them down on their side to help breathing; loosen any neckties or clothing around the neck, take off eye glasses, and place something soft under the head (if available)
+
+[Right Column]
+*   » Place an intravenous (i.v.) line for medication/ fluid administration if possible
+*   » ⊗ DO NOT LEAVE THE PERSON ALONE
+*   » ⊗ DO NOT PUT ANYTHING IN THE MOUTH
+*   » FOR A PERSON WITH POSSIBLE HEAD INJURY, NEUROINFECTION (FEVER) OR FOCAL DEFICITS, REFER URGENTLY TO HOSPITAL ✚
+
+[Footer]
+EPILEPSY
+53

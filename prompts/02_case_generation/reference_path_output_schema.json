@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "cases"
+  ],
+  "properties": {
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "case_id",
+          "category",
+          "source_module",
+          "referred_module",
+          "final_module",
+          "diagnosis_reached",
+          "diagnosis_node_id",
+          "exit_node_id",
+          "node_sequence"
+        ],
+        "properties": {
+          "case_id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "single_hop_positive",
+              "single_hop_negative",
+              "multi_hop_positive",
+              "multi_hop_negative"
+            ]
+          },
+          "source_module": {
+            "type": "string"
+          },
+          "referred_module": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "final_module": {
+            "type": "string"
+          },
+          "diagnosis_reached": {
+            "type": "boolean"
+          },
+          "diagnosis_node_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "exit_node_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "node_sequence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

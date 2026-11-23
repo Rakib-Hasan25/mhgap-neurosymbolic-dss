@@ -1,0 +1,192 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "PSY",
+  "step_logs": [
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_M5",
+      "type": "management",
+      "is_starting": false,
+      "text": "Consider consultation with a specialist to review other possible causes of psychosis."
+    },
+    {
+      "id": "PSY_E2",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of unconfirmed psychosis path."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "PSY_A1",
+      "answer": "NO",
+      "to": "PSY_A2"
+    },
+    {
+      "from": "PSY_A2",
+      "answer": "NO",
+      "to": "PSY_A3"
+    },
+    {
+      "from": "PSY_A3",
+      "answer": "NO",
+      "to": "PSY_A4"
+    },
+    {
+      "from": "PSY_A4",
+      "answer": "NO",
+      "to": "PSY_A6"
+    },
+    {
+      "from": "PSY_A6",
+      "answer": "NO",
+      "to": "PSY_M5"
+    },
+    {
+      "from": "PSY_M5",
+      "answer": "NEXT",
+      "to": "PSY_E2"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "PSY_E2",
+  "usage": {
+    "vp": {
+      "calls": 5,
+      "input_tokens": 2613,
+      "output_tokens": 10,
+      "total_tokens": 2623
+    },
+    "nav": {
+      "calls": 6,
+      "input_tokens": 10592,
+      "output_tokens": 72,
+      "total_tokens": 10664
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "openai",
+      "model": "gpt-4.1"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/PSY/PSY_single_hop_single_hop_negative_1.json",
+  "case_id": "PSY_single_hop_negative_001",
+  "nav_model_spec": {
+    "provider": "openai",
+    "model": "gpt-4.1"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A6",
+      "type": "assessment",
+      "text": "Does the person have psychosis (at least two of: delusions, hallucinations, disorganized speech/behaviour)?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_M5",
+      "type": "management",
+      "text": "Consider consultation with a specialist to review other possible causes of psychosis.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_E2",
+      "type": "exit",
+      "text": "End of unconfirmed psychosis path."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_A3",
+      "PSY_A4",
+      "PSY_A6",
+      "PSY_M5",
+      "PSY_E2"
+    ],
+    "actual_ids": [
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_A3",
+      "PSY_A4",
+      "PSY_A6",
+      "PSY_M5",
+      "PSY_E2"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 5,
+      "matched": 5,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 13287
+}

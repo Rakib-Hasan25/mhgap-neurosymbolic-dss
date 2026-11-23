@@ -1,0 +1,86 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/CMH/CMH_single_hop_single_hop_positive_1.json",
+  "results": [
+    {
+      "case_id": "CMH_single_hop_positive_1",
+      "prefix_ok": false,
+      "exact_ok": false,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [
+        {
+          "node_id": "CMH_A4",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "CMH_A7",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "CMH_A9",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "CMH_A15",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "CMH_A16",
+          "expected": null,
+          "actual": "NO"
+        },
+        {
+          "node_id": "CMH_A17",
+          "expected": null,
+          "actual": "NO"
+        }
+      ],
+      "counts": {
+        "expected_assessment_findings": 3,
+        "matched": 3,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 6
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": true,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "CMH_A1",
+        "CMH_A2",
+        "CMH_A3",
+        "CMH_D1",
+        "CMH_M3",
+        "CMH_A4",
+        "CMH_A7",
+        "CMH_A9",
+        "CMH_A15",
+        "CMH_A16",
+        "CMH_A17",
+        "CMH_A18"
+      ],
+      "expected_node_ids": [
+        "CMH_A1",
+        "CMH_A2",
+        "CMH_A3",
+        "CMH_D1"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": "CMH_D1",
+        "engine_management_node_ids": [
+          "CMH_M3"
+        ],
+        "engine_referrals": [],
+        "engine_exit_node_id": null
+      },
+      "stop_reason": "no_answer",
+      "stop_node_id": "CMH_A18",
+      "vp_total_tokens": 5457
+    }
+  ]
+}

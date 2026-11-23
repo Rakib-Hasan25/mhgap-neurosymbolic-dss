@@ -1,0 +1,5 @@
+Hypothesis component,Expected measurable signal,Best supporting metric,Expected strongest system
+Clinical navigation is constrained by symbolic graph,High exact/prefix path match and low unsupported finding rate,"exact_path_rate, prefix_path_rate, unsupported_finding_rate",System 1: Neurosymbolic Clinical Graph Navigator
+Separating navigation from conversation reduces hallucination,Fewer extra and mismatched findings,"extra_findings, mismatched_findings, unsupported_finding_rate",System 1: Neurosymbolic Clinical Graph Navigator
+Structured graph JSON helps LLM navigation compared with raw text,System 2 outperforms System 3 in path fidelity and/or finding accuracy,"exact_path_rate, prefix_path_rate, weighted_finding_accuracy",System 2 > System 3
+Raw guideline text increases reasoning burden,Higher token consumption for text-only clinical logic baseline,"avg_total_tokens, avg_nav_tokens",System 3 uses more tokens than System 2 and System 1

@@ -1,0 +1,55 @@
+**Header:**
+DISORDERS DUE TO SUBSTANCE USE ........................................ 108  
+SUB
+
+---
+
+**[Box 1]**
+1  
+Does the person appear sedated?
+
+---
+
+**Decision from Box 1:**
+- [NO] → SKIP to STEP 2  
+- [YES] → [Suspect Sedative Intoxication]
+
+---
+
+**[Side Box: CLINICAL TIP]**
+CLINICAL TIP  
+» Suspect sedative intoxication/overdose in anyone with unexplained drowsiness and slow breathing.
+
+---
+
+**[Box]**
+Suspect SEDATIVE INTOXICATION  
+(alcohol, opioids, other sedatives)
+
+---
+
+**[Bullet List under Sedative Intoxication]**
+» Check Airway, Breathing, Circulation (ABC).  
+» Provide initial respiratory support.  
+» Give oxygen.
+
+---
+
+**[Decision Box]**
+Is the person minimally responsive, unresponsive, or in respiratory failure?
+
+---
+
+**Decision from this box:**
+- [YES] → (leads to care actions below)
+- [NO] → (downward path continues; no further text visible)
+
+---
+
+**[Care Actions Box]**
+» Supportive care.  
+» Monitor vital signs.  
+» Lay the person on their side to prevent aspiration.  
+» Give oxygen if available.  
+» Consider intravenous (i.v.), rehydration but do not give fluids orally while sedated.  
+» Observe the person until fully recovered or transported to hospital.

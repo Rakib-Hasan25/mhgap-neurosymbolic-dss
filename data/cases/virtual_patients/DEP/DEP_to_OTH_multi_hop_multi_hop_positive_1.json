@@ -1,0 +1,78 @@
+{
+  "cases": [
+    {
+      "case_id": "DEP_to_OTH_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "OTH",
+      "final_module": "OTH",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "OTH_D1",
+      "exit_node_id": "OTH_E4",
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_R1",
+          "type": "referral",
+          "target_module": "OTH",
+          "text": "Depression is unlikely. Go to Other Significant Mental Health Complaints."
+        },
+        {
+          "id": "OTH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Is there a physical cause that fully explains the presenting symptoms?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A2",
+          "type": "assessment",
+          "text": "Is this depression or another MNS condition discussed in another module of this guide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A3",
+          "type": "assessment",
+          "text": "Is the person seeking help to relieve symptoms or having considerable difficulty with daily functioning because of their symptoms?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "OTH_D1",
+          "type": "diagnosis",
+          "text": "Other Significant Mental Health Complaints are likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_A4",
+          "type": "assessment",
+          "text": "Is there imminent risk of suicide?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_A5",
+          "type": "assessment",
+          "text": "Has the person been exposed to extreme stressors? (e.g., physical or sexual violence, major accidents, bereavement or other major losses)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "OTH_M4",
+          "type": "management",
+          "text": "Apply Protocol 1: Do not prescribe anti-anxiety or antidepressant medicines unless advised by a specialist. Reduce stress, teach relaxation techniques, and strengthen social supports (ECP). Acknowledge symptoms but avoid unnecessary investigations; explain that no serious disease has been identified. Encourage return to daily activities. Follow-up: Ask the person to return in 2-4 weeks if symptoms do not improve or worsen. If improving, continue treatment plan. If not improving or if insisting on further investigations, review Protocol 1 and consider consulting a specialist.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "OTH_E4",
+          "type": "exit",
+          "text": "Exit after Protocol 1 management."
+        }
+      ],
+      "user_story": "Nusrat Jahan, a 29-year-old quality inspector at a knitwear factory in Gazipur, came to the local upazila health complex because of recurring tightness in her chest, a “heavy head,” and a shaky feeling in her hands that tends to appear before busy production deadlines or arguments at home about money. She has visited two pharmacies and one doctor already; her blood pressure, blood sugar, hemoglobin, thyroid test, and ECG were normal, and she has no fever, weight loss, fainting, seizures, or signs of heart or lung disease to explain the symptoms fully.\n\nNusrat is worried the sensations mean something serious, and the worry has begun affecting her work. She has taken three days off this month and sometimes asks another worker to recheck her measurements because she feels too tense to concentrate. Still, she does not describe being sad most of the day, nearly every day. Her mood often improves after chatting with her younger sister, watching Eid drama clips on her phone, or helping her mother cook on Fridays, and she still enjoys saving money for a tailoring course. She has not lost interest in her usual activities.\n\nShe sleeps lightly on some nights before overtime shifts but has no episodes of unusually high energy, reckless spending, hearing voices, seeing things others do not, confusion, memory decline, or substance use. She does not drink alcohol and only takes occasional paracetamol for headaches. When asked directly, she says she has never thought of killing or harming herself and wants to stay well so she can continue supporting her family and enroll in tailoring classes after the next bonus.\n\nThere has been no recent bereavement, assault, serious accident, forced displacement, or major loss in her life. Her complaints seem to rise with everyday pressure and family expectations rather than any extreme traumatic event, and she has come mainly because the symptoms feel distressing and are interfering with her daily routine."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "dataset_path": "detector_outputs/phase1_userstories/EPI/EPI_single_hop_single_hop_negative_1.json",
+  "results": [
+    {
+      "case_id": "EPI_single_hop_negative_1",
+      "prefix_ok": true,
+      "exact_ok": true,
+      "finding_accuracy": 1.0,
+      "missing_findings": [],
+      "mismatched_findings": [],
+      "extra_findings": [],
+      "counts": {
+        "expected_assessment_findings": 4,
+        "matched": 4,
+        "missing": 0,
+        "mismatched": 0,
+        "extra": 0
+      },
+      "mismatched_answers": [],
+      "diagnosis_ok": true,
+      "exit_ok": true,
+      "actual_node_ids": [
+        "EPI_A1",
+        "EPI_M2",
+        "EPI_A2",
+        "EPI_M4",
+        "EPI_A3",
+        "EPI_A8",
+        "EPI_M11",
+        "EPI_E3"
+      ],
+      "expected_node_ids": [
+        "EPI_A1",
+        "EPI_M2",
+        "EPI_A2",
+        "EPI_M4",
+        "EPI_A3",
+        "EPI_A8",
+        "EPI_M11",
+        "EPI_E3"
+      ],
+      "engine_outcomes": {
+        "engine_diagnosis_node_id": null,
+        "engine_management_node_ids": [
+          "EPI_M2",
+          "EPI_M4",
+          "EPI_M11"
+        ],
+        "engine_referrals": [],
+        "engine_exit_node_id": "EPI_E3"
+      },
+      "stop_reason": "exit_reached",
+      "stop_node_id": "EPI_E3",
+      "vp_total_tokens": 1813
+    }
+  ]
+}

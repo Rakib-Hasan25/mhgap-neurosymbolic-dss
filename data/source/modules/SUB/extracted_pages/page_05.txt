@@ -1,0 +1,97 @@
+[Start]
+
+[Box]  
+» Check pupils.
+
+Connections:  
+[Check pupils.] -> [Normal pupils]  
+[Check pupils.] -> [Pinpoint pupils]
+
+---
+
+[Box]  
+Normal pupils
+
+[Box]  
+» Opioid overdose less likely –  
+consider overdose of alcohol,  
+other sedatives, or other medical  
+causes (i.e. head injury, infection,  
+or hypoglycemia).
+
+Connection:  
+[Normal pupils] -> [Opioid overdose less likely – consider overdose of alcohol, other sedatives, or other medical causes (i.e. head injury, infection, or hypoglycemia).]
+
+---
+
+[Box]  
+Pinpoint pupils
+
+[Box]  
+Suspect  
+OPIOID OVERDOSE
+
+Connection:  
+[Pinpoint pupils] -> [Suspect OPIOID OVERDOSE]
+
+---
+
+Connections merging:  
+[Opioid overdose less likely …] -> [Give naloxone box]  
+[Suspect OPIOID OVERDOSE] -> [Give naloxone box]
+
+---
+
+[Box]  
+» Give i.v., intramuscular (i.m.), intranasal  
+or subcutaneous naloxone 0.4-2 mg.  
+» Continue respiratory support.
+
+Connection:  
+[Give naloxone box] -> [Did the person respond to naloxone within 2 minutes?]
+
+---
+
+[Decision Box]  
+Did the person respond to naloxone within 2 minutes?
+
+Connections:  
+[Decision] -> NO  
+[Decision] -> YES
+
+---
+
+[Path: NO]
+
+[Circle]  
+NO
+
+Connection:  
+[NO] -> [GIVE A SECOND DOSE]
+
+[Box]  
+» GIVE A SECOND DOSE  
+❗ Observe the person until fully recovered  
+or transported to hospital.
+
+---
+
+[Path: YES]
+
+[Diamond]  
+YES
+
+Connection:  
+[YES] -> [Observe for 1-2 hours box]
+
+[Box]  
+» Observe for 1-2 hours and repeat naloxone  
+as needed.  
+❗ Continue to resuscitate and observe the person  
+until fully recovered or transported to hospital.
+
+---
+
+[Footer]  
+DISORDERS DUE TO SUBSTANCE USE  
+109

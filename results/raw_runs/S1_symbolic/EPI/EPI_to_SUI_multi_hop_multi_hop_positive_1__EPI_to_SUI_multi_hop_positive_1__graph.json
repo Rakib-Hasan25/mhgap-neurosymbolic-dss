@@ -1,0 +1,558 @@
+{
+  "module_id": "EPI",
+  "collected_answers": {
+    "EPI_A1": "NO",
+    "EPI_A2": "NO",
+    "EPI_A3": "YES",
+    "EPI_A8": "YES",
+    "EPI_A9": "YES",
+    "EPI_A10": "NO",
+    "EPI_A13": "YES",
+    "EPI_A14": "NO",
+    "SUI_A1": "NO",
+    "SUI_A2": "YES",
+    "SUI_A4": "YES",
+    "SUI_A5": "NO",
+    "SUI_A6": "YES"
+  },
+  "step_logs": [
+    {
+      "id": "EPI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Any sign of head or neck injury?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital."
+    },
+    {
+      "id": "EPI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_M4",
+      "type": "management",
+      "is_starting": false,
+      "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.)."
+    },
+    {
+      "id": "EPI_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_A8",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_A9",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_D3",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Suspect CONVULSIVE SEIZURES"
+    },
+    {
+      "id": "EPI_A10",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_D4",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Suspect EPILEPSY"
+    },
+    {
+      "id": "EPI_A13",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_D7",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "EPILEPSY is likely"
+    },
+    {
+      "id": "EPI_A14",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "If there is imminent risk of suicide, assess and manage before continuing to Protocol 1.",
+      "target_module": "SUI"
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely."
+    },
+    {
+      "id": "SUI_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving."
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_M4",
+      "type": "management",
+      "is_starting": false,
+      "text": "Manage the concurrent conditions. See relevant modules."
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have chronic pain?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "SUI_M6",
+      "type": "management",
+      "is_starting": false,
+      "text": "Manage the emotional symptoms."
+    },
+    {
+      "id": "SUI_R1",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Go to Other Significant Mental Health Complaints module.",
+      "target_module": "OTH"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "EPI_A1",
+      "answer": "NO",
+      "to": "EPI_M2"
+    },
+    {
+      "from": "EPI_M2",
+      "answer": "NEXT",
+      "to": "EPI_A2"
+    },
+    {
+      "from": "EPI_A2",
+      "answer": "NO",
+      "to": "EPI_M4"
+    },
+    {
+      "from": "EPI_M4",
+      "answer": "NEXT",
+      "to": "EPI_A3"
+    },
+    {
+      "from": "EPI_A3",
+      "answer": "YES",
+      "to": "EPI_A8"
+    },
+    {
+      "from": "EPI_A8",
+      "answer": "YES",
+      "to": "EPI_A9"
+    },
+    {
+      "from": "EPI_A9",
+      "answer": "YES",
+      "to": "EPI_D3"
+    },
+    {
+      "from": "EPI_D3",
+      "answer": "NEXT",
+      "to": "EPI_A10"
+    },
+    {
+      "from": "EPI_A10",
+      "answer": "NO",
+      "to": "EPI_D4"
+    },
+    {
+      "from": "EPI_D4",
+      "answer": "NEXT",
+      "to": "EPI_A13"
+    },
+    {
+      "from": "EPI_A13",
+      "answer": "YES",
+      "to": "EPI_D7"
+    },
+    {
+      "from": "EPI_D7",
+      "answer": "NEXT",
+      "to": "EPI_A14"
+    },
+    {
+      "from": "EPI_A14",
+      "answer": "NO",
+      "to": "EPI_R1"
+    },
+    {
+      "from": "EPI_R1",
+      "answer": "REFERRAL",
+      "to": "SUI_A1",
+      "target_module": "SUI"
+    },
+    {
+      "from": "SUI_A1",
+      "answer": "NO",
+      "to": "SUI_A2"
+    },
+    {
+      "from": "SUI_A2",
+      "answer": "YES",
+      "to": "SUI_D1"
+    },
+    {
+      "from": "SUI_D1",
+      "answer": "NEXT",
+      "to": "SUI_M2"
+    },
+    {
+      "from": "SUI_M2",
+      "answer": "NEXT",
+      "to": "SUI_A4"
+    },
+    {
+      "from": "SUI_A4",
+      "answer": "YES",
+      "to": "SUI_M4"
+    },
+    {
+      "from": "SUI_M4",
+      "answer": "NEXT",
+      "to": "SUI_A5"
+    },
+    {
+      "from": "SUI_A5",
+      "answer": "NO",
+      "to": "SUI_A6"
+    },
+    {
+      "from": "SUI_A6",
+      "answer": "YES",
+      "to": "SUI_M6"
+    },
+    {
+      "from": "SUI_M6",
+      "answer": "NEXT",
+      "to": "SUI_R1"
+    }
+  ],
+  "stop_reason": "max_referral_hops",
+  "stop_node_id": "SUI_R1",
+  "usage": {
+    "vp": {
+      "calls": 13,
+      "input_tokens": 8165,
+      "output_tokens": 26,
+      "total_tokens": 8191
+    }
+  },
+  "dataset_path": "detector_outputs/phase1_userstories/EPI/EPI_to_SUI_multi_hop_multi_hop_positive_1.json",
+  "case_id": "EPI_to_SUI_multi_hop_positive_1",
+  "expected_node_sequence": [
+    {
+      "id": "EPI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Any sign of head or neck injury?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M2",
+      "type": "management",
+      "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A2",
+      "type": "assessment",
+      "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M4",
+      "type": "management",
+      "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A3",
+      "type": "assessment",
+      "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_A8",
+      "type": "assessment",
+      "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_A9",
+      "type": "assessment",
+      "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_D3",
+      "type": "diagnosis",
+      "text": "Suspect CONVULSIVE SEIZURES",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A10",
+      "type": "assessment",
+      "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_D4",
+      "type": "diagnosis",
+      "text": "Suspect EPILEPSY",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A13",
+      "type": "assessment",
+      "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_D7",
+      "type": "diagnosis",
+      "text": "EPILEPSY is likely",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A14",
+      "type": "assessment",
+      "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_R1",
+      "type": "referral",
+      "target_module": "SUI",
+      "text": "If there is imminent risk of suicide, assess and manage before continuing to Protocol 1."
+    },
+    {
+      "id": "SUI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A2",
+      "type": "assessment",
+      "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_D1",
+      "type": "diagnosis",
+      "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_M2",
+      "type": "management",
+      "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A4",
+      "type": "assessment",
+      "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "SUI_M4",
+      "type": "management",
+      "text": "Manage the concurrent conditions. See relevant modules.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_A5",
+      "type": "assessment",
+      "text": "Does the person have chronic pain?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_A6",
+      "type": "assessment",
+      "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "SUI_M7",
+      "type": "management",
+      "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "SUI_E1",
+      "type": "exit",
+      "text": "End of Self-Harm / Suicide Assessment and Management."
+    }
+  ],
+  "evaluation": {
+    "case_id": "EPI_to_SUI_multi_hop_positive_1",
+    "prefix_ok": false,
+    "exact_ok": false,
+    "finding_accuracy": 0.9230769230769231,
+    "missing_findings": [],
+    "mismatched_findings": [
+      {
+        "node_id": "SUI_A6",
+        "expected": "NO",
+        "actual": "YES"
+      }
+    ],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 13,
+      "matched": 12,
+      "missing": 0,
+      "mismatched": 1,
+      "extra": 0
+    },
+    "mismatched_answers": [
+      {
+        "node_id": "SUI_A6",
+        "expected": "NO",
+        "actual": "YES"
+      }
+    ],
+    "diagnosis_ok": false,
+    "exit_ok": false,
+    "actual_node_ids": [
+      "EPI_A1",
+      "EPI_M2",
+      "EPI_A2",
+      "EPI_M4",
+      "EPI_A3",
+      "EPI_A8",
+      "EPI_A9",
+      "EPI_D3",
+      "EPI_A10",
+      "EPI_D4",
+      "EPI_A13",
+      "EPI_D7",
+      "EPI_A14",
+      "EPI_R1",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1",
+      "SUI_M2",
+      "SUI_A4",
+      "SUI_M4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M6",
+      "SUI_R1"
+    ],
+    "expected_node_ids": [
+      "EPI_A1",
+      "EPI_M2",
+      "EPI_A2",
+      "EPI_M4",
+      "EPI_A3",
+      "EPI_A8",
+      "EPI_A9",
+      "EPI_D3",
+      "EPI_A10",
+      "EPI_D4",
+      "EPI_A13",
+      "EPI_D7",
+      "EPI_A14",
+      "EPI_R1",
+      "SUI_A1",
+      "SUI_A2",
+      "SUI_D1",
+      "SUI_M2",
+      "SUI_A4",
+      "SUI_M4",
+      "SUI_A5",
+      "SUI_A6",
+      "SUI_M7",
+      "SUI_E1"
+    ],
+    "engine_outcomes": {
+      "engine_diagnosis_node_id": "EPI_D3",
+      "engine_management_node_ids": [
+        "EPI_M2",
+        "EPI_M4",
+        "SUI_M2",
+        "SUI_M4",
+        "SUI_M6"
+      ],
+      "engine_referrals": [
+        "SUI",
+        "OTH"
+      ],
+      "engine_exit_node_id": null
+    },
+    "stop_reason": "max_referral_hops",
+    "stop_node_id": "SUI_R1",
+    "vp_total_tokens": 8191
+  },
+  "vp_total_tokens": 8191
+}

@@ -1,0 +1,347 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "EPI",
+  "step_logs": [
+    {
+      "id": "EPI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Any sign of head or neck injury?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_M2",
+      "type": "management",
+      "is_starting": false,
+      "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital."
+    },
+    {
+      "id": "EPI_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_M4",
+      "type": "management",
+      "is_starting": false,
+      "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.)."
+    },
+    {
+      "id": "EPI_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_A8",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_A9",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_D3",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Suspect CONVULSIVE SEIZURES"
+    },
+    {
+      "id": "EPI_A10",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "EPI_D4",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Suspect EPILEPSY"
+    },
+    {
+      "id": "EPI_A13",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_D7",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "EPILEPSY is likely"
+    },
+    {
+      "id": "EPI_A14",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "EPI_M16",
+      "type": "management",
+      "is_starting": false,
+      "text": "Refer to specialist for further evaluation of cause."
+    },
+    {
+      "id": "EPI_E7",
+      "type": "exit",
+      "is_starting": false,
+      "text": "Exit: Specialist referral for underlying cause."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "EPI_A1",
+      "answer": "NO",
+      "to": "EPI_M2"
+    },
+    {
+      "from": "EPI_M2",
+      "answer": "NEXT",
+      "to": "EPI_A2"
+    },
+    {
+      "from": "EPI_A2",
+      "answer": "NO",
+      "to": "EPI_M4"
+    },
+    {
+      "from": "EPI_M4",
+      "answer": "NEXT",
+      "to": "EPI_A3"
+    },
+    {
+      "from": "EPI_A3",
+      "answer": "YES",
+      "to": "EPI_A8"
+    },
+    {
+      "from": "EPI_A8",
+      "answer": "YES",
+      "to": "EPI_A9"
+    },
+    {
+      "from": "EPI_A9",
+      "answer": "YES",
+      "to": "EPI_D3"
+    },
+    {
+      "from": "EPI_D3",
+      "answer": "NEXT",
+      "to": "EPI_A10"
+    },
+    {
+      "from": "EPI_A10",
+      "answer": "NO",
+      "to": "EPI_D4"
+    },
+    {
+      "from": "EPI_D4",
+      "answer": "NEXT",
+      "to": "EPI_A13"
+    },
+    {
+      "from": "EPI_A13",
+      "answer": "YES",
+      "to": "EPI_D7"
+    },
+    {
+      "from": "EPI_D7",
+      "answer": "NEXT",
+      "to": "EPI_A14"
+    },
+    {
+      "from": "EPI_A14",
+      "answer": "YES",
+      "to": "EPI_M16"
+    },
+    {
+      "from": "EPI_M16",
+      "answer": "NEXT",
+      "to": "EPI_E7"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "EPI_E7",
+  "usage": {
+    "vp": {
+      "calls": 8,
+      "input_tokens": 4650,
+      "output_tokens": 16,
+      "total_tokens": 4666
+    },
+    "nav": {
+      "calls": 14,
+      "input_tokens": 66066,
+      "output_tokens": 280,
+      "total_tokens": 74994
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/EPI/EPI_single_hop_single_hop_positive_1.json",
+  "case_id": "EPI_single_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "EPI_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Any sign of head or neck injury?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M2",
+      "type": "management",
+      "text": "Check AIRWAY, BREATHING, CIRCULATION (ABCs). Start timing the duration of the convulsions. Place an intravenous (i.v.) line if possible. Ensure the person is in a safe place. Do not leave the person alone. Do not put anything in the mouth. For a person with possible head injury, neuroinfection, or focal deficits, refer urgently to hospital.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A2",
+      "type": "assessment",
+      "text": "SPECIAL POPULATION: Is the woman in the second half of pregnancy OR up to 1 week post partum AND has no past history of epilepsy?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_M4",
+      "type": "management",
+      "text": "Give medication to stop convulsions. If no i.v. established: give diazepam rectally or midazolam buccally/intranasally. If i.v. established: start normal saline, glucose, and give emergency medication (diazepam or lorazepam i.v.).",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A3",
+      "type": "assessment",
+      "text": "Have the convulsions stopped within 10 minutes of 1st dose of emergency medication?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_A8",
+      "type": "assessment",
+      "text": "Has the person had convulsive movements lasting longer than 1-2 minutes?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_A9",
+      "type": "assessment",
+      "text": "Has the person had at least 2 of the following symptoms during the episode(s): loss of consciousness/impaired consciousness, stiffness/rigidity, bitten tongue/injury, incontinence, or post-convulsion fatigue/confusion/headache?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_D3",
+      "type": "diagnosis",
+      "text": "Suspect CONVULSIVE SEIZURES",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A10",
+      "type": "assessment",
+      "text": "Is there an acute cause? (e.g., neuroinfection, fever, head injury, metabolic abnormality, intoxication/withdrawal)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "EPI_D4",
+      "type": "diagnosis",
+      "text": "Suspect EPILEPSY",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A13",
+      "type": "assessment",
+      "text": "Does the person have epilepsy? Has the person had at least two seizures on two different days in the past year?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_D7",
+      "type": "diagnosis",
+      "text": "EPILEPSY is likely",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_A14",
+      "type": "assessment",
+      "text": "Assess for underlying cause via physical/neurologic examination. Are any of the following present: Birth asphyxia or trauma, head injury, brain infection, or family history of seizures?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "EPI_M16",
+      "type": "management",
+      "text": "Refer to specialist for further evaluation of cause.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "EPI_E7",
+      "type": "exit",
+      "text": "Exit: Specialist referral for underlying cause."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "EPI_A1",
+      "EPI_M2",
+      "EPI_A2",
+      "EPI_M4",
+      "EPI_A3",
+      "EPI_A8",
+      "EPI_A9",
+      "EPI_D3",
+      "EPI_A10",
+      "EPI_D4",
+      "EPI_A13",
+      "EPI_D7",
+      "EPI_A14",
+      "EPI_M16",
+      "EPI_E7"
+    ],
+    "actual_ids": [
+      "EPI_A1",
+      "EPI_M2",
+      "EPI_A2",
+      "EPI_M4",
+      "EPI_A3",
+      "EPI_A8",
+      "EPI_A9",
+      "EPI_D3",
+      "EPI_A10",
+      "EPI_D4",
+      "EPI_A13",
+      "EPI_D7",
+      "EPI_A14",
+      "EPI_M16",
+      "EPI_E7"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 8,
+      "matched": 8,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 79660
+}

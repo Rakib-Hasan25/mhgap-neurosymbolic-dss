@@ -1,0 +1,80 @@
+PSYCHOSES >> Follow -up
+
+48 | PSY 3
+
+---
+
+[Circular icon with a curved arrow and a plus sign]
+**PSY 3 >> Follow-up**
+**MANIC EPISODE IN BIPOLAR DISORDER**
+
+---
+
+**RECOMMENDATIONS ON FREQUENCY OF CONTACT**
+[Connected to a red person icon]
+
+*   >> For acute mania: Initial follow-up should be as frequent as possible, even daily, until acute symptoms respond to treatment. Once symptoms respond, monthly to quarterly follow-up is recommended.
+*   >> For persons not currently in manic or depressed states, follow-up at least every three months. Consider more frequent follow up when needed. Monitor closely for relapse.
+
+---
+
+**CLINICAL TIP**
+[Connected to a red person with stethoscope icon]
+
+If switching to another medication, begin that medication first and treat with both medications for 2 weeks before tapering off the first medication.
+
+---
+
+**[FLOWCHART]**
+
+**[Box 1]**
+1
+ASSESS FOR IMPROVEMENT
+
+**[Arrow down from Box 1]**
+
+**[Decision Box 1]**
+Is the person improving?
+
+**[Path from Decision Box 1]**
+**YES -->**
+**[Leads to Box 2]**
+
+**[Box 2]**
+*   >> Follow-up as needed until symptoms have subsided. [Circular icon with a curved arrow and a plus sign]
+*   >> Continue maintenance medications for at least 2 years.
+
+**[Arrow down from Box 2]**
+
+**[Box 3]**
+SKIP to **STEP 2**
+
+**[Path from Decision Box 1]**
+**NO -->**
+**[Leads to Decision Box 2]**
+
+**[Decision Box 2]**
+Is the person taking medication?
+
+**[Path from Decision Box 2]**
+**YES -->**
+**[Leads to Box 4]**
+
+**[Box 4]**
+*   >> Check dosing and side effects. Go to **Table 1** or **Table 3**.
+*   >> Ensure that person has been on a typical effective dose of medication for a **minimum of four to six weeks**.
+*   >> If on typical effective dose of medication for four to six weeks with no improvement, consider switching medication. See **Table 3**.
+*   >> If response is still poor, consult a specialist. [Icon of a person at a podium]
+
+**[Path from Decision Box 2]**
+**NO -->**
+**[Leads to Box 5]**
+
+**[Box 5]**
+>> If appropriate, initiate medication. [Icon of a pill bottle with a plus sign]
+
+**[Arrow down from Box 5]**
+
+**[Box 6]**
+*   >> Review psychosocial interventions.
+*   >> Evaluate for medical problems.

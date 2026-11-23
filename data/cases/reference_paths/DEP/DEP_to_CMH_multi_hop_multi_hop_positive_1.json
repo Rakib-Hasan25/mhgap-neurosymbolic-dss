@@ -1,0 +1,185 @@
+{
+  "cases": [
+    {
+      "case_id": "DEP_to_CMH_multi_hop_positive_1",
+      "category": "multi_hop_positive",
+      "source_module": "DEP",
+      "referred_module": "CMH",
+      "final_module": "CMH",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "CMH_D8",
+      "exit_node_id": "CMH_E1",
+      "node_sequence": [
+        {
+          "id": "DEP_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A2",
+          "type": "assessment",
+          "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A3",
+          "type": "assessment",
+          "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_A4",
+          "type": "assessment",
+          "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A6",
+          "type": "assessment",
+          "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_A7",
+          "type": "assessment",
+          "text": "Has there been a major loss (e.g., bereavement) within the last 6 months?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "DEP_D2",
+          "type": "diagnosis",
+          "text": "DEPRESSION is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "DEP_A11",
+          "type": "assessment",
+          "text": "Is the person a child or adolescent?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "DEP_R4",
+          "type": "referral",
+          "target_module": "CMH",
+          "text": "For management of depression in children/adolescents, refer to Child & Adolescent Mental & Behavioural Disorders."
+        },
+        {
+          "id": "CMH_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "ASSESS FOR DEVELOPMENTAL DISORDERS: Has the child had any difficulties with age-appropriate milestones across all developmental areas (or difficulties with school, communicating, interacting, and self-care for older children/adolescents)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A4",
+          "type": "assessment",
+          "text": "ASSESS FOR PROBLEMS WITH INATTENTION OR HYPERACTIVITY: Is the child/adolescent overactive, unable to stay still for long, easily distracted, or moving restlessly?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A7",
+          "type": "assessment",
+          "text": "ASSESS FOR CONDUCT DISORDER: Does the child/adolescent show repeated aggressive, disobedient, or defiant behaviour (e.g., arguing, extreme irritability, tantrums, fighting, bullying, destructiveness, stealing)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A9",
+          "type": "assessment",
+          "text": "ASSESS FOR EMOTIONAL DISORDERS: Is the child/adolescent often feeling irritable/down, lost interest, having many worries/fears, frequently complaining of physical sickness, or avoiding certain situations?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A10",
+          "type": "assessment",
+          "text": "Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A11",
+          "type": "assessment",
+          "text": "Rule out physical conditions that can resemble or exacerbate emotional disorders. Are there any signs/symptoms of thyroid diseases, infectious illness, anaemia, obesity, malnutrition, asthma, or medication side-effects?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A12",
+          "type": "assessment",
+          "text": "Is the person an adolescent who has problems with mood (feeling irritable, down or sad) OR has lost interest in or enjoyment of activities?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A13",
+          "type": "assessment",
+          "text": "Has the adolescent had several additional symptoms (e.g., disturbed sleep, appetite/weight change, worthlessness/guilt, fatigue, reduced concentration, indecisiveness, agitation, hopelessness, suicidal thoughts) most days for the last 2 weeks?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A14",
+          "type": "assessment",
+          "text": "Is there considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas due to these depressive symptoms?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_D8",
+          "type": "diagnosis",
+          "text": "Depression (Adolescent)",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "CMH_M12",
+          "type": "management",
+          "text": "Protocol 6 (Depression): Rule out manic episode or normal reaction to major loss. Provide psychoeducation, guidance on well-being, and carer support. Consider interpersonal therapy. Follow-up: Once a month. If psychological interventions are ineffective after 6 months and adolescent is >=12 years old, consult specialist for Fluoxetine (no other SSRIs or TCAs). Monitor weekly for first month if prescribed.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "CMH_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide or suicidal thoughts?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A16",
+          "type": "assessment",
+          "text": "ASSESS FOR OTHER PRIORITY MNS CONDITIONS: Are there any other concurrent MNS conditions (e.g., disorders due to substance use, or epilepsy for children with developmental delay)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A17",
+          "type": "assessment",
+          "text": "ASSESS THE HOME ENVIRONMENT: Are the emotional, behavioural or developmental problems a reaction to or aggravated by a distressing or frightening situation (e.g., maltreatment, exposure to violence, severe stressors)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A18",
+          "type": "assessment",
+          "text": "Do the carers have any priority MNS condition that could impact their ability to care for the child/adolescent (especially depression and disorders due to substance use)?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_A19",
+          "type": "assessment",
+          "text": "Is the child getting adequate opportunities for play and social interaction/communication at home?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A20",
+          "type": "assessment",
+          "text": "ASSESS THE SCHOOL ENVIRONMENT: Is the child/adolescent in school?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "CMH_A21",
+          "type": "assessment",
+          "text": "Is the child/adolescent being bullied, picked on, not able to participate and learn, or refusing to attend school?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "CMH_E1",
+          "type": "exit",
+          "text": "End of Assessment and Management for Child & Adolescent Mental & Behavioural Disorders."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "system": "two_llm_baseline",
+  "module_id": "DEP",
+  "step_logs": [
+    {
+      "id": "DEP_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+      "user_answer": "NO"
+    },
+    {
+      "id": "DEP_A6",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+      "user_answer": "YES"
+    },
+    {
+      "id": "DEP_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "DEPRESSIVE EPISODE IN BIPOLAR DISORDER is likely."
+    },
+    {
+      "id": "DEP_M3",
+      "type": "management",
+      "is_starting": false,
+      "text": "PROTOCOL 2: Consult a specialist. If not immediately available, follow treatment for depression but NEVER prescribe antidepressants alone without a mood stabilizer. If symptoms of mania develop, stop antidepressant immediately and return for help."
+    },
+    {
+      "id": "DEP_R2",
+      "type": "referral",
+      "is_starting": false,
+      "text": "Refer to Psychoses module for mood stabilizer management.",
+      "target_module": "PSY"
+    },
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "user_answer": "YES"
+    },
+    {
+      "id": "PSY_A5",
+      "type": "assessment",
+      "is_starting": false,
+      "text": "Is there an imminent risk of suicide?",
+      "user_answer": "NO"
+    },
+    {
+      "id": "PSY_D1",
+      "type": "diagnosis",
+      "is_starting": false,
+      "text": "Bipolar Disorder, Manic Episode"
+    },
+    {
+      "id": "PSY_M4",
+      "type": "management",
+      "is_starting": false,
+      "text": "Discontinue antidepressants. Begin treatment with lithium, valproate, carbamazepine, or antipsychotics (avoid valproate/lithium/carbamazepine in pregnancy). Provide psychoeducation, promote functioning, reduce stress. Follow-up: Assess for improvement, monitor adherence/side-effects. Continue maintenance medications for at least 2 years. Consider discontinuation if in full remission for 2 years."
+    },
+    {
+      "id": "PSY_E1",
+      "type": "exit",
+      "is_starting": false,
+      "text": "End of Bipolar Disorder Manic Episode path."
+    }
+  ],
+  "transitions": [
+    {
+      "from": "DEP_A1",
+      "answer": "YES",
+      "to": "DEP_A2"
+    },
+    {
+      "from": "DEP_A2",
+      "answer": "YES",
+      "to": "DEP_A3"
+    },
+    {
+      "from": "DEP_A3",
+      "answer": "YES",
+      "to": "DEP_A4"
+    },
+    {
+      "from": "DEP_A4",
+      "answer": "NO",
+      "to": "DEP_A6"
+    },
+    {
+      "from": "DEP_A6",
+      "answer": "YES",
+      "to": "DEP_D1"
+    },
+    {
+      "from": "DEP_D1",
+      "answer": "NEXT",
+      "to": "DEP_M3"
+    },
+    {
+      "from": "DEP_M3",
+      "answer": "NEXT",
+      "to": "DEP_R2"
+    },
+    {
+      "from": "DEP_R2",
+      "answer": "REFERRAL",
+      "to": "PSY_A1",
+      "target_module": "PSY"
+    },
+    {
+      "from": "PSY_A1",
+      "answer": "NO",
+      "to": "PSY_A2"
+    },
+    {
+      "from": "PSY_A2",
+      "answer": "NO",
+      "to": "PSY_A3"
+    },
+    {
+      "from": "PSY_A3",
+      "answer": "NO",
+      "to": "PSY_A4"
+    },
+    {
+      "from": "PSY_A4",
+      "answer": "YES",
+      "to": "PSY_A5"
+    },
+    {
+      "from": "PSY_A5",
+      "answer": "NO",
+      "to": "PSY_D1"
+    },
+    {
+      "from": "PSY_D1",
+      "answer": "NEXT",
+      "to": "PSY_M4"
+    },
+    {
+      "from": "PSY_M4",
+      "answer": "NEXT",
+      "to": "PSY_E1"
+    }
+  ],
+  "stop_reason": "exit_reached",
+  "stop_node_id": "PSY_E1",
+  "usage": {
+    "vp": {
+      "calls": 10,
+      "input_tokens": 6411,
+      "output_tokens": 20,
+      "total_tokens": 6431
+    },
+    "nav": {
+      "calls": 14,
+      "input_tokens": 31089,
+      "output_tokens": 242,
+      "total_tokens": 33325
+    }
+  },
+  "meta": {
+    "vp_model": "gpt-4o-mini",
+    "nav_model_spec": {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash"
+    }
+  },
+  "dataset_path": "/Users/rakib/Downloads/mental-health-research/detector_outputs/phase1_userstories/DEP/DEP_to_PSY_multi_hop_multi_hop_positive_1.json",
+  "case_id": "DEP_to_PSY_multi_hop_positive_1",
+  "nav_model_spec": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash"
+  },
+  "expected_node_sequence": [
+    {
+      "id": "DEP_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "Has the person had at least one of the following core symptoms of depression for at least 2 weeks? (Persistent depressed mood, markedly diminished interest in or pleasure from activities)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A2",
+      "type": "assessment",
+      "text": "Has the person had several of the following additional symptoms for at least 2 weeks: Disturbed sleep, indecisiveness, change in appetite or weight, agitation, beliefs of worthlessness, slow moving/talking, fatigue, hopelessness, reduced concentration, suicidal thoughts or acts?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A3",
+      "type": "assessment",
+      "text": "Does the person have considerable difficulty with daily functioning in personal, family, social, educational, occupational or other areas?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_A4",
+      "type": "assessment",
+      "text": "Are there other possible explanations for the symptoms? Is this a physical condition that can resemble or exacerbate depression? (e.g., anaemia, malnutrition, hypothyroidism, medication side-effects)",
+      "condition_met": "NO"
+    },
+    {
+      "id": "DEP_A6",
+      "type": "assessment",
+      "text": "Is there a history of mania? (e.g., elevation of mood, decreased need for sleep, increased activity, impulsive behaviors, lasting at least 1 week and severely interfering with work/social activities)",
+      "condition_met": "YES"
+    },
+    {
+      "id": "DEP_D1",
+      "type": "diagnosis",
+      "text": "DEPRESSIVE EPISODE IN BIPOLAR DISORDER is likely.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "DEP_M3",
+      "type": "management",
+      "text": "PROTOCOL 2: Consult a specialist. If not immediately available, follow treatment for depression but NEVER prescribe antidepressants alone without a mood stabilizer. If symptoms of mania develop, stop antidepressant immediately and return for help.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "DEP_R2",
+      "type": "referral",
+      "target_module": "PSY",
+      "text": "Refer to Psychoses module for mood stabilizer management."
+    },
+    {
+      "id": "PSY_A1",
+      "type": "assessment",
+      "is_starting": true,
+      "text": "By history, clinical examination, or laboratory findings, are there signs and symptoms suggesting delirium due to an acute physical condition or medication side effects?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A2",
+      "type": "assessment",
+      "text": "Are there other explanations for the symptoms such as dementia, depression, drug or alcohol intoxication or withdrawal?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A3",
+      "type": "assessment",
+      "text": "Does the person present with acute agitation and/or acute aggression?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_A4",
+      "type": "assessment",
+      "text": "Is the person having an acute manic episode (e.g., elevated or irritable mood, decreased need for sleep, increased activity, impulsive behaviours lasting at least 1 week)?",
+      "condition_met": "YES"
+    },
+    {
+      "id": "PSY_A5",
+      "type": "assessment",
+      "text": "Is there an imminent risk of suicide?",
+      "condition_met": "NO"
+    },
+    {
+      "id": "PSY_D1",
+      "type": "diagnosis",
+      "text": "Bipolar Disorder, Manic Episode",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_M4",
+      "type": "management",
+      "text": "Discontinue antidepressants. Begin treatment with lithium, valproate, carbamazepine, or antipsychotics (avoid valproate/lithium/carbamazepine in pregnancy). Provide psychoeducation, promote functioning, reduce stress. Follow-up: Assess for improvement, monitor adherence/side-effects. Continue maintenance medications for at least 2 years. Consider discontinuation if in full remission for 2 years.",
+      "condition_met": "NEXT"
+    },
+    {
+      "id": "PSY_E1",
+      "type": "exit",
+      "text": "End of Bipolar Disorder Manic Episode path."
+    }
+  ],
+  "evaluation": {
+    "expected_ids": [
+      "DEP_A1",
+      "DEP_A2",
+      "DEP_A3",
+      "DEP_A4",
+      "DEP_A6",
+      "DEP_D1",
+      "DEP_M3",
+      "DEP_R2",
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_A3",
+      "PSY_A4",
+      "PSY_A5",
+      "PSY_D1",
+      "PSY_M4",
+      "PSY_E1"
+    ],
+    "actual_ids": [
+      "DEP_A1",
+      "DEP_A2",
+      "DEP_A3",
+      "DEP_A4",
+      "DEP_A6",
+      "DEP_D1",
+      "DEP_M3",
+      "DEP_R2",
+      "PSY_A1",
+      "PSY_A2",
+      "PSY_A3",
+      "PSY_A4",
+      "PSY_A5",
+      "PSY_D1",
+      "PSY_M4",
+      "PSY_E1"
+    ],
+    "exact_path_match": true,
+    "prefix_path_match": true,
+    "finding_accuracy": 1.0,
+    "missing_findings": [],
+    "mismatched_findings": [],
+    "extra_findings": [],
+    "counts": {
+      "expected_assessment_findings": 10,
+      "matched": 10,
+      "missing": 0,
+      "mismatched": 0,
+      "extra": 0
+    }
+  },
+  "total_tokens": 39756
+}

@@ -1,0 +1,71 @@
+DISORDERS DUE TO SUBSTANCE USE » Management                                                                                                                                             126         SUB 2
+
+PHARMACOLOGICAL INTERVENTIONS
+
+TABLE 1: Medication Chart
+
+TABLE:
+
+| CLASS / INDICATION | MEDICATION | DOSING | SIDE EFFECTS | CONTRAINDICATIONS / CAUTIONS |
+|-------------------|------------|--------|--------------|-------------------------------|
+
+BENZODIAZEPINES  
+To treat alcohol withdrawal, stimulant intoxication, and psychosis  
+Medication: Diazepam  
+Dosing:  
+10-20 mg for observable features of alcohol withdrawal or stimulant intoxication every 2 hours until features of alcohol withdrawal/stimulant intoxication are no longer observable or the person is lightly sedated. Lower doses (up to 10 mg four times a day) for alcohol withdrawal in an outpatient setting.  
+Side effects:  
+Sedation and respiratory depression which can be life threatening. Prolonged use can lead to dependence.  
+Contraindications / Cautions:  
+Do not use in people who are sedated. Beware of combining with other sedatives. Patients should not drive. Duration of effect may be prolonged in persons with severe liver disease. Supervise dosing to minimise the risk of diversion (i.e. selling the medication to somebody else).
+
+OPIOID ANTAGONISTS  
+To treat opioid overdose  
+Medication: Naloxone  
+Dosing:  
+0.4-2 mg i.v., i.m., subcutaneous or intranasal. Repeat doses as needed.  
+Side effects:  
+Discomfort or withdrawal symptoms may result.  
+Contraindications / Cautions:  
+(blank)
+
+VITAMINS  
+To prevent or treat Wernicke’s encephalopathy  
+Medication: Thiamine (Vitamin B1)  
+Dosing:  
+100 mg p.o. daily for 5 days to prevent Wernicke’s encephalopathy.  
+100 mg – 500 mg i.v. or i.m. two to three times daily for 3-5 days to treat Wernicke’s encephalopathy.  
+Side effects:  
+(blank)  
+Contraindications / Cautions:  
+(blank)
+
+OPIOID AGONISTS  
+To treat opioid withdrawal and dependence  
+
+Medication: Methadone  
+Dosing:  
+Opioid withdrawal: Methadone initial dose 20 mg, with a supplemental dose of 5-10 mg 4 hours later if necessary.  
+Opioid maintenance: initial dose 10-20 mg with supplementary dose of 10 mg if needed, increasing the daily dose by 5-10 mg every few days if needed until the person is no longer experiencing opioid withdrawal and not using illicit opioids. Maintain until ready to cease opioid agonist treatment.  
+Side effects:  
+Sedation, confusion, nausea, vomiting, constipation, possible hormonal changes, decreased sex drive, ECG changes such as prolonged QT interval or bradycardia, hypotension, respiratory depression.  
+Contraindications / Cautions:  
+Use with caution in patients with cardiac or respiratory disease.
+
+Medication: Buprenorphine  
+Dosing:  
+Initial dose of 4-8 mg, increasing by 4-8 mg each day as needed until the person is no longer experiencing opioid withdrawal and not using illicit opioids. Maintain until ready to cease opioid agonist treatment.  
+Side effects:  
+Sedation, dizziness, ataxia, nausea, vomiting, constipation, respiratory depression.  
+Contraindications / Cautions:  
+– Use with caution in congestive heart failure, respiratory disease, or liver disease.  
+– Potential for abuse.  
+– Abrupt cessation can cause withdrawal symptoms.
+
+Medication: Morphine sulphate  
+Dosing:  
+10-20 mg as an initial dose with 10 mg extra dose if needed.  
+Side effects:  
+Sedation and respiratory depression which can be life threatening. Prolonged use can lead to dependence.  
+Contraindications / Cautions:  
+Do not use in people who are sedated. Beware of combining with other sedatives. The person should not drive. Supervise dosing to minimise the risk of diversion. Give longer acting opioids, such as methadone or buprenorphine, once per day to outpatients, when available.

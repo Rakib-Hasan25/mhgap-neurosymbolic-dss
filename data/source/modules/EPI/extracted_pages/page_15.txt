@@ -1,0 +1,27 @@
+**PHARMACOLOGICAL INTERVENTIONS** [Image of a medicine bottle with a plus sign]
+
+**2.3 Initiate antiepileptic medications**
+
+*   » Choose a medication that will be consistently available.
+*   » [!] If special population (children, women of childbearing age, person living with HIV), see relevant section of this module.
+*   » Start with only one medication at lowest starting dose.
+*   » Increase dose slowly until convulsions are controlled.
+*   » Consider monitoring blood count, blood chemistry and liver function tests, if available.
+
+**[!] CAUTION!**
+
+*   » Check for **drug-drug interactions**. When used together, antiepileptics may increase or reduce the effect of other antiepileptics. Antiepileptics may also reduce effect of hormonal birth control, immunosuppressants, antipsychotics, methadone, and some antiretrovirals.
+*   » Rarely, can cause severe bone marrow depression, hypersensitivity reactions including Stevens-Johnson Syndrome, altered Vitamin D metabolism and Vitamin K-deficient hemorrhagic disease of newborns.
+
+*   » [X] When possible, avoid use of sodium valproate in pregnant women due to **risk of neural tube defects**.
+*   » All anticonvulsant medications should be discontinued slowly as stopping them abruptly can cause seizure breakthrough.
+
+**TABLE 1: Antiepileptic medications**
+
+| MEDICATION | ORAL DOSING | SIDE EFFECTS | CONTRAINDICATIONS / CAUTIONS |
+| :--- | :--- | :--- | :--- |
+| **CARBAMAZEPINE** | **Adults:**<br>Start 100-200 mg daily in 2-3 divided doses.<br>Increase by 200 mg each week (max 1400mg daily).<br><br>**Children:**<br>Start 5 mg/kg daily in 2-3 divided doses. Increase by 5 mg/kg daily each week (max 40mg/kg daily OR 1400mg daily).<br><br>**[Icon of pregnant woman] Women who are pregnant or breastfeeding:**<br>Use with caution. | **Common:** Sedation, confusion, dizziness, ataxia, double vision, nausea, diarrhea, benign leukopenia.<br><br>**Serious:** Hepatotoxicity, cardiac conduction delay, low sodium levels. | Caution in patients with history of blood disorders, kidney, liver or cardiac disease.<br><br>Dose may need to be adjusted after 2 weeks due to induction of its own metabolism. |
+
+---
+**EPILEPSY**
+**65**

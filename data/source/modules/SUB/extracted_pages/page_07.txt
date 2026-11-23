@@ -1,0 +1,54 @@
+[Section B]
+
+[Box B]
+Person has recently used stimulants (cocaine, amphetamine type stimulants) and is showing any of the following signs: dilated pupils, anxiety, agitation, hyper-excitable state, racing thoughts, raised pulse and blood pressure.
+
+[Arrow]
+[Box B] -> [Box: Suspect ACUTE STIMULANT INTOXICATION]
+
+[Box: Suspect ACUTE STIMULANT INTOXICATION]
+
+[Arrow]
+[Suspect ACUTE STIMULANT INTOXICATION] -> [Management Box]
+
+[Management Box]
+» Give diazepam 5-10 mg p.o., i.v., or p.r. in titrated doses until the person is calm and lightly sedated.  
+» If psychotic symptoms are not responsive to diazepam, consider antipsychotic medication such as haloperidol 1-2.5 mg p.o. or i.m.. Treat until symptoms resolve. If symptoms persist, go to »PSY.  
+» For management of persons with aggressive and/or agitated behaviour go to »PSY, Table 5.  
+» If the person has chest pain, tachyarrhythmias, or other neurological signs TRANSFER TO HOSPITAL. +  
+» During the post-intoxication phase, be alert for suicidal thoughts or actions. If suicidal thoughts are present, go to »SUI.
+
+--------------------------------------------------
+
+[Section C]
+
+[Box C]
+Person has recently stopped using opioids and is showing any of the following signs: dilated pupils, muscle aches, abdominal cramps, headache, nausea, vomiting, diarrhea, runny eyes and nose, anxiety, restlessness.
+
+[Arrow]
+[Box C] -> [Box: Suspect ACUTE OPIOID WITHDRAWAL]
+
+[Box: Suspect ACUTE OPIOID WITHDRAWAL]
+
+[Arrow]
+[Suspect ACUTE OPIOID WITHDRAWAL] -> [Management Box]
+
+[Management Box]
+» MANAGE OPIOID WITHDRAWAL  
+– Methadone 20 mg, with a supplemental dose of 5-10 mg 4 hours later if necessary.  
+– Buprenorphine 4-8 mg, with a supplementary dose 12 hours later if necessary.  
+– If methadone or buprenorphine are not available, any opioid can be used in the acute setting, i.e. morphine sulphate 10-20 mg as an initial dose with a 10 mg extra dose if needed. Also consider an alpha adrenergic agonists, i.e. clonidine or lofexidine.  
+» Once stable, go to »SUB 2
+
+--------------------------------------------------
+
+[Section D]
+
+[Box D]
+RULE OUT OTHER MEDICAL CAUSES AND PRIORITY MNS CONDITIONS.
+
+--------------------------------------------------
+
+[Footer]
+DISORDERS DUE TO SUBSTANCE USE  
+111

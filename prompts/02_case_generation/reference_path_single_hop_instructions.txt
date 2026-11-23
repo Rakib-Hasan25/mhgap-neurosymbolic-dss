@@ -1,0 +1,16 @@
+- Use only the provided module graph.
+- Generate at most one case for this request.
+- If requested_category is set, generate only that category.
+- If no supported new case exists for requested_category, return exactly {"cases": []}.
+- Start from the node where is_starting is true.
+- Classify the case as single_hop_positive or single_hop_negative.
+- Positive means the path reaches a diagnosis confirming the module syndrome.
+- Negative means the path exits or rules out the module syndrome without positive diagnosis.
+- Avoid duplicating any path listed in existing_cases_to_avoid.
+- Preserve node objects from graph.nodes. Do not invent or rewrite node text.
+- Inline the flow in node_sequence: for each node except the last, add condition_met equal to the relationship.condition used to reach the next node in the sequence.
+- condition_met must match an edge in graph.relationships with from=this_node.id and to=next_node.id.
+- Do not return relationship_sequence.
+- Do not include decision_trace, warnings, or metadata.
+- Do not invent missing nodes, missing edges, or unsupported paths.
+- Do not create unrealistic data to satisfy a requested count.

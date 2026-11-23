@@ -1,0 +1,120 @@
+{
+  "cases": [
+    {
+      "case_id": "SUB_to_SUI_R4_positive_001",
+      "category": "multi_hop_positive",
+      "source_module": "SUB",
+      "referred_module": "SUI",
+      "final_module": "SUI",
+      "diagnosis_reached": true,
+      "diagnosis_node_id": "SUI_D1",
+      "exit_node_id": "SUI_E1",
+      "node_sequence": [
+        {
+          "id": "SUB_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "EMERGENCY ASSESSMENT: Does the person appear sedated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A4",
+          "type": "assessment",
+          "text": "Does the person appear overstimulated, anxious, or agitated?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A8",
+          "type": "assessment",
+          "text": "Does the person appear confused?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUB_A12",
+          "type": "assessment",
+          "text": "NON-EMERGENCY ASSESSMENT: Does the person use psychoactive substances (e.g. tobacco, alcohol, prescription medicines, cannabis)?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A14",
+          "type": "assessment",
+          "text": "Is DEPENDENCE likely? (Features include: High levels of frequent use, strong craving, difficulty self-regulating use despite risks, increasing tolerance, and withdrawal symptoms on cessation)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_A15",
+          "type": "assessment",
+          "text": "Is there an imminent risk of suicide?",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUB_R4",
+          "type": "referral",
+          "target_module": "SUI",
+          "text": "Assess and manage imminent risk of suicide before continuing."
+        },
+        {
+          "id": "SUI_A1",
+          "type": "assessment",
+          "is_starting": true,
+          "text": "Has the person attempted a medically serious act of self-harm? (Check for signs of poisoning/intoxication, bleeding from self-inflicted wound, loss of consciousness, or extreme lethargy)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A2",
+          "type": "assessment",
+          "text": "Is there an imminent risk of self-harm/suicide? (Current thoughts/plan of self-harm/suicide, or history of thoughts/plan in the past month or act in the past year in a person who is now extremely agitated, violent, distressed or lacks communication)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_D1",
+          "type": "diagnosis",
+          "text": "IMMINENT RISK OF SELF-HARM/SUICIDE is likely.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_M2",
+          "type": "management",
+          "text": "PROTOCOL 2: Imminent risk of self-harm/suicide. Remove means of self-harm/suicide. Create a secure environment and DO NOT leave the person alone. Supervise to ensure safety at all times. Attend to mental state. Provide psychoeducation, psychosocial, and carers support. Follow-up: maintain regular contact, decrease contact as person improves, or increase intensity and refer if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A4",
+          "type": "assessment",
+          "text": "Does the person have concurrent MNS conditions? (Depression, Disorders due to substance use, Child & adolescent mental and behavioral disorders, Psychoses, Epilepsy)",
+          "condition_met": "YES"
+        },
+        {
+          "id": "SUI_M4",
+          "type": "management",
+          "text": "Manage the concurrent conditions. See relevant modules.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_A5",
+          "type": "assessment",
+          "text": "Does the person have chronic pain?",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_A6",
+          "type": "assessment",
+          "text": "Does the person have emotional symptoms severe enough to warrant clinical management? (Difficulty carrying out usual activities, repeated self-medication for emotional distress, unexplained physical symptoms, marked distress or repeated help-seeking)",
+          "condition_met": "NO"
+        },
+        {
+          "id": "SUI_M7",
+          "type": "management",
+          "text": "Follow-up for as long as the risk of self-harm/suicide persists. Maintain regular contact. Assess for improvement; decrease contact as the person improves, or increase intensity/duration and refer to specialist if not improving.",
+          "condition_met": "NEXT"
+        },
+        {
+          "id": "SUI_E1",
+          "type": "exit",
+          "text": "End of Self-Harm / Suicide Assessment and Management."
+        }
+      ],
+      "user_story": "Mohammad Tareq Hasan, a 32-year-old launch engine helper from Char Fasson in Bhola, came to the upazila health complex with his elder cousin after a tense family argument about debts. He was sitting upright, alert, and neatly answering questions; his speech was normal in pace and volume, his eyes stayed open, and he walked steadily without drowsiness, slurring, extreme lethargy, or signs of intoxication. He was not pacing, shouting, sweating, trembling, or restless, and although he looked ashamed, he remained calm and cooperative. He knew his name, the date, where he was, and why his cousin had brought him.\n\nFor the past three years Tareq has smoked cigarettes heavily and used yaba tablets, first during overnight river trips to stay awake and later almost every day. In recent months he has needed more tablets to feel the same effect, thinks about them throughout the day, and has repeatedly failed to stop despite quarrels with his wife and warnings from his employer. When he tries to go without them, he becomes irritable, sleepless, and gets body aches and intense cravings, so he usually borrows money to buy more.\n\nThat morning his wife found him quietly putting a length of nylon rope into his work bag after he had said, “Tonight after everyone sleeps, I’ll finish this near the cowshed.” He admitted to the health worker that he had been thinking about hanging himself for the past week and had chosen the beam behind their house because he believed his debts and drug use had ruined his family. He had not yet harmed himself: there were no cuts or bleeding, no pesticide or medicine ingestion, no loss of consciousness, no vomiting, and no extreme lethargy. His cousin brought the rope along and said no tablets, blades, or pesticides were found on him.\n\nTareq has no history of epilepsy, psychosis, or adolescent behavioral disorder, but his yaba and tobacco use has clearly become a substance use disorder needing care. He denies long-standing sadness, panic attacks, or hearing voices, and he has continued going to the launch ghat most days when work is available. He has not been repeatedly visiting doctors for unexplained physical complaints, does not take medicines to numb emotional pain, and is not seeking help again and again for distress; this visit happened because his family discovered the rope and plan. He also has no chronic pain—only occasional tiredness after work that settles with rest."
+    }
+  ]
+}
