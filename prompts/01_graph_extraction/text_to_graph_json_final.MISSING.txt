@@ -1,2 +1,14 @@
-TODO: paste the prompt that produced the final data/graphs/<CODE>/mhgap_decision_graph.json files.
-TODO: paste the prompt that produced data/graphs/<CODE>/mhgap_clinical_logic.md (used by S3).
+NOTE: the prompt that produced the final graphs was not kept.
+
+The final data/graphs/<CODE>/mhgap_decision_graph.json files and the
+data/graphs/<CODE>/mhgap_clinical_logic.md files (the S3 input) were produced with an
+LLM prompt that was not saved. The text-to-JSON prompt in
+notebooks/01_graph_construction/ produces an earlier schema (Question nodes, NEXT_YES
+edges), not the final one.
+
+The graphs themselves are released as data, so every experiment can be rerun from
+them without this prompt. Their structure can be checked with:
+
+    python scripts/validate_graphs.py
+
+If the prompt is found, it will replace this file.
